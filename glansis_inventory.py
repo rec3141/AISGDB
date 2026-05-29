@@ -86,6 +86,12 @@ RISK_PRIORITY = ["Invasive", "High", "Watchlist", "Moderate", "Low"]
 # Same URL-stability caveat as RALevel2_v6.txt: vendor a snapshot.
 GLANSIS_REGS_URL = "https://www.glerl.noaa.gov/glansis/data/invasiveRegs.txt"
 
+# Manitoba isn't in GLANSIS's invasiveRegs.txt — its own province-level
+# AIS schedule (M.R. 173/2015 Schedule A) is a separate file we parse out
+# of the PDF and fold in as one additional jurisdiction.
+MB_REGULATION_URL = ("https://web2.gov.mb.ca/laws/regs/current/"
+                     "_pdf-regs.php?reg=173/2015")
+
 # Most-restrictive regulation level wins for the displayed cell.
 REG_PRIORITY = ["Prohibited", "Restricted", "Other"]
 
@@ -190,12 +196,31 @@ def load_ra_file(path):
     return enrichment
 
 
-def _enrichment_key(scientific_name):
-    """Best-effort (genus, species) from a DwC scientificName."""
+def _enrichment_keys(scientific_name):
+    """Candidate (genus, species) join keys, in priority order.
+
+    For a trinomial DwC name like 'Dreissena rostriformis bugensis', the
+    binomial form 'Dreissena bugensis' is what GLANSIS Tier-2 + Manitoba
+    Schedule A actually use. So we emit both (genus, species) and (genus,
+    subspecies) — the lookup tries each in turn.
+    """
     parts = scientific_name.split()
     if len(parts) < 2:
-        return None
-    return (parts[0].lower(), parts[1].lower())
+        return []
+    keys = [(parts[0].lower(), parts[1].lower())]
+    if (len(parts) >= 3
+            and parts[2][0].islower()
+            and parts[2] not in ("var.", "subsp.", "f.", "ssp.")):
+        keys.append((parts[0].lower(), parts[2].lower()))
+    return keys
+
+
+def _lookup(d, name):
+    """First-hit dict lookup across _enrichment_keys(name)."""
+    for k in _enrichment_keys(name):
+        if k in d:
+            return d[k]
+    return {}
 
 
 def load_regs(path):
@@ -237,6 +262,48 @@ def load_regs(path):
             "top_level":         top,
             "n_jurisdictions":   sum(len(v) for v in by_level.values()),
             "by_level":          {lvl: sorted(jur) for lvl, jur in by_level.items()},
+        }
+    return regs
+
+
+def load_mb_schedule_a(path):
+    """Read the parsed Manitoba Schedule A TSV.
+
+    Returns {(genus_lo, species_lo): condition}. Family-level entries
+    ('Any species of family Channidae', etc.) are skipped — they don't
+    have a clean binomial to join on.
+    """
+    if not path or not os.path.exists(path):
+        return {}
+    out = {}
+    with open(path, encoding="utf-8") as fh:
+        for row in csv.DictReader(fh, delimiter="\t"):
+            sci = (row.get("scientific_name") or "").strip()
+            parts = sci.split()
+            if len(parts) < 2 or not parts[0][0].isupper() or not parts[1][0].islower():
+                continue
+            out[(parts[0].lower(), parts[1].lower())] = (row.get("condition") or "").strip()
+    return out
+
+
+def merge_mb_into_regs(regs, mb_entries):
+    """Fold each Manitoba listing into the regs dict as one extra Prohibited
+    jurisdiction. Possession is prohibited under MR 173/2015 regardless of
+    the Schedule A 'condition' (Dead / Dead and eviscerated / n/a), so all
+    map to Prohibited."""
+    for key in mb_entries:
+        entry = regs.get(key) or {"top_level": "", "n_jurisdictions": 0,
+                                  "by_level": {}}
+        by_level = {lvl: list(jur) for lvl, jur in entry.get("by_level", {}).items()}
+        by_level.setdefault("Prohibited", []).append("Manitoba")
+        # Re-sort the affected level.
+        by_level["Prohibited"] = sorted(set(by_level["Prohibited"]))
+        top = next((lvl for lvl in REG_PRIORITY if lvl in by_level),
+                   next(iter(by_level), ""))
+        regs[key] = {
+            "top_level":       top,
+            "n_jurisdictions": sum(len(v) for v in by_level.values()),
+            "by_level":        by_level,
         }
     return regs
 
@@ -327,6 +394,11 @@ def main():
                                          "data", "invasiveRegs.txt.gz"),
                     help="GLANSIS regulatory-listings TSV (UTF-8 or .gz). "
                          f"Live source: {GLANSIS_REGS_URL}")
+    ap.add_argument("--mb-schedule-a",
+                    default=os.path.join(os.path.dirname(__file__) or ".",
+                                         "data", "manitoba_schedule_a.tsv"),
+                    help="Manitoba AIS Regulation MR 173/2015 Schedule A "
+                         "(parsed TSV). Source PDF: " + MB_REGULATION_URL)
     ap.add_argument("--out-tsv",  default="/matika/projects/project_zebra/docs/glansis_inventory.tsv")
     ap.add_argument("--out-html", default="/matika/projects/project_zebra/docs/glansis_inventory.html")
     ap.add_argument("--out-json", default="/matika/projects/project_zebra/docs/glansis_inventory.json")
@@ -349,6 +421,12 @@ def main():
           file=sys.stderr)
     regs_enrich = load_regs(args.regs)
     print(f"[inventory] regs loaded for {len(regs_enrich)} (genus, species) pairs",
+          file=sys.stderr)
+    mb_entries = load_mb_schedule_a(args.mb_schedule_a)
+    print(f"[inventory] Manitoba Schedule A: {len(mb_entries)} binomial entries",
+          file=sys.stderr)
+    regs_enrich = merge_mb_into_regs(regs_enrich, mb_entries)
+    print(f"[inventory] regs after Manitoba merge: {len(regs_enrich)} pairs",
           file=sys.stderr)
 
     cache = {}
@@ -392,9 +470,8 @@ def main():
             entry.get("nuccore_count") or 0,
             entry.get("transcriptome_count") or 0,
         )
-        ek = _enrichment_key(name) or ("", "")
-        ra = ra_enrich.get(ek, {})
-        rg = regs_enrich.get(ek, {})
+        ra = _lookup(ra_enrich, name)
+        rg = _lookup(regs_enrich, name)
         results.append({
             "scientific_name": name,
             "tier": tier,
@@ -682,9 +759,11 @@ def write_html(path, results, counts):
   in parentheses is the number of source assessments.
   Regulated is joined from
   <a href="https://www.glerl.noaa.gov/glansis/raT2Explorer.html"><code>invasiveRegs.txt</code></a>
-  &mdash; {n_with_reg} of {n_total} species have at least one regulatory listing
-  in a Great Lakes jurisdiction. Hover the badge for the per-jurisdiction
-  breakdown; cell shows the most-restrictive level and total jurisdictions.
+  (13 Great Lakes basin jurisdictions) plus
+  <a href="https://web2.gov.mb.ca/laws/regs/current/173-2015.php?lang=en">Manitoba MR 173/2015 Schedule A</a>
+  &mdash; {n_with_reg} of {n_total} species have at least one regulatory listing.
+  Hover the badge for the per-jurisdiction breakdown; cell shows the
+  most-restrictive level and total jurisdictions.
 </div>
 
 <table>

@@ -48,8 +48,8 @@ case-folded `(Genus, Species)`:
 | `common_name`  | Modal `Common Names` across all assessments for the species (`RALevel2_v6.txt`) | 197/370 (53%) |
 | `group`        | Modal `Group` (Fishes / Plants / Mollusk-Bivalve / …), with sing/plural variants collapsed (`RALevel2_v6.txt`) | 252/370 (68%) |
 | `risk`         | Most-severe verdict across all `Overall` strings, by priority *Invasive > High > Watchlist > Moderate > Low* (`RALevel2_v6.txt`) | 193/370 (52%) |
-| `reg_level`    | Most-restrictive regulation level across all jurisdictions, by priority *Prohibited > Restricted > Other* (`invasiveRegs.txt`) | 121/370 (33%) |
-| `reg_n_juris`  | Total number of regulatory listings — e.g. round goby (*Neogobius melanostomus*) is Prohibited in 11 jurisdictions (`invasiveRegs.txt`) | same |
+| `reg_level`    | Most-restrictive regulation level across all jurisdictions, by priority *Prohibited > Restricted > Other* (`invasiveRegs.txt` + Manitoba MR 173/2015 Sched. A) | 134/370 (36%) |
+| `reg_n_juris`  | Total number of regulatory listings — e.g. round goby (*Neogobius melanostomus*) is Prohibited in 9 jurisdictions and Restricted in 3 (`invasiveRegs.txt` + Manitoba) | same |
 
 The HTML view exposes Group, Risk, and Regulation level as dropdown
 filters, mirroring the GLANSIS Tier-2 Explorer UI; the regulation cell
@@ -68,6 +68,9 @@ so we mirror them here. All four are tab-delimited; encoding noted below.
 | [`data/invasiveRegs.txt.gz`](data/invasiveRegs.txt.gz) | <https://www.glerl.noaa.gov/glansis/data/invasiveRegs.txt> | UTF-8 | Regulatory listings — 757 rows × 19 cols across 13 jurisdictions (WI, MN, OH, NY, IN, PA, QC, IL, US, MI, ON, Canada, …). Powers `reg_level`, `reg_n_juris`. |
 | [`data/RA_Content_v3_forLevel2.txt.gz`](data/RA_Content_v3_forLevel2.txt.gz) | <https://www.glerl.noaa.gov/glansis/data/RA_Content_v3_forLevel2.txt> | UTF-8 | Methodology lookup — 18 rows describing each risk-assessment method (USFWS ERSS, Canadian AqWRA, …). Not joined into the inventory; archived for future use as per-assessment tooltip text. |
 | [`data/IllinoisWhiteList.txt.gz`](data/IllinoisWhiteList.txt.gz) | <https://www.glerl.noaa.gov/glansis/data/IllinoisWhiteList.txt> | CP-1252 | Illinois aquaculture-approved list — 367 species. Not joined: it's the *inverse* signal (permitted in IL), almost no overlap with the GLANSIS DwC list. |
+| [`data/manitoba_schedule_a.tsv`](data/manitoba_schedule_a.tsv) | extracted from PDF (see below) | UTF-8 | Manitoba *Aquatic Invasive Species Regulation* (MR 173/2015) Schedule A — 128 prohibited species in 4 groups (Fish 81, Invertebrates 24, Plants 21, Algae 2). 125 carry a clean binomial; 62 overlap with the GLANSIS DwC list and are folded into `reg_level`/`reg_n_juris` as one additional Prohibited jurisdiction. The 63 MB-only species (Russian/Beluga sturgeons, killer shrimp, yabby, etc.) are documented in the TSV but not yet expanded as inventory rows. |
+| [`data/manitoba_schedule_a.parse.py`](data/manitoba_schedule_a.parse.py) | (this repo) | — | Reproducible parser — converts the `pdftotext -layout` dump back into a clean TSV. Re-run when the regulation is amended. |
+| [`data/manitoba_AIS_regulation_173-2015.pdf.gz`](data/manitoba_AIS_regulation_173-2015.pdf.gz) | <https://web2.gov.mb.ca/laws/regs/current/_pdf-regs.php?reg=173/2015> | PDF | Pinned snapshot of the source regulation (current 25 May 2023). Manitoba doesn't ship a structured table — CanLII blocks scrapers, and the official site only offers HTML and PDF. The PDF parses more reliably than the HTML. |
 
 ## Re-running the inventory
 

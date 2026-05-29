@@ -63,11 +63,11 @@
   <input id="filter" placeholder="Filter species (substring)" oninput="applyFilters()">
   <select id="groupFilter" onchange="applyFilters()">
     <option value="">All groups</option>
-    <option value="Plants">Plants (77)</option><option value="Fishes">Fishes (75)</option><option value="Algae">Algae (19)</option><option value="Crustacean-Copepod">Crustacean-Copepod (12)</option><option value="Mollusk-Gastropoda">Mollusk-Gastropoda (10)</option><option value="Mollusk-Bivalve">Mollusk-Bivalve (6)</option><option value="Crustacean-Crayfish">Crustacean-Crayfish (6)</option><option value="Crustacean-Cladoceran">Crustacean-Cladoceran (6)</option><option value="Annelids">Annelids (6)</option><option value="Fluke">Fluke (5)</option><option value="Reptile">Reptile (3)</option><option value="Crustacean-Amphipod">Crustacean-Amphipod (3)</option><option value="Protozoa-Amoebae">Protozoa-Amoebae (3)</option><option value="Insects">Insects (2)</option><option value="Amphibian">Amphibian (2)</option><option value="Myxosporean">Myxosporean (2)</option><option value="Tapeworm">Tapeworm (2)</option><option value="Microsporidea">Microsporidea (2)</option><option value="Bacteria">Bacteria (1)</option><option value="Birds">Birds (1)</option><option value="Crustacean-Crab">Crustacean-Crab (1)</option><option value="Nematodes">Nematodes (1)</option><option value="Rotifers">Rotifers (1)</option><option value="Crustacean-Mysid">Crustacean-Mysid (1)</option><option value="Flatworm">Flatworm (1)</option><option value="Bryozoan">Bryozoan (1)</option><option value="Protozoa-Ciliate">Protozoa-Ciliate (1)</option><option value="Coelenterates">Coelenterates (1)</option><option value="Protozoa-Flagellate">Protozoa-Flagellate (1)</option>
+    <option value="Plants">Plants (79)</option><option value="Fishes">Fishes (75)</option><option value="Algae">Algae (21)</option><option value="Crustacean-Copepod">Crustacean-Copepod (12)</option><option value="Mollusk-Gastropoda">Mollusk-Gastropoda (10)</option><option value="Mollusk-Bivalve">Mollusk-Bivalve (7)</option><option value="Crustacean-Crayfish">Crustacean-Crayfish (6)</option><option value="Crustacean-Cladoceran">Crustacean-Cladoceran (6)</option><option value="Annelids">Annelids (6)</option><option value="Fluke">Fluke (5)</option><option value="Reptile">Reptile (3)</option><option value="Crustacean-Amphipod">Crustacean-Amphipod (3)</option><option value="Protozoa-Amoebae">Protozoa-Amoebae (3)</option><option value="Insects">Insects (2)</option><option value="Bacteria">Bacteria (2)</option><option value="Amphibian">Amphibian (2)</option><option value="Myxosporean">Myxosporean (2)</option><option value="Tapeworm">Tapeworm (2)</option><option value="Microsporidea">Microsporidea (2)</option><option value="Birds">Birds (1)</option><option value="Crustacean-Crab">Crustacean-Crab (1)</option><option value="Nematodes">Nematodes (1)</option><option value="Rotifers">Rotifers (1)</option><option value="Crustacean-Mysid">Crustacean-Mysid (1)</option><option value="Flatworm">Flatworm (1)</option><option value="Bryozoan">Bryozoan (1)</option><option value="Protozoa-Ciliate">Protozoa-Ciliate (1)</option><option value="Coelenterates">Coelenterates (1)</option><option value="Viruses">Viruses (1)</option><option value="Protozoa-Flagellate">Protozoa-Flagellate (1)</option>
   </select>
   <select id="riskFilter" onchange="applyFilters()">
     <option value="">All risk</option>
-    <option value="Invasive">Invasive (110)</option><option value="High">High (41)</option><option value="Watchlist">Watchlist (4)</option><option value="Moderate">Moderate (8)</option><option value="Low">Low (30)</option>
+    <option value="Invasive">Invasive (113)</option><option value="High">High (42)</option><option value="Watchlist">Watchlist (4)</option><option value="Moderate">Moderate (8)</option><option value="Low">Low (31)</option>
   </select>
   <select id="regFilter" onchange="applyFilters()">
     <option value="">All regulation</option>
@@ -78,15 +78,17 @@
   Group, Common Name, and Risk are joined from the
   <a href="https://www.glerl.noaa.gov/glansis/raT2Explorer.html">GLANSIS Tier&nbsp;2 Risk-Assessment Clearinghouse</a>
   (<code>RALevel2_v6.txt</code>, vendored at <code>data/</code>) &mdash;
-  252 of 370 species have ≥1 assessment.
+  259 of 370 species have ≥1 assessment.
   Risk reduces all assessments per species to a single label
   (priority: Invasive &gt; High &gt; Watchlist &gt; Moderate &gt; Low); count
   in parentheses is the number of source assessments.
   Regulated is joined from
   <a href="https://www.glerl.noaa.gov/glansis/raT2Explorer.html"><code>invasiveRegs.txt</code></a>
-  &mdash; 121 of 370 species have at least one regulatory listing
-  in a Great Lakes jurisdiction. Hover the badge for the per-jurisdiction
-  breakdown; cell shows the most-restrictive level and total jurisdictions.
+  (13 Great Lakes basin jurisdictions) plus
+  <a href="https://web2.gov.mb.ca/laws/regs/current/173-2015.php?lang=en">Manitoba MR 173/2015 Schedule A</a>
+  &mdash; 134 of 370 species have at least one regulatory listing.
+  Hover the badge for the per-jurisdiction breakdown; cell shows the
+  most-restrictive level and total jurisdictions.
 </div>
 
 <table>
@@ -210,12 +212,12 @@
           <td class="mono right" data-sort=""></td>
         </tr>
         
-        <tr data-group="" data-risk="" data-reg="Restricted">
+        <tr data-group="" data-risk="" data-reg="Prohibited">
           <td data-sort="0"><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
           <td data-sort="amia calva"><em>Amia calva</em></td>
           <td class="small" data-sort=""></td>
           <td data-sort="99"></td>
-          <td data-sort="9999"><span class="badge" style="background:#ea580c1a;color:#ea580c" title="Restricted: Quebec">Restricted</span> <span class="muted">×1</span></td>
+          <td data-sort="-2"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba | Restricted: Quebec">Prohibited</span> <span class="muted">×2</span></td>
           <td data-sort="1">Chromosome</td>
           <td class="mono" data-sort="gca_017591415.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCA_017591415">GCA_017591415.1</a></td>
           <td class="mono right" data-sort="831002832">831 Mb</td>
@@ -236,12 +238,12 @@
           <td class="mono right" data-sort=""></td>
         </tr>
         
-        <tr data-group="Fishes" data-risk="Low" data-reg="">
+        <tr data-group="Fishes" data-risk="Low" data-reg="Prohibited">
           <td data-sort="0"><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
           <td data-sort="apeltes quadracus"><em>Apeltes quadracus</em><br><span class="muted small">Fourspine Stickleback</span></td>
           <td class="small" data-sort="fishes">Fishes</td>
           <td data-sort="4"><span class="badge" style="background:#16a34a1a;color:#16a34a">Low</span> <span class="muted">(6)</span></td>
-          <td data-sort="990000"></td>
+          <td data-sort="-1"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba">Prohibited</span> <span class="muted">×1</span></td>
           <td data-sort="1">Chromosome</td>
           <td class="mono" data-sort="gca_048569185.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCA_048569185">GCA_048569185.1</a></td>
           <td class="mono right" data-sort="475913512">476 Mb</td>
@@ -293,7 +295,7 @@
           <td data-sort="cipangopaludina chinensis"><em>Cipangopaludina chinensis</em><br><span class="muted small">Chinese Mysterysnail</span></td>
           <td class="small" data-sort="mollusk-gastropoda">Mollusk-Gastropoda</td>
           <td data-sort="1"><span class="badge" style="background:#dc26261a;color:#dc2626">High</span> <span class="muted">(2)</span></td>
-          <td data-sort="-4"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: New York | Restricted: Wisconsin | Other: Indiana, Pennsylvania">Prohibited</span> <span class="muted">×4</span></td>
+          <td data-sort="-5"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba, New York | Restricted: Wisconsin | Other: Indiana, Pennsylvania">Prohibited</span> <span class="muted">×5</span></td>
           <td data-sort="1">Chromosome</td>
           <td class="mono" data-sort="gca_050437285.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCA_050437285">GCA_050437285.1</a></td>
           <td class="mono right" data-sort="1560258163">1.56 Gb</td>
@@ -332,7 +334,7 @@
           <td data-sort="ctenopharyngodon idella"><em>Ctenopharyngodon idella</em><br><span class="muted small">Grass carp</span></td>
           <td class="small" data-sort="fishes">Fishes</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(10)</span></td>
-          <td data-sort="-8"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Michigan, Mille Lacs Band of Ojibwe Minnesota Ceded territory, Minnesota, Ohio, Ontario, Wisconsin | Restricted: Indiana | Other: Pennsylvania">Prohibited</span> <span class="muted">×8</span></td>
+          <td data-sort="-9"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba, Michigan, Mille Lacs Band of Ojibwe Minnesota Ceded territory, Minnesota, Ohio, Ontario, Wisconsin | Restricted: Indiana | Other: Pennsylvania">Prohibited</span> <span class="muted">×9</span></td>
           <td data-sort="0">Complete Genome</td>
           <td class="mono" data-sort="gca_049919795.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCA_049919795">GCA_049919795.1</a></td>
           <td class="mono right" data-sort="890918310">891 Mb</td>
@@ -358,7 +360,7 @@
           <td data-sort="cyprinella lutrensis"><em>Cyprinella lutrensis</em><br><span class="muted small">Red shiner</span></td>
           <td class="small" data-sort="fishes">Fishes</td>
           <td data-sort="1"><span class="badge" style="background:#dc26261a;color:#dc2626">High</span> <span class="muted">(6)</span></td>
-          <td data-sort="-3"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Ontario, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×3</span></td>
+          <td data-sort="-4"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba, Ontario, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×4</span></td>
           <td data-sort="1">Chromosome</td>
           <td class="mono" data-sort="gca_054825075.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCA_054825075">GCA_054825075.1</a></td>
           <td class="mono right" data-sort="926968418">927 Mb</td>
@@ -397,7 +399,7 @@
           <td data-sort="dreissena polymorpha"><em>Dreissena polymorpha</em><br><span class="muted small">Zebra Mussel</span></td>
           <td class="small" data-sort="mollusk-bivalve">Mollusk-Bivalve</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(7)</span></td>
-          <td data-sort="-8"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Canada, Indiana, New York, Ohio, Pennsylvania, United States | Restricted: Michigan, Wisconsin">Prohibited</span> <span class="muted">×8</span></td>
+          <td data-sort="-9"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Canada, Indiana, Manitoba, New York, Ohio, Pennsylvania, United States | Restricted: Michigan, Wisconsin">Prohibited</span> <span class="muted">×9</span></td>
           <td data-sort="1">Chromosome</td>
           <td class="mono" data-sort="gcf_020536995.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCF_020536995">GCF_020536995.1</a></td>
           <td class="mono right" data-sort="1797942340">1.80 Gb</td>
@@ -405,12 +407,12 @@
           <td class="mono right" data-sort=""></td>
         </tr>
         
-        <tr data-group="" data-risk="" data-reg="">
+        <tr data-group="Mollusk-Bivalve" data-risk="Invasive" data-reg="Prohibited">
           <td data-sort="0"><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
-          <td data-sort="dreissena rostriformis bugensis"><em>Dreissena rostriformis bugensis</em></td>
-          <td class="small" data-sort=""></td>
-          <td data-sort="99"></td>
-          <td data-sort="990000"></td>
+          <td data-sort="dreissena rostriformis bugensis"><em>Dreissena rostriformis bugensis</em><br><span class="muted small">Quagga Mussel</span></td>
+          <td class="small" data-sort="mollusk-bivalve">Mollusk-Bivalve</td>
+          <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(6)</span></td>
+          <td data-sort="-10"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Canada, Indiana, Manitoba, Minnesota, New York, Ohio, Pennsylvania, United States, Wisconsin | Restricted: Michigan">Prohibited</span> <span class="muted">×10</span></td>
           <td data-sort="1">Chromosome</td>
           <td class="mono" data-sort="gca_055670145.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCA_055670145">GCA_055670145.1</a></td>
           <td class="mono right" data-sort="1613145916">1.61 Gb</td>
@@ -436,7 +438,7 @@
           <td data-sort="eichhornia crassipes"><em>Eichhornia crassipes</em><br><span class="muted small">Water Hyacinth</span></td>
           <td class="small" data-sort="plants">Plants</td>
           <td data-sort="1"><span class="badge" style="background:#dc26261a;color:#dc2626">High</span> <span class="muted">(12)</span></td>
-          <td data-sort="-2"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Wisconsin | Restricted: Minnesota">Prohibited</span> <span class="muted">×2</span></td>
+          <td data-sort="-3"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba, Wisconsin | Restricted: Minnesota">Prohibited</span> <span class="muted">×3</span></td>
           <td data-sort="1">Chromosome</td>
           <td class="mono" data-sort="gca_030549335.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCA_030549335">GCA_030549335.1</a></td>
           <td class="mono right" data-sort="1132240410">1.13 Gb</td>
@@ -527,7 +529,7 @@
           <td data-sort="gambusia affinis"><em>Gambusia affinis</em><br><span class="muted small">Western mosquitofish</span></td>
           <td class="small" data-sort="fishes">Fishes</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(10)</span></td>
-          <td data-sort="-4"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Minnesota, New York, Ontario | Restricted: Wisconsin">Prohibited</span> <span class="muted">×4</span></td>
+          <td data-sort="-5"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba, Minnesota, New York, Ontario | Restricted: Wisconsin">Prohibited</span> <span class="muted">×5</span></td>
           <td data-sort="1">Chromosome</td>
           <td class="mono" data-sort="gcf_019740435.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCF_019740435">GCF_019740435.1</a></td>
           <td class="mono right" data-sort="680149392">680 Mb</td>
@@ -540,7 +542,7 @@
           <td data-sort="gasterosteus aculeatus"><em>Gasterosteus aculeatus</em><br><span class="muted small">Threespine Stickleback</span></td>
           <td class="small" data-sort="fishes">Fishes</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(7)</span></td>
-          <td data-sort="-2"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Ohio | Restricted: Wisconsin">Prohibited</span> <span class="muted">×2</span></td>
+          <td data-sort="-3"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba, Ohio | Restricted: Wisconsin">Prohibited</span> <span class="muted">×3</span></td>
           <td data-sort="1">Chromosome</td>
           <td class="mono" data-sort="gcf_964276395.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCF_964276395">GCF_964276395.1</a></td>
           <td class="mono right" data-sort="511138727">511 Mb</td>
@@ -566,7 +568,7 @@
           <td data-sort="hypophthalmichthys nobilis"><em>Hypophthalmichthys nobilis</em><br><span class="muted small">Bighead Carp</span></td>
           <td class="small" data-sort="fishes">Fishes</td>
           <td data-sort="1"><span class="badge" style="background:#dc26261a;color:#dc2626">High</span> <span class="muted">(9)</span></td>
-          <td data-sort="-10"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Illinois, Indiana, Michigan, Minnesota, New York, Ohio, Ontario, Pennsylvania, United States, Wisconsin">Prohibited</span> <span class="muted">×10</span></td>
+          <td data-sort="-11"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Illinois, Indiana, Manitoba, Michigan, Minnesota, New York, Ohio, Ontario, Pennsylvania, United States, Wisconsin">Prohibited</span> <span class="muted">×11</span></td>
           <td data-sort="1">Chromosome</td>
           <td class="mono" data-sort="gca_037950665.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCA_037950665">GCA_037950665.1</a></td>
           <td class="mono right" data-sort="863920326">864 Mb</td>
@@ -605,7 +607,7 @@
           <td data-sort="impatiens glandulifera"><em>Impatiens glandulifera</em><br><span class="muted small">Ornamental Jewelweed</span></td>
           <td class="small" data-sort="plants">Plants</td>
           <td data-sort="3"><span class="badge" style="background:#ca8a041a;color:#ca8a04">Moderate</span> <span class="muted">(5)</span></td>
-          <td data-sort="-1"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Wisconsin">Prohibited</span> <span class="muted">×1</span></td>
+          <td data-sort="-2"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba, Wisconsin">Prohibited</span> <span class="muted">×2</span></td>
           <td data-sort="1">Chromosome</td>
           <td class="mono" data-sort="gcf_907164915.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCF_907164915">GCF_907164915.1</a></td>
           <td class="mono right" data-sort="653879104">654 Mb</td>
@@ -626,12 +628,12 @@
           <td class="mono right" data-sort=""></td>
         </tr>
         
-        <tr data-group="" data-risk="" data-reg="">
+        <tr data-group="" data-risk="" data-reg="Prohibited">
           <td data-sort="0"><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
           <td data-sort="lepisosteus oculatus"><em>Lepisosteus oculatus</em></td>
           <td class="small" data-sort=""></td>
           <td data-sort="99"></td>
-          <td data-sort="990000"></td>
+          <td data-sort="-1"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba">Prohibited</span> <span class="muted">×1</span></td>
           <td data-sort="1">Chromosome</td>
           <td class="mono" data-sort="gcf_040954835.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCF_040954835">GCF_040954835.1</a></td>
           <td class="mono right" data-sort="1200589847">1.20 Gb</td>
@@ -709,7 +711,7 @@
           <td data-sort="misgurnus anguillicaudatus"><em>Misgurnus anguillicaudatus</em><br><span class="muted small">Oriental Weatherfish</span></td>
           <td class="small" data-sort="fishes">Fishes</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(8)</span></td>
-          <td data-sort="-5"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Minnesota, New York | Restricted: Michigan, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×5</span></td>
+          <td data-sort="-6"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba, Minnesota, New York | Restricted: Michigan, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×6</span></td>
           <td data-sort="1">Chromosome</td>
           <td class="mono" data-sort="gcf_027580225.2"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCF_027580225">GCF_027580225.2</a></td>
           <td class="mono right" data-sort="1120296596">1.12 Gb</td>
@@ -748,7 +750,7 @@
           <td data-sort="nymphoides peltata"><em>Nymphoides peltata</em><br><span class="muted small">Yellow Floating-heart</span></td>
           <td class="small" data-sort="plants">Plants</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(11)</span></td>
-          <td data-sort="-9"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Illinois, Indiana, Michigan, Minnesota, New York, Ohio, Wisconsin | Restricted: Ontario | Other: Pennsylvania">Prohibited</span> <span class="muted">×9</span></td>
+          <td data-sort="-10"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Illinois, Indiana, Manitoba, Michigan, Minnesota, New York, Ohio, Wisconsin | Restricted: Ontario | Other: Pennsylvania">Prohibited</span> <span class="muted">×10</span></td>
           <td data-sort="1">Chromosome</td>
           <td class="mono" data-sort="gca_965615785.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCA_965615785">GCA_965615785.1</a></td>
           <td class="mono right" data-sort="721921864">722 Mb</td>
@@ -865,7 +867,7 @@
           <td data-sort="osmerus mordax"><em>Osmerus mordax</em><br><span class="muted small">Rainbow Smelt</span></td>
           <td class="small" data-sort="fishes">Fishes</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(8)</span></td>
-          <td data-sort="-4"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Quebec | Restricted: Minnesota, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×4</span></td>
+          <td data-sort="-5"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba, Quebec | Restricted: Minnesota, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×5</span></td>
           <td data-sort="1">Chromosome</td>
           <td class="mono" data-sort="gcf_038355195.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCF_038355195">GCF_038355195.1</a></td>
           <td class="mono right" data-sort="497673479">498 Mb</td>
@@ -904,7 +906,7 @@
           <td data-sort="petromyzon marinus"><em>Petromyzon marinus</em><br><span class="muted small">Sea Lamprey</span></td>
           <td class="small" data-sort="fishes">Fishes</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(7)</span></td>
-          <td data-sort="-8"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Mille Lacs Band of Ojibwe Minnesota Ceded territory, Minnesota, New York, Ohio | Restricted: Quebec, Wisconsin | Other: Indiana, Pennsylvania">Prohibited</span> <span class="muted">×8</span></td>
+          <td data-sort="-9"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba, Mille Lacs Band of Ojibwe Minnesota Ceded territory, Minnesota, New York, Ohio | Restricted: Quebec, Wisconsin | Other: Indiana, Pennsylvania">Prohibited</span> <span class="muted">×9</span></td>
           <td data-sort="1">Chromosome</td>
           <td class="mono" data-sort="gcf_048934315.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCF_048934315">GCF_048934315.1</a></td>
           <td class="mono right" data-sort="1808332251">1.81 Gb</td>
@@ -956,7 +958,7 @@
           <td data-sort="potamogeton crispus"><em>Potamogeton crispus</em><br><span class="muted small">Curly-leaved Pondweed</span></td>
           <td class="small" data-sort="plants">Plants</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(12)</span></td>
-          <td data-sort="-8"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Illinois, Indiana, Minnesota, New York, Ohio | Restricted: Michigan, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×8</span></td>
+          <td data-sort="-9"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Illinois, Indiana, Manitoba, Minnesota, New York, Ohio | Restricted: Michigan, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×9</span></td>
           <td data-sort="1">Chromosome</td>
           <td class="mono" data-sort="gca_965783375.2"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCA_965783375">GCA_965783375.2</a></td>
           <td class="mono right" data-sort="513044524">513 Mb</td>
@@ -969,7 +971,7 @@
           <td data-sort="procambarus clarkii"><em>Procambarus clarkii</em><br><span class="muted small">red swamp crayfish</span></td>
           <td class="small" data-sort="crustacean-crayfish">Crustacean-Crayfish</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(6)</span></td>
-          <td data-sort="-5"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Michigan, Minnesota, Ontario | Restricted: Pennsylvania | Other: Indiana">Prohibited</span> <span class="muted">×5</span></td>
+          <td data-sort="-6"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba, Michigan, Minnesota, Ontario | Restricted: Pennsylvania | Other: Indiana">Prohibited</span> <span class="muted">×6</span></td>
           <td data-sort="1">Chromosome</td>
           <td class="mono" data-sort="gcf_040958095.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCF_040958095">GCF_040958095.1</a></td>
           <td class="mono right" data-sort="4028952570">4.03 Gb</td>
@@ -982,7 +984,7 @@
           <td data-sort="proterorhinus semilunaris"><em>Proterorhinus semilunaris</em><br><span class="muted small">Western Tubenose Goby</span></td>
           <td class="small" data-sort="fishes">Fishes</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(4)</span></td>
-          <td data-sort="-5"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Michigan, Minnesota, New York, Ontario, Pennsylvania">Prohibited</span> <span class="muted">×5</span></td>
+          <td data-sort="-6"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba, Michigan, Minnesota, New York, Ontario, Pennsylvania">Prohibited</span> <span class="muted">×6</span></td>
           <td data-sort="1">Chromosome</td>
           <td class="mono" data-sort="gca_021464625.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCA_021464625">GCA_021464625.1</a></td>
           <td class="mono right" data-sort="864621867">865 Mb</td>
@@ -1211,12 +1213,12 @@
           <td class="mono right" data-sort=""></td>
         </tr>
         
-        <tr data-group="Mollusk-Bivalve" data-risk="" data-reg="">
+        <tr data-group="Mollusk-Bivalve" data-risk="" data-reg="Prohibited">
           <td data-sort="0"><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
           <td data-sort="sphaerium corneum"><em>Sphaerium corneum</em><br><span class="muted small">European Fingernailclam</span></td>
           <td class="small" data-sort="mollusk-bivalve">Mollusk-Bivalve</td>
           <td data-sort="99"><span class="muted">(3)</span></td>
-          <td data-sort="990000"></td>
+          <td data-sort="-1"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba">Prohibited</span> <span class="muted">×1</span></td>
           <td data-sort="1">Chromosome</td>
           <td class="mono" data-sort="gca_965230695.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCA_965230695">GCA_965230695.1</a></td>
           <td class="mono right" data-sort="3625506042">3.63 Gb</td>
@@ -1281,7 +1283,7 @@
           <td data-sort="trapa natans"><em>Trapa natans</em><br><span class="muted small">Water Chestnut</span></td>
           <td class="small" data-sort="plants">Plants</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(12)</span></td>
-          <td data-sort="-10"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Illinois, Indiana, Michigan, Mille Lacs Band of Ojibwe Minnesota Ceded territory, Minnesota, New York, Ohio, Ontario, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×10</span></td>
+          <td data-sort="-11"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Illinois, Indiana, Manitoba, Michigan, Mille Lacs Band of Ojibwe Minnesota Ceded territory, Minnesota, New York, Ohio, Ontario, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×11</span></td>
           <td data-sort="1">Chromosome</td>
           <td class="mono" data-sort="gca_035582545.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCA_035582545">GCA_035582545.1</a></td>
           <td class="mono right" data-sort="477423239">477 Mb</td>
@@ -1354,12 +1356,12 @@
           <td class="mono right" data-sort=""></td>
         </tr>
         
-        <tr data-group="Fishes" data-risk="Invasive" data-reg="Restricted">
+        <tr data-group="Fishes" data-risk="Invasive" data-reg="Prohibited">
           <td data-sort="1"><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
           <td data-sort="alosa pseudoharengus"><em>Alosa pseudoharengus</em><br><span class="muted small">Alewife</span></td>
           <td class="small" data-sort="fishes">Fishes</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(7)</span></td>
-          <td data-sort="9996"><span class="badge" style="background:#ea580c1a;color:#ea580c" title="Restricted: Indiana, Minnesota, Wisconsin | Other: Pennsylvania">Restricted</span> <span class="muted">×4</span></td>
+          <td data-sort="-5"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba | Restricted: Indiana, Minnesota, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×5</span></td>
           <td data-sort="2">Scaffold</td>
           <td class="mono" data-sort="gcf_046254945.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCF_046254945">GCF_046254945.1</a></td>
           <td class="mono right" data-sort="1050053806">1.05 Gb</td>
@@ -1424,7 +1426,7 @@
           <td data-sort="corbicula fluminea"><em>Corbicula fluminea</em><br><span class="muted small">Asian Clam</span></td>
           <td class="small" data-sort="mollusk-bivalve">Mollusk-Bivalve</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(7)</span></td>
-          <td data-sort="-5"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Indiana, Minnesota, New York, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×5</span></td>
+          <td data-sort="-6"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Indiana, Manitoba, Minnesota, New York, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×6</span></td>
           <td data-sort="3">Contig</td>
           <td class="mono" data-sort="gca_001632725.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCA_001632725">GCA_001632725.1</a></td>
           <td class="mono right" data-sort="662517">663 kb</td>
@@ -1523,12 +1525,12 @@
           <td class="mono right" data-sort=""></td>
         </tr>
         
-        <tr data-group="" data-risk="" data-reg="Restricted">
+        <tr data-group="" data-risk="" data-reg="Prohibited">
           <td data-sort="1"><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
           <td data-sort="lepisosteus osseus"><em>Lepisosteus osseus</em></td>
           <td class="small" data-sort=""></td>
           <td data-sort="99"></td>
-          <td data-sort="9999"><span class="badge" style="background:#ea580c1a;color:#ea580c" title="Restricted: Quebec">Restricted</span> <span class="muted">×1</span></td>
+          <td data-sort="-2"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba | Restricted: Quebec">Prohibited</span> <span class="muted">×2</span></td>
           <td data-sort="2">Scaffold</td>
           <td class="mono" data-sort="gca_026401145.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCA_026401145">GCA_026401145.1</a></td>
           <td class="mono right" data-sort="930537206">931 Mb</td>
@@ -1554,7 +1556,7 @@
           <td data-sort="morone americana"><em>Morone americana</em><br><span class="muted small">White perch</span></td>
           <td class="small" data-sort="fishes">Fishes</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(8)</span></td>
-          <td data-sort="-7"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Indiana, Mille Lacs Band of Ojibwe Minnesota Ceded territory, Minnesota, Ohio | Restricted: Quebec, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×7</span></td>
+          <td data-sort="-8"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Indiana, Manitoba, Mille Lacs Band of Ojibwe Minnesota Ceded territory, Minnesota, Ohio | Restricted: Quebec, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×8</span></td>
           <td data-sort="3">Contig</td>
           <td class="mono" data-sort="gca_965119265.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCA_965119265">GCA_965119265.1</a></td>
           <td class="mono right" data-sort="688633020">689 Mb</td>
@@ -1580,7 +1582,7 @@
           <td data-sort="morone saxatilis"><em>Morone saxatilis</em><br><span class="muted small">Rockfish</span></td>
           <td class="small" data-sort="fishes">Fishes</td>
           <td data-sort="3"><span class="badge" style="background:#ca8a041a;color:#ca8a04">Moderate</span> <span class="muted">(4)</span></td>
-          <td data-sort="-1"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Quebec">Prohibited</span> <span class="muted">×1</span></td>
+          <td data-sort="-2"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba, Quebec">Prohibited</span> <span class="muted">×2</span></td>
           <td data-sort="2">Scaffold</td>
           <td class="mono" data-sort="gcf_004916995.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCF_004916995">GCF_004916995.1</a></td>
           <td class="mono right" data-sort="598109547">598 Mb</td>
@@ -1593,7 +1595,7 @@
           <td data-sort="myriophyllum spicatum"><em>Myriophyllum spicatum</em><br><span class="muted small">Eurasian Watermilfoil</span></td>
           <td class="small" data-sort="plants">Plants</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(13)</span></td>
-          <td data-sort="-10"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Illinois, Indiana, Mille Lacs Band of Ojibwe Minnesota Ceded territory, Minnesota, New York, Ohio | Restricted: Michigan, Ontario, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×10</span></td>
+          <td data-sort="-11"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Illinois, Indiana, Manitoba, Mille Lacs Band of Ojibwe Minnesota Ceded territory, Minnesota, New York, Ohio | Restricted: Michigan, Ontario, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×11</span></td>
           <td data-sort="2">Scaffold</td>
           <td class="mono" data-sort="gca_057662065.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCA_057662065">GCA_057662065.1</a></td>
           <td class="mono right" data-sort="880108064">880 Mb</td>
@@ -1606,7 +1608,7 @@
           <td data-sort="neogobius melanostomus"><em>Neogobius melanostomus</em><br><span class="muted small">Round goby</span></td>
           <td class="small" data-sort="fishes">Fishes</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(10)</span></td>
-          <td data-sort="-11"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Illinois, Indiana, Michigan, Mille Lacs Band of Ojibwe Minnesota Ceded territory, Minnesota, New York, Ohio, Ontario | Restricted: Pennsylvania, Quebec, Wisconsin">Prohibited</span> <span class="muted">×11</span></td>
+          <td data-sort="-12"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Illinois, Indiana, Manitoba, Michigan, Mille Lacs Band of Ojibwe Minnesota Ceded territory, Minnesota, New York, Ohio, Ontario | Restricted: Pennsylvania, Quebec, Wisconsin">Prohibited</span> <span class="muted">×12</span></td>
           <td data-sort="3">Contig</td>
           <td class="mono" data-sort="gca_007210695.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCA_007210695">GCA_007210695.1</a></td>
           <td class="mono right" data-sort="1003738541">1.00 Gb</td>
@@ -1640,12 +1642,12 @@
           <td class="mono right" data-sort=""></td>
         </tr>
         
-        <tr data-group="Fishes" data-risk="Invasive" data-reg="Other">
+        <tr data-group="Fishes" data-risk="Invasive" data-reg="Prohibited">
           <td data-sort="1"><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
           <td data-sort="pylodictis olivaris"><em>Pylodictis olivaris</em><br><span class="muted small">Flathead catfish</span></td>
           <td class="small" data-sort="fishes">Fishes</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(4)</span></td>
-          <td data-sort="19999"><span class="badge" style="background:#64748b1a;color:#64748b" title="Other: Pennsylvania">Other</span> <span class="muted">×1</span></td>
+          <td data-sort="-2"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba | Other: Pennsylvania">Prohibited</span> <span class="muted">×2</span></td>
           <td data-sort="2">Scaffold</td>
           <td class="mono" data-sort="gca_028570965.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCA_028570965">GCA_028570965.1</a></td>
           <td class="mono right" data-sort="1424310885">1.42 Gb</td>
@@ -1653,12 +1655,12 @@
           <td class="mono right" data-sort=""></td>
         </tr>
         
-        <tr data-group="Mollusk-Gastropoda" data-risk="Moderate" data-reg="">
+        <tr data-group="Mollusk-Gastropoda" data-risk="Moderate" data-reg="Prohibited">
           <td data-sort="1"><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
           <td data-sort="radix auricularia"><em>Radix auricularia</em><br><span class="muted small">European Ear Snail</span></td>
           <td class="small" data-sort="mollusk-gastropoda">Mollusk-Gastropoda</td>
           <td data-sort="3"><span class="badge" style="background:#ca8a041a;color:#ca8a04">Moderate</span> <span class="muted">(4)</span></td>
-          <td data-sort="990000"></td>
+          <td data-sort="-1"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba">Prohibited</span> <span class="muted">×1</span></td>
           <td data-sort="2">Scaffold</td>
           <td class="mono" data-sort="gca_002072015.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCA_002072015">GCA_002072015.1</a></td>
           <td class="mono right" data-sort="909750324">910 Mb</td>
@@ -1723,7 +1725,7 @@
           <td data-sort="tinca tinca"><em>Tinca tinca</em><br><span class="muted small">Tench</span></td>
           <td class="small" data-sort="fishes">Fishes</td>
           <td data-sort="1"><span class="badge" style="background:#dc26261a;color:#dc2626">High</span> <span class="muted">(7)</span></td>
-          <td data-sort="-7"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Michigan, Minnesota, New York, Ohio, Ontario, Quebec, Wisconsin">Prohibited</span> <span class="muted">×7</span></td>
+          <td data-sort="-8"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba, Michigan, Minnesota, New York, Ohio, Ontario, Quebec, Wisconsin">Prohibited</span> <span class="muted">×8</span></td>
           <td data-sort="3">Contig</td>
           <td class="mono" data-sort="gca_037022345.1"><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=GCA_037022345">GCA_037022345.1</a></td>
           <td class="mono right" data-sort="669980980">670 Mb</td>
@@ -1775,7 +1777,7 @@
           <td data-sort="iris pseudacorus"><em>Iris pseudacorus</em><br><span class="muted small">Yellow Flag</span></td>
           <td class="small" data-sort="plants">Plants</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(10)</span></td>
-          <td data-sort="-7"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Illinois, Indiana, New York, New York | Restricted: Minnesota, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×7</span></td>
+          <td data-sort="-7"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Illinois, Indiana, Manitoba, New York | Restricted: Minnesota, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×7</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -1866,7 +1868,7 @@
           <td data-sort="potamopyrgus antipodarum"><em>Potamopyrgus antipodarum</em><br><span class="muted small">New Zealand mudsnail</span></td>
           <td class="small" data-sort="mollusk-gastropoda">Mollusk-Gastropoda</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(8)</span></td>
-          <td data-sort="-8"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Michigan, Minnesota, New York, Ohio, Ontario, Wisconsin | Other: Indiana, Pennsylvania">Prohibited</span> <span class="muted">×8</span></td>
+          <td data-sort="-9"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba, Michigan, Minnesota, New York, Ohio, Ontario, Wisconsin | Other: Indiana, Pennsylvania">Prohibited</span> <span class="muted">×9</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -1913,12 +1915,12 @@
           <td class="mono right" data-sort="166">166</td>
         </tr>
         
-        <tr data-group="Fishes" data-risk="High" data-reg="">
+        <tr data-group="Fishes" data-risk="High" data-reg="Prohibited">
           <td data-sort="3"><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
           <td data-sort="ameiurus catus"><em>Ameiurus catus</em><br><span class="muted small">White Catfish</span></td>
           <td class="small" data-sort="fishes">Fishes</td>
           <td data-sort="1"><span class="badge" style="background:#dc26261a;color:#dc2626">High</span> <span class="muted">(1)</span></td>
-          <td data-sort="990000"></td>
+          <td data-sort="-1"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba">Prohibited</span> <span class="muted">×1</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -1931,7 +1933,7 @@
           <td data-sort="ameiurus natalis"><em>Ameiurus natalis</em></td>
           <td class="small" data-sort=""></td>
           <td data-sort="99"></td>
-          <td data-sort="-1"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Quebec">Prohibited</span> <span class="muted">×1</span></td>
+          <td data-sort="-2"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba, Quebec">Prohibited</span> <span class="muted">×2</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -1983,7 +1985,7 @@
           <td data-sort="bithynia tentaculata"><em>Bithynia tentaculata</em><br><span class="muted small">Faucet snail</span></td>
           <td class="small" data-sort="mollusk-gastropoda">Mollusk-Gastropoda</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(6)</span></td>
-          <td data-sort="-3"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Minnesota, New York, Wisconsin">Prohibited</span> <span class="muted">×3</span></td>
+          <td data-sort="-4"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba, Minnesota, New York, Wisconsin">Prohibited</span> <span class="muted">×4</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -2009,7 +2011,7 @@
           <td data-sort="bythotrephes longimanus"><em>Bythotrephes longimanus</em><br><span class="muted small">Spiny Waterflea</span></td>
           <td class="small" data-sort="crustacean-cladoceran">Crustacean-Cladoceran</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(6)</span></td>
-          <td data-sort="-5"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: New York, Wisconsin | Restricted: Minnesota | Other: Indiana, Pennsylvania">Prohibited</span> <span class="muted">×5</span></td>
+          <td data-sort="-6"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba, New York, Wisconsin | Restricted: Minnesota | Other: Indiana, Pennsylvania">Prohibited</span> <span class="muted">×6</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -2022,7 +2024,7 @@
           <td data-sort="cabomba caroliniana"><em>Cabomba caroliniana</em><br><span class="muted small">Carolina Fanwort</span></td>
           <td class="small" data-sort="plants">Plants</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(10)</span></td>
-          <td data-sort="-6"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Michigan, New York, Wisconsin | Restricted: Minnesota, Ontario | Other: Pennsylvania">Prohibited</span> <span class="muted">×6</span></td>
+          <td data-sort="-7"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba, Michigan, New York, Wisconsin | Restricted: Minnesota, Ontario | Other: Pennsylvania">Prohibited</span> <span class="muted">×7</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -2100,7 +2102,7 @@
           <td data-sort="cercopagis pengoi"><em>Cercopagis pengoi</em><br><span class="muted small">Fishhook Water Flea</span></td>
           <td class="small" data-sort="crustacean-cladoceran">Crustacean-Cladoceran</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(8)</span></td>
-          <td data-sort="-4"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: New York, Wisconsin | Other: Indiana, Pennsylvania">Prohibited</span> <span class="muted">×4</span></td>
+          <td data-sort="-5"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba, New York, Wisconsin | Other: Indiana, Pennsylvania">Prohibited</span> <span class="muted">×5</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -2191,7 +2193,7 @@
           <td data-sort="didymosphenia geminata"><em>Didymosphenia geminata</em><br><span class="muted small">Didymo</span></td>
           <td class="small" data-sort="algae">Algae</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(5)</span></td>
-          <td data-sort="-3"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: New York, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×3</span></td>
+          <td data-sort="-4"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba, New York, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×4</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -2238,12 +2240,12 @@
           <td class="mono right" data-sort="821">821</td>
         </tr>
         
-        <tr data-group="Crustacean-Cladoceran" data-risk="" data-reg="">
+        <tr data-group="Crustacean-Cladoceran" data-risk="" data-reg="Prohibited">
           <td data-sort="3"><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
           <td data-sort="eubosmina coregoni"><em>Eubosmina coregoni</em></td>
           <td class="small" data-sort="crustacean-cladoceran">Crustacean-Cladoceran</td>
           <td data-sort="99"><span class="muted">(1)</span></td>
-          <td data-sort="990000"></td>
+          <td data-sort="-1"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba">Prohibited</span> <span class="muted">×1</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -2334,7 +2336,7 @@
           <td data-sort="hemimysis anomala"><em>Hemimysis anomala</em><br><span class="muted small">Bloody Shrimp</span></td>
           <td class="small" data-sort="crustacean-mysid">Crustacean-Mysid</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(8)</span></td>
-          <td data-sort="-3"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: New York, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×3</span></td>
+          <td data-sort="-4"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba, New York, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×4</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -2347,7 +2349,7 @@
           <td data-sort="hydrocharis morsus-ranae"><em>Hydrocharis morsus-ranae</em><br><span class="muted small">Common Frogbit</span></td>
           <td class="small" data-sort="plants">Plants</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(11)</span></td>
-          <td data-sort="-10"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Illinois, Indiana, Michigan, Mille Lacs Band of Ojibwe Minnesota Ceded territory, Minnesota, New York, Ohio, Wisconsin | Restricted: Ontario | Other: Pennsylvania">Prohibited</span> <span class="muted">×10</span></td>
+          <td data-sort="-11"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Illinois, Indiana, Manitoba, Michigan, Mille Lacs Band of Ojibwe Minnesota Ceded territory, Minnesota, New York, Ohio, Wisconsin | Restricted: Ontario | Other: Pennsylvania">Prohibited</span> <span class="muted">×11</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -2420,12 +2422,12 @@
           <td class="mono right" data-sort="91455">91455</td>
         </tr>
         
-        <tr data-group="Fishes" data-risk="" data-reg="">
+        <tr data-group="Fishes" data-risk="" data-reg="Prohibited">
           <td data-sort="3"><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
           <td data-sort="lepisosteus platostomus"><em>Lepisosteus platostomus</em></td>
           <td class="small" data-sort="fishes">Fishes</td>
           <td data-sort="99"><span class="muted">(1)</span></td>
-          <td data-sort="990000"></td>
+          <td data-sort="-1"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba">Prohibited</span> <span class="muted">×1</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -2433,12 +2435,12 @@
           <td class="mono right" data-sort="91">91</td>
         </tr>
         
-        <tr data-group="" data-risk="" data-reg="">
+        <tr data-group="" data-risk="" data-reg="Prohibited">
           <td data-sort="3"><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
           <td data-sort="lepomis cyanellus"><em>Lepomis cyanellus</em></td>
           <td class="small" data-sort=""></td>
           <td data-sort="99"></td>
-          <td data-sort="990000"></td>
+          <td data-sort="-1"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba">Prohibited</span> <span class="muted">×1</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -2503,7 +2505,7 @@
           <td data-sort="lythrum salicaria"><em>Lythrum salicaria</em><br><span class="muted small">Purple Loosestrife</span></td>
           <td class="small" data-sort="plants">Plants</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(10)</span></td>
-          <td data-sort="-8"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Indiana, Mille Lacs Band of Ojibwe Minnesota Ceded territory, New York, New York, Ohio | Restricted: Michigan, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×8</span></td>
+          <td data-sort="-8"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Indiana, Manitoba, Mille Lacs Band of Ojibwe Minnesota Ceded territory, New York, Ohio | Restricted: Michigan, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×8</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -2537,12 +2539,12 @@
           <td class="mono right" data-sort="44">44</td>
         </tr>
         
-        <tr data-group="Fishes" data-risk="" data-reg="">
+        <tr data-group="Fishes" data-risk="" data-reg="Prohibited">
           <td data-sort="3"><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
           <td data-sort="morone mississippiensis"><em>Morone mississippiensis</em><br><span class="muted small">Yellow Bass</span></td>
           <td class="small" data-sort="fishes">Fishes</td>
           <td data-sort="99"><span class="muted">(1)</span></td>
-          <td data-sort="990000"></td>
+          <td data-sort="-1"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba">Prohibited</span> <span class="muted">×1</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -2607,7 +2609,7 @@
           <td data-sort="nitellopsis obtusa"><em>Nitellopsis obtusa</em><br><span class="muted small">Starry Stonewort</span></td>
           <td class="small" data-sort="algae">Algae</td>
           <td data-sort="1"><span class="badge" style="background:#dc26261a;color:#dc2626">High</span> <span class="muted">(6)</span></td>
-          <td data-sort="-5"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Indiana, Michigan, Minnesota, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×5</span></td>
+          <td data-sort="-6"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Indiana, Manitoba, Michigan, Minnesota, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×6</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -2823,12 +2825,12 @@
           <td class="mono right" data-sort="32">32</td>
         </tr>
         
-        <tr data-group="Mollusk-Bivalve" data-risk="Moderate" data-reg="">
+        <tr data-group="Mollusk-Bivalve" data-risk="Moderate" data-reg="Prohibited">
           <td data-sort="3"><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
           <td data-sort="pisidium amnicum"><em>Pisidium amnicum</em><br><span class="muted small">Greater European Peaclam</span></td>
           <td class="small" data-sort="mollusk-bivalve">Mollusk-Bivalve</td>
           <td data-sort="3"><span class="badge" style="background:#ca8a041a;color:#ca8a04">Moderate</span> <span class="muted">(3)</span></td>
-          <td data-sort="990000"></td>
+          <td data-sort="-1"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba">Prohibited</span> <span class="muted">×1</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -2841,7 +2843,7 @@
           <td data-sort="pistia stratiotes"><em>Pistia stratiotes</em><br><span class="muted small">Water Lettuce</span></td>
           <td class="small" data-sort="plants">Plants</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(12)</span></td>
-          <td data-sort="-1"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Wisconsin">Prohibited</span> <span class="muted">×1</span></td>
+          <td data-sort="-2"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba, Wisconsin">Prohibited</span> <span class="muted">×2</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -3023,7 +3025,7 @@
           <td data-sort="stratiotes aloides"><em>Stratiotes aloides</em><br><span class="muted small">Water Soldiers</span></td>
           <td class="small" data-sort="plants">Plants</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(10)</span></td>
-          <td data-sort="-6"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Illinois, Indiana, Michigan, Minnesota, Ontario, Wisconsin">Prohibited</span> <span class="muted">×6</span></td>
+          <td data-sort="-7"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Illinois, Indiana, Manitoba, Michigan, Minnesota, Ontario, Wisconsin">Prohibited</span> <span class="muted">×7</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -3179,7 +3181,7 @@
           <td data-sort="butomus umbellatus"><em>Butomus umbellatus</em><br><span class="muted small">Flowering Rush</span></td>
           <td class="small" data-sort="plants">Plants</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(12)</span></td>
-          <td data-sort="-8"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Illinois, Indiana, Mille Lacs Band of Ojibwe Minnesota Ceded territory, Minnesota, Ohio | Restricted: Michigan, Ontario, Wisconsin">Prohibited</span> <span class="muted">×8</span></td>
+          <td data-sort="-9"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Illinois, Indiana, Manitoba, Mille Lacs Band of Ojibwe Minnesota Ceded territory, Minnesota, Ohio | Restricted: Michigan, Ontario, Wisconsin">Prohibited</span> <span class="muted">×9</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -3426,7 +3428,7 @@
           <td data-sort="dorosoma cepedianum"><em>Dorosoma cepedianum</em><br><span class="muted small">Gizzard shad</span></td>
           <td class="small" data-sort="fishes">Fishes</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(2)</span></td>
-          <td data-sort="-1"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Quebec">Prohibited</span> <span class="muted">×1</span></td>
+          <td data-sort="-2"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba, Quebec">Prohibited</span> <span class="muted">×2</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -3447,12 +3449,12 @@
           <td class="mono right" data-sort=""></td>
         </tr>
         
-        <tr data-group="Crustacean-Amphipod" data-risk="Invasive" data-reg="">
+        <tr data-group="Crustacean-Amphipod" data-risk="Invasive" data-reg="Prohibited">
           <td data-sort="4"><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
           <td data-sort="echinogammarus ischnus"><em>Echinogammarus ischnus</em><br><span class="muted small">Scud</span></td>
           <td class="small" data-sort="crustacean-amphipod">Crustacean-Amphipod</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(3)</span></td>
-          <td data-sort="990000"></td>
+          <td data-sort="-1"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba">Prohibited</span> <span class="muted">×1</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -3465,7 +3467,7 @@
           <td data-sort="egeria densa"><em>Egeria densa</em><br><span class="muted small">Brazilian Elodea</span></td>
           <td class="small" data-sort="plants">Plants</td>
           <td data-sort="1"><span class="badge" style="background:#dc26261a;color:#dc2626">High</span> <span class="muted">(11)</span></td>
-          <td data-sort="-9"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Illinois, Indiana, Michigan, New York, Ohio, Ontario, Wisconsin | Restricted: Minnesota | Other: Pennsylvania">Prohibited</span> <span class="muted">×9</span></td>
+          <td data-sort="-10"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Illinois, Indiana, Manitoba, Michigan, New York, Ohio, Ontario, Wisconsin | Restricted: Minnesota | Other: Pennsylvania">Prohibited</span> <span class="muted">×10</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -3712,7 +3714,7 @@
           <td data-sort="hydrilla verticillata peregrina"><em>Hydrilla verticillata peregrina</em><br><span class="muted small">Hydrilla</span></td>
           <td class="small" data-sort="plants">Plants</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(11)</span></td>
-          <td data-sort="-10"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Illinois, Indiana, Michigan, Mille Lacs Band of Ojibwe Minnesota Ceded territory, Minnesota, New York, Ohio, Ontario, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×10</span></td>
+          <td data-sort="-11"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Illinois, Indiana, Manitoba, Michigan, Mille Lacs Band of Ojibwe Minnesota Ceded territory, Minnesota, New York, Ohio, Ontario, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×11</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -3850,12 +3852,12 @@
           <td class="mono right" data-sort=""></td>
         </tr>
         
-        <tr data-group="Fishes" data-risk="" data-reg="">
+        <tr data-group="Fishes" data-risk="" data-reg="Prohibited">
           <td data-sort="4"><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
           <td data-sort="lepomis humilis"><em>Lepomis humilis</em><br><span class="muted small">Orangespotted Sunfish</span></td>
           <td class="small" data-sort="fishes">Fishes</td>
           <td data-sort="99"><span class="muted">(3)</span></td>
-          <td data-sort="990000"></td>
+          <td data-sort="-1"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba">Prohibited</span> <span class="muted">×1</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -3868,7 +3870,7 @@
           <td data-sort="lepomis megalotis"><em>Lepomis megalotis</em></td>
           <td class="small" data-sort=""></td>
           <td data-sort="99"></td>
-          <td data-sort="-1"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Quebec">Prohibited</span> <span class="muted">×1</span></td>
+          <td data-sort="-2"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba, Quebec">Prohibited</span> <span class="muted">×2</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -3993,11 +3995,11 @@
           <td class="mono right" data-sort=""></td>
         </tr>
         
-        <tr data-group="" data-risk="" data-reg="">
+        <tr data-group="Plants" data-risk="" data-reg="">
           <td data-sort="4"><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
           <td data-sort="mentha × gracilis"><em>Mentha × gracilis</em></td>
-          <td class="small" data-sort=""></td>
-          <td data-sort="99"></td>
+          <td class="small" data-sort="plants">Plants</td>
+          <td data-sort="99"><span class="muted">(1)</span></td>
           <td data-sort="990000"></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
@@ -4063,7 +4065,7 @@
           <td data-sort="myriophyllum aquaticum"><em>Myriophyllum aquaticum</em><br><span class="muted small">Parrot Feather</span></td>
           <td class="small" data-sort="plants">Plants</td>
           <td data-sort="1"><span class="badge" style="background:#dc26261a;color:#dc2626">High</span> <span class="muted">(11)</span></td>
-          <td data-sort="-9"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Illinois, Indiana, Michigan, New York, Ohio, Ontario, Wisconsin | Restricted: Minnesota | Other: Pennsylvania">Prohibited</span> <span class="muted">×9</span></td>
+          <td data-sort="-10"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Illinois, Indiana, Manitoba, Michigan, New York, Ohio, Ontario, Wisconsin | Restricted: Minnesota | Other: Pennsylvania">Prohibited</span> <span class="muted">×10</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -4089,7 +4091,7 @@
           <td data-sort="najas minor"><em>Najas minor</em><br><span class="muted small">Brittle Waternymph</span></td>
           <td class="small" data-sort="plants">Plants</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(12)</span></td>
-          <td data-sort="-4"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Illinois, Indiana, Minnesota, Wisconsin">Prohibited</span> <span class="muted">×4</span></td>
+          <td data-sort="-5"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Illinois, Indiana, Manitoba, Minnesota, Wisconsin">Prohibited</span> <span class="muted">×5</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -4206,7 +4208,7 @@
           <td data-sort="phragmites australis australis"><em>Phragmites australis australis</em><br><span class="muted small">Phragmites</span></td>
           <td class="small" data-sort="plants">Plants</td>
           <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(5)</span></td>
-          <td data-sort="-8"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Indiana, Minnesota, New York, Ohio | Restricted: Michigan, Ontario, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×8</span></td>
+          <td data-sort="-9"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Indiana, Manitoba, Minnesota, New York, Ohio | Restricted: Michigan, Ontario, Wisconsin | Other: Pennsylvania">Prohibited</span> <span class="muted">×9</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
@@ -4253,11 +4255,11 @@
           <td class="mono right" data-sort=""></td>
         </tr>
         
-        <tr data-group="" data-risk="" data-reg="">
+        <tr data-group="Viruses" data-risk="" data-reg="">
           <td data-sort="4"><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
-          <td data-sort="piscirickettsia cf. salmonis"><em>Piscirickettsia cf. salmonis</em></td>
-          <td class="small" data-sort=""></td>
-          <td data-sort="99"></td>
+          <td data-sort="piscirickettsia cf. salmonis"><em>Piscirickettsia cf. salmonis</em><br><span class="muted small">Piscirickettsia salmonis</span></td>
+          <td class="small" data-sort="viruses">Viruses</td>
+          <td data-sort="99"><span class="muted">(1)</span></td>
           <td data-sort="990000"></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
@@ -4435,11 +4437,11 @@
           <td class="mono right" data-sort=""></td>
         </tr>
         
-        <tr data-group="" data-risk="" data-reg="">
+        <tr data-group="Bacteria" data-risk="Invasive" data-reg="">
           <td data-sort="4"><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
-          <td data-sort="renibacterium (corynebacterium) salmoninarum"><em>Renibacterium (Corynebacterium) salmoninarum</em></td>
-          <td class="small" data-sort=""></td>
-          <td data-sort="99"></td>
+          <td data-sort="renibacterium (corynebacterium) salmoninarum"><em>Renibacterium (Corynebacterium) salmoninarum</em><br><span class="muted small">Renibacterium salmoninarum</span></td>
+          <td class="small" data-sort="bacteria">Bacteria</td>
+          <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(2)</span></td>
           <td data-sort="990000"></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
@@ -4838,11 +4840,11 @@
           <td class="mono right" data-sort=""></td>
         </tr>
         
-        <tr data-group="" data-risk="" data-reg="">
+        <tr data-group="Plants" data-risk="High" data-reg="">
           <td data-sort="4"><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
-          <td data-sort="ulva (enteromorpha) flexuosa subsp. flexuosa and flexuosa subsp. paradoxa"><em>Ulva (Enteromorpha) flexuosa subsp. flexuosa and flexuosa subsp. paradoxa</em></td>
-          <td class="small" data-sort=""></td>
-          <td data-sort="99"></td>
+          <td data-sort="ulva (enteromorpha) flexuosa subsp. flexuosa and flexuosa subsp. paradoxa"><em>Ulva (Enteromorpha) flexuosa subsp. flexuosa and flexuosa subsp. paradoxa</em><br><span class="muted small">Grass kelp</span></td>
+          <td class="small" data-sort="plants">Plants</td>
+          <td data-sort="1"><span class="badge" style="background:#dc26261a;color:#dc2626">High</span> <span class="muted">(1)</span></td>
           <td data-sort="990000"></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
@@ -4851,11 +4853,11 @@
           <td class="mono right" data-sort=""></td>
         </tr>
         
-        <tr data-group="" data-risk="" data-reg="">
+        <tr data-group="Algae" data-risk="Invasive" data-reg="">
           <td data-sort="4"><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
           <td data-sort="ulva (enteromorpha) intestinalis"><em>Ulva (Enteromorpha) intestinalis</em></td>
-          <td class="small" data-sort=""></td>
-          <td data-sort="99"></td>
+          <td class="small" data-sort="algae">Algae</td>
+          <td data-sort="0"><span class="badge" style="background:#be123c1a;color:#be123c">Invasive</span> <span class="muted">(1)</span></td>
           <td data-sort="990000"></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
@@ -4864,11 +4866,11 @@
           <td class="mono right" data-sort=""></td>
         </tr>
         
-        <tr data-group="" data-risk="" data-reg="">
+        <tr data-group="Algae" data-risk="Low" data-reg="">
           <td data-sort="4"><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
           <td data-sort="ulva (enteromorpha) prolifera"><em>Ulva (Enteromorpha) prolifera</em></td>
-          <td class="small" data-sort=""></td>
-          <td data-sort="99"></td>
+          <td class="small" data-sort="algae">Algae</td>
+          <td data-sort="4"><span class="badge" style="background:#16a34a1a;color:#16a34a">Low</span> <span class="muted">(1)</span></td>
           <td data-sort="990000"></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
@@ -4903,12 +4905,12 @@
           <td class="mono right" data-sort=""></td>
         </tr>
         
-        <tr data-group="Mollusk-Gastropoda" data-risk="" data-reg="Restricted">
+        <tr data-group="Mollusk-Gastropoda" data-risk="" data-reg="Prohibited">
           <td data-sort="4"><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
           <td data-sort="valvata piscinalis"><em>Valvata piscinalis</em><br><span class="muted small">European Stream Valvata</span></td>
           <td class="small" data-sort="mollusk-gastropoda">Mollusk-Gastropoda</td>
           <td data-sort="99"><span class="muted">(4)</span></td>
-          <td data-sort="9999"><span class="badge" style="background:#ea580c1a;color:#ea580c" title="Restricted: Wisconsin">Restricted</span> <span class="muted">×1</span></td>
+          <td data-sort="-2"><span class="badge" style="background:#be123c1a;color:#be123c" title="Prohibited: Manitoba | Restricted: Wisconsin">Prohibited</span> <span class="muted">×2</span></td>
           <td data-sort="99"></td>
           <td class="mono" data-sort=""></td>
           <td class="mono right" data-sort=""></td>
