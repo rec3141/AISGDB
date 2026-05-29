@@ -281,8 +281,15 @@ def write_html(path, results, counts):
         tier = r["tier"]
         label, color = tier_meta[tier]
         acc = r.get("accession") or ""
+        # Link to the BioProject search rather than the canonical
+        # /datasets/genome/<acc>/ page: as of 2026-05, the NCBI Datasets
+        # genome landing pages return errors (likely an NIH funding /
+        # service-outage issue). BioProject search is a stable fallback
+        # that resolves the underlying study. Version suffix (".1") is
+        # stripped — the search matches the base accession.
+        acc_base = acc.split(".", 1)[0]
         acc_html = (
-            f'<a href="https://www.ncbi.nlm.nih.gov/datasets/genome/{acc}/">{acc}</a>'
+            f'<a href="https://www.ncbi.nlm.nih.gov/bioproject/?term={acc_base}">{acc}</a>'
             if acc else ""
         )
         tsc = r.get("transcriptome_count") or ""
