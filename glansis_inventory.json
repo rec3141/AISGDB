@@ -1,0 +1,3478 @@
+{
+  "generated_at": "2026-05-29T15:13:32Z",
+  "n_species": 370,
+  "tier_counts": {
+    "A": 95,
+    "B": 30,
+    "C": 13,
+    "D": 92,
+    "E": 140
+  },
+  "species": [
+    {
+      "scientific_name": "Acentria ephemerella",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_943193645.1",
+      "assembly_name": "ilAceEphe1.1",
+      "assembly_level": "Chromosome",
+      "total_length": "340777416",
+      "organism_name": "Acentria ephemerella",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Acorus calamus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_030737845.1",
+      "assembly_name": "ASM3073784v1",
+      "assembly_level": "Chromosome",
+      "total_length": "721748827",
+      "organism_name": "Acorus calamus",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Aeromonas salmonicida",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_028355655.1",
+      "assembly_name": "ASM2835565v1",
+      "assembly_level": "Complete Genome",
+      "total_length": "4954811",
+      "organism_name": "Aeromonas salmonicida",
+      "refseq_category": "reference genome",
+      "n_reports": 20,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Alisma plantago-aquatica",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_963693085.1",
+      "assembly_name": "laAliPlan1.1",
+      "assembly_level": "Chromosome",
+      "total_length": "9377969683",
+      "organism_name": "Alisma plantago-aquatica",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Alligator mississippiensis",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_030867095.1",
+      "assembly_name": "rAllMis1",
+      "assembly_level": "Chromosome",
+      "total_length": "2346779227",
+      "organism_name": "Alligator mississippiensis",
+      "refseq_category": "reference genome",
+      "n_reports": 9,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Alnus glutinosa",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_958979055.1",
+      "assembly_name": "dhAlnGlut1.1",
+      "assembly_level": "Chromosome",
+      "total_length": "456761304",
+      "organism_name": "Alnus glutinosa",
+      "refseq_category": "reference genome",
+      "n_reports": 4,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Alopecurus geniculatus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_965641495.1",
+      "assembly_name": "lpAloGeni1.hap1.1",
+      "assembly_level": "Chromosome",
+      "total_length": "6196785535",
+      "organism_name": "Alopecurus geniculatus",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Alosa sapidissima",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_018492685.1",
+      "assembly_name": "fAloSap1.pri",
+      "assembly_level": "Chromosome",
+      "total_length": "903564947",
+      "organism_name": "Alosa sapidissima",
+      "refseq_category": "reference genome",
+      "n_reports": 4,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Amia calva",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_017591415.1",
+      "assembly_name": "AmiCal1",
+      "assembly_level": "Chromosome",
+      "total_length": "831002832",
+      "organism_name": "Amia calva",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Anguilla rostrata",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_018555375.3",
+      "assembly_name": "ASM1855537v3",
+      "assembly_level": "Chromosome",
+      "total_length": "976090453",
+      "organism_name": "Anguilla rostrata",
+      "refseq_category": "reference genome",
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Apeltes quadracus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_048569185.1",
+      "assembly_name": "Unibe_ApeQuad_male_1.0",
+      "assembly_level": "Chromosome",
+      "total_length": "475913512",
+      "organism_name": "Apeltes quadracus",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Carassius auratus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_003368295.1",
+      "assembly_name": "ASM336829v1",
+      "assembly_level": "Chromosome",
+      "total_length": "1820618472",
+      "organism_name": "Carassius auratus",
+      "refseq_category": "reference genome",
+      "n_reports": 7,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Carex acutiformis",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_964417155.2",
+      "assembly_name": "lpCarAcui1.hap1.2",
+      "assembly_level": "Chromosome",
+      "total_length": "411490426",
+      "organism_name": "Carex acutiformis",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Chrosomus eos",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_036326025.1",
+      "assembly_name": "ASM3632602v1",
+      "assembly_level": "Chromosome",
+      "total_length": "1270618293",
+      "organism_name": "Chrosomus eos",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Cipangopaludina chinensis",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_050437285.1",
+      "assembly_name": "ASM5043728v1",
+      "assembly_level": "Chromosome",
+      "total_length": "1560258163",
+      "organism_name": "Cipangopaludina chinensis",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Coregonus clupeaformis",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_020615455.1",
+      "assembly_name": "ASM2061545v1",
+      "assembly_level": "Chromosome",
+      "total_length": "2753270621",
+      "organism_name": "Coregonus clupeaformis",
+      "refseq_category": "reference genome",
+      "n_reports": 4,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Crassostrea virginica",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_053477285.1",
+      "assembly_name": "ASM5347728v1",
+      "assembly_level": "Chromosome",
+      "total_length": "529025936",
+      "organism_name": "Crassostrea virginica",
+      "refseq_category": "reference genome",
+      "n_reports": 4,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Ctenopharyngodon idella",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_049919795.1",
+      "assembly_name": "ASM4991979v1",
+      "assembly_level": "Complete Genome",
+      "total_length": "890918310",
+      "organism_name": "Ctenopharyngodon idella",
+      "refseq_category": null,
+      "n_reports": 7,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Cygnus olor",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_009769625.2",
+      "assembly_name": "bCygOlo1.pri.v2",
+      "assembly_level": "Chromosome",
+      "total_length": "1134169903",
+      "organism_name": "Cygnus olor",
+      "refseq_category": "reference genome",
+      "n_reports": 4,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Cyprinella lutrensis",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_054825075.1",
+      "assembly_name": "fCypLut1.hap1",
+      "assembly_level": "Chromosome",
+      "total_length": "926968418",
+      "organism_name": "Cyprinella lutrensis",
+      "refseq_category": "reference genome",
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Cyprinus carpio",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_050881965.1",
+      "assembly_name": "ASM5088196v1",
+      "assembly_level": "Complete Genome",
+      "total_length": "1555859486",
+      "organism_name": "Cyprinus carpio",
+      "refseq_category": null,
+      "n_reports": 17,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Diadumene lineata",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_918843875.1",
+      "assembly_name": "jaDiaLine6.1",
+      "assembly_level": "Chromosome",
+      "total_length": "312988696",
+      "organism_name": "Diadumene lineata",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Dreissena polymorpha",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_020536995.1",
+      "assembly_name": "UMN_Dpol_1.0",
+      "assembly_level": "Chromosome",
+      "total_length": "1797942340",
+      "organism_name": "Dreissena polymorpha",
+      "refseq_category": "reference genome",
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Dreissena rostriformis bugensis",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_055670145.1",
+      "assembly_name": "ASM5567014v1",
+      "assembly_level": "Chromosome",
+      "total_length": "1613145916",
+      "organism_name": "Dreissena rostriformis bugensis",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Echinochloa crus-galli",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_020466025.1",
+      "assembly_name": "ec_v3",
+      "assembly_level": "Chromosome",
+      "total_length": "1340710827",
+      "organism_name": "Echinochloa crus-galli",
+      "refseq_category": null,
+      "n_reports": 4,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Eichhornia crassipes",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_030549335.1",
+      "assembly_name": "CAS_Eicr_1.0",
+      "assembly_level": "Chromosome",
+      "total_length": "1132240410",
+      "organism_name": "Pontederia crassipes",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Epilobium hirsutum",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_965153245.1",
+      "assembly_name": "drEpiHirs1.hap1.1",
+      "assembly_level": "Chromosome",
+      "total_length": "336043468",
+      "organism_name": "Epilobium hirsutum",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Eriocheir sinensis",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_024679095.1",
+      "assembly_name": "ASM2467909v1",
+      "assembly_level": "Chromosome",
+      "total_length": "1765827443",
+      "organism_name": "Eriocheir sinensis",
+      "refseq_category": "reference genome",
+      "n_reports": 6,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Esox lucius",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_011004845.1",
+      "assembly_name": "fEsoLuc1.pri",
+      "assembly_level": "Chromosome",
+      "total_length": "918731919",
+      "organism_name": "Esox lucius",
+      "refseq_category": "reference genome",
+      "n_reports": 8,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Eurytemora carolleeae",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_057318455.1",
+      "assembly_name": "ASM5731845v1",
+      "assembly_level": "Chromosome",
+      "total_length": "529287666",
+      "organism_name": "Eurytemora carolleeae",
+      "refseq_category": null,
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Filipendula ulmaria",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_964200655.1",
+      "assembly_name": "drFilUlma1.1",
+      "assembly_level": "Chromosome",
+      "total_length": "274991720",
+      "organism_name": "Filipendula ulmaria",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Fundulus heteroclitus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_011125445.2",
+      "assembly_name": "MU-UCD_Fhet_4.1",
+      "assembly_level": "Chromosome",
+      "total_length": "1203489213",
+      "organism_name": "Fundulus heteroclitus",
+      "refseq_category": "reference genome",
+      "n_reports": 4,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Gambusia affinis",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_019740435.1",
+      "assembly_name": "SWU_Gaff_1.0",
+      "assembly_level": "Chromosome",
+      "total_length": "680149392",
+      "organism_name": "Gambusia affinis",
+      "refseq_category": "reference genome",
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Gasterosteus aculeatus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_964276395.1",
+      "assembly_name": "fGasAcu3.hap1.1",
+      "assembly_level": "Chromosome",
+      "total_length": "511138727",
+      "organism_name": "Gasterosteus aculeatus",
+      "refseq_category": "reference genome",
+      "n_reports": 12,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Gymnocephalus cernua",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_023631565.1",
+      "assembly_name": "fGymCer.pri",
+      "assembly_level": "Chromosome",
+      "total_length": "904342373",
+      "organism_name": "Gymnocephalus cernua",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Hypophthalmichthys nobilis",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_037950665.1",
+      "assembly_name": "Hypophthalmichthys_nobilis_1.0",
+      "assembly_level": "Chromosome",
+      "total_length": "863920326",
+      "organism_name": "Hypophthalmichthys nobilis",
+      "refseq_category": "reference genome",
+      "n_reports": 4,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Ictalurus furcatus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_023375685.1",
+      "assembly_name": "Billie_1.0",
+      "assembly_level": "Chromosome",
+      "total_length": "825459183",
+      "organism_name": "Ictalurus furcatus",
+      "refseq_category": "reference genome",
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Ictalurus punctatus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_001660625.3",
+      "assembly_name": "Coco_2.0",
+      "assembly_level": "Chromosome",
+      "total_length": "842926452",
+      "organism_name": "Ictalurus punctatus",
+      "refseq_category": "reference genome",
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Impatiens glandulifera",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_907164915.1",
+      "assembly_name": "dImpGla2.1",
+      "assembly_level": "Chromosome",
+      "total_length": "653879104",
+      "organism_name": "Impatiens glandulifera",
+      "refseq_category": "reference genome",
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Juncus inflexus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_965612345.2",
+      "assembly_name": "lpJunInfl1.hap1.2",
+      "assembly_level": "Chromosome",
+      "total_length": "321598421",
+      "organism_name": "Juncus inflexus",
+      "refseq_category": "reference genome",
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Lepisosteus oculatus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_040954835.1",
+      "assembly_name": "fLepOcu1.hap2",
+      "assembly_level": "Chromosome",
+      "total_length": "1200589847",
+      "organism_name": "Lepisosteus oculatus",
+      "refseq_category": "reference genome",
+      "n_reports": 5,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Lithobates catesbeianus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_042186555.1",
+      "assembly_name": "ASM4218655v1",
+      "assembly_level": "Chromosome",
+      "total_length": "6377618952",
+      "organism_name": "Aquarana catesbeiana",
+      "refseq_category": "reference genome",
+      "n_reports": 5,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Mentha aquatica",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_965615935.2",
+      "assembly_name": "daMenAqua1.hap1.2",
+      "assembly_level": "Chromosome",
+      "total_length": "1304813858",
+      "organism_name": "Mentha aquatica",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Micropterus dolomieu",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_021292245.1",
+      "assembly_name": "ASM2129224v1",
+      "assembly_level": "Chromosome",
+      "total_length": "829570727",
+      "organism_name": "Micropterus dolomieu",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Micropterus salmoides",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_056957295.1",
+      "assembly_name": "T2T_MSal_M1.0",
+      "assembly_level": "Complete Genome",
+      "total_length": "873867271",
+      "organism_name": "Micropterus salmoides",
+      "refseq_category": null,
+      "n_reports": 8,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Microstegium vimineum",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_022036555.1",
+      "assembly_name": "ASM2203655v1",
+      "assembly_level": "Chromosome",
+      "total_length": "1118670587",
+      "organism_name": "Microstegium vimineum",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Misgurnus anguillicaudatus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_027580225.2",
+      "assembly_name": "ASM2758022v2",
+      "assembly_level": "Chromosome",
+      "total_length": "1120296596",
+      "organism_name": "Misgurnus anguillicaudatus",
+      "refseq_category": "reference genome",
+      "n_reports": 8,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Nasturtium officinale",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_963854855.1",
+      "assembly_name": "ddNasOffi1.1",
+      "assembly_level": "Chromosome",
+      "total_length": "224952480",
+      "organism_name": "Nasturtium officinale",
+      "refseq_category": "reference genome",
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Nelumbo lutea",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_056320005.1",
+      "assembly_name": "American lotus-T2T",
+      "assembly_level": "Complete Genome",
+      "total_length": "838457245",
+      "organism_name": "Nelumbo lutea",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Nymphoides peltata",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_965615785.1",
+      "assembly_name": "daNymPelt1.hap1.1",
+      "assembly_level": "Chromosome",
+      "total_length": "721921864",
+      "organism_name": "Nymphoides peltata",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Oenanthe javanica",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_048932635.1",
+      "assembly_name": "ASM4893263v1",
+      "assembly_level": "Complete Genome",
+      "total_length": "1012110832",
+      "organism_name": "Oenanthe javanica",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Oncorhynchus gorbuscha",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_021184085.1",
+      "assembly_name": "OgorEven_v1.0",
+      "assembly_level": "Chromosome",
+      "total_length": "2690266878",
+      "organism_name": "Oncorhynchus gorbuscha",
+      "refseq_category": "reference genome",
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Oncorhynchus kisutch",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_002021735.2",
+      "assembly_name": "Okis_V2",
+      "assembly_level": "Chromosome",
+      "total_length": "2375894934",
+      "organism_name": "Oncorhynchus kisutch",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Oncorhynchus mykiss",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_013265735.2",
+      "assembly_name": "USDA_OmykA_1.1",
+      "assembly_level": "Chromosome",
+      "total_length": "2341671972",
+      "organism_name": "Oncorhynchus mykiss",
+      "refseq_category": "reference genome",
+      "n_reports": 12,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Oncorhynchus mykiss irideus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_049308825.1",
+      "assembly_name": "O.lewisi_USDA_pat1.0",
+      "assembly_level": "Chromosome",
+      "total_length": "2331236414",
+      "organism_name": "Oncorhynchus mykiss irideus",
+      "refseq_category": null,
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Oncorhynchus nerka",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_034236695.1",
+      "assembly_name": "Oner_Uvic_2.0",
+      "assembly_level": "Chromosome",
+      "total_length": "2645619652",
+      "organism_name": "Oncorhynchus nerka",
+      "refseq_category": "reference genome",
+      "n_reports": 4,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Oncorhynchus tshawytscha",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_018296145.1",
+      "assembly_name": "Otsh_v2.0",
+      "assembly_level": "Chromosome",
+      "total_length": "2294842546",
+      "organism_name": "Oncorhynchus tshawytscha",
+      "refseq_category": "reference genome",
+      "n_reports": 5,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Oreochromis niloticus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_001858045.2",
+      "assembly_name": "O_niloticus_UMD_NMBU",
+      "assembly_level": "Chromosome",
+      "total_length": "1005664923",
+      "organism_name": "Oreochromis niloticus",
+      "refseq_category": "reference genome",
+      "n_reports": 9,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Osmerus mordax",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_038355195.1",
+      "assembly_name": "fOsmMor3.pri",
+      "assembly_level": "Chromosome",
+      "total_length": "497673479",
+      "organism_name": "Osmerus mordax",
+      "refseq_category": "reference genome",
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Perca flavescens",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_004354835.1",
+      "assembly_name": "PFLA_1.0",
+      "assembly_level": "Chromosome",
+      "total_length": "877439799",
+      "organism_name": "Perca flavescens",
+      "refseq_category": "reference genome",
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Persicaria maculosa",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_963922045.1",
+      "assembly_name": "dcPerMacu1.1",
+      "assembly_level": "Chromosome",
+      "total_length": "1505165586",
+      "organism_name": "Persicaria maculosa",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Petromyzon marinus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_048934315.1",
+      "assembly_name": "UKy_Petmar_22M1.pri1.0",
+      "assembly_level": "Chromosome",
+      "total_length": "1808332251",
+      "organism_name": "Petromyzon marinus",
+      "refseq_category": "reference genome",
+      "n_reports": 9,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Phalaris arundinacea",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_977930405.1",
+      "assembly_name": "lpPhaArun1.hap1.1",
+      "assembly_level": "Chromosome",
+      "total_length": "4271620721",
+      "organism_name": "Phalaris arundinacea",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Piaractus brachypomus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_056915255.1",
+      "assembly_name": "YSFRI_Pbrachy_1",
+      "assembly_level": "Chromosome",
+      "total_length": "1343059155",
+      "organism_name": "Piaractus brachypomus",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Platichthys flesus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_949316205.1",
+      "assembly_name": "fPlaFle2.1",
+      "assembly_level": "Chromosome",
+      "total_length": "597120941",
+      "organism_name": "Platichthys flesus",
+      "refseq_category": "reference genome",
+      "n_reports": 4,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Potamogeton crispus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_965783375.2",
+      "assembly_name": "laPotCris1.hap1.2",
+      "assembly_level": "Chromosome",
+      "total_length": "513044524",
+      "organism_name": "Potamogeton crispus",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Procambarus clarkii",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_040958095.1",
+      "assembly_name": "FALCON_Pclarkii_2.0",
+      "assembly_level": "Chromosome",
+      "total_length": "4028952570",
+      "organism_name": "Procambarus clarkii",
+      "refseq_category": "reference genome",
+      "n_reports": 5,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Proterorhinus semilunaris",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_021464625.1",
+      "assembly_name": "fProSem1.pri.20201207",
+      "assembly_level": "Chromosome",
+      "total_length": "864621867",
+      "organism_name": "Proterorhinus semilunaris",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Pterygoplichthys disjunctivus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_981919085.1",
+      "assembly_name": "Pd_IHB",
+      "assembly_level": "Chromosome",
+      "total_length": "1566152583",
+      "organism_name": "Pterygoplichthys disjunctivus",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Pungitius pungitius",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_056822235.1",
+      "assembly_name": "TVA-T2T",
+      "assembly_level": "Complete Genome",
+      "total_length": "510968162",
+      "organism_name": "Pungitius pungitius",
+      "refseq_category": null,
+      "n_reports": 6,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Ranavirus micropterus1",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_029269695.1",
+      "assembly_name": "LMBV-FS001",
+      "assembly_level": "Complete Genome",
+      "total_length": "100460",
+      "organism_name": "Largemouth bass virus",
+      "refseq_category": null,
+      "n_reports": 12,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Raphidiopsis raciborskii",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_003367075.2",
+      "assembly_name": "ASM336707v2",
+      "assembly_level": "Complete Genome",
+      "total_length": "3757845",
+      "organism_name": "Cylindrospermopsis raciborskii Cr2010",
+      "refseq_category": "reference genome",
+      "n_reports": 20,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Reynoutria japonica",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_048128825.1",
+      "assembly_name": "RJap_1.0",
+      "assembly_level": "Chromosome",
+      "total_length": "3293239434",
+      "organism_name": "Reynoutria japonica",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Rhamnus frangula",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_964106655.1",
+      "assembly_name": "drFraAlnu1.hap2.1",
+      "assembly_level": "Chromosome",
+      "total_length": "281245521",
+      "organism_name": "Frangula alnus",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Salix caprea",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_964035475.1",
+      "assembly_name": "ddSalCapr1.1",
+      "assembly_level": "Chromosome",
+      "total_length": "389070326",
+      "organism_name": "Salix caprea",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Salix purpurea",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_027405865.1",
+      "assembly_name": "94003 Monoecious Salix purpurea Haplotype 2 assembly",
+      "assembly_level": "Chromosome",
+      "total_length": "405530279",
+      "organism_name": "Salix purpurea",
+      "refseq_category": "reference genome",
+      "n_reports": 6,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Salmo salar",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_965601325.1",
+      "assembly_name": "fSalSal1",
+      "assembly_level": "Chromosome",
+      "total_length": "2825041709",
+      "organism_name": "Salmo salar",
+      "refseq_category": "reference genome",
+      "n_reports": 19,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Salmo trutta",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_901001165.2",
+      "assembly_name": "fSalTru1.2",
+      "assembly_level": "Chromosome",
+      "total_length": "2371863509",
+      "organism_name": "Salmo trutta",
+      "refseq_category": "reference genome",
+      "n_reports": 5,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Salvelinus alpinus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_045679555.1",
+      "assembly_name": "SLU_Salpinus.1",
+      "assembly_level": "Chromosome",
+      "total_length": "2367887750",
+      "organism_name": "Salvelinus alpinus",
+      "refseq_category": "reference genome",
+      "n_reports": 6,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Salvelinus fontinalis",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_029448725.1",
+      "assembly_name": "ASM2944872v1",
+      "assembly_level": "Chromosome",
+      "total_length": "2496185110",
+      "organism_name": "Salvelinus fontinalis",
+      "refseq_category": "reference genome",
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Salvelinus namaycush",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_016432855.1",
+      "assembly_name": "SaNama_1.0",
+      "assembly_level": "Chromosome",
+      "total_length": "2345496725",
+      "organism_name": "Salvelinus namaycush",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Sander vitreus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_031162955.1",
+      "assembly_name": "sanVit1",
+      "assembly_level": "Chromosome",
+      "total_length": "791702833",
+      "organism_name": "Sander vitreus",
+      "refseq_category": "reference genome",
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Scardinius erythrophthalmus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_964197995.1",
+      "assembly_name": "fScaEry2.hap1.1",
+      "assembly_level": "Chromosome",
+      "total_length": "1229649543",
+      "organism_name": "Scardinius erythrophthalmus",
+      "refseq_category": "reference genome",
+      "n_reports": 5,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Schmidtea polychroa",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_044892525.1",
+      "assembly_name": "ASM4489252v1",
+      "assembly_level": "Chromosome",
+      "total_length": "781270316",
+      "organism_name": "Schmidtea polychroa",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Solanum dulcamara",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_947179165.1",
+      "assembly_name": "daSolDulc1.2",
+      "assembly_level": "Chromosome",
+      "total_length": "946304905",
+      "organism_name": "Solanum dulcamara",
+      "refseq_category": "reference genome",
+      "n_reports": 4,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Sphaerium corneum",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_965230695.1",
+      "assembly_name": "xbSphCorn4.1",
+      "assembly_level": "Chromosome",
+      "total_length": "3625506042",
+      "organism_name": "Sphaerium corneum",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Sprivivirus cyprinus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_000850305.1",
+      "assembly_name": "ViralProj14726",
+      "assembly_level": "Complete Genome",
+      "total_length": "11019",
+      "organism_name": "Sprivivirus cyprinus",
+      "refseq_category": null,
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Thalassiosira pseudonana",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_000149405.2",
+      "assembly_name": "ASM14940v2",
+      "assembly_level": "Chromosome",
+      "total_length": "32437365",
+      "organism_name": "Thalassiosira pseudonana CCMP1335",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Trachemys scripta",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_013100865.1",
+      "assembly_name": "CAS_Tse_1.0",
+      "assembly_level": "Chromosome",
+      "total_length": "2126182493",
+      "organism_name": "Trachemys scripta elegans",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Trachemys scripta elegans",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_013100865.1",
+      "assembly_name": "CAS_Tse_1.0",
+      "assembly_level": "Chromosome",
+      "total_length": "2126182493",
+      "organism_name": "Trachemys scripta elegans",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Trapa natans",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_035582545.1",
+      "assembly_name": "ASM3558254v1",
+      "assembly_level": "Chromosome",
+      "total_length": "477423239",
+      "organism_name": "Trapa natans",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Typha angustifolia",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_048772165.1",
+      "assembly_name": "ASM4877216v1",
+      "assembly_level": "Complete Genome",
+      "total_length": "206997856",
+      "organism_name": "Typha angustifolia",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Typha latifolia",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_019914945.1",
+      "assembly_name": "TyphaL0001v2",
+      "assembly_level": "Chromosome",
+      "total_length": "213846373",
+      "organism_name": "Typha latifolia",
+      "refseq_category": "reference genome",
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Veronica anagallis-aquatica",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_965198525.1",
+      "assembly_name": "daVerAnag1.hap1.1",
+      "assembly_level": "Chromosome",
+      "total_length": "1000668773",
+      "organism_name": "Veronica anagallis-aquatica",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Xenopus laevis",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_017654675.1",
+      "assembly_name": "Xenopus_laevis_v10.1",
+      "assembly_level": "Chromosome",
+      "total_length": "2742451793",
+      "organism_name": "Xenopus laevis",
+      "refseq_category": "reference genome",
+      "n_reports": 4,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Alosa aestivalis",
+      "tier": "B",
+      "tier_label": "Contig WGS",
+      "accession": "GCA_040955115.1",
+      "assembly_name": "fAloAes1_p1.1",
+      "assembly_level": "Contig",
+      "total_length": "1193374213",
+      "organism_name": "Alosa aestivalis",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Alosa pseudoharengus",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCF_046254945.1",
+      "assembly_name": "YU_APseudo_1.1",
+      "assembly_level": "Scaffold",
+      "total_length": "1050053806",
+      "organism_name": "Alosa pseudoharengus",
+      "refseq_category": "reference genome",
+      "n_reports": 4,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Ameiurus nebulosus",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCA_051624135.1",
+      "assembly_name": "ASM5162413v1",
+      "assembly_level": "Scaffold",
+      "total_length": "852833594",
+      "organism_name": "Ameiurus nebulosus",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Amnicola limosus",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCA_043384305.1",
+      "assembly_name": "ASM4338430v1",
+      "assembly_level": "Scaffold",
+      "total_length": "1893660595",
+      "organism_name": "Amnicola limosus",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Aphredoderus sayanus",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCA_027564795.1",
+      "assembly_name": "ASM2756479v1",
+      "assembly_level": "Scaffold",
+      "total_length": "490500259",
+      "organism_name": "Aphredoderus sayanus",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Chaetoceros muelleri",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCA_019693545.1",
+      "assembly_name": "ASM1969354v1",
+      "assembly_level": "Scaffold",
+      "total_length": "37735205",
+      "organism_name": "Chaetoceros muelleri",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Corbicula fluminea",
+      "tier": "B",
+      "tier_label": "Contig WGS",
+      "accession": "GCA_001632725.1",
+      "assembly_name": "ASM163272v1",
+      "assembly_level": "Contig",
+      "total_length": "662517",
+      "organism_name": "Corbicula fluminea",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Craspedacusta sowerbii",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCA_003687565.2",
+      "assembly_name": "ASM368756v2",
+      "assembly_level": "Scaffold",
+      "total_length": "620643343",
+      "organism_name": "Craspedacusta sowerbii",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Cyclotella atomus",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCA_036940135.2",
+      "assembly_name": "UArk_CyAtom_2",
+      "assembly_level": "Scaffold",
+      "total_length": "67031067",
+      "organism_name": "Cyclotella atomus",
+      "refseq_category": "reference genome",
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Cyclotella cryptica",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCA_013187285.2",
+      "assembly_name": "UArk_CyCryp_3",
+      "assembly_level": "Scaffold",
+      "total_length": "171140631",
+      "organism_name": "Cyclotella cryptica",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Diadumene leucolena",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCA_044473225.1",
+      "assembly_name": "ASM4447322v1",
+      "assembly_level": "Scaffold",
+      "total_length": "360459906",
+      "organism_name": "Diadumene leucolena",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Discostella pseudostelligera",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCA_036940085.2",
+      "assembly_name": "ASM3694008v2",
+      "assembly_level": "Scaffold",
+      "total_length": "30276017",
+      "organism_name": "Discostella pseudostelligera",
+      "refseq_category": null,
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Esox masquinongy",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCA_016801175.1",
+      "assembly_name": "ASM1680117v1",
+      "assembly_level": "Scaffold",
+      "total_length": "1138222515",
+      "organism_name": "Esox masquinongy",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Esox niger",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCA_016801105.1",
+      "assembly_name": "ASM1680110v1",
+      "assembly_level": "Scaffold",
+      "total_length": "859849040",
+      "organism_name": "Esox niger",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Lepisosteus osseus",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCA_026401145.1",
+      "assembly_name": "ASM2640114v1",
+      "assembly_level": "Scaffold",
+      "total_length": "930537206",
+      "organism_name": "Lepisosteus osseus",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Lepomis macrochirus",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCA_024633595.2",
+      "assembly_name": "Lm_LA_1.1",
+      "assembly_level": "Scaffold",
+      "total_length": "889035858",
+      "organism_name": "Lepomis macrochirus",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Morone americana",
+      "tier": "B",
+      "tier_label": "Contig WGS",
+      "accession": "GCA_965119265.1",
+      "assembly_name": "M_amer_male.genomic",
+      "assembly_level": "Contig",
+      "total_length": "688633020",
+      "organism_name": "Morone americana",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Morone chrysops",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCA_019097615.1",
+      "assembly_name": "DOM_MoChry_2.0",
+      "assembly_level": "Scaffold",
+      "total_length": "640404081",
+      "organism_name": "Morone chrysops",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Morone saxatilis",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCF_004916995.1",
+      "assembly_name": "NCSU_SB_2.0",
+      "assembly_level": "Scaffold",
+      "total_length": "598109547",
+      "organism_name": "Morone saxatilis",
+      "refseq_category": "reference genome",
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Myriophyllum spicatum",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCA_057662065.1",
+      "assembly_name": "ASM5766206v1",
+      "assembly_level": "Scaffold",
+      "total_length": "880108064",
+      "organism_name": "Myriophyllum spicatum",
+      "refseq_category": "reference genome",
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Neogobius melanostomus",
+      "tier": "B",
+      "tier_label": "Contig WGS",
+      "accession": "GCA_007210695.1",
+      "assembly_name": "RGoby_Basel_V2",
+      "assembly_level": "Contig",
+      "total_length": "1003738541",
+      "organism_name": "Neogobius melanostomus",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Pimephales promelas",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCF_016745375.1",
+      "assembly_name": "EPA_FHM_2.0",
+      "assembly_level": "Scaffold",
+      "total_length": "1066412313",
+      "organism_name": "Pimephales promelas",
+      "refseq_category": "reference genome",
+      "n_reports": 4,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Procambarus virginalis",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCA_020271785.1",
+      "assembly_name": "DKFZ_Pvir_1.0",
+      "assembly_level": "Scaffold",
+      "total_length": "3700845369",
+      "organism_name": "Procambarus virginalis",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Pylodictis olivaris",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCA_028570965.1",
+      "assembly_name": "ASM2857096v1",
+      "assembly_level": "Scaffold",
+      "total_length": "1424310885",
+      "organism_name": "Pylodictis olivaris",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Radix auricularia",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCA_002072015.1",
+      "assembly_name": "ASM207201v1",
+      "assembly_level": "Scaffold",
+      "total_length": "909750324",
+      "organism_name": "Radix auricularia",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Salvelinus alpinus oquassa",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCA_036784965.1",
+      "assembly_name": "fSalAlp2_p1.0",
+      "assembly_level": "Scaffold",
+      "total_length": "2129014997",
+      "organism_name": "Salvelinus alpinus oquassa",
+      "refseq_category": null,
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Skeletonema potamos",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCA_036940105.2",
+      "assembly_name": "ASM3694010v2",
+      "assembly_level": "Scaffold",
+      "total_length": "34111510",
+      "organism_name": "Skeletonema potamos",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Thalassiosira weissflogii",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCA_036940025.2",
+      "assembly_name": "ASM3694002v2",
+      "assembly_level": "Scaffold",
+      "total_length": "129999045",
+      "organism_name": "Conticribra weissflogii",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Thymallus arcticus",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCA_048126525.2",
+      "assembly_name": "fThyArc1_p1.2",
+      "assembly_level": "Scaffold",
+      "total_length": "1606449914",
+      "organism_name": "Thymallus arcticus",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Tinca tinca",
+      "tier": "B",
+      "tier_label": "Contig WGS",
+      "accession": "GCA_037022345.1",
+      "assembly_name": "ASM3702234v1",
+      "assembly_level": "Contig",
+      "total_length": "669980980",
+      "organism_name": "Tinca tinca",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Anguillicola crassus",
+      "tier": "C",
+      "tier_label": "Transcriptome / EST (129 records)",
+      "transcriptome_count": 129,
+      "nuccore_count": 874
+    },
+    {
+      "scientific_name": "Bangia atropurpurea",
+      "tier": "C",
+      "tier_label": "Transcriptome / EST (1252 records)",
+      "transcriptome_count": 1252,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Chaetogaster diaphanus",
+      "tier": "C",
+      "tier_label": "Transcriptome / EST (1 records)",
+      "transcriptome_count": 1,
+      "nuccore_count": 122
+    },
+    {
+      "scientific_name": "Iris pseudacorus",
+      "tier": "C",
+      "tier_label": "Transcriptome / EST (1 records)",
+      "transcriptome_count": 1,
+      "nuccore_count": 135
+    },
+    {
+      "scientific_name": "Lepomis microlophus",
+      "tier": "C",
+      "tier_label": "Transcriptome / EST (1 records)",
+      "transcriptome_count": 1,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Lotus corniculatus",
+      "tier": "C",
+      "tier_label": "Transcriptome / EST (1 records)",
+      "transcriptome_count": 1,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Marsilea quadrifolia",
+      "tier": "C",
+      "tier_label": "Transcriptome / EST (16 records)",
+      "transcriptome_count": 16,
+      "nuccore_count": 65
+    },
+    {
+      "scientific_name": "Mentha \u00d7 piperita",
+      "tier": "C",
+      "tier_label": "Transcriptome / EST (1316 records)",
+      "transcriptome_count": 1316,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Myosoton aquaticum",
+      "tier": "C",
+      "tier_label": "Transcriptome / EST (1 records)",
+      "transcriptome_count": 1,
+      "nuccore_count": 92
+    },
+    {
+      "scientific_name": "Myxobolus cerebralis",
+      "tier": "C",
+      "tier_label": "Transcriptome / EST (1 records)",
+      "transcriptome_count": 1,
+      "nuccore_count": 87
+    },
+    {
+      "scientific_name": "Potamopyrgus antipodarum",
+      "tier": "C",
+      "tier_label": "Transcriptome / EST (2 records)",
+      "transcriptome_count": 2,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Salix alba",
+      "tier": "C",
+      "tier_label": "Transcriptome / EST (10 records)",
+      "transcriptome_count": 10,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Salix fragilis",
+      "tier": "C",
+      "tier_label": "Transcriptome / EST (18 records)",
+      "transcriptome_count": 18,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Ambloplites rupestris",
+      "tier": "D",
+      "tier_label": "Marker pool (166 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 166
+    },
+    {
+      "scientific_name": "Ameiurus catus",
+      "tier": "D",
+      "tier_label": "Marker pool (86 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 86
+    },
+    {
+      "scientific_name": "Ameiurus natalis",
+      "tier": "D",
+      "tier_label": "Marker pool (179 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 179
+    },
+    {
+      "scientific_name": "Ammocrypta pellucida",
+      "tier": "D",
+      "tier_label": "Marker pool (75 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 75
+    },
+    {
+      "scientific_name": "Aplodinotus grunniens",
+      "tier": "D",
+      "tier_label": "Marker pool (56 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 56
+    },
+    {
+      "scientific_name": "Arundo donax",
+      "tier": "D",
+      "tier_label": "Marker pool (284181 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 284181
+    },
+    {
+      "scientific_name": "Bithynia tentaculata",
+      "tier": "D",
+      "tier_label": "Marker pool (76 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 76
+    },
+    {
+      "scientific_name": "Brachionus leydigii",
+      "tier": "D",
+      "tier_label": "Markers only (8 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 8
+    },
+    {
+      "scientific_name": "Bythotrephes longimanus",
+      "tier": "D",
+      "tier_label": "Marker pool (42 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 42
+    },
+    {
+      "scientific_name": "Cabomba caroliniana",
+      "tier": "D",
+      "tier_label": "Marker pool (369 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 369
+    },
+    {
+      "scientific_name": "Caecidotea racovitzai",
+      "tier": "D",
+      "tier_label": "Marker pool (152 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 152
+    },
+    {
+      "scientific_name": "Callinina georgiana",
+      "tier": "D",
+      "tier_label": "Marker pool (266 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 266
+    },
+    {
+      "scientific_name": "Carex disticha",
+      "tier": "D",
+      "tier_label": "Markers only (15 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 15
+    },
+    {
+      "scientific_name": "Carex flacca",
+      "tier": "D",
+      "tier_label": "Marker pool (67 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 67
+    },
+    {
+      "scientific_name": "Carpiodes carpio",
+      "tier": "D",
+      "tier_label": "Marker pool (394 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 394
+    },
+    {
+      "scientific_name": "Cercopagis pengoi",
+      "tier": "D",
+      "tier_label": "Marker pool (41 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 41
+    },
+    {
+      "scientific_name": "Chroodactylon ornatum",
+      "tier": "D",
+      "tier_label": "Marker pool (83600 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 83600
+    },
+    {
+      "scientific_name": "Cirsium palustre",
+      "tier": "D",
+      "tier_label": "Marker pool (67 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 67
+    },
+    {
+      "scientific_name": "Corbicula sp.",
+      "tier": "D",
+      "tier_label": "Marker pool (342 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 342
+    },
+    {
+      "scientific_name": "Cyprinus rubrofuscus",
+      "tier": "D",
+      "tier_label": "Marker pool (93 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 93
+    },
+    {
+      "scientific_name": "Dactylogyrus hemiamphibothrium",
+      "tier": "D",
+      "tier_label": "Markers only (2 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 2
+    },
+    {
+      "scientific_name": "Daphnia longispina",
+      "tier": "D",
+      "tier_label": "Marker pool (1348 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 1348
+    },
+    {
+      "scientific_name": "Didymosphenia geminata",
+      "tier": "D",
+      "tier_label": "Marker pool (166 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 166
+    },
+    {
+      "scientific_name": "Elimia livescens",
+      "tier": "D",
+      "tier_label": "Markers only (5 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 5
+    },
+    {
+      "scientific_name": "Enneacanthus gloriosus",
+      "tier": "D",
+      "tier_label": "Marker pool (164 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 164
+    },
+    {
+      "scientific_name": "Etheostoma olmstedi",
+      "tier": "D",
+      "tier_label": "Marker pool (821 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 821
+    },
+    {
+      "scientific_name": "Eubosmina coregoni",
+      "tier": "D",
+      "tier_label": "Marker pool (2018 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 2018
+    },
+    {
+      "scientific_name": "Euglesa supina",
+      "tier": "D",
+      "tier_label": "Marker pool (31 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 31
+    },
+    {
+      "scientific_name": "Faxonius obscurus",
+      "tier": "D",
+      "tier_label": "Markers only (15 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 15
+    },
+    {
+      "scientific_name": "Fundulus notatus",
+      "tier": "D",
+      "tier_label": "Marker pool (487 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 487
+    },
+    {
+      "scientific_name": "Gianius aquaedulcis",
+      "tier": "D",
+      "tier_label": "Markers only (14 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 14
+    },
+    {
+      "scientific_name": "Glyceria maxima",
+      "tier": "D",
+      "tier_label": "Marker pool (32 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 32
+    },
+    {
+      "scientific_name": "Graptemys pseudogeographica",
+      "tier": "D",
+      "tier_label": "Marker pool (476 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 476
+    },
+    {
+      "scientific_name": "Hemimysis anomala",
+      "tier": "D",
+      "tier_label": "Markers only (21 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 21
+    },
+    {
+      "scientific_name": "Hydrocharis morsus-ranae",
+      "tier": "D",
+      "tier_label": "Marker pool (68 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 68
+    },
+    {
+      "scientific_name": "Ichthyocotylurus pileatus",
+      "tier": "D",
+      "tier_label": "Markers only (19 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 19
+    },
+    {
+      "scientific_name": "Ictiobus cyprinellus",
+      "tier": "D",
+      "tier_label": "Marker pool (122 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 122
+    },
+    {
+      "scientific_name": "Ictiobus niger",
+      "tier": "D",
+      "tier_label": "Marker pool (80 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 80
+    },
+    {
+      "scientific_name": "Juncus gerardii",
+      "tier": "D",
+      "tier_label": "Marker pool (26 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 26
+    },
+    {
+      "scientific_name": "Landoltia punctata",
+      "tier": "D",
+      "tier_label": "Marker pool (91455 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 91455
+    },
+    {
+      "scientific_name": "Lepisosteus platostomus",
+      "tier": "D",
+      "tier_label": "Marker pool (91 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 91
+    },
+    {
+      "scientific_name": "Lepomis cyanellus",
+      "tier": "D",
+      "tier_label": "Marker pool (294 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 294
+    },
+    {
+      "scientific_name": "Leyogonimus polyoon",
+      "tier": "D",
+      "tier_label": "Markers only (7 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 7
+    },
+    {
+      "scientific_name": "Ligumia recta",
+      "tier": "D",
+      "tier_label": "Marker pool (25 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 25
+    },
+    {
+      "scientific_name": "Lophopodella carteri",
+      "tier": "D",
+      "tier_label": "Markers only (5 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 5
+    },
+    {
+      "scientific_name": "Lysimachia vulgaris",
+      "tier": "D",
+      "tier_label": "Marker pool (53 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 53
+    },
+    {
+      "scientific_name": "Lythrum salicaria",
+      "tier": "D",
+      "tier_label": "Marker pool (103 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 103
+    },
+    {
+      "scientific_name": "Margariscus nachtriebi",
+      "tier": "D",
+      "tier_label": "Markers only (4 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 4
+    },
+    {
+      "scientific_name": "Mesocyclops pehpeiensis",
+      "tier": "D",
+      "tier_label": "Marker pool (44 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 44
+    },
+    {
+      "scientific_name": "Morone mississippiensis",
+      "tier": "D",
+      "tier_label": "Marker pool (39 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 39
+    },
+    {
+      "scientific_name": "Myriophyllum heterophyllum",
+      "tier": "D",
+      "tier_label": "Marker pool (96 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 96
+    },
+    {
+      "scientific_name": "Mysis diluviana",
+      "tier": "D",
+      "tier_label": "Marker pool (40 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 40
+    },
+    {
+      "scientific_name": "Najas marina",
+      "tier": "D",
+      "tier_label": "Marker pool (532 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 532
+    },
+    {
+      "scientific_name": "Neoergasilus japonicus",
+      "tier": "D",
+      "tier_label": "Marker pool (61 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 61
+    },
+    {
+      "scientific_name": "Nitellopsis obtusa",
+      "tier": "D",
+      "tier_label": "Marker pool (83 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 83
+    },
+    {
+      "scientific_name": "Nitokra hibernica",
+      "tier": "D",
+      "tier_label": "Markers only (14 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 14
+    },
+    {
+      "scientific_name": "Notemigonus crysoleucas",
+      "tier": "D",
+      "tier_label": "Marker pool (429 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 429
+    },
+    {
+      "scientific_name": "Notropis buchanani",
+      "tier": "D",
+      "tier_label": "Marker pool (57 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 57
+    },
+    {
+      "scientific_name": "Notropis dorsalis",
+      "tier": "D",
+      "tier_label": "Marker pool (42 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 42
+    },
+    {
+      "scientific_name": "Notropis hudsonius",
+      "tier": "D",
+      "tier_label": "Marker pool (141 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 141
+    },
+    {
+      "scientific_name": "Notropis volucellus",
+      "tier": "D",
+      "tier_label": "Marker pool (106 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 106
+    },
+    {
+      "scientific_name": "Noturus insignis",
+      "tier": "D",
+      "tier_label": "Marker pool (72 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 72
+    },
+    {
+      "scientific_name": "Nymphaea odorata",
+      "tier": "D",
+      "tier_label": "Marker pool (143 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 143
+    },
+    {
+      "scientific_name": "Nymphaea sp.",
+      "tier": "D",
+      "tier_label": "Markers only (1 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 1
+    },
+    {
+      "scientific_name": "Odhneripisidium moitessierianum",
+      "tier": "D",
+      "tier_label": "Markers only (12 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 12
+    },
+    {
+      "scientific_name": "Oxybasis glauca",
+      "tier": "D",
+      "tier_label": "Marker pool (223 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 223
+    },
+    {
+      "scientific_name": "Paranais frici",
+      "tier": "D",
+      "tier_label": "Marker pool (27 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 27
+    },
+    {
+      "scientific_name": "Percina shumardi",
+      "tier": "D",
+      "tier_label": "Marker pool (35 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 35
+    },
+    {
+      "scientific_name": "Perrunichthys perruno",
+      "tier": "D",
+      "tier_label": "Markers only (6 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 6
+    },
+    {
+      "scientific_name": "Persicaria longiseta",
+      "tier": "D",
+      "tier_label": "Marker pool (61 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 61
+    },
+    {
+      "scientific_name": "Phenacobius mirabilis",
+      "tier": "D",
+      "tier_label": "Marker pool (32 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 32
+    },
+    {
+      "scientific_name": "Pisidium amnicum",
+      "tier": "D",
+      "tier_label": "Marker pool (52 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 52
+    },
+    {
+      "scientific_name": "Pistia stratiotes",
+      "tier": "D",
+      "tier_label": "Marker pool (278 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 278
+    },
+    {
+      "scientific_name": "Pleurosira laevis",
+      "tier": "D",
+      "tier_label": "Markers only (22 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 22
+    },
+    {
+      "scientific_name": "Poa trivialis",
+      "tier": "D",
+      "tier_label": "Marker pool (129 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 129
+    },
+    {
+      "scientific_name": "Pomoxis annularis",
+      "tier": "D",
+      "tier_label": "Marker pool (106 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 106
+    },
+    {
+      "scientific_name": "Potamilus alatus",
+      "tier": "D",
+      "tier_label": "Marker pool (25 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 25
+    },
+    {
+      "scientific_name": "Puccinellia distans",
+      "tier": "D",
+      "tier_label": "Marker pool (396 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 396
+    },
+    {
+      "scientific_name": "Rumex longifolius",
+      "tier": "D",
+      "tier_label": "Markers only (19 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 19
+    },
+    {
+      "scientific_name": "Salmo trutta \u00d7 Salvelinus fontinalis",
+      "tier": "D",
+      "tier_label": "Markers only (2 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 2
+    },
+    {
+      "scientific_name": "Schizopera borutzkyi",
+      "tier": "D",
+      "tier_label": "Markers only (7 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 7
+    },
+    {
+      "scientific_name": "Scolex pleuronectis",
+      "tier": "D",
+      "tier_label": "Markers only (1 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 1
+    },
+    {
+      "scientific_name": "Skeletonema subsalsum",
+      "tier": "D",
+      "tier_label": "Marker pool (380 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 380
+    },
+    {
+      "scientific_name": "Skistodiaptomus pallidus",
+      "tier": "D",
+      "tier_label": "Marker pool (78 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 78
+    },
+    {
+      "scientific_name": "Sonchus arvensis uliginosus",
+      "tier": "D",
+      "tier_label": "Markers only (5 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 5
+    },
+    {
+      "scientific_name": "Stephanodiscus binderanus",
+      "tier": "D",
+      "tier_label": "Marker pool (33 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 33
+    },
+    {
+      "scientific_name": "Stratiotes aloides",
+      "tier": "D",
+      "tier_label": "Marker pool (178 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 178
+    },
+    {
+      "scientific_name": "Tanysphyrus lemnae",
+      "tier": "D",
+      "tier_label": "Marker pool (39 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 39
+    },
+    {
+      "scientific_name": "Thalassiosira baltica",
+      "tier": "D",
+      "tier_label": "Markers only (2 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 2
+    },
+    {
+      "scientific_name": "Thermocyclops crassus",
+      "tier": "D",
+      "tier_label": "Markers only (14 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 14
+    },
+    {
+      "scientific_name": "Utricularia inflata",
+      "tier": "D",
+      "tier_label": "Marker pool (44 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 44
+    },
+    {
+      "scientific_name": "Veronica beccabunga",
+      "tier": "D",
+      "tier_label": "Marker pool (68 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 68
+    },
+    {
+      "scientific_name": "Acineta nitocrae",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Actinocyclus normanii f. subsalsa",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Agrostis gigantea",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Alosa chrysochloris",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Argulus japonicus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Branchiura sowerbyi",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Butomus umbellatus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Cambarus robustus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Cipangopaludina japonica",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Cipangopaludina sp.",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Conium maculatum",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Conticribra (Thalassiosira) guillardii",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Cordylophora caspia",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Corythionella golemanskyi",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Cottus cognatus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Couesius plumbeus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Cyclops strenuus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Cyprinella analostana",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Cyprinella spiloptera",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Dactylogyrus amphibothrium",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Daphnia galeata galeata",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Daphnia lumholtzi",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Diaphanosoma fluviatile",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Diatoma ehrenbergii",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Discostella woltereckii",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Dorosoma cepedianum",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Dreissena sp.",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Echinogammarus ischnus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Egeria densa",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Elimia virginica",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Epilobium parviflorum",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Esox lucius \u00d7 masquinongy",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Etheostoma caeruleum",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Etheostoma zonale",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Eubosmina maritima",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Euglesa henslowana",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Faxonius propinquus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Faxonius rusticus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Faxonius virilis",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Fundulus diaphanus diaphanus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Gammarus fasciatus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Gammarus tigrinus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Gillia altilis",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Glugea hertwigi",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Heteropsyllus nr. nunni",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Heteropsyllus nunni",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Heterosporis sutherlandae",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Hydrilla verticillata peregrina",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Hymenomonas roseola",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Ictiobus bubalus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Juncus compressus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Labidesthes sicculus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Ladislavella catascopium",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Lasmigona subviridis",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Lepomis auritus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Lepomis gibbosus \u00d7 cyanellus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Lepomis gibbosus \u00d7 macrochirus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Lepomis gulosus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Lepomis humilis",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Lepomis megalotis",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Leptodea fragilis",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Lupinus polyphyllus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Lycopus asper",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Lycopus europaeus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Lysimachia nummularia",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Lysimachia punctata",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Manayunkia speciosa",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Megacyclops viridis",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Mentha spicata",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Mentha \u00d7 gracilis",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Morone chrysops \u00d7 americana",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Morone chrysops \u00d7 saxatilis",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Moxostoma carinatum",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Myosotis scorpioides",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Myriophyllum aquaticum",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Myriophyllum \u00d7 hybridum",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Najas minor",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Nasturtium microphyllum",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Neascus brevicaudatus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Nitokra incerta",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Nocomis biguttatus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Notropis atherinoides",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Novirhabdovirus sp. genotype IV sublineage b",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Oncorhynchus mykiss whitei",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Phractocephalus hemioliopterus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Phragmites australis australis",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Physella sp.",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Piaractus sp.",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Pimephales notatus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Piscirickettsia cf. salmonis",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Pleurocera acuta",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Pluchea odorata",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Pomoxis nigromaculatus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Potamothrix bavaricus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Potamothrix bedoti",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Potamothrix moldaviensis",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Potamothrix vejdovskyi",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Procambarus acutus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Psammonobiotus communis",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Psammonobiotus dziwnowi",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Psammonobiotus linearis",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Pseudemys rubriventris",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Pterygoplichthys sp.",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Renibacterium (Corynebacterium) salmoninarum",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Rhinichthys obtusus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Ripistes parasita",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Rorippa sylvestris",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Rumex obtusifolius",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Salix cf. cinerea/atrocinerea",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Salmincola californiensis",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Salmincola edwardsii",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Salmincola lotae",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Salmo letnica",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Salmo salar sebago",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Salvelinus fontinalis \u00d7 namaycush",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Sander canadensis",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Sander canadensis \u00d7 vitreus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Schyzocotyle acheilognathi",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Semotilus corporalis",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Solidago sempervirens",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Sonchus arvensis",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Sparganium glomeratum",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Sphacelaria fluviatilis",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Sphacelaria lacustris",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Sphaeromyxa sevastopoli",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Stagnicola palustris",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Stephanodiscus subtilis",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Stylodrilus heringianus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Thalassiosira bramaputrae",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Timoniella sp.",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Trachemys scripta scripta",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Trypanosoma acerinae",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Typha laxmannii",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Typha \u00d7 glauca",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Ulva (Enteromorpha) flexuosa subsp. flexuosa and flexuosa subsp. paradoxa",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Ulva (Enteromorpha) intestinalis",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Ulva (Enteromorpha) prolifera",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Umbra limi",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Urnatella gracilis",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    },
+    {
+      "scientific_name": "Valvata piscinalis",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0
+    }
+  ]
+}

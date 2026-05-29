@@ -1,0 +1,3784 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GLANSIS species → NCBI assembly inventory</title>
+<style>
+  body {
+    font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+    color: #1f2937; max-width: 56rem; margin: 2rem auto; padding: 0 1rem;
+  }
+  h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+  .meta { color: #475569; font-size: 0.85rem; margin-bottom: 1rem; }
+  .tier-summary { margin: 1rem 0 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .tier-pill {
+    display: inline-block; padding: 0.4rem 0.8rem; border-radius: 6px;
+    font-size: 0.9rem;
+  }
+  .filter-bar { margin: 1rem 0; }
+  .filter-bar input {
+    padding: 0.4rem 0.7rem; font-size: 0.9rem; border: 1px solid #cbd5e1;
+    border-radius: 4px; width: 100%; max-width: 24rem;
+  }
+  table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+  th, td {
+    text-align: left; padding: 0.4rem 0.6rem; border-bottom: 1px solid #e2e8f0;
+    vertical-align: top;
+  }
+  th { font-weight: 600; color: #1e40af; background: #f8fafc; position: sticky; top: 0; }
+  .mono { font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 0.85em; }
+  .right { text-align: right; }
+  .badge {
+    display: inline-block; padding: 0.05em 0.55em; border-radius: 9999px;
+    font-weight: 600; font-size: 0.85em;
+  }
+  a { color: #1e40af; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer { margin-top: 2rem; color: #475569; font-size: 0.8rem; }
+</style>
+</head><body>
+<h1>GLANSIS species &rarr; NCBI assembly inventory</h1>
+<div class="meta">
+  Generated 2026-05-29 &middot;
+  370 species from the
+  <a href="https://nas.er.usgs.gov/ipt/resource?r=nas_glansis">USGS NAS GLANSIS Darwin Core archive</a>
+  &middot; per-species lookup via the
+  <a href="https://api.ncbi.nlm.nih.gov/datasets/">NCBI Datasets v2 API</a>
+  and <a href="https://eutils.ncbi.nlm.nih.gov/">Entrez E-utilities</a>.
+</div>
+
+<div class="tier-summary"><span class="tier-pill" style="background:#0478571a;color:#047857"><b>A</b> Chromosome-scale WGS &middot; <b>95</b> (26%)</span> <span class="tier-pill" style="background:#1d4ed81a;color:#1d4ed8"><b>B</b> Draft (scaffold / contig) WGS &middot; <b>30</b> (8%)</span> <span class="tier-pill" style="background:#7c3aed1a;color:#7c3aed"><b>C</b> Transcriptome / EST &middot; <b>13</b> (4%)</span> <span class="tier-pill" style="background:#b453091a;color:#b45309"><b>D</b> Marker / mitochondrion only &middot; <b>92</b> (25%)</span> <span class="tier-pill" style="background:#be123c1a;color:#be123c"><b>E</b> No usable public sequence &middot; <b>140</b> (38%)</span></div>
+
+<div class="filter-bar">
+  <input id="filter" placeholder="Filter species (case-insensitive substring)" oninput="filterRows(event)">
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tier</th><th>Species</th><th>Assembly level</th>
+      <th>Accession</th><th class="right">Length</th>
+      <th class="right">EST/TSA</th><th class="right">nuccore</th>
+    </tr>
+  </thead>
+  <tbody id="rows">
+    
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Acentria ephemerella</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_943193645.1/">GCA_943193645.1</a></td>
+          <td class="mono right">341 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Acorus calamus</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_030737845.1/">GCA_030737845.1</a></td>
+          <td class="mono right">722 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Aeromonas salmonicida</em></td>
+          <td>Complete Genome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_028355655.1/">GCF_028355655.1</a></td>
+          <td class="mono right">5 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Alisma plantago-aquatica</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_963693085.1/">GCA_963693085.1</a></td>
+          <td class="mono right">9.38 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Alligator mississippiensis</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_030867095.1/">GCF_030867095.1</a></td>
+          <td class="mono right">2.35 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Alnus glutinosa</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_958979055.1/">GCF_958979055.1</a></td>
+          <td class="mono right">457 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Alopecurus geniculatus</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_965641495.1/">GCA_965641495.1</a></td>
+          <td class="mono right">6.20 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Alosa sapidissima</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_018492685.1/">GCF_018492685.1</a></td>
+          <td class="mono right">904 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Amia calva</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_017591415.1/">GCA_017591415.1</a></td>
+          <td class="mono right">831 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Anguilla rostrata</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_018555375.3/">GCF_018555375.3</a></td>
+          <td class="mono right">976 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Apeltes quadracus</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_048569185.1/">GCA_048569185.1</a></td>
+          <td class="mono right">476 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Carassius auratus</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003368295.1/">GCF_003368295.1</a></td>
+          <td class="mono right">1.82 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Carex acutiformis</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_964417155.2/">GCA_964417155.2</a></td>
+          <td class="mono right">411 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Chrosomus eos</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_036326025.1/">GCA_036326025.1</a></td>
+          <td class="mono right">1.27 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Cipangopaludina chinensis</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_050437285.1/">GCA_050437285.1</a></td>
+          <td class="mono right">1.56 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Coregonus clupeaformis</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_020615455.1/">GCF_020615455.1</a></td>
+          <td class="mono right">2.75 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Crassostrea virginica</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_053477285.1/">GCF_053477285.1</a></td>
+          <td class="mono right">529 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Ctenopharyngodon idella</em></td>
+          <td>Complete Genome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_049919795.1/">GCA_049919795.1</a></td>
+          <td class="mono right">891 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Cygnus olor</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009769625.2/">GCF_009769625.2</a></td>
+          <td class="mono right">1.13 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Cyprinella lutrensis</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_054825075.1/">GCA_054825075.1</a></td>
+          <td class="mono right">927 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Cyprinus carpio</em></td>
+          <td>Complete Genome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_050881965.1/">GCA_050881965.1</a></td>
+          <td class="mono right">1.56 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Diadumene lineata</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_918843875.1/">GCA_918843875.1</a></td>
+          <td class="mono right">313 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Dreissena polymorpha</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_020536995.1/">GCF_020536995.1</a></td>
+          <td class="mono right">1.80 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Dreissena rostriformis bugensis</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_055670145.1/">GCA_055670145.1</a></td>
+          <td class="mono right">1.61 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Echinochloa crus-galli</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_020466025.1/">GCA_020466025.1</a></td>
+          <td class="mono right">1.34 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Eichhornia crassipes</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_030549335.1/">GCA_030549335.1</a></td>
+          <td class="mono right">1.13 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Epilobium hirsutum</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_965153245.1/">GCA_965153245.1</a></td>
+          <td class="mono right">336 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Eriocheir sinensis</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_024679095.1/">GCF_024679095.1</a></td>
+          <td class="mono right">1.77 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Esox lucius</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_011004845.1/">GCF_011004845.1</a></td>
+          <td class="mono right">919 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Eurytemora carolleeae</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_057318455.1/">GCA_057318455.1</a></td>
+          <td class="mono right">529 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Filipendula ulmaria</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_964200655.1/">GCA_964200655.1</a></td>
+          <td class="mono right">275 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Fundulus heteroclitus</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_011125445.2/">GCF_011125445.2</a></td>
+          <td class="mono right">1.20 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Gambusia affinis</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_019740435.1/">GCF_019740435.1</a></td>
+          <td class="mono right">680 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Gasterosteus aculeatus</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_964276395.1/">GCF_964276395.1</a></td>
+          <td class="mono right">511 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Gymnocephalus cernua</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_023631565.1/">GCA_023631565.1</a></td>
+          <td class="mono right">904 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Hypophthalmichthys nobilis</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_037950665.1/">GCA_037950665.1</a></td>
+          <td class="mono right">864 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Ictalurus furcatus</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_023375685.1/">GCF_023375685.1</a></td>
+          <td class="mono right">825 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Ictalurus punctatus</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001660625.3/">GCF_001660625.3</a></td>
+          <td class="mono right">843 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Impatiens glandulifera</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_907164915.1/">GCF_907164915.1</a></td>
+          <td class="mono right">654 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Juncus inflexus</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_965612345.2/">GCA_965612345.2</a></td>
+          <td class="mono right">322 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Lepisosteus oculatus</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_040954835.1/">GCF_040954835.1</a></td>
+          <td class="mono right">1.20 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Lithobates catesbeianus</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_042186555.1/">GCF_042186555.1</a></td>
+          <td class="mono right">6.38 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Mentha aquatica</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_965615935.2/">GCA_965615935.2</a></td>
+          <td class="mono right">1.30 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Micropterus dolomieu</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_021292245.1/">GCF_021292245.1</a></td>
+          <td class="mono right">830 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Micropterus salmoides</em></td>
+          <td>Complete Genome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_056957295.1/">GCA_056957295.1</a></td>
+          <td class="mono right">874 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Microstegium vimineum</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_022036555.1/">GCA_022036555.1</a></td>
+          <td class="mono right">1.12 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Misgurnus anguillicaudatus</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_027580225.2/">GCF_027580225.2</a></td>
+          <td class="mono right">1.12 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Nasturtium officinale</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_963854855.1/">GCA_963854855.1</a></td>
+          <td class="mono right">225 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Nelumbo lutea</em></td>
+          <td>Complete Genome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_056320005.1/">GCA_056320005.1</a></td>
+          <td class="mono right">838 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Nymphoides peltata</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_965615785.1/">GCA_965615785.1</a></td>
+          <td class="mono right">722 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Oenanthe javanica</em></td>
+          <td>Complete Genome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_048932635.1/">GCA_048932635.1</a></td>
+          <td class="mono right">1.01 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Oncorhynchus gorbuscha</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_021184085.1/">GCF_021184085.1</a></td>
+          <td class="mono right">2.69 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Oncorhynchus kisutch</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002021735.2/">GCF_002021735.2</a></td>
+          <td class="mono right">2.38 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Oncorhynchus mykiss</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_013265735.2/">GCF_013265735.2</a></td>
+          <td class="mono right">2.34 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Oncorhynchus mykiss irideus</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_049308825.1/">GCA_049308825.1</a></td>
+          <td class="mono right">2.33 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Oncorhynchus nerka</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_034236695.1/">GCF_034236695.1</a></td>
+          <td class="mono right">2.65 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Oncorhynchus tshawytscha</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_018296145.1/">GCF_018296145.1</a></td>
+          <td class="mono right">2.29 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Oreochromis niloticus</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001858045.2/">GCF_001858045.2</a></td>
+          <td class="mono right">1.01 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Osmerus mordax</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_038355195.1/">GCF_038355195.1</a></td>
+          <td class="mono right">498 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Perca flavescens</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004354835.1/">GCF_004354835.1</a></td>
+          <td class="mono right">877 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Persicaria maculosa</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_963922045.1/">GCA_963922045.1</a></td>
+          <td class="mono right">1.51 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Petromyzon marinus</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_048934315.1/">GCF_048934315.1</a></td>
+          <td class="mono right">1.81 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Phalaris arundinacea</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_977930405.1/">GCA_977930405.1</a></td>
+          <td class="mono right">4.27 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Piaractus brachypomus</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_056915255.1/">GCA_056915255.1</a></td>
+          <td class="mono right">1.34 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Platichthys flesus</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_949316205.1/">GCF_949316205.1</a></td>
+          <td class="mono right">597 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Potamogeton crispus</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_965783375.2/">GCA_965783375.2</a></td>
+          <td class="mono right">513 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Procambarus clarkii</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_040958095.1/">GCF_040958095.1</a></td>
+          <td class="mono right">4.03 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Proterorhinus semilunaris</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_021464625.1/">GCA_021464625.1</a></td>
+          <td class="mono right">865 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Pterygoplichthys disjunctivus</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_981919085.1/">GCA_981919085.1</a></td>
+          <td class="mono right">1.57 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Pungitius pungitius</em></td>
+          <td>Complete Genome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_056822235.1/">GCA_056822235.1</a></td>
+          <td class="mono right">511 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Ranavirus micropterus1</em></td>
+          <td>Complete Genome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_029269695.1/">GCA_029269695.1</a></td>
+          <td class="mono right">100 kb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Raphidiopsis raciborskii</em></td>
+          <td>Complete Genome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003367075.2/">GCF_003367075.2</a></td>
+          <td class="mono right">4 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Reynoutria japonica</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_048128825.1/">GCA_048128825.1</a></td>
+          <td class="mono right">3.29 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Rhamnus frangula</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_964106655.1/">GCA_964106655.1</a></td>
+          <td class="mono right">281 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Salix caprea</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_964035475.1/">GCA_964035475.1</a></td>
+          <td class="mono right">389 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Salix purpurea</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_027405865.1/">GCA_027405865.1</a></td>
+          <td class="mono right">406 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Salmo salar</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_965601325.1/">GCF_965601325.1</a></td>
+          <td class="mono right">2.83 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Salmo trutta</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_901001165.2/">GCF_901001165.2</a></td>
+          <td class="mono right">2.37 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Salvelinus alpinus</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_045679555.1/">GCF_045679555.1</a></td>
+          <td class="mono right">2.37 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Salvelinus fontinalis</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_029448725.1/">GCF_029448725.1</a></td>
+          <td class="mono right">2.50 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Salvelinus namaycush</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_016432855.1/">GCF_016432855.1</a></td>
+          <td class="mono right">2.35 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Sander vitreus</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_031162955.1/">GCF_031162955.1</a></td>
+          <td class="mono right">792 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Scardinius erythrophthalmus</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_964197995.1/">GCF_964197995.1</a></td>
+          <td class="mono right">1.23 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Schmidtea polychroa</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_044892525.1/">GCA_044892525.1</a></td>
+          <td class="mono right">781 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Solanum dulcamara</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_947179165.1/">GCF_947179165.1</a></td>
+          <td class="mono right">946 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Sphaerium corneum</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_965230695.1/">GCA_965230695.1</a></td>
+          <td class="mono right">3.63 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Sprivivirus cyprinus</em></td>
+          <td>Complete Genome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000850305.1/">GCF_000850305.1</a></td>
+          <td class="mono right">11 kb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Thalassiosira pseudonana</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000149405.2/">GCF_000149405.2</a></td>
+          <td class="mono right">32 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Trachemys scripta</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_013100865.1/">GCF_013100865.1</a></td>
+          <td class="mono right">2.13 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Trachemys scripta elegans</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_013100865.1/">GCF_013100865.1</a></td>
+          <td class="mono right">2.13 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Trapa natans</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_035582545.1/">GCA_035582545.1</a></td>
+          <td class="mono right">477 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Typha angustifolia</em></td>
+          <td>Complete Genome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_048772165.1/">GCF_048772165.1</a></td>
+          <td class="mono right">207 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Typha latifolia</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_019914945.1/">GCF_019914945.1</a></td>
+          <td class="mono right">214 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Veronica anagallis-aquatica</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_965198525.1/">GCA_965198525.1</a></td>
+          <td class="mono right">1.00 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#0478571a;color:#047857">A</span></td>
+          <td><em>Xenopus laevis</em></td>
+          <td>Chromosome</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_017654675.1/">GCF_017654675.1</a></td>
+          <td class="mono right">2.74 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Alosa aestivalis</em></td>
+          <td>Contig</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_040955115.1/">GCA_040955115.1</a></td>
+          <td class="mono right">1.19 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Alosa pseudoharengus</em></td>
+          <td>Scaffold</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_046254945.1/">GCF_046254945.1</a></td>
+          <td class="mono right">1.05 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Ameiurus nebulosus</em></td>
+          <td>Scaffold</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_051624135.1/">GCA_051624135.1</a></td>
+          <td class="mono right">853 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Amnicola limosus</em></td>
+          <td>Scaffold</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_043384305.1/">GCA_043384305.1</a></td>
+          <td class="mono right">1.89 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Aphredoderus sayanus</em></td>
+          <td>Scaffold</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_027564795.1/">GCA_027564795.1</a></td>
+          <td class="mono right">491 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Chaetoceros muelleri</em></td>
+          <td>Scaffold</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_019693545.1/">GCA_019693545.1</a></td>
+          <td class="mono right">38 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Corbicula fluminea</em></td>
+          <td>Contig</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001632725.1/">GCA_001632725.1</a></td>
+          <td class="mono right">663 kb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Craspedacusta sowerbii</em></td>
+          <td>Scaffold</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003687565.2/">GCA_003687565.2</a></td>
+          <td class="mono right">621 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Cyclotella atomus</em></td>
+          <td>Scaffold</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_036940135.2/">GCA_036940135.2</a></td>
+          <td class="mono right">67 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Cyclotella cryptica</em></td>
+          <td>Scaffold</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_013187285.2/">GCA_013187285.2</a></td>
+          <td class="mono right">171 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Diadumene leucolena</em></td>
+          <td>Scaffold</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_044473225.1/">GCA_044473225.1</a></td>
+          <td class="mono right">360 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Discostella pseudostelligera</em></td>
+          <td>Scaffold</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_036940085.2/">GCA_036940085.2</a></td>
+          <td class="mono right">30 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Esox masquinongy</em></td>
+          <td>Scaffold</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_016801175.1/">GCA_016801175.1</a></td>
+          <td class="mono right">1.14 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Esox niger</em></td>
+          <td>Scaffold</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_016801105.1/">GCA_016801105.1</a></td>
+          <td class="mono right">860 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Lepisosteus osseus</em></td>
+          <td>Scaffold</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_026401145.1/">GCA_026401145.1</a></td>
+          <td class="mono right">931 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Lepomis macrochirus</em></td>
+          <td>Scaffold</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_024633595.2/">GCA_024633595.2</a></td>
+          <td class="mono right">889 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Morone americana</em></td>
+          <td>Contig</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_965119265.1/">GCA_965119265.1</a></td>
+          <td class="mono right">689 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Morone chrysops</em></td>
+          <td>Scaffold</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_019097615.1/">GCA_019097615.1</a></td>
+          <td class="mono right">640 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Morone saxatilis</em></td>
+          <td>Scaffold</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004916995.1/">GCF_004916995.1</a></td>
+          <td class="mono right">598 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Myriophyllum spicatum</em></td>
+          <td>Scaffold</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_057662065.1/">GCA_057662065.1</a></td>
+          <td class="mono right">880 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Neogobius melanostomus</em></td>
+          <td>Contig</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_007210695.1/">GCA_007210695.1</a></td>
+          <td class="mono right">1.00 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Pimephales promelas</em></td>
+          <td>Scaffold</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_016745375.1/">GCF_016745375.1</a></td>
+          <td class="mono right">1.07 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Procambarus virginalis</em></td>
+          <td>Scaffold</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_020271785.1/">GCA_020271785.1</a></td>
+          <td class="mono right">3.70 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Pylodictis olivaris</em></td>
+          <td>Scaffold</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_028570965.1/">GCA_028570965.1</a></td>
+          <td class="mono right">1.42 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Radix auricularia</em></td>
+          <td>Scaffold</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002072015.1/">GCA_002072015.1</a></td>
+          <td class="mono right">910 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Salvelinus alpinus oquassa</em></td>
+          <td>Scaffold</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_036784965.1/">GCA_036784965.1</a></td>
+          <td class="mono right">2.13 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Skeletonema potamos</em></td>
+          <td>Scaffold</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_036940105.2/">GCA_036940105.2</a></td>
+          <td class="mono right">34 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Thalassiosira weissflogii</em></td>
+          <td>Scaffold</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_036940025.2/">GCA_036940025.2</a></td>
+          <td class="mono right">130 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Thymallus arcticus</em></td>
+          <td>Scaffold</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_048126525.2/">GCA_048126525.2</a></td>
+          <td class="mono right">1.61 Gb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#1d4ed81a;color:#1d4ed8">B</span></td>
+          <td><em>Tinca tinca</em></td>
+          <td>Contig</td>
+          <td class="mono"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_037022345.1/">GCA_037022345.1</a></td>
+          <td class="mono right">670 Mb</td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#7c3aed1a;color:#7c3aed">C</span></td>
+          <td><em>Anguillicola crassus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right">129</td>
+          <td class="mono right">874</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#7c3aed1a;color:#7c3aed">C</span></td>
+          <td><em>Bangia atropurpurea</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right">1252</td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#7c3aed1a;color:#7c3aed">C</span></td>
+          <td><em>Chaetogaster diaphanus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right">1</td>
+          <td class="mono right">122</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#7c3aed1a;color:#7c3aed">C</span></td>
+          <td><em>Iris pseudacorus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right">1</td>
+          <td class="mono right">135</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#7c3aed1a;color:#7c3aed">C</span></td>
+          <td><em>Lepomis microlophus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right">1</td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#7c3aed1a;color:#7c3aed">C</span></td>
+          <td><em>Lotus corniculatus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right">1</td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#7c3aed1a;color:#7c3aed">C</span></td>
+          <td><em>Marsilea quadrifolia</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right">16</td>
+          <td class="mono right">65</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#7c3aed1a;color:#7c3aed">C</span></td>
+          <td><em>Mentha × piperita</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right">1316</td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#7c3aed1a;color:#7c3aed">C</span></td>
+          <td><em>Myosoton aquaticum</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right">1</td>
+          <td class="mono right">92</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#7c3aed1a;color:#7c3aed">C</span></td>
+          <td><em>Myxobolus cerebralis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right">1</td>
+          <td class="mono right">87</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#7c3aed1a;color:#7c3aed">C</span></td>
+          <td><em>Potamopyrgus antipodarum</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right">2</td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#7c3aed1a;color:#7c3aed">C</span></td>
+          <td><em>Salix alba</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right">10</td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#7c3aed1a;color:#7c3aed">C</span></td>
+          <td><em>Salix fragilis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right">18</td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Ambloplites rupestris</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">166</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Ameiurus catus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">86</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Ameiurus natalis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">179</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Ammocrypta pellucida</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">75</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Aplodinotus grunniens</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">56</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Arundo donax</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">284181</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Bithynia tentaculata</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">76</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Brachionus leydigii</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">8</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Bythotrephes longimanus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">42</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Cabomba caroliniana</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">369</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Caecidotea racovitzai</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">152</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Callinina georgiana</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">266</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Carex disticha</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">15</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Carex flacca</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">67</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Carpiodes carpio</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">394</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Cercopagis pengoi</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">41</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Chroodactylon ornatum</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">83600</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Cirsium palustre</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">67</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Corbicula sp.</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">342</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Cyprinus rubrofuscus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">93</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Dactylogyrus hemiamphibothrium</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">2</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Daphnia longispina</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">1348</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Didymosphenia geminata</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">166</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Elimia livescens</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">5</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Enneacanthus gloriosus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">164</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Etheostoma olmstedi</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">821</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Eubosmina coregoni</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">2018</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Euglesa supina</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">31</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Faxonius obscurus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">15</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Fundulus notatus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">487</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Gianius aquaedulcis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">14</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Glyceria maxima</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">32</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Graptemys pseudogeographica</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">476</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Hemimysis anomala</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">21</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Hydrocharis morsus-ranae</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">68</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Ichthyocotylurus pileatus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">19</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Ictiobus cyprinellus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">122</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Ictiobus niger</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">80</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Juncus gerardii</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">26</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Landoltia punctata</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">91455</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Lepisosteus platostomus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">91</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Lepomis cyanellus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">294</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Leyogonimus polyoon</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">7</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Ligumia recta</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">25</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Lophopodella carteri</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">5</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Lysimachia vulgaris</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">53</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Lythrum salicaria</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">103</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Margariscus nachtriebi</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">4</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Mesocyclops pehpeiensis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">44</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Morone mississippiensis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">39</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Myriophyllum heterophyllum</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">96</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Mysis diluviana</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">40</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Najas marina</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">532</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Neoergasilus japonicus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">61</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Nitellopsis obtusa</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">83</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Nitokra hibernica</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">14</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Notemigonus crysoleucas</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">429</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Notropis buchanani</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">57</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Notropis dorsalis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">42</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Notropis hudsonius</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">141</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Notropis volucellus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">106</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Noturus insignis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">72</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Nymphaea odorata</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">143</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Nymphaea sp.</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">1</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Odhneripisidium moitessierianum</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">12</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Oxybasis glauca</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">223</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Paranais frici</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">27</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Percina shumardi</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">35</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Perrunichthys perruno</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">6</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Persicaria longiseta</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">61</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Phenacobius mirabilis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">32</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Pisidium amnicum</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">52</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Pistia stratiotes</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">278</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Pleurosira laevis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">22</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Poa trivialis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">129</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Pomoxis annularis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">106</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Potamilus alatus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">25</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Puccinellia distans</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">396</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Rumex longifolius</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">19</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Salmo trutta × Salvelinus fontinalis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">2</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Schizopera borutzkyi</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">7</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Scolex pleuronectis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">1</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Skeletonema subsalsum</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">380</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Skistodiaptomus pallidus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">78</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Sonchus arvensis uliginosus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">5</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Stephanodiscus binderanus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">33</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Stratiotes aloides</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">178</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Tanysphyrus lemnae</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">39</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Thalassiosira baltica</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">2</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Thermocyclops crassus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">14</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Utricularia inflata</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">44</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#b453091a;color:#b45309">D</span></td>
+          <td><em>Veronica beccabunga</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right">68</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Acineta nitocrae</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Actinocyclus normanii f. subsalsa</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Agrostis gigantea</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Alosa chrysochloris</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Argulus japonicus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Branchiura sowerbyi</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Butomus umbellatus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Cambarus robustus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Cipangopaludina japonica</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Cipangopaludina sp.</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Conium maculatum</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Conticribra (Thalassiosira) guillardii</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Cordylophora caspia</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Corythionella golemanskyi</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Cottus cognatus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Couesius plumbeus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Cyclops strenuus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Cyprinella analostana</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Cyprinella spiloptera</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Dactylogyrus amphibothrium</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Daphnia galeata galeata</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Daphnia lumholtzi</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Diaphanosoma fluviatile</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Diatoma ehrenbergii</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Discostella woltereckii</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Dorosoma cepedianum</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Dreissena sp.</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Echinogammarus ischnus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Egeria densa</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Elimia virginica</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Epilobium parviflorum</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Esox lucius × masquinongy</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Etheostoma caeruleum</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Etheostoma zonale</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Eubosmina maritima</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Euglesa henslowana</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Faxonius propinquus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Faxonius rusticus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Faxonius virilis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Fundulus diaphanus diaphanus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Gammarus fasciatus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Gammarus tigrinus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Gillia altilis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Glugea hertwigi</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Heteropsyllus nr. nunni</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Heteropsyllus nunni</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Heterosporis sutherlandae</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Hydrilla verticillata peregrina</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Hymenomonas roseola</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Ictiobus bubalus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Juncus compressus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Labidesthes sicculus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Ladislavella catascopium</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Lasmigona subviridis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Lepomis auritus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Lepomis gibbosus × cyanellus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Lepomis gibbosus × macrochirus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Lepomis gulosus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Lepomis humilis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Lepomis megalotis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Leptodea fragilis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Lupinus polyphyllus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Lycopus asper</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Lycopus europaeus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Lysimachia nummularia</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Lysimachia punctata</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Manayunkia speciosa</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Megacyclops viridis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Mentha spicata</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Mentha × gracilis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Morone chrysops × americana</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Morone chrysops × saxatilis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Moxostoma carinatum</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Myosotis scorpioides</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Myriophyllum aquaticum</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Myriophyllum × hybridum</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Najas minor</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Nasturtium microphyllum</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Neascus brevicaudatus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Nitokra incerta</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Nocomis biguttatus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Notropis atherinoides</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Novirhabdovirus sp. genotype IV sublineage b</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Oncorhynchus mykiss whitei</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Phractocephalus hemioliopterus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Phragmites australis australis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Physella sp.</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Piaractus sp.</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Pimephales notatus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Piscirickettsia cf. salmonis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Pleurocera acuta</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Pluchea odorata</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Pomoxis nigromaculatus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Potamothrix bavaricus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Potamothrix bedoti</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Potamothrix moldaviensis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Potamothrix vejdovskyi</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Procambarus acutus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Psammonobiotus communis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Psammonobiotus dziwnowi</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Psammonobiotus linearis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Pseudemys rubriventris</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Pterygoplichthys sp.</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Renibacterium (Corynebacterium) salmoninarum</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Rhinichthys obtusus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Ripistes parasita</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Rorippa sylvestris</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Rumex obtusifolius</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Salix cf. cinerea/atrocinerea</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Salmincola californiensis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Salmincola edwardsii</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Salmincola lotae</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Salmo letnica</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Salmo salar sebago</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Salvelinus fontinalis × namaycush</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Sander canadensis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Sander canadensis × vitreus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Schyzocotyle acheilognathi</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Semotilus corporalis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Solidago sempervirens</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Sonchus arvensis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Sparganium glomeratum</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Sphacelaria fluviatilis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Sphacelaria lacustris</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Sphaeromyxa sevastopoli</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Stagnicola palustris</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Stephanodiscus subtilis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Stylodrilus heringianus</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Thalassiosira bramaputrae</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Timoniella sp.</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Trachemys scripta scripta</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Trypanosoma acerinae</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Typha laxmannii</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Typha × glauca</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Ulva (Enteromorpha) flexuosa subsp. flexuosa and flexuosa subsp. paradoxa</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Ulva (Enteromorpha) intestinalis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Ulva (Enteromorpha) prolifera</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Umbra limi</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Urnatella gracilis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge" style="background:#be123c1a;color:#be123c">E</span></td>
+          <td><em>Valvata piscinalis</em></td>
+          <td></td>
+          <td class="mono"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+          <td class="mono right"></td>
+        </tr>
+        
+  </tbody>
+</table>
+
+<footer>
+  Built by <a href="https://github.com/rec3141/danaSeq/blob/main/docs/glansis_inventory.py">glansis_inventory.py</a>
+  &middot; methodology described in the
+  <a href="glansis-ncbi-panel-proposal.html">GLANSIS &rarr; NCBI panel proposal</a>.
+</footer>
+
+<script>
+  function filterRows(e) {
+    const q = e.target.value.toLowerCase();
+    const rows = document.querySelectorAll('#rows tr');
+    for (const r of rows) {
+      r.style.display = r.textContent.toLowerCase().includes(q) ? '' : 'none';
+    }
+  }
+</script>
+
+</body></html>

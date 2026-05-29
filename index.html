@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AISGDB — Aquatic Invasive Species Genomic Database</title>
+<style>
+  :root { --fg:#1f2937; --muted:#475569; --accent:#047857; --rule:#e2e8f0; }
+  html { color-scheme: light; }
+  body {
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+    color: var(--fg); max-width: 44rem; margin: 3rem auto; padding: 0 1.25rem 4rem;
+  }
+  h1 { font-size: 1.75rem; margin-bottom: 0.25rem; letter-spacing: -0.01em; }
+  .subtitle { color: var(--muted); font-size: 0.95rem; font-style: italic; margin-bottom: 2rem; }
+  h2 { margin-top: 2.5rem; font-size: 1.15rem; color: var(--accent); border-bottom: 1px solid var(--rule); padding-bottom: 0.35rem; }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+  a:hover { border-bottom-color: var(--accent); }
+  .card-list { display: grid; gap: 1rem; margin: 1rem 0 0; padding: 0; list-style: none; }
+  .card {
+    border: 1px solid var(--rule); border-radius: 8px; padding: 1rem 1.25rem;
+    background: #fcfcfd;
+  }
+  .card h3 { font-size: 1rem; margin: 0 0 0.25rem; }
+  .card p  { margin: 0.35rem 0 0; color: var(--muted); font-size: 0.9rem; }
+  .meta { font-size: 0.8rem; color: var(--muted); margin-top: 0.5rem; }
+  code { font-family: "JetBrains Mono", ui-monospace, monospace; background: #f1f5f9; padding: 0.1em 0.35em; border-radius: 4px; font-size: 0.85em; }
+  footer { margin-top: 3rem; color: var(--muted); font-size: 0.8rem; border-top: 1px solid var(--rule); padding-top: 1rem; }
+</style>
+</head>
+<body>
+
+<h1>AISGDB</h1>
+<div class="subtitle">A working space for the <strong>Aquatic Invasive Species Genomic Database</strong> — a curated WGS reference panel for shotgun-metagenomic AIS surveillance.</div>
+
+<h2>What this is</h2>
+<p>
+Surveillance of aquatic invasive species using shotgun metagenomics — rather than PCR-based metabarcoding — is bottlenecked by the lack of a curated, versioned panel of reference genomes for the species managers actually need to detect. AISGDB is a working space for building that panel: methodology, inventory, and pipeline integration in one place.
+</p>
+<p>
+Companion pipeline: <a href="https://github.com/rec3141/danaSeq">danaSeq</a>'s <code>nanopore_live</code>, whose <code>--mapping_refs</code> module consumes any reference directory conforming to the AISGDB schema.
+</p>
+
+<h2>Documents</h2>
+<ul class="card-list">
+
+  <li class="card">
+    <h3><a href="ais-shotgun-metagenomics-landscape.html">Shotgun metagenomics for AIS surveillance — landscape snapshot</a></h3>
+    <p>Where the published literature stands on shotgun metagenomic detection of AIS, with a per-paper synopsis of the references that matter and a candid assessment of why no operational panel exists today.</p>
+    <div class="meta">Reference doc · updated 2026-05-29</div>
+  </li>
+
+  <li class="card">
+    <h3><a href="glansis-ncbi-panel-proposal.html">GLANSIS → NCBI panel: pilot proposal</a></h3>
+    <p>Funder-facing proposal to construct, validate, and publicly release a curated whole-genome reference panel keyed to the NOAA GLANSIS watchlist. Four aims, twelve months, deferred budget/PI/program fields. <a href="glansis-ncbi-panel-proposal.tex">LaTeX source</a> ships alongside the HTML.</p>
+    <div class="meta">Proposal draft · placeholders for funder-specific fields</div>
+  </li>
+
+  <li class="card">
+    <h3><a href="glansis_inventory.html">GLANSIS species → NCBI assembly inventory (first pass)</a></h3>
+    <p>Live inventory of all 370 GLANSIS species against the NCBI Datasets API, tiered as <em>chromosome-scale WGS</em> / <em>draft WGS</em> / <em>markers only</em> / <em>nothing</em>. Filterable table; underlying script + machine-readable outputs (<a href="glansis_inventory.tsv">TSV</a>, <a href="glansis_inventory.json">JSON</a>) ship in the repo.</p>
+    <div class="meta">95 chromosome-scale (26%) · 30 draft (8%) · 13 transcriptome/EST (4%) · 92 marker-only (25%) · 140 absent (38%)</div>
+  </li>
+
+</ul>
+
+<h2>Reproducing the inventory</h2>
+<p>The inventory script is fully reproducible and re-runnable as new assemblies land:</p>
+<pre style="background:#f1f5f9;padding:0.75rem 1rem;border-radius:4px;overflow-x:auto;font-size:0.85em"><code># pull the GLANSIS Darwin Core archive
+curl -sS -L -o /tmp/glansis.zip "https://nas.er.usgs.gov/ipt/archive.do?r=nas_glansis"
+mkdir -p /tmp/glansis &amp;&amp; cd /tmp/glansis &amp;&amp; unzip -o /tmp/glansis.zip
+
+# re-query NCBI (cache + retry-safe)
+python3 glansis_inventory.py --occurrence /tmp/glansis/occurrence.txt</code></pre>
+
+<footer>
+Repo: <a href="https://github.com/rec3141/AISGDB">github.com/rec3141/AISGDB</a> ·
+Pipeline: <a href="https://github.com/rec3141/danaSeq">github.com/rec3141/danaSeq</a> ·
+Live SPA: <a href="https://microscape.app/complete/">microscape.app/complete/</a> (AIS tab)
+</footer>
+
+</body>
+</html>

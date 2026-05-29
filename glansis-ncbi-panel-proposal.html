@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A curated WGS reference panel for shotgun-metagenomic AIS surveillance — proposal</title>
+<style>
+  :root {
+    --fg: #1f2937;
+    --muted: #475569;
+    --accent: #1e40af;
+    --rule: #e2e8f0;
+    --code-bg: #f1f5f9;
+  }
+  html { color-scheme: light; }
+  body {
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+    color: var(--fg);
+    max-width: 46rem;
+    margin: 3rem auto;
+    padding: 0 1.25rem 6rem;
+    background: #fff;
+  }
+  .title-block { border-bottom: 2px solid var(--accent); padding-bottom: 1rem; margin-bottom: 1.5rem; }
+  h1, h2, h3, h4 { font-weight: 600; line-height: 1.25; letter-spacing: -0.01em; }
+  h1 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+  h2 { margin-top: 2.25rem; font-size: 1.15rem; color: var(--accent); }
+  h3 { margin-top: 1.5rem; font-size: 1rem; }
+  h4 { margin-top: 1rem; font-size: 0.95rem; color: var(--muted); }
+  .subtitle { color: var(--muted); font-size: 0.95rem; font-style: italic; }
+  .placeholder { color: var(--muted); font-style: italic; }
+  .meta-block { color: var(--muted); font-size: 0.85rem; margin-top: 0.75rem; }
+  .meta-block strong { color: var(--fg); font-style: normal; font-weight: 500; }
+  p { margin: 0.75rem 0; }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+  a:hover { border-bottom-color: var(--accent); }
+  ul, ol { padding-left: 1.25rem; }
+  li { margin: 0.4rem 0; }
+  code, pre {
+    font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.85em;
+    background: var(--code-bg);
+    border-radius: 4px;
+  }
+  code { padding: 0.1em 0.35em; }
+  pre { padding: 0.75rem 1rem; overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+  th, td { text-align: left; padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 600; color: var(--accent); }
+  .aim { background: #f8fafc; border-left: 3px solid var(--accent); padding: 0.6rem 1rem; margin: 1rem 0; border-radius: 4px; }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+</style>
+</head>
+<body>
+
+<div class="title-block">
+  <h1>A curated whole-genome reference panel for shotgun-metagenomic aquatic invasive species surveillance in the Laurentian Great Lakes &amp; Lake Winnipeg basin</h1>
+  <div class="subtitle">A pilot proposal to bridge the gap between published reference genomes and operational AIS detection.</div>
+  <div class="meta-block">
+    <div><strong>Principal investigator:</strong> <span class="placeholder">[PI NAME], [INSTITUTION]</span></div>
+    <div><strong>Co-investigators:</strong> <span class="placeholder">[CO-I NAMES]</span></div>
+    <div><strong>Submission target:</strong> <span class="placeholder">[FUNDER / PROGRAM]</span></div>
+    <div><strong>Duration:</strong> <span class="placeholder">[X] months</span></div>
+    <div><strong>Total requested:</strong> <span class="placeholder">[$X]</span></div>
+    <div><strong>Date:</strong> 2026-05-29</div>
+  </div>
+</div>
+
+<h2>Summary</h2>
+
+<p>Aquatic invasive species (AIS) cause billions of dollars in damage annually to North American freshwater ecosystems and the economies that depend on them. Existing DNA-based surveillance relies almost exclusively on PCR-amplified marker assays (qPCR or amplicon metabarcoding), which constrain detection to a small predefined target list and depend on primer compatibility. Shotgun metagenomic sequencing — sequencing all DNA in a water sample without amplification — would let a single library serve any reference-genome–bearing taxon, but is not currently used operationally for AIS detection. The blocker is not the sequencing chemistry; the blocker is that <strong>no curated panel of whole-genome reference assemblies exists for the species AIS managers actually need to detect.</strong></p>
+
+<p>We propose to construct, validate, and publicly release this missing panel. We will (1) systematically pair the NOAA <a href="https://www.glerl.noaa.gov/glansis/">GLANSIS</a> watchlist and species inventory against the NCBI Datasets API to enumerate which AIS have published whole-genome assemblies; (2) integrate those assemblies into an existing real-time nanopore pipeline (<a href="https://github.com/rec3141/danaSeq">danaSeq</a>, already deployed at <a href="https://microscape.app/">microscape.app</a>) as a versioned, reproducible reference set; (3) demonstrate operational detection by reprocessing <span class="placeholder">[N]</span> existing nanopore metagenomic libraries from <span class="placeholder">[STUDY REGION]</span>; and (4) publish the panel, the inventory methodology, and a recommendations document for the AIS taxa whose reference-genome gaps most urgently need closing.</p>
+
+<h2>1. Background</h2>
+
+<h3>1.1 Current state of DNA-based AIS surveillance</h3>
+
+<p>DNA-based monitoring of aquatic invasive species has matured rapidly over the past decade. Resource managers now routinely deploy:</p>
+
+<ul>
+  <li><strong>Species-specific qPCR assays</strong> for high-priority targets (zebra/quagga mussels, bigheaded carps, sea lamprey). Sensitive but each target requires a separately developed and validated assay.</li>
+  <li><strong>Multi-species metabarcoding</strong> of taxonomically informative loci (12S MiFish for fish, COI for invertebrates, 18S for protists, ITS for fungi/plants). Broader but limited by primer compatibility and reference-marker completeness.</li>
+  <li><strong>Curated taxonomic watchlists</strong> — most notably the NOAA <a href="https://www.glerl.noaa.gov/glansis/">Great Lakes Aquatic Nonindigenous Species Information System</a> (GLANSIS), the USGS <a href="https://nas.er.usgs.gov/">Nonindigenous Aquatic Species</a> national database, and state-level DNR watchlists. These define <em>which species to monitor</em>; they do not provide genomic resources for doing so.</li>
+</ul>
+
+<p>What is conspicuously missing from this stack is a curated, versioned, <em>genome-level</em> reference resource matched to the species watchlists.</p>
+
+<h3>1.2 The case for shotgun metagenomics</h3>
+
+<p>Shotgun sequencing of environmental DNA samples — sequencing total DNA without PCR — has three advantages over amplicon-based approaches for AIS detection:</p>
+
+<ol>
+  <li><strong>No primer bias.</strong> Detection sensitivity is determined by sequencing depth and reference availability, not by primer fit. A single library can be re-queried for new species without re-sequencing as the reference panel grows.</li>
+  <li><strong>Per-position alignment evidence.</strong> Each read carries CIGAR, mapq, and identity information. Hits that cluster on one repetitive element are visually distinguishable from hits spread uniformly across a target genome — a discrimination amplicon counts cannot provide.</li>
+  <li><strong>Single library, many taxa.</strong> Fish, mussels, crustaceans, plants, pathogens, and the background microbiome are all sequenced together. Cost per detected taxon falls as the reference panel grows.</li>
+</ol>
+
+<p>The recently published call by McCartney et al. (Frontiers in Environmental Science, 2023) — <a href="https://www.frontiersin.org/journals/environmental-science/articles/10.3389/fenvs.2023.1258880/full">"Time to invest in the worst"</a> — argues for closing the reference-genome gap specifically to enable this kind of shotgun-based monitoring. The authors report that <strong>approximately 55% of the IUCN "100 worst invasive species" lack a reference genome</strong>. The gap is the reason a panel-based shotgun pipeline does not exist; closing it is a tractable next step.</p>
+
+<h3>1.3 What is missing today</h3>
+
+<ol>
+  <li>A reproducible mapping between the species AIS managers care about (GLANSIS watchlists, state lists) and the genomic resources available for each (chromosome-scale assembly, scaffold-level draft, marker-only, nothing).</li>
+  <li>A curated, versioned reference panel deployable in a standard bioinformatics pipeline.</li>
+  <li>An operational pipeline that consumes that panel, runs at sample turnaround speeds compatible with field decision-making, and surfaces per-sample evidence (identity histograms, genome-position distributions) usable by non-bioinformaticians.</li>
+  <li>A documented audit of which AIS most urgently need a reference assembly — feeding back into sequencing prioritisation by groups like the Earth BioGenome Project and Darwin Tree of Life.</li>
+</ol>
+
+<h2>2. Approach</h2>
+
+<div class="aim"><strong>Aim 1.</strong> Inventory the GLANSIS / regional watchlist species against NCBI to classify each as chromosome-scale WGS, fragmented draft, marker-pool, or no-data.</div>
+
+<p>The GLANSIS database exposes its species list via the USGS <a href="https://nas.er.usgs.gov/ipt/resource?r=nas_glansis">IPT Darwin Core archive</a> and via a web-based list generator. We will pull the canonical species list, normalise taxonomy (resolving synonyms via NCBI Taxonomy), and query the NCBI Datasets API per taxon. Each species is then assigned a tier:</p>
+
+<table>
+  <thead><tr><th>Tier</th><th>Definition</th><th>Action for the panel</th></tr></thead>
+  <tbody>
+    <tr><td>A</td><td>Chromosome-scale RefSeq or GenBank reference assembly</td><td>Include directly.</td></tr>
+    <tr><td>B</td><td>Scaffold- or contig-level draft assembly</td><td>Include with sensitivity caveats in <code>meta.json</code>.</td></tr>
+    <tr><td>C</td><td>Marker / mitochondrion-only GenBank records (COI, 18S, ITS, mtDNA)</td><td>Build a multifasta marker pool; flag as "marker reference" in the SPA.</td></tr>
+    <tr><td>D</td><td>No usable public sequence</td><td>Flag in the gaps report (see Aim 4). Not in the panel.</td></tr>
+  </tbody>
+</table>
+
+<p>The inventory will be published as an open TSV alongside the panel itself, re-runnable at any time as new assemblies are published.</p>
+
+<div class="aim"><strong>Aim 2.</strong> Build, version, and publicly release the panel as a directory of references conforming to a documented schema.</div>
+
+<p>Each reference subdirectory will contain a minimap2 ONT-preset index, a contig offset map (for downstream genome-position visualisation), the source FASTA, and a JSON <code>meta.json</code> file with taxonomic, accession, and provenance information. The directory becomes a single artifact that any downstream pipeline can ingest. We will version the panel by GLANSIS snapshot date and by panel-build date, allowing reproducible re-runs against historical states.</p>
+
+<div class="aim"><strong>Aim 3.</strong> Demonstrate operational detection at scale using the existing danaSeq nanopore pipeline.</div>
+
+<p>The <code>nanopore_live</code> pipeline already implements a generic <code>--mapping_refs</code> module (<a href="https://github.com/rec3141/danaSeq">github.com/rec3141/danaSeq</a>, commit <code>c5c74e7</code>, May 2026), which consumes any compatible reference directory and writes per-barcode alignment results into a DuckDB <code>mapping</code> table. A dashboard (currently deployed at <a href="https://microscape.app/complete/">microscape.app/complete/</a>) surfaces per-sample hit counts, identity histograms, and genome-position distributions with a live identity-threshold slider.</p>
+
+<p>We will reprocess <span class="placeholder">[N]</span> existing nanopore metagenomic libraries from <span class="placeholder">[STUDY REGION]</span> against the full panel and characterise:</p>
+
+<ul>
+  <li>Per-species detection rates and false-positive sources (sister-taxon cross-mapping, repetitive-element artifacts).</li>
+  <li>Identity-cutoff calibration per species — particularly for sister-taxon pairs (e.g. zebra/quagga, sea/silver lamprey, silver/bighead carp) where moderate cutoffs are ambiguous.</li>
+  <li>Comparison against ground-truth: existing qPCR-positive samples and metabarcoding co-detection where available.</li>
+</ul>
+
+<div class="aim"><strong>Aim 4.</strong> Publish a "reference-genome gaps" recommendations document for AIS sequencing prioritisation.</div>
+
+<p>The Tier-D species from Aim 1 — the AIS taxa for which no usable reference exists — are not a panel problem but a policy problem. We will compile a recommendations document ranking these species by management priority (GLANSIS impact scores, regional jurisdiction), invasion-front proximity, and phylogenetic isolation (where related-taxon references are unlikely to substitute). The document is intended for distribution to the Earth BioGenome Project, Darwin Tree of Life, and equivalent regional efforts (Canadian BioGenome Project).</p>
+
+<h2>3. Preliminary results</h2>
+
+<p>A pilot implementation of Aims 2 and 3 has been completed under unfunded development. We have:</p>
+
+<ul>
+  <li>Built the <code>--mapping_refs</code> module in <code>nanopore_live</code> (committed and pushed to <a href="https://github.com/rec3141/danaSeq">github.com/rec3141/danaSeq</a>).</li>
+  <li>Constructed and deployed a five-species panel (<em>Dreissena polymorpha</em>, <em>D. rostriformis bugensis</em>, <em>Petromyzon marinus</em>, plus a CDS-only zebra reference for comparison and a marker-pool reference for spiny water flea).</li>
+  <li>Reprocessed <span class="placeholder">[~700]</span> nanopore-sequenced metagenomic libraries against the panel, with results live at <a href="https://microscape.app/complete/">microscape.app/complete/</a> (AIS tab).</li>
+  <li>Documented the protocol for adding new references at <a href="https://github.com/rec3141/danaSeq/blob/main/docs/mapping-references.md">docs/mapping-references.md</a>.</li>
+</ul>
+
+<p>Initial findings confirm the literature: sister-taxon cross-mapping is the dominant false-positive source (zebra and quagga share substantial signal below 95% identity), repetitive-element artifacts are visually identifiable on genome-position histograms, and a single identity threshold across all species under-performs species-specific calibration. These observations are the empirical basis for Aim 3's cutoff-calibration work.</p>
+
+<h2>4. Deliverables &amp; timeline</h2>
+
+<table>
+  <thead><tr><th>Month</th><th>Deliverable</th></tr></thead>
+  <tbody>
+    <tr><td>1–2</td><td>Inventory pipeline (GLANSIS → NCBI Datasets → tiered classification). Open TSV + reproducible script.</td></tr>
+    <tr><td>3–6</td><td>Tier-A/B panel build for GLANSIS species with assemblies. Public release on Zenodo and GitHub.</td></tr>
+    <tr><td>5–9</td><td>Reprocessing of <span class="placeholder">[N]</span> existing libraries; per-species detection benchmarking; cutoff calibration.</td></tr>
+    <tr><td>9–11</td><td>Tier-D gaps report. Manuscript drafting.</td></tr>
+    <tr><td>12</td><td>Manuscript submission; final panel release.</td></tr>
+  </tbody>
+</table>
+
+<h2>5. Broader impacts</h2>
+
+<ul>
+  <li><strong>Resource managers</strong> gain a deployable shotgun-metagenomic surveillance option that does not lock them into a fixed marker panel.</li>
+  <li><strong>The genome-sequencing community</strong> gains a prioritised list of AIS most urgently in need of reference assemblies.</li>
+  <li><strong>Sequencing facilities</strong> running nanopore eDNA workflows gain a versioned, reproducible reference panel to drop into their existing pipelines.</li>
+  <li><strong>Subsequent geographies</strong> (Pacific Northwest, Atlantic coast, polar invasions) gain a documented template for building region-specific panels from their own watchlists.</li>
+</ul>
+
+<h2>6. Budget summary</h2>
+
+<p class="placeholder">[Budget narrative — personnel (X months bioinformatician, Y months data manager, Z student months), sequencing reagents for validation runs, cloud compute / storage, publication open-access fees, travel for one stakeholder workshop.]</p>
+
+<h2>References</h2>
+
+<ol>
+  <li>McCartney M. et al. (2023). Time to invest in the worst: a call for full genome sequencing of the 100 worst invasive species. <em>Front Environ Sci</em>. <a href="https://www.frontiersin.org/journals/environmental-science/articles/10.3389/fenvs.2023.1258880/full">link</a></li>
+  <li>Rossi G. et al. (2022). Genomic data is missing for many highly invasive species, restricting our preparedness for escalating incursion rates. <em>Mol Ecol Resour</em>. <a href="https://ncbi.nlm.nih.gov/pmc/articles/PMC9385848">link</a></li>
+  <li>Buchner D. et al. (2022). Shotgun metagenomics of soil invertebrate communities reflects taxonomy, biomass, and reference genome properties. <em>Nat Comms</em>. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9170594/">link</a></li>
+  <li>Urban L. et al. (2021). Freshwater monitoring by nanopore sequencing. <em>eLife</em>. <a href="https://elifesciences.org/articles/61504">link</a></li>
+  <li>Spens J. et al. (2020). Speeding up the detection of invasive aquatic species using environmental DNA and nanopore sequencing. <em>bioRxiv</em>. <a href="https://www.biorxiv.org/content/10.1101/2020.06.09.142521.full.pdf">link</a></li>
+  <li>NOAA GLERL. Great Lakes Aquatic Nonindigenous Species Information System (GLANSIS). <a href="https://www.glerl.noaa.gov/glansis/">glerl.noaa.gov/glansis</a></li>
+  <li>IUCN/ISSG. 100 of the World's Worst Invasive Alien Species. <a href="https://www.iucngisd.org/gisd/100_worst.php">iucngisd.org/gisd/100_worst.php</a></li>
+</ol>
+
+</body>
+</html>

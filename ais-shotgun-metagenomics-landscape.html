@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shotgun metagenomics for AIS surveillance — a 2026 landscape snapshot</title>
+<style>
+  :root {
+    --fg: #1f2937;
+    --muted: #475569;
+    --accent: #047857;
+    --rule: #e2e8f0;
+    --code-bg: #f1f5f9;
+  }
+  html { color-scheme: light; }
+  body {
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+    color: var(--fg);
+    max-width: 44rem;
+    margin: 3rem auto;
+    padding: 0 1.25rem 6rem;
+    background: #fff;
+  }
+  h1, h2, h3 { font-weight: 600; line-height: 1.25; letter-spacing: -0.01em; }
+  h1 { font-size: 1.75rem; margin-bottom: 0.25rem; }
+  h2 { margin-top: 2.5rem; font-size: 1.25rem; color: var(--accent); border-bottom: 1px solid var(--rule); padding-bottom: 0.35rem; }
+  h3 { margin-top: 1.5rem; font-size: 1rem; }
+  .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+  .meta a { color: var(--muted); }
+  p { margin: 0.75rem 0; }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+  a:hover { border-bottom-color: var(--accent); }
+  ul, ol { padding-left: 1.25rem; }
+  li { margin: 0.4rem 0; }
+  blockquote {
+    border-left: 3px solid var(--rule);
+    margin: 1rem 0;
+    padding: 0.25rem 0 0.25rem 1rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+  code, pre {
+    font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.85em;
+    background: var(--code-bg);
+    border-radius: 4px;
+  }
+  code { padding: 0.1em 0.35em; }
+  pre { padding: 0.75rem 1rem; overflow-x: auto; }
+  pre code { background: none; padding: 0; }
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+  th, td { text-align: left; padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--rule); }
+  th { font-weight: 600; color: var(--accent); }
+  .tag { display: inline-block; font-size: 0.75rem; padding: 0.1em 0.5em; border-radius: 9999px; background: var(--code-bg); color: var(--muted); margin-left: 0.4em; vertical-align: middle; }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+  .footnote { font-size: 0.85rem; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<h1>Shotgun metagenomics for AIS surveillance — a 2026 landscape snapshot</h1>
+<div class="meta">Reference document · last updated 2026-05-29 · companion to the danaSeq pipeline's <code>mapping_refs</code> module</div>
+
+<p>This page summarises where the published literature stands on using <em>shotgun</em> metagenomic sequencing — as distinct from PCR-based metabarcoding — to surveil aquatic invasive species (AIS). It exists because we keep being asked "is there a standard reference panel for this?" and the honest answer requires some unpacking.</p>
+
+<h2>The short answer</h2>
+
+<p><strong>There is no off-the-shelf shotgun-metagenomic AIS reference panel in published use.</strong> The dominant DNA-based surveillance approach is amplicon-based: COI, 12S MiFish, 16S rRNA, or species-specific qPCR assays, typically read on Illumina or — increasingly — Nanopore. Shotgun approaches are emerging but remain a research method, not an operational one, for invasive-species early detection.</p>
+
+<p>What the operational programs distribute today:</p>
+<ul>
+  <li><strong>Curated taxonomic species lists</strong> (e.g. NOAA's <a href="https://www.glerl.noaa.gov/glansis/">GLANSIS</a> for the Laurentian Great Lakes, USGS <a href="https://nas.er.usgs.gov/">NAS</a> nationally, state DNR watchlists). These are species-level inventories and watchlists, not genomic resources.</li>
+  <li><strong>qPCR / amplicon marker assays</strong> for high-priority targets (zebra/quagga, bigheaded carps, round goby, etc.).</li>
+  <li><strong>Genome assemblies in NCBI/ENA</strong> for individual species — never curated as a "panel".</li>
+</ul>
+
+<p>What we are building under <code>nanopore_live/--mapping_refs</code> sits somewhere between (1) and (3) — a user-assembled panel of WGS references, used to map shotgun nanopore reads against species-by-species and stored per-barcode in a <code>mapping</code> DuckDB table. The concept exists in the literature; the operational pipeline does not.</p>
+
+<h2>Why shotgun metagenomics is rare for AIS, and changing</h2>
+
+<p>Metabarcoding has dominated because:</p>
+<ul>
+  <li>Amplicons concentrate the signal — a target read after PCR is far more likely to be the species you care about than a random shotgun read.</li>
+  <li>Marker references (BOLD, MIDORI, MitoFish) are vastly more complete than whole-genome references for invertebrates.</li>
+  <li>Cost per sample is much lower for amplicons than for shotgun at any useful depth.</li>
+</ul>
+
+<p>The arguments for moving toward shotgun:</p>
+<ul>
+  <li><strong>No primer bias.</strong> Whatever DNA you can sequence, you can in principle classify.</li>
+  <li><strong>Single library serves many taxa</strong> — invertebrates, vertebrates, microbes — without separate primer panels.</li>
+  <li><strong>Per-position alignment evidence</strong>: position-of-hit distributions, identity histograms, and CIGAR-level data let you distinguish clean signal from cross-mapping or repetitive artifacts in ways amplicons cannot.</li>
+  <li><strong>Nanopore long reads</strong> reduce ambiguity at the species level by spanning multiple polymorphic regions per read.</li>
+</ul>
+
+<p>The current blockers are (1) reference-genome coverage and (2) the absence of curated panels — exactly the gap the recent literature is starting to name.</p>
+
+<h2>Key references (chronological)</h2>
+
+<h3>Spens et al., bioRxiv 2020 <span class="tag">amplicon / nanopore</span></h3>
+<p><a href="https://www.biorxiv.org/content/10.1101/2020.06.09.142521.full.pdf">Speeding up the detection of invasive aquatic species using environmental DNA and nanopore sequencing.</a> The most-cited "nanopore + AIS" paper to date. Uses 12S MiFish amplicons; nanopore is the read-out platform. Demonstrates rapid in-field detection but does not depart from the metabarcoding paradigm.</p>
+
+<h3>Urban et al., eLife 2021 <span class="tag">shotgun / nanopore</span></h3>
+<p><a href="https://elifesciences.org/articles/61504">Freshwater monitoring by nanopore sequencing.</a> Shotgun-style nanopore metagenomics applied to river water; identifies microbial and eukaryotic taxa from raw reads. Closer to what we are doing, but the framing is "biodiversity / pollution monitoring", not "AIS surveillance".</p>
+
+<h3>Rossi et al., Mol Ecol Resour 2022 <span class="tag">methodology</span></h3>
+<p><a href="https://ncbi.nlm.nih.gov/pmc/articles/PMC9385848">Genomic data is missing for many highly invasive species, restricting our preparedness for escalating incursion rates.</a> Audits genomic resources for known-invasive taxa. Reports that population-genetic data exists for ~82% of high-impact invasives but population-genomic data only for ~32%; reference genomes are unavailable for a large fraction. Methodologically useful: supplementary tables function as a per-species inventory of what is sequenceable today.</p>
+
+<h3>Buchner et al., Nat Comms 2022 <span class="tag">shotgun / reference design</span></h3>
+<p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9170594/">Shotgun metagenomics of soil invertebrate communities reflects taxonomy, biomass, and reference genome properties.</a> Closest methodological analog to AIS shotgun panels. Uses ~270 invertebrate genomes as a reference database and characterises systematic biases: <em>larger genomes and more contiguous assemblies attract disproportionately more reads at the same true biomass</em>. Important caveat for any panel that mixes chromosome-scale and fragmented references.</p>
+
+<h3>McCartney et al., Front Environ Sci 2023 <span class="tag">policy</span></h3>
+<p><a href="https://www.frontiersin.org/journals/environmental-science/articles/10.3389/fenvs.2023.1258880/full">Time to invest in the worst: a call for full genome sequencing of the 100 worst invasive species.</a> Explicit call to close the reference-genome gap for the IUCN "100 worst" list, of which (as of writing) <strong>~55% lack a reference genome</strong>. Frames panel-building as policy infrastructure, not just a research output.</p>
+
+<h3>Various, 2024–2026 <span class="tag">surveys</span></h3>
+<p>The recent reviews — <a href="https://academic.oup.com/nargab/article/8/2/lqag040/8661631">Carøe et al. (NAR Genom Bioinform 2024)</a>, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12480646/">the 2025 multi-species eDNA screening review</a>, and the <a href="https://www.sciencedirect.com/science/article/pii/S2772735125000666">2025 nanopore-vs-Illumina AIS-tracking comparison</a> — consistently treat shotgun metagenomics as an emerging but not standard approach. None describe a published, named AIS shotgun panel.</p>
+
+<h2>The reference-genome gap</h2>
+
+<p>Empirically, when we tried to assemble a Lake Winnipeg–relevant panel by walking down the AIS list and querying NCBI Datasets:</p>
+
+<table>
+  <thead><tr><th>Species</th><th>Common name</th><th>WGS status</th></tr></thead>
+  <tbody>
+    <tr><td><em>Dreissena polymorpha</em></td><td>Zebra mussel</td><td>Chromosome-scale RefSeq (GCF_020536995.1)</td></tr>
+    <tr><td><em>Dreissena rostriformis bugensis</em></td><td>Quagga mussel</td><td>Chromosome-scale (GCA_055670145.1)</td></tr>
+    <tr><td><em>Petromyzon marinus</em></td><td>Sea lamprey</td><td>Chromosome-scale RefSeq (GCF_048934315.1)</td></tr>
+    <tr><td><em>Hypophthalmichthys molitrix</em></td><td>Silver carp</td><td>Chromosome-scale (GCA_037950675.1)</td></tr>
+    <tr><td><em>H. nobilis</em></td><td>Bighead carp</td><td>Chromosome-scale (GCA_037950665.1)</td></tr>
+    <tr><td><em>Ctenopharyngodon idella</em></td><td>Grass carp</td><td>Chromosome-scale RefSeq (GCF_019924925.1)</td></tr>
+    <tr><td><em>Mylopharyngodon piceus</em></td><td>Black carp</td><td>Chromosome-scale (GCA_049864055.1)</td></tr>
+    <tr><td><em>Bythotrephes</em> spp.</td><td>Spiny water flea</td><td>None — only ~117 GenBank marker records (COI/18S)</td></tr>
+    <tr><td><em>Faxonius rusticus</em></td><td>Rusty crayfish</td><td>None published</td></tr>
+  </tbody>
+</table>
+
+<p>That ratio — chromosome-scale for charismatic vertebrates and the dreissenid mussels, marker-pool or nothing for most invertebrates — is exactly the pattern Rossi et al. (2022) and McCartney et al. (2023) document at scale. It directly constrains which species can be detected by shotgun mapping at all.</p>
+
+<h2>Implementation considerations for a shotgun-metagenomic AIS pipeline</h2>
+
+<ol>
+  <li><strong>Reference-genome biases are real.</strong> Buchner et al. show that read assignment is biased by genome size and assembly contiguity. A panel mixing a 140 Mb CDS-only reference with a 1.8 Gb chromosome-scale assembly will report wildly different hit counts at the same true biomass. Standardising to whole-genome assemblies of comparable contiguity, where available, is worth the rebuild.</li>
+  <li><strong>Close relatives cross-map.</strong> Sister species (zebra ↔ quagga; silver ↔ bighead carp; sea ↔ silver lamprey) will share reads at moderate identity. Per-sample identity histograms and a tunable HQ-identity cutoff (e.g. shifting from 90% to 96–98% for sister-taxon cases) are essential UI tools; baking a single cutoff into the data is a mistake.</li>
+  <li><strong>Position-of-hit distributions disambiguate signal.</strong> A read pile-up clustered to one repetitive locus is an artifact; uniform spread across the genome is consistent with real coverage. Per-sample linear-genome histograms make this visually obvious and add discriminative power that amplicons cannot offer.</li>
+  <li><strong>Marker-only "references" are still useful.</strong> For taxa with no WGS assembly (water flea, crayfish, many bryozoans/mollusks), a multifasta of the available GenBank marker records (COI / 18S / mitochondrion) gives a usable but lower-sensitivity reference. Label it as such in the pipeline so downstream users do not over-interpret hit counts.</li>
+  <li><strong>Per-position evidence belongs in the database.</strong> Storing <code>(reference, qname, rname, pos, mapq, identity_pct, cigar, aligned_len)</code> rows in DuckDB — rather than pre-summarising to counts — preserves the ability to re-derive thresholds and visualise alignment quality after the fact.</li>
+</ol>
+
+<h2>Where danaSeq fits</h2>
+
+<p>The <code>nanopore_live</code> pipeline's <code>--mapping_refs</code> module (added 2026-05-28) implements the design above:</p>
+
+<ul>
+  <li>Directory of reference subdirs, each holding <code>&lt;name&gt;.idx</code> + <code>&lt;name&gt;.contigs.json</code> + <code>meta.json</code>.</li>
+  <li>Per-barcode minimap2 alignment, filtered to mapq ≥ 1 and aligned length ≥ 10 bp, streamed into a <code>mapping</code> DuckDB table keyed on reference name.</li>
+  <li>SPA (the AIS view at <code>/ais</code> on each lab's deployed dashboard) provides per-species cycling, a live HQ-identity slider, per-sample identity and genome-position histograms, and a dynamic-range exponent for marker sizing.</li>
+</ul>
+
+<p>The implementation is documented in detail in <a href="https://rec3141.github.io/danaSeq/mapping-references/">docs/mapping-references.md</a> in the danaSeq repository.</p>
+
+<hr>
+
+<p class="footnote">References cited above. Where available, links go to the open-access PMC version.</p>
+
+<ul class="footnote">
+  <li>Spens J. et al., <em>bioRxiv</em> 2020 — <a href="https://www.biorxiv.org/content/10.1101/2020.06.09.142521.full.pdf">Speeding up the detection of invasive aquatic species using environmental DNA and nanopore sequencing</a>.</li>
+  <li>Urban L. et al., <em>eLife</em> 2021 — <a href="https://elifesciences.org/articles/61504">Freshwater monitoring by nanopore sequencing</a>.</li>
+  <li>Rossi G. et al., <em>Mol Ecol Resour</em> 2022 — <a href="https://ncbi.nlm.nih.gov/pmc/articles/PMC9385848">Genomic data is missing for many highly invasive species</a>.</li>
+  <li>Buchner D. et al., <em>Nat Comms</em> 2022 — <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9170594/">Shotgun metagenomics of soil invertebrate communities reflects taxonomy, biomass, and reference genome properties</a>.</li>
+  <li>McCartney M. et al., <em>Front Environ Sci</em> 2023 — <a href="https://www.frontiersin.org/journals/environmental-science/articles/10.3389/fenvs.2023.1258880/full">Time to invest in the worst: a call for full genome sequencing of the 100 worst invasive species</a>.</li>
+  <li>Carøe C. et al., <em>NAR Genom Bioinform</em> 2024 — <a href="https://academic.oup.com/nargab/article/8/2/lqag040/8661631">Long-read nanopore shotgun metagenomic DNA sequencing for river biodiversity monitoring</a>.</li>
+  <li>NOAA GLERL, <em>GLANSIS database</em> — <a href="https://www.glerl.noaa.gov/glansis/">glerl.noaa.gov/glansis</a>.</li>
+  <li>IUCN/ISSG, <em>100 of the World's Worst Invasive Alien Species</em> — <a href="https://www.iucngisd.org/gisd/100_worst.php">iucngisd.org/gisd/100_worst.php</a>.</li>
+</ul>
+
+</body>
+</html>
