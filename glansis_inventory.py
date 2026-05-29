@@ -534,18 +534,38 @@ def write_html(path, results, counts):
             f'title="{reg_tooltip}">{reg_level}</span>'
             f' <span class="muted">×{reg_n}</span>' if reg_level else ""
         )
+
+        # Per-column sort keys. Numeric where it makes sense; pre-ranked
+        # for categorical columns with a natural severity order. Empty
+        # strings sort to the end regardless of direction (handled in JS).
+        tier_rank = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}[tier]
+        risk_rank = RISK_PRIORITY.index(risk) if risk in RISK_PRIORITY else 99
+        reg_rank  = REG_PRIORITY.index(reg_level) if reg_level in REG_PRIORITY else 99
+        # Composite: severity major, count minor (more jurisdictions = more
+        # severe within a tier). Encoded so ascending sort = "worst first".
+        reg_sort  = reg_rank * 10000 - (reg_n if reg_level else 0)
+        asm_rank  = {"Complete Genome": 0, "Chromosome": 1,
+                     "Scaffold": 2, "Contig": 3}.get(
+                         r.get("assembly_level") or "", 99)
+        len_sort  = r.get("total_length") or ""
+        tsc_sort  = tsc if isinstance(tsc, int) else (tsc or "")
+        nuc_sort  = nuc if isinstance(nuc, int) else (nuc or "")
+        species_sort = r["scientific_name"].lower()
+        group_sort   = (grp or "").lower()
+        acc_sort     = (acc or "").lower()
+
         rows_html.append(f"""
         <tr data-group="{grp}" data-risk="{risk}" data-reg="{reg_level}">
-          <td><span class="badge" style="background:{color}1a;color:{color}">{tier}</span></td>
-          <td>{species_cell}</td>
-          <td class="small">{grp}</td>
-          <td>{risk_cell}</td>
-          <td>{regs_cell}</td>
-          <td>{r.get("assembly_level") or ""}</td>
-          <td class="mono">{acc_html}</td>
-          <td class="mono right">{fmt_bp(r.get("total_length"))}</td>
-          <td class="mono right">{tsc}</td>
-          <td class="mono right">{nuc}</td>
+          <td data-sort="{tier_rank}"><span class="badge" style="background:{color}1a;color:{color}">{tier}</span></td>
+          <td data-sort="{species_sort}">{species_cell}</td>
+          <td class="small" data-sort="{group_sort}">{grp}</td>
+          <td data-sort="{risk_rank}">{risk_cell}</td>
+          <td data-sort="{reg_sort}">{regs_cell}</td>
+          <td data-sort="{asm_rank}">{r.get("assembly_level") or ""}</td>
+          <td class="mono" data-sort="{acc_sort}">{acc_html}</td>
+          <td class="mono right" data-sort="{len_sort}">{fmt_bp(r.get("total_length"))}</td>
+          <td class="mono right" data-sort="{tsc_sort}">{tsc}</td>
+          <td class="mono right" data-sort="{nuc_sort}">{nuc}</td>
         </tr>
         """)
 
@@ -605,7 +625,13 @@ def write_html(path, results, counts):
     text-align: left; padding: 0.4rem 0.6rem; border-bottom: 1px solid #e2e8f0;
     vertical-align: top;
   }}
-  th {{ font-weight: 600; color: #1e40af; background: #f8fafc; position: sticky; top: 0; }}
+  th {{
+    font-weight: 600; color: #1e40af; background: #f8fafc; position: sticky; top: 0;
+    cursor: pointer; user-select: none;
+  }}
+  th:hover {{ background: #eef2ff; }}
+  th.sorted-asc::after  {{ content: " \\25B2"; opacity: 0.6; font-size: 0.8em; }}
+  th.sorted-desc::after {{ content: " \\25BC"; opacity: 0.6; font-size: 0.8em; }}
   .mono {{ font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 0.85em; }}
   .right {{ text-align: right; }}
   .small {{ font-size: 0.85em; }}
@@ -664,9 +690,16 @@ def write_html(path, results, counts):
 <table>
   <thead>
     <tr>
-      <th>Tier</th><th>Species</th><th>Group</th><th>Risk</th><th>Regulated</th>
-      <th>Assembly level</th><th>Accession</th><th class="right">Length</th>
-      <th class="right">EST/TSA</th><th class="right">nuccore</th>
+      <th onclick="sortBy(0)">Tier</th>
+      <th onclick="sortBy(1)">Species</th>
+      <th onclick="sortBy(2)">Group</th>
+      <th onclick="sortBy(3)">Risk</th>
+      <th onclick="sortBy(4)">Regulated</th>
+      <th onclick="sortBy(5)">Assembly level</th>
+      <th onclick="sortBy(6)">Accession</th>
+      <th class="right" onclick="sortBy(7)">Length</th>
+      <th class="right" onclick="sortBy(8)">EST/TSA</th>
+      <th class="right" onclick="sortBy(9)">nuccore</th>
     </tr>
   </thead>
   <tbody id="rows">
@@ -695,6 +728,30 @@ def write_html(path, results, counts):
       if (reg && r.dataset.reg   !== reg) show = false;
       r.style.display = show ? '' : 'none';
     }}
+  }}
+
+  // Click-to-sort. First click ascending, second descending.
+  // Empty cells always sink to the bottom regardless of direction.
+  let sortState = {{ col: null, dir: 1 }};
+  function sortBy(col) {{
+    if (sortState.col === col) sortState.dir = -sortState.dir;
+    else                       {{ sortState.col = col; sortState.dir = 1; }}
+    const tbody = document.getElementById('rows');
+    const rows = Array.from(tbody.querySelectorAll('tr'));
+    rows.sort((a, b) => {{
+      const av = a.children[col].dataset.sort ?? '';
+      const bv = b.children[col].dataset.sort ?? '';
+      if (av === '' && bv !== '') return  1;
+      if (bv === '' && av !== '') return -1;
+      const an = parseFloat(av), bn = parseFloat(bv);
+      if (!isNaN(an) && !isNaN(bn)) return (an - bn) * sortState.dir;
+      return av.localeCompare(bv) * sortState.dir;
+    }});
+    rows.forEach(r => tbody.appendChild(r));
+    document.querySelectorAll('th').forEach((th, i) => {{
+      th.classList.toggle('sorted-asc',  i === col && sortState.dir > 0);
+      th.classList.toggle('sorted-desc', i === col && sortState.dir < 0);
+    }});
   }}
 </script>
 
