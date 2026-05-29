@@ -21,34 +21,34 @@ A	Cygnus olor	Mute swan	Birds	High	3			GCF_009769625.2	Chromosome	bCygOlo1.pri.v
 A	Cyprinella lutrensis	Red shiner	Fishes	High	6	Prohibited	4	GCA_054825075.1	Chromosome	fCypLut1.hap1	926968418	reference genome		
 A	Cyprinus carpio	Common Carp	Fishes	Invasive	8	Prohibited	6	GCA_050881965.1	Complete Genome	ASM5088196v1	1555859486			
 A	Diadumene lineata							GCA_918843875.1	Chromosome	jaDiaLine6.1	312988696	reference genome		
-A	Dreissena polymorpha	Zebra Mussel	Mollusk-Bivalve	Invasive	7	Prohibited	9	GCF_020536995.1	Chromosome	UMN_Dpol_1.0	1797942340	reference genome		
-A	Dreissena rostriformis bugensis	Quagga Mussel	Mollusk-Bivalve	Invasive	6	Prohibited	10	GCA_055670145.1	Chromosome	ASM5567014v1	1613145916	reference genome		
+A	Dreissena polymorpha	Zebra Mussel	Mollusk-Bivalve	Invasive	7	Prohibited	12	GCF_020536995.1	Chromosome	UMN_Dpol_1.0	1797942340	reference genome		
+A	Dreissena rostriformis bugensis	Quagga Mussel	Mollusk-Bivalve	Invasive	6	Prohibited	13	GCA_055670145.1	Chromosome	ASM5567014v1	1613145916	reference genome		
 A	Echinochloa crus-galli	Barnyard grass	Plants	Invasive	2			GCA_020466025.1	Chromosome	ec_v3	1340710827			
-A	Eichhornia crassipes	Water Hyacinth	Plants	High	12	Prohibited	3	GCA_030549335.1	Chromosome	CAS_Eicr_1.0	1132240410	reference genome		
+A	Eichhornia crassipes	Water Hyacinth	Plants	High	12	Prohibited	2	GCA_030549335.1	Chromosome	CAS_Eicr_1.0	1132240410	reference genome		
 A	Epilobium hirsutum	Hairy Willow Herb	Plants	Invasive	5	Prohibited	2	GCA_965153245.1	Chromosome	drEpiHirs1.hap1.1	336043468	reference genome		
-A	Eriocheir sinensis	Chinese Mitten Crab	Crustacean-Crab	High	4	Prohibited	5	GCF_024679095.1	Chromosome	ASM2467909v1	1765827443	reference genome		
-A	Esox lucius	Northern pike	Fishes	High	1	Prohibited	1	GCF_011004845.1	Chromosome	fEsoLuc1.pri	918731919	reference genome		
+A	Eriocheir sinensis	Chinese Mitten Crab	Crustacean-Crab	High	4	Prohibited	6	GCF_024679095.1	Chromosome	ASM2467909v1	1765827443	reference genome		
+A	Esox lucius	Northern pike	Fishes	High	1	Prohibited	2	GCF_011004845.1	Chromosome	fEsoLuc1.pri	918731919	reference genome		
 A	Eurytemora carolleeae							GCA_057318455.1	Chromosome	ASM5731845v1	529287666			
 A	Filipendula ulmaria	Queen of the Meadow	Plants	Invasive	5	Restricted	1	GCA_964200655.1	Chromosome	drFilUlma1.1	274991720	reference genome		
 A	Fundulus heteroclitus	Mummichog	Fishes	High	1			GCF_011125445.2	Chromosome	MU-UCD_Fhet_4.1	1203489213	reference genome		
 A	Gambusia affinis	Western mosquitofish	Fishes	Invasive	10	Prohibited	5	GCF_019740435.1	Chromosome	SWU_Gaff_1.0	680149392	reference genome		
 A	Gasterosteus aculeatus	Threespine Stickleback	Fishes	Invasive	7	Prohibited	3	GCF_964276395.1	Chromosome	fGasAcu3.hap1.1	511138727	reference genome		
-A	Gymnocephalus cernua					Prohibited	9	GCA_023631565.1	Chromosome	fGymCer.pri	904342373	reference genome		
+A	Gymnocephalus cernua					Prohibited	10	GCA_023631565.1	Chromosome	fGymCer.pri	904342373	reference genome		
 A	Hypophthalmichthys nobilis	Bighead Carp	Fishes	High	9	Prohibited	11	GCA_037950665.1	Chromosome	Hypophthalmichthys_nobilis_1.0	863920326	reference genome		
 A	Ictalurus furcatus	Blue Catfish	Fishes	Invasive	5			GCF_023375685.1	Chromosome	Billie_1.0	825459183	reference genome		
 A	Ictalurus punctatus					Prohibited	1	GCF_001660625.3	Chromosome	Coco_2.0	842926452	reference genome		
-A	Impatiens glandulifera	Ornamental Jewelweed	Plants	Moderate	5	Prohibited	2	GCF_907164915.1	Chromosome	dImpGla2.1	653879104	reference genome		
+A	Impatiens glandulifera	Ornamental Jewelweed	Plants	Moderate	5	Prohibited	1	GCF_907164915.1	Chromosome	dImpGla2.1	653879104	reference genome		
 A	Juncus inflexus		Plants	Invasive	1			GCA_965612345.2	Chromosome	lpJunInfl1.hap1.2	321598421	reference genome		
 A	Lepisosteus oculatus					Prohibited	1	GCF_040954835.1	Chromosome	fLepOcu1.hap2	1200589847	reference genome		
 A	Lithobates catesbeianus	American bullfrog	Amphibian	Invasive	2			GCF_042186555.1	Chromosome	ASM4218655v1	6377618952	reference genome		
 A	Mentha aquatica	Water Mint	Plants		5			GCA_965615935.2	Chromosome	daMenAqua1.hap1.2	1304813858	reference genome		
-A	Micropterus dolomieu	Smallmouth Bass	Fishes	High	1	Prohibited	1	GCF_021292245.1	Chromosome	ASM2129224v1	829570727	reference genome		
-A	Micropterus salmoides	Largemouth Bass	Fishes	High	1	Prohibited	1	GCA_056957295.1	Complete Genome	T2T_MSal_M1.0	873867271			
+A	Micropterus dolomieu	Smallmouth Bass	Fishes	High	1	Prohibited	2	GCF_021292245.1	Chromosome	ASM2129224v1	829570727	reference genome		
+A	Micropterus salmoides	Largemouth Bass	Fishes	High	1	Prohibited	2	GCA_056957295.1	Complete Genome	T2T_MSal_M1.0	873867271			
 A	Microstegium vimineum	Japanese stiltgrass	Plants	Invasive	4	Prohibited	4	GCA_022036555.1	Chromosome	ASM2203655v1	1118670587	reference genome		
 A	Misgurnus anguillicaudatus	Oriental Weatherfish	Fishes	Invasive	8	Prohibited	6	GCF_027580225.2	Chromosome	ASM2758022v2	1120296596	reference genome		
 A	Nasturtium officinale	Watercress	Plants	High	10			GCA_963854855.1	Chromosome	ddNasOffi1.1	224952480	reference genome		
 A	Nelumbo lutea							GCA_056320005.1	Complete Genome	American lotus-T2T	838457245	reference genome		
-A	Nymphoides peltata	Yellow Floating-heart	Plants	Invasive	11	Prohibited	10	GCA_965615785.1	Chromosome	daNymPelt1.hap1.1	721921864	reference genome		
+A	Nymphoides peltata	Yellow Floating-heart	Plants	Invasive	11	Prohibited	9	GCA_965615785.1	Chromosome	daNymPelt1.hap1.1	721921864	reference genome		
 A	Oenanthe javanica	Java waterdropwort	Plants	Invasive	5	Prohibited	1	GCA_048932635.1	Complete Genome	ASM4893263v1	1012110832	reference genome		
 A	Oncorhynchus gorbuscha	Pink Salmon	Fishes	Invasive	5	Restricted	2	GCF_021184085.1	Chromosome	OgorEven_v1.0	2690266878	reference genome		
 A	Oncorhynchus kisutch	Coho Salmon	Fishes	Invasive	5	Restricted	3	GCF_002021735.2	Chromosome	Okis_V2	2375894934	reference genome		
@@ -58,14 +58,14 @@ A	Oncorhynchus nerka		Fishes		1			GCF_034236695.1	Chromosome	Oner_Uvic_2.0	26456
 A	Oncorhynchus tshawytscha	Chinook Salmon	Fishes	Invasive	6	Restricted	3	GCF_018296145.1	Chromosome	Otsh_v2.0	2294842546	reference genome		
 A	Oreochromis niloticus	Nile Tilapia	Fishes	High	4			GCF_001858045.2	Chromosome	O_niloticus_UMD_NMBU	1005664923	reference genome		
 A	Osmerus mordax	Rainbow Smelt	Fishes	Invasive	8	Prohibited	5	GCF_038355195.1	Chromosome	fOsmMor3.pri	497673479	reference genome		
-A	Perca flavescens	Yellow Perch	Fishes	High	1	Prohibited	1	GCF_004354835.1	Chromosome	PFLA_1.0	877439799	reference genome		
+A	Perca flavescens	Yellow Perch	Fishes	High	1	Prohibited	2	GCF_004354835.1	Chromosome	PFLA_1.0	877439799	reference genome		
 A	Persicaria maculosa		Plants	Invasive	1			GCA_963922045.1	Chromosome	dcPerMacu1.1	1505165586	reference genome		
 A	Petromyzon marinus	Sea Lamprey	Fishes	Invasive	7	Prohibited	9	GCF_048934315.1	Chromosome	UKy_Petmar_22M1.pri1.0	1808332251	reference genome		
 A	Phalaris arundinacea	Reed Canarygrass	Plants	Invasive	5	Prohibited	3	GCA_977930405.1	Chromosome	lpPhaArun1.hap1.1	4271620721	reference genome		
 A	Piaractus brachypomus	Red-bellied Pacu	Fishes	Invasive	2			GCA_056915255.1	Chromosome	YSFRI_Pbrachy_1	1343059155	reference genome		
 A	Platichthys flesus							GCF_949316205.1	Chromosome	fPlaFle2.1	597120941	reference genome		
-A	Potamogeton crispus	Curly-leaved Pondweed	Plants	Invasive	12	Prohibited	9	GCA_965783375.2	Chromosome	laPotCris1.hap1.2	513044524	reference genome		
-A	Procambarus clarkii	red swamp crayfish	Crustacean-Crayfish	Invasive	6	Prohibited	6	GCF_040958095.1	Chromosome	FALCON_Pclarkii_2.0	4028952570	reference genome		
+A	Potamogeton crispus	Curly-leaved Pondweed	Plants	Invasive	12	Prohibited	8	GCA_965783375.2	Chromosome	laPotCris1.hap1.2	513044524	reference genome		
+A	Procambarus clarkii	red swamp crayfish	Crustacean-Crayfish	Invasive	6	Prohibited	5	GCF_040958095.1	Chromosome	FALCON_Pclarkii_2.0	4028952570	reference genome		
 A	Proterorhinus semilunaris	Western Tubenose Goby	Fishes	Invasive	4	Prohibited	6	GCA_021464625.1	Chromosome	fProSem1.pri.20201207	864621867	reference genome		
 A	Pterygoplichthys disjunctivus	Verminculated Sailfin Catfish	Fishes	High	2			GCA_981919085.1	Chromosome	Pd_IHB	1566152583	reference genome		
 A	Pungitius pungitius							GCA_056822235.1	Complete Genome	TVA-T2T	510968162			
@@ -80,7 +80,7 @@ A	Salmo trutta	Brown Trout	Fishes	Invasive	6	Prohibited	4	GCF_901001165.2	Chromo
 A	Salvelinus alpinus	Artic Char	Fishes	High	2	Prohibited	2	GCF_045679555.1	Chromosome	SLU_Salpinus.1	2367887750	reference genome		
 A	Salvelinus fontinalis					Prohibited	2	GCF_029448725.1	Chromosome	ASM2944872v1	2496185110	reference genome		
 A	Salvelinus namaycush					Prohibited	2	GCF_016432855.1	Chromosome	SaNama_1.0	2345496725	reference genome		
-A	Sander vitreus	Walleye	Fishes	High	1			GCF_031162955.1	Chromosome	sanVit1	791702833	reference genome		
+A	Sander vitreus	Walleye	Fishes	High	1	Restricted	1	GCF_031162955.1	Chromosome	sanVit1	791702833	reference genome		
 A	Scardinius erythrophthalmus	Rudd	Fishes	Invasive	7	Prohibited	10	GCF_964197995.1	Chromosome	fScaEry2.hap1.1	1229649543	reference genome		
 A	Schmidtea polychroa							GCA_044892525.1	Chromosome	ASM4489252v1	781270316	reference genome		
 A	Solanum dulcamara	Trailing Nightshade	Plants	Invasive	2			GCF_947179165.1	Chromosome	daSolDulc1.2	946304905	reference genome		
@@ -89,7 +89,7 @@ A	Sprivivirus cyprinus							GCF_000850305.1	Complete Genome	ViralProj14726	1101
 A	Thalassiosira pseudonana		Algae	Low	1			GCF_000149405.2	Chromosome	ASM14940v2	32437365	reference genome		
 A	Trachemys scripta	Red-eared slider	Reptile		1			GCF_013100865.1	Chromosome	CAS_Tse_1.0	2126182493	reference genome		
 A	Trachemys scripta elegans	Red-eared slider	Reptile		1			GCF_013100865.1	Chromosome	CAS_Tse_1.0	2126182493	reference genome		
-A	Trapa natans	Water Chestnut	Plants	Invasive	12	Prohibited	11	GCA_035582545.1	Chromosome	ASM3558254v1	477423239	reference genome		
+A	Trapa natans	Water Chestnut	Plants	Invasive	12	Prohibited	10	GCA_035582545.1	Chromosome	ASM3558254v1	477423239	reference genome		
 A	Typha angustifolia	Narrowleaf Cattail	Plants	Invasive	8	Prohibited	4	GCF_048772165.1	Complete Genome	ASM4877216v1	206997856	reference genome		
 A	Typha latifolia							GCF_019914945.1	Chromosome	TyphaL0001v2	213846373	reference genome		
 A	Veronica anagallis-aquatica							GCA_965198525.1	Chromosome	daVerAnag1.hap1.1	1000668773	reference genome		
@@ -113,7 +113,7 @@ B	Lepomis macrochirus					Prohibited	1	GCA_024633595.2	Scaffold	Lm_LA_1.1	889035
 B	Morone americana	White perch	Fishes	Invasive	8	Prohibited	8	GCA_965119265.1	Contig	M_amer_male.genomic	688633020	reference genome		
 B	Morone chrysops					Prohibited	1	GCA_019097615.1	Scaffold	DOM_MoChry_2.0	640404081	reference genome		
 B	Morone saxatilis	Rockfish	Fishes	Moderate	4	Prohibited	2	GCF_004916995.1	Scaffold	NCSU_SB_2.0	598109547	reference genome		
-B	Myriophyllum spicatum	Eurasian Watermilfoil	Plants	Invasive	13	Prohibited	11	GCA_057662065.1	Scaffold	ASM5766206v1	880108064	reference genome		
+B	Myriophyllum spicatum	Eurasian Watermilfoil	Plants	Invasive	13	Prohibited	10	GCA_057662065.1	Scaffold	ASM5766206v1	880108064	reference genome		
 B	Neogobius melanostomus	Round goby	Fishes	Invasive	10	Prohibited	12	GCA_007210695.1	Contig	RGoby_Basel_V2	1003738541	reference genome		
 B	Pimephales promelas							GCF_016745375.1	Scaffold	EPA_FHM_2.0	1066412313	reference genome		
 B	Procambarus virginalis	Marmorkrebs	Crustacean-Crayfish	High	2	Prohibited	3	GCA_020271785.1	Scaffold	DKFZ_Pvir_1.0	3700845369	reference genome		
@@ -145,8 +145,8 @@ D	Aplodinotus grunniens	Freshwater drum	Fishes	Invasive	3	Restricted	1							56
 D	Arundo donax	Giant Reed	Plants	High	7	Prohibited	1							284181
 D	Bithynia tentaculata	Faucet snail	Mollusk-Gastropoda	Invasive	6	Prohibited	4							76
 D	Brachionus leydigii	Rotifer	Rotifers	High	4									8
-D	Bythotrephes longimanus	Spiny Waterflea	Crustacean-Cladoceran	Invasive	6	Prohibited	6							42
-D	Cabomba caroliniana	Carolina Fanwort	Plants	Invasive	10	Prohibited	7							369
+D	Bythotrephes longimanus	Spiny Waterflea	Crustacean-Cladoceran	Invasive	6	Prohibited	5							42
+D	Cabomba caroliniana	Carolina Fanwort	Plants	Invasive	10	Prohibited	6							369
 D	Caecidotea racovitzai													152
 D	Callinina georgiana													266
 D	Carex disticha		Plants	Low	1									15
@@ -159,11 +159,11 @@ D	Corbicula sp.													342
 D	Cyprinus rubrofuscus	Koi	Fishes	High	1									93
 D	Dactylogyrus hemiamphibothrium		Fluke	Low	1									2
 D	Daphnia longispina													1348
-D	Didymosphenia geminata	Didymo	Algae	Invasive	5	Prohibited	4							166
+D	Didymosphenia geminata	Didymo	Algae	Invasive	5	Prohibited	3							166
 D	Elimia livescens	Liver Elimia	Mollusk-Gastropoda	Invasive	6									5
 D	Enneacanthus gloriosus	Bluespotted Sunfish	Fishes		3									164
 D	Etheostoma olmstedi													821
-D	Eubosmina coregoni		Crustacean-Cladoceran		1	Prohibited	1							2018
+D	Eubosmina coregoni		Crustacean-Cladoceran		1									2018
 D	Euglesa supina													31
 D	Faxonius obscurus													15
 D	Fundulus notatus													487
@@ -171,7 +171,7 @@ D	Gianius aquaedulcis		Annelids		1									14
 D	Glyceria maxima	Reed Mannagrass	Plants	Invasive	10	Prohibited	3							32
 D	Graptemys pseudogeographica													476
 D	Hemimysis anomala	Bloody Shrimp	Crustacean-Mysid	Invasive	8	Prohibited	4							21
-D	Hydrocharis morsus-ranae	Common Frogbit	Plants	Invasive	11	Prohibited	11							68
+D	Hydrocharis morsus-ranae	Common Frogbit	Plants	Invasive	11	Prohibited	10							68
 D	Ichthyocotylurus pileatus		Fluke	Invasive	1									19
 D	Ictiobus cyprinellus	Bigmouth buffalo	Fishes	Invasive	2									122
 D	Ictiobus niger	Black Buffalo	Fishes	Invasive	2									80
@@ -191,14 +191,14 @@ D	Myriophyllum heterophyllum	Broadleaf Water-milfoil	Plants	High	4	Prohibited	2	
 D	Mysis diluviana													40
 D	Najas marina	Spiny naiad	Plants	Invasive	6	Restricted	1							532
 D	Neoergasilus japonicus	parasitic copepod	Crustacean-Copepod		2									61
-D	Nitellopsis obtusa	Starry Stonewort	Algae	High	6	Prohibited	6							83
+D	Nitellopsis obtusa	Starry Stonewort	Algae	High	6	Prohibited	5							83
 D	Nitokra hibernica		Crustacean-Copepod		1									14
 D	Notemigonus crysoleucas	Golden Shiner	Fishes	Moderate	1									429
 D	Notropis buchanani	Ghost shiner	Fishes	Invasive	2									57
 D	Notropis dorsalis													42
 D	Notropis hudsonius													141
 D	Notropis volucellus													106
-D	Noturus insignis	Margined Madtom	Fishes	Invasive	3									72
+D	Noturus insignis	Margined Madtom	Fishes	Invasive	3	Prohibited	1							72
 D	Nymphaea odorata	Fragrant Waterlily	Plants	High	1									143
 D	Nymphaea sp.													1
 D	Odhneripisidium moitessierianum													12
@@ -209,7 +209,7 @@ D	Perrunichthys perruno													6
 D	Persicaria longiseta	Creeping Smartweed	Plants	Moderate	3									61
 D	Phenacobius mirabilis	Suckermouth Minnow	Fishes	Invasive	4									32
 D	Pisidium amnicum	Greater European Peaclam	Mollusk-Bivalve	Moderate	3	Prohibited	1							52
-D	Pistia stratiotes	Water Lettuce	Plants	Invasive	12	Prohibited	2							278
+D	Pistia stratiotes	Water Lettuce	Plants	Invasive	12	Prohibited	1							278
 D	Pleurosira laevis		Algae		1									22
 D	Poa trivialis		Plants	Low	1									129
 D	Pomoxis annularis	White Crappie	Fishes	Invasive	2									106
@@ -223,7 +223,7 @@ D	Skeletonema subsalsum		Algae	Low	1									380
 D	Skistodiaptomus pallidus		Crustacean-Copepod		1									78
 D	Sonchus arvensis uliginosus	Perennial sowthistle	Plants		1									5
 D	Stephanodiscus binderanus	Diatom	Algae	Invasive	2									33
-D	Stratiotes aloides	Water Soldiers	Plants	Invasive	10	Prohibited	7							178
+D	Stratiotes aloides	Water Soldiers	Plants	Invasive	10	Prohibited	6							178
 D	Tanysphyrus lemnae		Insects		1									39
 D	Thalassiosira baltica		Algae	Low	1									2
 D	Thermocyclops crassus	A copepod	Crustacean-Copepod	Invasive	3									14
@@ -235,7 +235,7 @@ E	Agrostis gigantea	Redtop	Plants	Moderate	3
 E	Alosa chrysochloris	Skipjack Herring	Fishes	High	3									
 E	Argulus japonicus	Parasitic copepod	Crustacean-Copepod		2									
 E	Branchiura sowerbyi	Tubificid worm	Annelids		3									
-E	Butomus umbellatus	Flowering Rush	Plants	Invasive	12	Prohibited	9							
+E	Butomus umbellatus	Flowering Rush	Plants	Invasive	12	Prohibited	8							
 E	Cambarus robustus	Big Water Crayfish	Crustacean-Crayfish	High	3									
 E	Cipangopaludina japonica	Japanese Mysterysnail	Mollusk-Gastropoda	High	7	Prohibited	2							
 E	Cipangopaludina sp.													
@@ -256,11 +256,11 @@ E	Diatoma ehrenbergii		Algae	Low	1
 E	Discostella woltereckii		Algae	Low	1									
 E	Dorosoma cepedianum	Gizzard shad	Fishes	Invasive	2	Prohibited	2							
 E	Dreissena sp.													
-E	Echinogammarus ischnus	Scud	Crustacean-Amphipod	Invasive	3	Prohibited	1							
-E	Egeria densa	Brazilian Elodea	Plants	High	11	Prohibited	10							
+E	Echinogammarus ischnus	Scud	Crustacean-Amphipod	Invasive	3									
+E	Egeria densa	Brazilian Elodea	Plants	High	11	Prohibited	9							
 E	Elimia virginica	Piedmont Elimia	Mollusk-Gastropoda		3									
 E	Epilobium parviflorum													
-E	Esox lucius × masquinongy	Northern pike	Fishes	High	1	Prohibited	1							
+E	Esox lucius × masquinongy	Northern pike	Fishes	High	1	Prohibited	2							
 E	Etheostoma caeruleum													
 E	Etheostoma zonale													
 E	Eubosmina maritima		Crustacean-Cladoceran		1									
@@ -276,7 +276,7 @@ E	Glugea hertwigi		Microsporidea	Low	1
 E	Heteropsyllus nr. nunni													
 E	Heteropsyllus nunni													
 E	Heterosporis sutherlandae	Heterosporis	Microsporidea	Invasive	2	Other	1							
-E	Hydrilla verticillata peregrina	Hydrilla	Plants	Invasive	11	Prohibited	11							
+E	Hydrilla verticillata peregrina	Hydrilla	Plants	Invasive	11	Prohibited	10							
 E	Hymenomonas roseola		Algae		1									
 E	Ictiobus bubalus	Smallmouth buffalo	Fishes	Invasive	2									
 E	Juncus compressus		Plants	Invasive	1									
@@ -284,8 +284,8 @@ E	Labidesthes sicculus	Brook silverside	Fishes	Invasive	2
 E	Ladislavella catascopium													
 E	Lasmigona subviridis	Green Floater	Mollusk-Bivalve	Low	2									
 E	Lepomis auritus	Redbreast sunfish	Fishes	Watchlist	1									
-E	Lepomis gibbosus × cyanellus					Prohibited	1							
-E	Lepomis gibbosus × macrochirus					Prohibited	1							
+E	Lepomis gibbosus × cyanellus					Prohibited	2							
+E	Lepomis gibbosus × macrochirus					Prohibited	2							
 E	Lepomis gulosus													
 E	Lepomis humilis	Orangespotted Sunfish	Fishes		3	Prohibited	1							
 E	Lepomis megalotis					Prohibited	2							
@@ -303,9 +303,9 @@ E	Morone chrysops × americana					Prohibited	1
 E	Morone chrysops × saxatilis					Prohibited	1							
 E	Moxostoma carinatum					Prohibited	1							
 E	Myosotis scorpioides	Forget-me-not	Plants	Invasive	8	Restricted	1							
-E	Myriophyllum aquaticum	Parrot Feather	Plants	High	11	Prohibited	10							
+E	Myriophyllum aquaticum	Parrot Feather	Plants	High	11	Prohibited	9							
 E	Myriophyllum × hybridum													
-E	Najas minor	Brittle Waternymph	Plants	Invasive	12	Prohibited	5							
+E	Najas minor	Brittle Waternymph	Plants	Invasive	12	Prohibited	4							
 E	Nasturtium microphyllum	Onerow Yellowcress	Plants	High	5									
 E	Neascus brevicaudatus		Fluke	Low	1									
 E	Nitokra incerta		Crustacean-Copepod		1									
@@ -314,7 +314,7 @@ E	Notropis atherinoides
 E	Novirhabdovirus sp. genotype IV sublineage b													
 E	Oncorhynchus mykiss whitei	Rainbow Trout	Fishes	Invasive	5	Prohibited	4							
 E	Phractocephalus hemioliopterus	Redtail Catfish	Fishes	Low	2									
-E	Phragmites australis australis	Phragmites	Plants	Invasive	5	Prohibited	9							
+E	Phragmites australis australis	Phragmites	Plants	Invasive	5	Prohibited	8							
 E	Physella sp.													
 E	Piaractus sp.													
 E	Pimephales notatus													

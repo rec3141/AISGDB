@@ -1,0 +1,2548 @@
+{
+  "generated_at": "2026-05-29T20:30:35Z",
+  "source": "Canada SOR/2015-121",
+  "n_species": 101,
+  "tier_counts": {
+    "A": 47,
+    "B": 14,
+    "C": 3,
+    "D": 32,
+    "E": 5
+  },
+  "species": [
+    {
+      "scientific_name": "Abramis brama",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_022829085.1",
+      "assembly_name": "ASM2282908v1",
+      "assembly_level": "Chromosome",
+      "total_length": "1067396354",
+      "organism_name": "Abramis brama",
+      "refseq_category": "reference genome",
+      "n_reports": 4,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Bream",
+      "risk": "High",
+      "n_ra": 2,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Acipenser ruthenus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_902713425.1",
+      "assembly_name": "fAciRut3.2 maternal haplotype",
+      "assembly_level": "Chromosome",
+      "total_length": "1899794300",
+      "organism_name": "Acipenser ruthenus",
+      "refseq_category": "reference genome",
+      "n_reports": 6,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Sterlet",
+      "risk": "High",
+      "n_ra": 1,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 2,
+      "reg_by_level": {
+        "Restricted": [
+          "Wisconsin"
+        ],
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Amia calva",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_017591415.1",
+      "assembly_name": "AmiCal1",
+      "assembly_level": "Chromosome",
+      "total_length": "831002832",
+      "organism_name": "Amia calva",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 2,
+      "reg_by_level": {
+        "Restricted": [
+          "Quebec"
+        ],
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Apeltes quadracus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_048569185.1",
+      "assembly_name": "Unibe_ApeQuad_male_1.0",
+      "assembly_level": "Chromosome",
+      "total_length": "475913512",
+      "organism_name": "Apeltes quadracus",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Fourspine Stickleback",
+      "risk": "Low",
+      "n_ra": 6,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Barbatula barbatula",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_947034865.1",
+      "assembly_name": "fBarBar1.1",
+      "assembly_level": "Chromosome",
+      "total_length": "617646710",
+      "organism_name": "Barbatula barbatula",
+      "refseq_category": "reference genome",
+      "n_reports": 4,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Botrylloides violaceus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_981691465.1",
+      "assembly_name": "Genome assembly of Botrylloides violaceus",
+      "assembly_level": "Chromosome",
+      "total_length": "129131147",
+      "organism_name": "Botrylloides violaceus",
+      "refseq_category": "reference genome",
+      "n_reports": 4,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Tunicate",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1,
+      "reg_level": "Restricted",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Restricted": [
+          "Canada (where not indigenous)"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Botryllus schlosseri",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_051294905.1",
+      "assembly_name": "Bs_hap1",
+      "assembly_level": "Chromosome",
+      "total_length": "495547953",
+      "organism_name": "Botryllus schlosseri",
+      "refseq_category": "reference genome",
+      "n_reports": 4,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Tunicate",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1,
+      "reg_level": "Restricted",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Restricted": [
+          "Canada (where not indigenous)"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Carassius carassius",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_963082965.1",
+      "assembly_name": "fCarCar2.1",
+      "assembly_level": "Chromosome",
+      "total_length": "1684296438",
+      "organism_name": "Carassius carassius",
+      "refseq_category": "reference genome",
+      "n_reports": 4,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Crucian Carp",
+      "risk": "High",
+      "n_ra": 8,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 4,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba",
+          "Minnesota",
+          "Ohio",
+          "United States"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Channa argus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_033026475.1",
+      "assembly_name": "Channa argus male v1.0",
+      "assembly_level": "Chromosome",
+      "total_length": "675457141",
+      "organism_name": "Channa argus",
+      "refseq_category": "reference genome",
+      "n_reports": 6,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Northern Snakehead",
+      "risk": "High",
+      "n_ra": 7,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 5,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba",
+          "Michigan",
+          "Minnesota",
+          "New York",
+          "Pennsylvania"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Ciona intestinalis",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_018327825.1",
+      "assembly_name": "ASM1832782v2",
+      "assembly_level": "Chromosome",
+      "total_length": "140258035",
+      "organism_name": "Ciona intestinalis",
+      "refseq_category": "reference genome",
+      "n_reports": 10,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Tunicate",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1,
+      "reg_level": "Restricted",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Restricted": [
+          "Canada (where not indigenous)"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Cipangopaludina chinensis",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_050437285.1",
+      "assembly_name": "ASM5043728v1",
+      "assembly_level": "Chromosome",
+      "total_length": "1560258163",
+      "organism_name": "Cipangopaludina chinensis",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Mollusk-Gastropoda",
+      "common_name": "Chinese Mysterysnail",
+      "risk": "High",
+      "n_ra": 2,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 5,
+      "reg_by_level": {
+        "Other": [
+          "Indiana",
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "Manitoba",
+          "New York"
+        ],
+        "Restricted": [
+          "Wisconsin"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Cottus gobio",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_023566465.1",
+      "assembly_name": "ASM2356646v1",
+      "assembly_level": "Chromosome",
+      "total_length": "645607472",
+      "organism_name": "Cottus gobio",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "European Bullhead",
+      "risk": "High",
+      "n_ra": 3,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Ctenopharyngodon idella",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_049919795.1",
+      "assembly_name": "ASM4991979v1",
+      "assembly_level": "Complete Genome",
+      "total_length": "890918310",
+      "organism_name": "Ctenopharyngodon idella",
+      "refseq_category": null,
+      "n_reports": 7,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Grass carp",
+      "risk": "Invasive",
+      "n_ra": 10,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 9,
+      "reg_by_level": {
+        "Prohibited": [
+          "Canada (federal)",
+          "Michigan",
+          "Mille Lacs Band of Ojibwe Minnesota Ceded territory",
+          "Minnesota",
+          "Ohio",
+          "Ontario",
+          "Wisconsin"
+        ],
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Restricted": [
+          "Indiana"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Cyprinella lutrensis",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_054825075.1",
+      "assembly_name": "fCypLut1.hap1",
+      "assembly_level": "Chromosome",
+      "total_length": "926968418",
+      "organism_name": "Cyprinella lutrensis",
+      "refseq_category": "reference genome",
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Red shiner",
+      "risk": "High",
+      "n_ra": 6,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 4,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba",
+          "Ontario",
+          "Wisconsin"
+        ],
+        "Other": [
+          "Pennsylvania"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Didemnum vexillum",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_965643705.1",
+      "assembly_name": "kaDidVexi2",
+      "assembly_level": "Chromosome",
+      "total_length": "829254971",
+      "organism_name": "Didemnum vexillum",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Tunicate",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1,
+      "reg_level": "Restricted",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Restricted": [
+          "Canada (where not indigenous)"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Dreissena bugensis",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_055670145.1",
+      "assembly_name": "ASM5567014v1",
+      "assembly_level": "Chromosome",
+      "total_length": "1613145916",
+      "organism_name": "Dreissena rostriformis bugensis",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Mollusk-Bivalve",
+      "common_name": "Quagga Mussel",
+      "risk": "Invasive",
+      "n_ra": 6,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 13,
+      "reg_by_level": {
+        "Prohibited": [
+          "Alberta",
+          "British Columbia",
+          "Canada",
+          "Indiana",
+          "Manitoba",
+          "Minnesota",
+          "New York",
+          "Ohio",
+          "Pennsylvania",
+          "Saskatchewan",
+          "United States",
+          "Wisconsin"
+        ],
+        "Restricted": [
+          "Michigan"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Dreissena polymorpha",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_020536995.1",
+      "assembly_name": "UMN_Dpol_1.0",
+      "assembly_level": "Chromosome",
+      "total_length": "1797942340",
+      "organism_name": "Dreissena polymorpha",
+      "refseq_category": "reference genome",
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Mollusk-Bivalve",
+      "common_name": "Zebra Mussel",
+      "risk": "Invasive",
+      "n_ra": 7,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 12,
+      "reg_by_level": {
+        "Prohibited": [
+          "Alberta",
+          "British Columbia",
+          "Canada",
+          "Indiana",
+          "Manitoba",
+          "New York",
+          "Ohio",
+          "Pennsylvania",
+          "Saskatchewan",
+          "United States"
+        ],
+        "Restricted": [
+          "Michigan",
+          "Wisconsin"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Eriocheir sinensis",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_024679095.1",
+      "assembly_name": "ASM2467909v1",
+      "assembly_level": "Chromosome",
+      "total_length": "1765827443",
+      "organism_name": "Eriocheir sinensis",
+      "refseq_category": "reference genome",
+      "n_reports": 6,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Crustacean-Crab",
+      "common_name": "Chinese Mitten Crab",
+      "risk": "High",
+      "n_ra": 4,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 6,
+      "reg_by_level": {
+        "Restricted": [
+          "Canada (where not indigenous)",
+          "Quebec"
+        ],
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "New York",
+          "Ohio",
+          "Wisconsin"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Esox lucius",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_011004845.1",
+      "assembly_name": "fEsoLuc1.pri",
+      "assembly_level": "Chromosome",
+      "total_length": "918731919",
+      "organism_name": "Esox lucius",
+      "refseq_category": "reference genome",
+      "n_reports": 8,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Northern pike",
+      "risk": "High",
+      "n_ra": 1,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 2,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ],
+        "Restricted": [
+          "Canada (where not indigenous)"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Gambusia affinis",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_019740435.1",
+      "assembly_name": "SWU_Gaff_1.0",
+      "assembly_level": "Chromosome",
+      "total_length": "680149392",
+      "organism_name": "Gambusia affinis",
+      "refseq_category": "reference genome",
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Western mosquitofish",
+      "risk": "Invasive",
+      "n_ra": 10,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 5,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba",
+          "Minnesota",
+          "New York",
+          "Ontario"
+        ],
+        "Restricted": [
+          "Wisconsin"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Gasterosteus aculeatus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_964276395.1",
+      "assembly_name": "fGasAcu3.hap1.1",
+      "assembly_level": "Chromosome",
+      "total_length": "511138727",
+      "organism_name": "Gasterosteus aculeatus",
+      "refseq_category": "reference genome",
+      "n_reports": 12,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Threespine Stickleback",
+      "risk": "Invasive",
+      "n_ra": 7,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 3,
+      "reg_by_level": {
+        "Restricted": [
+          "Wisconsin"
+        ],
+        "Prohibited": [
+          "Manitoba",
+          "Ohio"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Gobio gobio",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_949357685.1",
+      "assembly_name": "fGobGob1.1",
+      "assembly_level": "Chromosome",
+      "total_length": "1460662624",
+      "organism_name": "Gobio gobio",
+      "refseq_category": "reference genome",
+      "n_reports": 5,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Gudgeon",
+      "risk": "High",
+      "n_ra": 1,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Gymnocephalus cernua",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_023631565.1",
+      "assembly_name": "fGymCer.pri",
+      "assembly_level": "Chromosome",
+      "total_length": "904342373",
+      "organism_name": "Gymnocephalus cernua",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 10,
+      "reg_by_level": {
+        "Prohibited": [
+          "Illinois",
+          "Indiana",
+          "Manitoba",
+          "Michigan",
+          "Mille Lacs Band of Ojibwe Minnesota Ceded territory",
+          "Minnesota",
+          "Ohio",
+          "Ontario",
+          "Pennsylvania"
+        ],
+        "Restricted": [
+          "Wisconsin"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Huso huso",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_036884735.1",
+      "assembly_name": "HHUS_1.1",
+      "assembly_level": "Chromosome",
+      "total_length": "1942381910",
+      "organism_name": "Huso huso",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Beluga",
+      "risk": "High",
+      "n_ra": 2,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Hypophthalmichthys molitrix",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_037950675.1",
+      "assembly_name": "Hypophthalmichthys_molitrix_1.0",
+      "assembly_level": "Chromosome",
+      "total_length": "853475415",
+      "organism_name": "Hypophthalmichthys molitrix",
+      "refseq_category": "reference genome",
+      "n_reports": 5,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Silver Carp",
+      "risk": "High",
+      "n_ra": 9,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 11,
+      "reg_by_level": {
+        "Prohibited": [
+          "Canada (federal)",
+          "Illinois",
+          "Indiana",
+          "Michigan",
+          "Minnesota",
+          "New York",
+          "Ohio",
+          "Ontario",
+          "Pennsylvania",
+          "United States",
+          "Wisconsin"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Hypophthalmichthys nobilis",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_037950665.1",
+      "assembly_name": "Hypophthalmichthys_nobilis_1.0",
+      "assembly_level": "Chromosome",
+      "total_length": "863920326",
+      "organism_name": "Hypophthalmichthys nobilis",
+      "refseq_category": "reference genome",
+      "n_reports": 4,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Bighead Carp",
+      "risk": "High",
+      "n_ra": 9,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 11,
+      "reg_by_level": {
+        "Prohibited": [
+          "Canada (federal)",
+          "Illinois",
+          "Indiana",
+          "Michigan",
+          "Minnesota",
+          "New York",
+          "Ohio",
+          "Ontario",
+          "Pennsylvania",
+          "United States",
+          "Wisconsin"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Lepisosteus oculatus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_040954835.1",
+      "assembly_name": "fLepOcu1.hap2",
+      "assembly_level": "Chromosome",
+      "total_length": "1200589847",
+      "organism_name": "Lepisosteus oculatus",
+      "refseq_category": "reference genome",
+      "n_reports": 5,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Leuciscus cephalus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_949319135.1",
+      "assembly_name": "fSquCep2.1",
+      "assembly_level": "Chromosome",
+      "total_length": "1101913912",
+      "organism_name": "Squalius cephalus",
+      "refseq_category": "reference genome",
+      "n_reports": 6,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Leuciscus idus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_021554675.1",
+      "assembly_name": "fLeuIdu1.pri.20210917",
+      "assembly_level": "Chromosome",
+      "total_length": "1104030153",
+      "organism_name": "Leuciscus idus",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Ide",
+      "risk": "High",
+      "n_ra": 5,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 5,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba",
+          "Michigan",
+          "Ohio",
+          "Ontario"
+        ],
+        "Restricted": [
+          "Wisconsin"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Leuciscus leuciscus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_965113295.1",
+      "assembly_name": "fLeuLeu2.hap1.1",
+      "assembly_level": "Chromosome",
+      "total_length": "1198359543",
+      "organism_name": "Leuciscus leuciscus",
+      "refseq_category": "reference genome",
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Eurasian dace",
+      "risk": "High",
+      "n_ra": 3,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Micropterus dolomieu",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_021292245.1",
+      "assembly_name": "ASM2129224v1",
+      "assembly_level": "Chromosome",
+      "total_length": "829570727",
+      "organism_name": "Micropterus dolomieu",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Smallmouth Bass",
+      "risk": "High",
+      "n_ra": 1,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 2,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ],
+        "Restricted": [
+          "Canada (where not indigenous)"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Micropterus salmoides",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_056957295.1",
+      "assembly_name": "T2T_MSal_M1.0",
+      "assembly_level": "Complete Genome",
+      "total_length": "873867271",
+      "organism_name": "Micropterus salmoides",
+      "refseq_category": null,
+      "n_reports": 8,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Largemouth Bass",
+      "risk": "High",
+      "n_ra": 1,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 2,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ],
+        "Restricted": [
+          "Canada (where not indigenous)"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Misgurnus anguillicaudatus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_027580225.2",
+      "assembly_name": "ASM2758022v2",
+      "assembly_level": "Chromosome",
+      "total_length": "1120296596",
+      "organism_name": "Misgurnus anguillicaudatus",
+      "refseq_category": "reference genome",
+      "n_reports": 8,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Oriental Weatherfish",
+      "risk": "Invasive",
+      "n_ra": 8,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 6,
+      "reg_by_level": {
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "Manitoba",
+          "Minnesota",
+          "New York"
+        ],
+        "Restricted": [
+          "Michigan",
+          "Wisconsin"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Mylopharyngodon piceus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_049864055.1",
+      "assembly_name": "ASM4986405v1",
+      "assembly_level": "Chromosome",
+      "total_length": "893890919",
+      "organism_name": "Mylopharyngodon piceus",
+      "refseq_category": "reference genome",
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Black Carp",
+      "risk": "High",
+      "n_ra": 7,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 11,
+      "reg_by_level": {
+        "Prohibited": [
+          "Canada (federal)",
+          "Illinois",
+          "Indiana",
+          "Michigan",
+          "Minnesota",
+          "New York",
+          "Ohio",
+          "Ontario",
+          "Pennsylvania",
+          "United States",
+          "Wisconsin"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Osmerus mordax",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_038355195.1",
+      "assembly_name": "fOsmMor3.pri",
+      "assembly_level": "Chromosome",
+      "total_length": "497673479",
+      "organism_name": "Osmerus mordax",
+      "refseq_category": "reference genome",
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Rainbow Smelt",
+      "risk": "Invasive",
+      "n_ra": 8,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 5,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba",
+          "Quebec"
+        ],
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Restricted": [
+          "Minnesota",
+          "Wisconsin"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Perca flavescens",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_004354835.1",
+      "assembly_name": "PFLA_1.0",
+      "assembly_level": "Chromosome",
+      "total_length": "877439799",
+      "organism_name": "Perca flavescens",
+      "refseq_category": "reference genome",
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Yellow Perch",
+      "risk": "High",
+      "n_ra": 1,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 2,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ],
+        "Restricted": [
+          "Canada (where not indigenous)"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Petromyzon marinus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_048934315.1",
+      "assembly_name": "UKy_Petmar_22M1.pri1.0",
+      "assembly_level": "Chromosome",
+      "total_length": "1808332251",
+      "organism_name": "Petromyzon marinus",
+      "refseq_category": "reference genome",
+      "n_reports": 9,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Sea Lamprey",
+      "risk": "Invasive",
+      "n_ra": 7,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 9,
+      "reg_by_level": {
+        "Restricted": [
+          "Quebec",
+          "Wisconsin"
+        ],
+        "Other": [
+          "Indiana",
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "Manitoba",
+          "Mille Lacs Band of Ojibwe Minnesota Ceded territory",
+          "Minnesota",
+          "New York",
+          "Ohio"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Phoxinus phoxinus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_949152265.1",
+      "assembly_name": "fPhoPho1.1",
+      "assembly_level": "Chromosome",
+      "total_length": "950479694",
+      "organism_name": "Phoxinus phoxinus",
+      "refseq_category": "reference genome",
+      "n_reports": 5,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Eurasian minnow",
+      "risk": "High",
+      "n_ra": 7,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 4,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba",
+          "Minnesota",
+          "Ohio",
+          "United States"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Polyodon spathula",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_017654505.1",
+      "assembly_name": "ASM1765450v1",
+      "assembly_level": "Chromosome",
+      "total_length": "1542066908",
+      "organism_name": "Polyodon spathula",
+      "refseq_category": "reference genome",
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Proterorhinus semilunaris",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_021464625.1",
+      "assembly_name": "fProSem1.pri.20201207",
+      "assembly_level": "Chromosome",
+      "total_length": "864621867",
+      "organism_name": "Proterorhinus semilunaris",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Western Tubenose Goby",
+      "risk": "Invasive",
+      "n_ra": 4,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 6,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba",
+          "Michigan",
+          "Minnesota",
+          "New York",
+          "Ontario",
+          "Pennsylvania"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Rutilus rutilus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_951802725.1",
+      "assembly_name": "fRutRut2.1",
+      "assembly_level": "Chromosome",
+      "total_length": "1100179043",
+      "organism_name": "Rutilus rutilus",
+      "refseq_category": null,
+      "n_reports": 6,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Roach",
+      "risk": "High",
+      "n_ra": 6,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 4,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba",
+          "Minnesota",
+          "Ohio",
+          "United States"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Sander lucioperca",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_008315115.2",
+      "assembly_name": "SLUC_FBN_1.2",
+      "assembly_level": "Chromosome",
+      "total_length": "901221791",
+      "organism_name": "Sander lucioperca",
+      "refseq_category": "reference genome",
+      "n_reports": 4,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Zander",
+      "risk": "High",
+      "n_ra": 5,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 9,
+      "reg_by_level": {
+        "Prohibited": [
+          "Illinois",
+          "Indiana",
+          "Manitoba",
+          "Michigan",
+          "Minnesota",
+          "Ohio",
+          "Ontario",
+          "United States",
+          "Wisconsin"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Sander vitreus",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_031162955.1",
+      "assembly_name": "sanVit1",
+      "assembly_level": "Chromosome",
+      "total_length": "791702833",
+      "organism_name": "Sander vitreus",
+      "refseq_category": "reference genome",
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Walleye",
+      "risk": "High",
+      "n_ra": 1,
+      "reg_level": "Restricted",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Restricted": [
+          "Canada (where not indigenous)"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Silurus glanis",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_055474285.1",
+      "assembly_name": "ASM5547428v1",
+      "assembly_level": "Chromosome",
+      "total_length": "808560677",
+      "organism_name": "Silurus glanis",
+      "refseq_category": "reference genome",
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Wels catfish",
+      "risk": "High",
+      "n_ra": 6,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 8,
+      "reg_by_level": {
+        "Prohibited": [
+          "Illinois",
+          "Indiana",
+          "Manitoba",
+          "Michigan",
+          "Minnesota",
+          "Ohio",
+          "Ontario",
+          "United States"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Sphaerium corneum",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_965230695.1",
+      "assembly_name": "xbSphCorn4.1",
+      "assembly_level": "Chromosome",
+      "total_length": "3625506042",
+      "organism_name": "Sphaerium corneum",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Mollusk-Bivalve",
+      "common_name": "European Fingernailclam",
+      "risk": "",
+      "n_ra": 3,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Styela clava",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCF_964204865.1",
+      "assembly_name": "kaStyClav1.hap1.2",
+      "assembly_level": "Chromosome",
+      "total_length": "376784849",
+      "organism_name": "Styela clava",
+      "refseq_category": "reference genome",
+      "n_reports": 5,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Tunicate",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1,
+      "reg_level": "Restricted",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Restricted": [
+          "Canada (where not indigenous)"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Vimba vimba",
+      "tier": "A",
+      "tier_label": "Chromosome-scale WGS",
+      "accession": "GCA_022828995.1",
+      "assembly_name": "ASM2282899v1",
+      "assembly_level": "Chromosome",
+      "total_length": "1054310786",
+      "organism_name": "Vimba vimba",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Acipenser gueldenstaedtii",
+      "tier": "B",
+      "tier_label": "Contig WGS",
+      "accession": "GCA_024762115.1",
+      "assembly_name": "AG_genome",
+      "assembly_level": "Contig",
+      "total_length": "2389722506",
+      "organism_name": "Acipenser gueldenstaedtii",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Russian Sturgeon",
+      "risk": "High",
+      "n_ra": 1,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Alosa pseudoharengus",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCF_046254945.1",
+      "assembly_name": "YU_APseudo_1.1",
+      "assembly_level": "Scaffold",
+      "total_length": "1050053806",
+      "organism_name": "Alosa pseudoharengus",
+      "refseq_category": "reference genome",
+      "n_reports": 4,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Alewife",
+      "risk": "Invasive",
+      "n_ra": 7,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 5,
+      "reg_by_level": {
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Restricted": [
+          "Indiana",
+          "Minnesota",
+          "Wisconsin"
+        ],
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Carcinus maenas",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCA_977014515.1",
+      "assembly_name": "cmg06",
+      "assembly_level": "Scaffold",
+      "total_length": "1090745283",
+      "organism_name": "Carcinus maenas",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Crustacean-Crab",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1,
+      "reg_level": "Restricted",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Restricted": [
+          "Canada (where not indigenous)"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Clarias batrachus",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCA_003987875.1",
+      "assembly_name": "ASM398787v1",
+      "assembly_level": "Scaffold",
+      "total_length": "821750104",
+      "organism_name": "Clarias batrachus",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Walking Catfish",
+      "risk": "High",
+      "n_ra": 4,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 3,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba",
+          "New York",
+          "Ohio"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Corbicula fluminea",
+      "tier": "B",
+      "tier_label": "Contig WGS",
+      "accession": "GCA_001632725.1",
+      "assembly_name": "ASM163272v1",
+      "assembly_level": "Contig",
+      "total_length": "662517",
+      "organism_name": "Corbicula fluminea",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Mollusk-Bivalve",
+      "common_name": "Asian Clam",
+      "risk": "Invasive",
+      "n_ra": 7,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 6,
+      "reg_by_level": {
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "Indiana",
+          "Manitoba",
+          "Minnesota",
+          "New York",
+          "Wisconsin"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Lepisosteus osseus",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCA_026401145.1",
+      "assembly_name": "ASM2640114v1",
+      "assembly_level": "Scaffold",
+      "total_length": "930537206",
+      "organism_name": "Lepisosteus osseus",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 2,
+      "reg_by_level": {
+        "Restricted": [
+          "Quebec"
+        ],
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Lepomis gibbosus",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCA_029875015.1",
+      "assembly_name": "ASM2987501v1",
+      "assembly_level": "Scaffold",
+      "total_length": "773627628",
+      "organism_name": "Lepomis gibbosus",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 2,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ],
+        "Restricted": [
+          "Canada (where not indigenous)"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Lethenteron camtschaticum",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCA_018977245.1",
+      "assembly_name": "IMCB_Ljap_1.0",
+      "assembly_level": "Scaffold",
+      "total_length": "1074727531",
+      "organism_name": "Lethenteron camtschaticum",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Morone americana",
+      "tier": "B",
+      "tier_label": "Contig WGS",
+      "accession": "GCA_965119265.1",
+      "assembly_name": "M_amer_male.genomic",
+      "assembly_level": "Contig",
+      "total_length": "688633020",
+      "organism_name": "Morone americana",
+      "refseq_category": "reference genome",
+      "n_reports": 2,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "White perch",
+      "risk": "Invasive",
+      "n_ra": 8,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 8,
+      "reg_by_level": {
+        "Restricted": [
+          "Quebec",
+          "Wisconsin"
+        ],
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "Indiana",
+          "Manitoba",
+          "Mille Lacs Band of Ojibwe Minnesota Ceded territory",
+          "Minnesota",
+          "Ohio"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Morone saxatilis",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCF_004916995.1",
+      "assembly_name": "NCSU_SB_2.0",
+      "assembly_level": "Scaffold",
+      "total_length": "598109547",
+      "organism_name": "Morone saxatilis",
+      "refseq_category": "reference genome",
+      "n_reports": 3,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Rockfish",
+      "risk": "Moderate",
+      "n_ra": 4,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 2,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba",
+          "Quebec"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Neogobius melanostomus",
+      "tier": "B",
+      "tier_label": "Contig WGS",
+      "accession": "GCA_007210695.1",
+      "assembly_name": "RGoby_Basel_V2",
+      "assembly_level": "Contig",
+      "total_length": "1003738541",
+      "organism_name": "Neogobius melanostomus",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Round goby",
+      "risk": "Invasive",
+      "n_ra": 10,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 12,
+      "reg_by_level": {
+        "Prohibited": [
+          "Illinois",
+          "Indiana",
+          "Manitoba",
+          "Michigan",
+          "Mille Lacs Band of Ojibwe Minnesota Ceded territory",
+          "Minnesota",
+          "New York",
+          "Ohio",
+          "Ontario"
+        ],
+        "Restricted": [
+          "Pennsylvania",
+          "Quebec",
+          "Wisconsin"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Pylodictis olivaris",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCA_028570965.1",
+      "assembly_name": "ASM2857096v1",
+      "assembly_level": "Scaffold",
+      "total_length": "1424310885",
+      "organism_name": "Pylodictis olivaris",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Flathead catfish",
+      "risk": "Invasive",
+      "n_ra": 4,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 2,
+      "reg_by_level": {
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Radix auricularia",
+      "tier": "B",
+      "tier_label": "Scaffold WGS",
+      "accession": "GCA_002072015.1",
+      "assembly_name": "ASM207201v1",
+      "assembly_level": "Scaffold",
+      "total_length": "909750324",
+      "organism_name": "Radix auricularia",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Mollusk-Gastropoda",
+      "common_name": "European Ear Snail",
+      "risk": "Moderate",
+      "n_ra": 4,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Tinca tinca",
+      "tier": "B",
+      "tier_label": "Contig WGS",
+      "accession": "GCA_037022345.1",
+      "assembly_name": "ASM3702234v1",
+      "assembly_level": "Contig",
+      "total_length": "669980980",
+      "organism_name": "Tinca tinca",
+      "refseq_category": "reference genome",
+      "n_reports": 1,
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Tench",
+      "risk": "High",
+      "n_ra": 7,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 8,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba",
+          "Michigan",
+          "Minnesota",
+          "New York",
+          "Ohio",
+          "Ontario",
+          "Quebec",
+          "Wisconsin"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Acipenser baerii",
+      "tier": "C",
+      "tier_label": "Transcriptome / EST (3 records)",
+      "transcriptome_count": 3,
+      "nuccore_count": 761,
+      "group": "Fishes",
+      "common_name": "Siberian Sturgeon",
+      "risk": "High",
+      "n_ra": 1,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Acipenser stellatus",
+      "tier": "C",
+      "tier_label": "Transcriptome / EST (1 records)",
+      "transcriptome_count": 1,
+      "nuccore_count": 660,
+      "group": "Fishes",
+      "common_name": "Stellate Sturgeon",
+      "risk": "High",
+      "n_ra": 1,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Potamopyrgus antipodarum",
+      "tier": "C",
+      "tier_label": "Transcriptome / EST (2 records)",
+      "transcriptome_count": 2,
+      "nuccore_count": 0,
+      "group": "Mollusk-Gastropoda",
+      "common_name": "New Zealand mudsnail",
+      "risk": "Invasive",
+      "n_ra": 8,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 9,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba",
+          "Michigan",
+          "Minnesota",
+          "New York",
+          "Ohio",
+          "Ontario",
+          "Wisconsin"
+        ],
+        "Other": [
+          "Indiana",
+          "Pennsylvania"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Acipenser brevirostrum",
+      "tier": "D",
+      "tier_label": "Marker pool (249 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 249,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Acipenser nudiventris",
+      "tier": "D",
+      "tier_label": "Marker pool (63 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 63,
+      "group": "Fishes",
+      "common_name": "Thorn Sturgeon",
+      "risk": "Moderate",
+      "n_ra": 1,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Alburnoides bipunctatus",
+      "tier": "D",
+      "tier_label": "Marker pool (265 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 265,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Ameiurus catus",
+      "tier": "D",
+      "tier_label": "Marker pool (86 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 86,
+      "group": "Fishes",
+      "common_name": "White Catfish",
+      "risk": "High",
+      "n_ra": 1,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Ameiurus natalis",
+      "tier": "D",
+      "tier_label": "Marker pool (179 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 179,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 2,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba",
+          "Quebec"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Bithynia tentaculata",
+      "tier": "D",
+      "tier_label": "Marker pool (76 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 76,
+      "group": "Mollusk-Gastropoda",
+      "common_name": "Faucet snail",
+      "risk": "Invasive",
+      "n_ra": 6,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 4,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba",
+          "Minnesota",
+          "New York",
+          "Wisconsin"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Bythotrephes cederstroemi",
+      "tier": "D",
+      "tier_label": "Markers only (7 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 7,
+      "group": "Crustacean-Cladoceran",
+      "common_name": "Spiny Waterflea",
+      "risk": "High",
+      "n_ra": 2,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Cercopagis pengoi",
+      "tier": "D",
+      "tier_label": "Marker pool (41 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 41,
+      "group": "Crustacean-Cladoceran",
+      "common_name": "Fishhook Water Flea",
+      "risk": "Invasive",
+      "n_ra": 8,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 5,
+      "reg_by_level": {
+        "Other": [
+          "Indiana",
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "Manitoba",
+          "New York",
+          "Wisconsin"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Erimyzon sucetta",
+      "tier": "D",
+      "tier_label": "Marker pool (134 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 134,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Gasterosteus wheatlandi",
+      "tier": "D",
+      "tier_label": "Marker pool (48 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 48,
+      "group": "Fishes",
+      "common_name": "Blackspotted Stickleback",
+      "risk": "High",
+      "n_ra": 1,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Gila atraria",
+      "tier": "D",
+      "tier_label": "Marker pool (45 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 45,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Hemimysis anomala",
+      "tier": "D",
+      "tier_label": "Markers only (21 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 21,
+      "group": "Crustacean-Mysid",
+      "common_name": "Bloody Shrimp",
+      "risk": "Invasive",
+      "n_ra": 8,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 4,
+      "reg_by_level": {
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "New York",
+          "Wisconsin"
+        ],
+        "Restricted": [
+          "Canada (where not indigenous)"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Lepisosteus platostomus",
+      "tier": "D",
+      "tier_label": "Marker pool (91 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 91,
+      "group": "Fishes",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Lepomis cyanellus",
+      "tier": "D",
+      "tier_label": "Marker pool (294 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 294,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Lepomis peltastes",
+      "tier": "D",
+      "tier_label": "Marker pool (46 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 46,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Morone mississippiensis",
+      "tier": "D",
+      "tier_label": "Marker pool (39 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 39,
+      "group": "Fishes",
+      "common_name": "Yellow Bass",
+      "risk": "",
+      "n_ra": 1,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Noturus exilis",
+      "tier": "D",
+      "tier_label": "Marker pool (278 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 278,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Noturus insignis",
+      "tier": "D",
+      "tier_label": "Marker pool (72 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 72,
+      "group": "Fishes",
+      "common_name": "Margined Madtom",
+      "risk": "Invasive",
+      "n_ra": 3,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Noturus miurus",
+      "tier": "D",
+      "tier_label": "Marker pool (120 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 120,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Noturus nocturnus",
+      "tier": "D",
+      "tier_label": "Marker pool (33 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 33,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Noturus stigmosus",
+      "tier": "D",
+      "tier_label": "Marker pool (31 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 31,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Orconectes rusticus",
+      "tier": "D",
+      "tier_label": "Marker pool (42 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 42,
+      "group": "Crustacean-Crayfish",
+      "common_name": "Rusty Crayfish",
+      "risk": "High",
+      "n_ra": 6,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Phoxinus czekanowskii",
+      "tier": "D",
+      "tier_label": "Marker pool (29 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 29,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Phoxinus perenurus",
+      "tier": "D",
+      "tier_label": "Marker pool (120 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 120,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Pisidium amnicum",
+      "tier": "D",
+      "tier_label": "Marker pool (52 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 52,
+      "group": "Mollusk-Bivalve",
+      "common_name": "Greater European Peaclam",
+      "risk": "Moderate",
+      "n_ra": 3,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Pisidium henslowanum",
+      "tier": "D",
+      "tier_label": "Marker pool (61 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 61,
+      "group": "Mollusk-Bivalve",
+      "common_name": "Henslow Peaclam",
+      "risk": "",
+      "n_ra": 2,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Rutilus frisii",
+      "tier": "D",
+      "tier_label": "Marker pool (74 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 74,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Sander volgensis",
+      "tier": "D",
+      "tier_label": "Markers only (16 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 16,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Scaphirhynchus albus",
+      "tier": "D",
+      "tier_label": "Marker pool (76 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 76,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Scaphirhynchus platorynchus",
+      "tier": "D",
+      "tier_label": "Marker pool (251 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 251,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Scardinius erythropthalmus",
+      "tier": "D",
+      "tier_label": "Marker pool (52623 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 52623,
+      "group": "Fishes",
+      "common_name": "Rudd",
+      "risk": "",
+      "n_ra": 1,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 2,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba",
+          "Ontario"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Tanichthys albonubes",
+      "tier": "D",
+      "tier_label": "Marker pool (1915 records)",
+      "transcriptome_count": 0,
+      "nuccore_count": 1915,
+      "group": "Fishes",
+      "common_name": "White Cloud Mountain Minnow",
+      "risk": "",
+      "n_ra": 1,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Barbel barbus",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Dorosoma cepedianum",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Gizzard shad",
+      "risk": "Invasive",
+      "n_ra": 2,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 2,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba",
+          "Quebec"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Lepomis humilis",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Orangespotted Sunfish",
+      "risk": "",
+      "n_ra": 3,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Lepomis megalotis",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 2,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba",
+          "Quebec"
+        ]
+      }
+    },
+    {
+      "scientific_name": "Valvata piscinalis",
+      "tier": "E",
+      "tier_label": "No public sequence",
+      "transcriptome_count": 0,
+      "nuccore_count": 0,
+      "group": "Mollusk-Gastropoda",
+      "common_name": "European Stream Valvata",
+      "risk": "",
+      "n_ra": 4,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 2,
+      "reg_by_level": {
+        "Restricted": [
+          "Wisconsin"
+        ],
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
+    }
+  ]
+}

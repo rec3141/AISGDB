@@ -1,0 +1,104 @@
+part	item	common_name	scientific	condition	import_area	possess_area	transport_area	release_area
+2	1	Grass carp	Ctenopharyngodon idella	Dead and eviscerated	Canada	Canada	Canada	Canada
+2	2	Bighead carp	Hypophthalmichthys nobilis	Dead and eviscerated	Canada	Canada	Canada	Canada
+2	3	Silver carp	Hypophthalmichthys molitrix	Dead and eviscerated	Canada	Canada	Canada	Canada
+2	4	Black carp	Mylopharyngodon piceus	Dead and eviscerated	Canada	Canada	Canada	Canada
+2	5	Zebra mussel	Dreissena polymorpha		Canada, except in (a) the transboundary waters in Ontario, downstream of the bridge crossing the Pigeon River located at 48°00 ′ 05.1 ″ N 89°35 ′ 06.8 ″ W;	British Columbia, Alberta, Saskatchewan and Manitoba	British Columbia, Alberta, Saskatchewan and Manitoba	British Columbia, Alberta, Saskatchewan and Manitoba
+2	6	Quagga mussel	Dreissena bugensis		Canada, except in (a) the transboundary waters in Ontario, downstream of the bridge crossing the Pigeon River located at 48°00 ′ 05.1 ″ N 89°35 ′ 06.8 ″ W; (b) the boundary waters of the Canadian Great Lakes and connecting waterways, between the location of the bridge and the boundary between Ontario and Quebec; and (c) the boundary and transboundary waters in Quebec	British Columbia, Alberta, Saskatchewan and Manitoba	British Columbia, Alberta, Saskatchewan and Manitoba	British Columbia, Alberta, Saskatchewan and Manitoba
+2	7	Any species of the snakehead family	Any species of the family Channidae	Dead and eviscerated		Ontario	Ontario	Ontario
+2	8	Ruffe	Gymnocephalus cernua	Dead		Ontario and Manitoba	Ontario and Manitoba	Ontario and Manitoba
+2	9	Rudd	Scardinius erythropthalmus	Dead		Ontario and Manitoba	Ontario and Manitoba	Ontario and Manitoba
+2	10	Round goby	Neogobius melanostomus	Dead		Ontario and Manitoba	Ontario and Manitoba	Ontario and Manitoba
+2	11	Tubenose goby	Proterorhinus semilunaris	Dead		Ontario and Manitoba	Ontario and Manitoba	Ontario and Manitoba
+2	12	Sea lamprey	Petromyzon marinus	Dead		Manitoba	Manitoba	Manitoba
+2	13	Arctic lamprey	Lethenteron camtschaticum	Dead		Manitoba	Manitoba	Manitoba
+2	14	Siberian sturgeon	Acipenser baerii	Dead		Manitoba	Manitoba	Manitoba
+2	15	Russian sturgeon	Acipenser gueldenstaedtii	Dead		Manitoba	Manitoba	Manitoba
+2	16	Thorn sturgeon	Acipenser nudiventris	Dead		Manitoba	Manitoba	Manitoba
+2	17	Sterlet sturgeon	Acipenser ruthenus	Dead		Manitoba	Manitoba	Manitoba
+2	18	Stellate sturgeon	Acipenser stellatus	Dead		Manitoba	Manitoba	Manitoba
+2	19	Beluga sturgeon	Huso huso	Dead		Manitoba	Manitoba	Manitoba
+2	20	Pallid sturgeon	Scaphirhynchus albus	Dead		Manitoba	Manitoba	Manitoba
+2	21	Shortnose sturgeon	Acipenser brevirostrum	Dead		Manitoba	Manitoba	Manitoba
+2	22	Shovelnose sturgeon	Scaphirhynchus platorynchus	Dead		Manitoba	Manitoba	Manitoba
+2	23	Paddlefish	Polyodon spathula	Dead		Manitoba	Manitoba	Manitoba
+2	24	Spotted gar	Lepisosteus oculatus	Dead		Manitoba	Manitoba	Manitoba
+2	25	Longnose gar	Lepisosteus osseus	Dead		Manitoba	Manitoba	Manitoba
+2	26	Shortnose gar	Lepisosteus platostomus	Dead		Manitoba	Manitoba	Manitoba
+2	27	Bowfin	Amia calva	Dead		Manitoba	Manitoba	Manitoba
+2	28	Alewife	Alosa pseudoharengus	Dead		Manitoba	Manitoba	Manitoba
+2	29	Gizzard shad	Dorosoma cepedianum	Dead		Manitoba	Manitoba	Manitoba
+2	30	Rainbow smelt	Osmerus mordax	Dead		Manitoba	Manitoba	Manitoba
+2	31	Bitterling	All species of the genera Rhodeus and Tanakia	Dead		Manitoba	Manitoba	Manitoba
+2	32	Carp bream	Abramis brama	Dead		Manitoba	Manitoba	Manitoba
+2	33	Schneider or Chub	Alburnoides bipunctatus	Dead		Manitoba	Manitoba	Manitoba
+2	34	Barbel	Barbel barbus	Dead		Manitoba	Manitoba	Manitoba
+2	35	Crucian carp	Carassius carassius	Dead		Manitoba	Manitoba	Manitoba
+2	36	Gudgeon	Gobio gobio gobio	Dead		Manitoba	Manitoba	Manitoba
+2	37	Red shiner	Cyprinella lutrensis	Dead		Manitoba	Manitoba	Manitoba
+2	38	Utah chub	Gila atraria	Dead		Manitoba	Manitoba	Manitoba
+2	39	European chub	Leuciscus cephalus	Dead		Manitoba	Manitoba	Manitoba
+2	40	Orfe or Ide	Leuciscus idus	Dead		Manitoba	Manitoba	Manitoba
+2	41	Common dace	Leuciscus leuciscus	Dead		Manitoba	Manitoba	Manitoba
+2	42	Czekanowski’s minnow	Phoxinus czekanowskii	Dead		Manitoba	Manitoba	Manitoba
+2	43	Swamp minnow	Phoxinus perenurus	Dead		Manitoba	Manitoba	Manitoba
+2	44	Eurasian minnow	Phoxinus phoxinus	Dead		Manitoba	Manitoba	Manitoba
+2	45	Kutum	Rutilus frisii	Dead		Manitoba	Manitoba	Manitoba
+2	46	Roach	Rutilus rutilus	Dead		Manitoba	Manitoba	Manitoba
+2	47	Tench	Tinca tinca	Dead		Manitoba	Manitoba	Manitoba
+2	48	Vimba	Vimba vimba	Dead		Manitoba	Manitoba	Manitoba
+2	49	White cloud minnow	Tanichthys albonubes	Dead		Manitoba	Manitoba	Manitoba
+2	50	Lake chubsucker	Erimyzon sucetta	Dead		Manitoba	Manitoba	Manitoba
+2	51	Stone loach	Barbatula barbatula	Dead		Manitoba	Manitoba	Manitoba
+2	52	Oriental weatherfish	Misgurnus anguillicaudatus	Dead		Manitoba	Manitoba	Manitoba
+2	53	Walking catfish	Clarias batrachus	Dead		Manitoba	Manitoba	Manitoba
+2	54	White catfish	Ameiurus catus	Dead		Manitoba	Manitoba	Manitoba
+2	55	Yellow bullhead	Ameiurus natalis	Dead		Manitoba	Manitoba	Manitoba
+2	56	Slender madtom	Noturus exilis	Dead		Manitoba	Manitoba	Manitoba
+2	57	Margined madtom	Noturus insignis	Dead		Manitoba	Manitoba	Manitoba
+2	58	Brindled madtom	Noturus miurus	Dead		Manitoba	Manitoba	Manitoba
+2	59	Freckled madtom	Noturus nocturnus	Dead		Manitoba	Manitoba	Manitoba
+2	60	Northern madtom	Noturus stigmosus	Dead		Manitoba	Manitoba	Manitoba
+2	61	Flathead catfish	Pylodictis olivaris	Dead		Manitoba	Manitoba	Manitoba
+2	62	Wels catfish	Silurus glanis	Dead		Manitoba	Manitoba	Manitoba
+2	63	Western mosquitofish	Gambusia affinis	Dead		Manitoba	Manitoba	Manitoba
+2	64	Fourspine stickleback	Apeltes quadracus	Dead		Manitoba	Manitoba	Manitoba
+2	65	Threespine stickleback	Gasterosteus aculeatus	Dead		Manitoba	Manitoba	Manitoba
+2	66	Blackspotted stickleback	Gasterosteus wheatlandi	Dead		Manitoba	Manitoba	Manitoba
+2	67	Bullhead or Miller’s thumb	Cottus gobio gobio	Dead		Manitoba	Manitoba	Manitoba
+2	68	White perch	Morone americana and hybrids	Dead		Manitoba	Manitoba	Manitoba
+2	69	Yellow bass	Morone mississippiensis and hybrids	Dead		Manitoba	Manitoba	Manitoba
+2	70	Striped bass	Morone saxatilis and hybrids	Dead		Manitoba	Manitoba	Manitoba
+2	71	Green sunfish	Lepomis cyanellus	Dead		Manitoba	Manitoba	Manitoba
+2	72	Orangespotted sunfish	Lepomis humilis	Dead		Manitoba	Manitoba	Manitoba
+2	73	Longear sunfish	Lepomis megalotis	Dead		Manitoba	Manitoba	Manitoba
+2	74	Northern sunfish	Lepomis peltastes	Dead		Manitoba	Manitoba	Manitoba
+2	75	Zander	Sander lucioperca	Dead		Manitoba	Manitoba	Manitoba
+2	76	Volga pikeperch	Sander volgensis or Sander marinus	Dead		Manitoba	Manitoba	Manitoba
+2	77	Snakehead	Channa argus	Dead and eviscerated		Manitoba	Manitoba	Manitoba
+2	78	European stream valvata	Valvata piscinalis	Dead		Manitoba	Manitoba	Manitoba
+2	79	Chinese mystery snail	Cipangopaludina chinensis	Dead		Manitoba	Manitoba	Manitoba
+2	80	New Zealand mud snail	Potamopyrgus antipodarum	Dead		Manitoba	Manitoba	Manitoba
+2	81	Mud bithynid	Bithynia tentaculata	Dead		Manitoba	Manitoba	Manitoba
+2	82	Big-eared radix	Radix auricularia	Dead		Manitoba	Manitoba	Manitoba
+2	83	Asian clam	Corbicula fluminea	Dead		Manitoba	Manitoba	Manitoba
+2	84	Greater european peaclam	Pisidium amnicum	Dead		Manitoba	Manitoba	Manitoba
+2	85	Henslow peaclam	Pisidium henslowanum	Dead		Manitoba	Manitoba	Manitoba
+2	86	European fingernail clam	Sphaerium corneum	Dead		Manitoba	Manitoba	Manitoba
+2	87	Spiny water flea	Bythotrephes cederstroemi	Dead		Manitoba	Manitoba	Manitoba
+2	88	Fish hook water flea	Cercopagis pengoi	Dead		Manitoba	Manitoba	Manitoba
+2	89	Rusty crayfish	Orconectes rusticus	Dead		Manitoba	Manitoba	Manitoba
+3	1	Club tunicate	Styela clava					
+3	2	Vase tunicate	Ciona intestinalis					
+3	3	Golden Star tunicate	Botryllus schlosseri					
+3	4	Violet tunicate	Botrylloides violaceus					
+3	5	Didemnum	Didemnum vexillum					
+3	6	Bloody red shrimp	Hemimysis anomala					
+3	7	European green crab	Carcinus maenas					
+3	8	Chinese mitten crab	Eriocheir sinensis					
+3	9	Smallmouth bass	Micropterus dolomieu					
+3	10	Largemouth bass	Micropterus salmoides					
+3	11	Northern pike	Esox lucius					
+3	12	Pumpkinseed	Lepomis gibbosus					
+3	13	Walleye	Sander vitreus					
+3	14	Yellow perch	Perca flavescens					

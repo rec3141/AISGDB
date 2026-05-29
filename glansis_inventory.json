@@ -1,5 +1,6 @@
 {
-  "generated_at": "2026-05-29T20:01:10Z",
+  "generated_at": "2026-05-29T20:31:39Z",
+  "source": "GLANSIS",
   "n_species": 370,
   "tier_counts": {
     "A": 95,
@@ -430,7 +431,7 @@
       "reg_n_juris": 9,
       "reg_by_level": {
         "Prohibited": [
-          "Manitoba",
+          "Canada (federal)",
           "Michigan",
           "Mille Lacs Band of Ojibwe Minnesota Ceded territory",
           "Minnesota",
@@ -568,15 +569,18 @@
       "risk": "Invasive",
       "n_ra": 7,
       "reg_level": "Prohibited",
-      "reg_n_juris": 9,
+      "reg_n_juris": 12,
       "reg_by_level": {
         "Prohibited": [
+          "Alberta",
+          "British Columbia",
           "Canada",
           "Indiana",
           "Manitoba",
           "New York",
           "Ohio",
           "Pennsylvania",
+          "Saskatchewan",
           "United States"
         ],
         "Restricted": [
@@ -603,9 +607,11 @@
       "risk": "Invasive",
       "n_ra": 6,
       "reg_level": "Prohibited",
-      "reg_n_juris": 10,
+      "reg_n_juris": 13,
       "reg_by_level": {
         "Prohibited": [
+          "Alberta",
+          "British Columbia",
           "Canada",
           "Indiana",
           "Manitoba",
@@ -613,6 +619,7 @@
           "New York",
           "Ohio",
           "Pennsylvania",
+          "Saskatchewan",
           "United States",
           "Wisconsin"
         ],
@@ -660,10 +667,9 @@
       "risk": "High",
       "n_ra": 12,
       "reg_level": "Prohibited",
-      "reg_n_juris": 3,
+      "reg_n_juris": 2,
       "reg_by_level": {
         "Prohibited": [
-          "Manitoba",
           "Wisconsin"
         ],
         "Restricted": [
@@ -717,9 +723,10 @@
       "risk": "High",
       "n_ra": 4,
       "reg_level": "Prohibited",
-      "reg_n_juris": 5,
+      "reg_n_juris": 6,
       "reg_by_level": {
         "Restricted": [
+          "Canada (where not indigenous)",
           "Quebec"
         ],
         "Other": [
@@ -750,10 +757,13 @@
       "risk": "High",
       "n_ra": 1,
       "reg_level": "Prohibited",
-      "reg_n_juris": 1,
+      "reg_n_juris": 2,
       "reg_by_level": {
         "Prohibited": [
           "Quebec"
+        ],
+        "Restricted": [
+          "Canada (where not indigenous)"
         ]
       }
     },
@@ -902,11 +912,12 @@
       "risk": "",
       "n_ra": 0,
       "reg_level": "Prohibited",
-      "reg_n_juris": 9,
+      "reg_n_juris": 10,
       "reg_by_level": {
         "Prohibited": [
           "Illinois",
           "Indiana",
+          "Manitoba",
           "Michigan",
           "Mille Lacs Band of Ojibwe Minnesota Ceded territory",
           "Minnesota",
@@ -940,9 +951,9 @@
       "reg_n_juris": 11,
       "reg_by_level": {
         "Prohibited": [
+          "Canada (federal)",
           "Illinois",
           "Indiana",
-          "Manitoba",
           "Michigan",
           "Minnesota",
           "New York",
@@ -1018,10 +1029,9 @@
       "risk": "Moderate",
       "n_ra": 5,
       "reg_level": "Prohibited",
-      "reg_n_juris": 2,
+      "reg_n_juris": 1,
       "reg_by_level": {
         "Prohibited": [
-          "Manitoba",
           "Wisconsin"
         ]
       }
@@ -1132,10 +1142,13 @@
       "risk": "High",
       "n_ra": 1,
       "reg_level": "Prohibited",
-      "reg_n_juris": 1,
+      "reg_n_juris": 2,
       "reg_by_level": {
         "Prohibited": [
           "Quebec"
+        ],
+        "Restricted": [
+          "Canada (where not indigenous)"
         ]
       }
     },
@@ -1157,10 +1170,13 @@
       "risk": "High",
       "n_ra": 1,
       "reg_level": "Prohibited",
-      "reg_n_juris": 1,
+      "reg_n_juris": 2,
       "reg_by_level": {
         "Prohibited": [
           "Quebec"
+        ],
+        "Restricted": [
+          "Canada (where not indigenous)"
         ]
       }
     },
@@ -1288,7 +1304,7 @@
       "risk": "Invasive",
       "n_ra": 11,
       "reg_level": "Prohibited",
-      "reg_n_juris": 10,
+      "reg_n_juris": 9,
       "reg_by_level": {
         "Restricted": [
           "Ontario"
@@ -1299,7 +1315,6 @@
         "Prohibited": [
           "Illinois",
           "Indiana",
-          "Manitoba",
           "Michigan",
           "Minnesota",
           "New York",
@@ -1576,10 +1591,13 @@
       "risk": "High",
       "n_ra": 1,
       "reg_level": "Prohibited",
-      "reg_n_juris": 1,
+      "reg_n_juris": 2,
       "reg_by_level": {
         "Prohibited": [
           "Quebec"
+        ],
+        "Restricted": [
+          "Canada (where not indigenous)"
         ]
       }
     },
@@ -1732,7 +1750,7 @@
       "risk": "Invasive",
       "n_ra": 12,
       "reg_level": "Prohibited",
-      "reg_n_juris": 9,
+      "reg_n_juris": 8,
       "reg_by_level": {
         "Other": [
           "Pennsylvania"
@@ -1740,7 +1758,6 @@
         "Prohibited": [
           "Illinois",
           "Indiana",
-          "Manitoba",
           "Minnesota",
           "New York",
           "Ohio"
@@ -1769,10 +1786,9 @@
       "risk": "Invasive",
       "n_ra": 6,
       "reg_level": "Prohibited",
-      "reg_n_juris": 6,
+      "reg_n_juris": 5,
       "reg_by_level": {
         "Prohibited": [
-          "Manitoba",
           "Michigan",
           "Minnesota",
           "Ontario"
@@ -2151,9 +2167,13 @@
       "common_name": "Walleye",
       "risk": "High",
       "n_ra": 1,
-      "reg_level": "",
-      "reg_n_juris": 0,
-      "reg_by_level": {}
+      "reg_level": "Restricted",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Restricted": [
+          "Canada (where not indigenous)"
+        ]
+      }
     },
     {
       "scientific_name": "Scardinius erythrophthalmus",
@@ -2360,12 +2380,11 @@
       "risk": "Invasive",
       "n_ra": 12,
       "reg_level": "Prohibited",
-      "reg_n_juris": 11,
+      "reg_n_juris": 10,
       "reg_by_level": {
         "Prohibited": [
           "Illinois",
           "Indiana",
-          "Manitoba",
           "Michigan",
           "Mille Lacs Band of Ojibwe Minnesota Ceded territory",
           "Minnesota",
@@ -2972,7 +2991,7 @@
       "risk": "Invasive",
       "n_ra": 13,
       "reg_level": "Prohibited",
-      "reg_n_juris": 11,
+      "reg_n_juris": 10,
       "reg_by_level": {
         "Restricted": [
           "Michigan",
@@ -2985,7 +3004,6 @@
         "Prohibited": [
           "Illinois",
           "Indiana",
-          "Manitoba",
           "Mille Lacs Band of Ojibwe Minnesota Ceded territory",
           "Minnesota",
           "New York",
@@ -3316,7 +3334,7 @@
         "Prohibited": [
           "Illinois",
           "Indiana",
-          "Manitoba",
+          "New York",
           "New York"
         ],
         "Restricted": [
@@ -3625,14 +3643,13 @@
       "risk": "Invasive",
       "n_ra": 6,
       "reg_level": "Prohibited",
-      "reg_n_juris": 6,
+      "reg_n_juris": 5,
       "reg_by_level": {
         "Other": [
           "Indiana",
           "Pennsylvania"
         ],
         "Prohibited": [
-          "Manitoba",
           "New York",
           "Wisconsin"
         ],
@@ -3652,7 +3669,7 @@
       "risk": "Invasive",
       "n_ra": 10,
       "reg_level": "Prohibited",
-      "reg_n_juris": 7,
+      "reg_n_juris": 6,
       "reg_by_level": {
         "Restricted": [
           "Minnesota",
@@ -3662,7 +3679,6 @@
           "Pennsylvania"
         ],
         "Prohibited": [
-          "Manitoba",
           "Michigan",
           "New York",
           "Wisconsin"
@@ -3862,13 +3878,12 @@
       "risk": "Invasive",
       "n_ra": 5,
       "reg_level": "Prohibited",
-      "reg_n_juris": 4,
+      "reg_n_juris": 3,
       "reg_by_level": {
         "Other": [
           "Pennsylvania"
         ],
         "Prohibited": [
-          "Manitoba",
           "New York",
           "Wisconsin"
         ]
@@ -3926,13 +3941,9 @@
       "common_name": "",
       "risk": "",
       "n_ra": 1,
-      "reg_level": "Prohibited",
-      "reg_n_juris": 1,
-      "reg_by_level": {
-        "Prohibited": [
-          "Manitoba"
-        ]
-      }
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Euglesa supina",
@@ -4043,9 +4054,11 @@
           "Pennsylvania"
         ],
         "Prohibited": [
-          "Manitoba",
           "New York",
           "Wisconsin"
+        ],
+        "Restricted": [
+          "Canada (where not indigenous)"
         ]
       }
     },
@@ -4060,7 +4073,7 @@
       "risk": "Invasive",
       "n_ra": 11,
       "reg_level": "Prohibited",
-      "reg_n_juris": 11,
+      "reg_n_juris": 10,
       "reg_by_level": {
         "Restricted": [
           "Ontario"
@@ -4071,7 +4084,6 @@
         "Prohibited": [
           "Illinois",
           "Indiana",
-          "Manitoba",
           "Michigan",
           "Mille Lacs Band of Ojibwe Minnesota Ceded territory",
           "Minnesota",
@@ -4268,8 +4280,8 @@
         ],
         "Prohibited": [
           "Indiana",
-          "Manitoba",
           "Mille Lacs Band of Ojibwe Minnesota Ceded territory",
+          "New York",
           "New York",
           "Ohio"
         ],
@@ -4403,14 +4415,13 @@
       "risk": "High",
       "n_ra": 6,
       "reg_level": "Prohibited",
-      "reg_n_juris": 6,
+      "reg_n_juris": 5,
       "reg_by_level": {
         "Other": [
           "Pennsylvania"
         ],
         "Prohibited": [
           "Indiana",
-          "Manitoba",
           "Michigan",
           "Minnesota",
           "Wisconsin"
@@ -4511,9 +4522,13 @@
       "common_name": "Margined Madtom",
       "risk": "Invasive",
       "n_ra": 3,
-      "reg_level": "",
-      "reg_n_juris": 0,
-      "reg_by_level": {}
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Manitoba"
+        ]
+      }
     },
     {
       "scientific_name": "Nymphaea odorata",
@@ -4670,10 +4685,9 @@
       "risk": "Invasive",
       "n_ra": 12,
       "reg_level": "Prohibited",
-      "reg_n_juris": 2,
+      "reg_n_juris": 1,
       "reg_by_level": {
         "Prohibited": [
-          "Manitoba",
           "Wisconsin"
         ]
       }
@@ -4882,12 +4896,11 @@
       "risk": "Invasive",
       "n_ra": 10,
       "reg_level": "Prohibited",
-      "reg_n_juris": 7,
+      "reg_n_juris": 6,
       "reg_by_level": {
         "Prohibited": [
           "Illinois",
           "Indiana",
-          "Manitoba",
           "Michigan",
           "Minnesota",
           "Ontario",
@@ -5060,7 +5073,7 @@
       "risk": "Invasive",
       "n_ra": 12,
       "reg_level": "Prohibited",
-      "reg_n_juris": 9,
+      "reg_n_juris": 8,
       "reg_by_level": {
         "Restricted": [
           "Michigan",
@@ -5070,7 +5083,6 @@
         "Prohibited": [
           "Illinois",
           "Indiana",
-          "Manitoba",
           "Mille Lacs Band of Ojibwe Minnesota Ceded territory",
           "Minnesota",
           "Ohio"
@@ -5387,13 +5399,9 @@
       "common_name": "Scud",
       "risk": "Invasive",
       "n_ra": 3,
-      "reg_level": "Prohibited",
-      "reg_n_juris": 1,
-      "reg_by_level": {
-        "Prohibited": [
-          "Manitoba"
-        ]
-      }
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Egeria densa",
@@ -5406,12 +5414,11 @@
       "risk": "High",
       "n_ra": 11,
       "reg_level": "Prohibited",
-      "reg_n_juris": 10,
+      "reg_n_juris": 9,
       "reg_by_level": {
         "Prohibited": [
           "Illinois",
           "Indiana",
-          "Manitoba",
           "Michigan",
           "New York",
           "Ohio",
@@ -5465,10 +5472,13 @@
       "risk": "High",
       "n_ra": 1,
       "reg_level": "Prohibited",
-      "reg_n_juris": 1,
+      "reg_n_juris": 2,
       "reg_by_level": {
         "Prohibited": [
           "Quebec"
+        ],
+        "Restricted": [
+          "Canada (where not indigenous)"
         ]
       }
     },
@@ -5716,12 +5726,11 @@
       "risk": "Invasive",
       "n_ra": 11,
       "reg_level": "Prohibited",
-      "reg_n_juris": 11,
+      "reg_n_juris": 10,
       "reg_by_level": {
         "Prohibited": [
           "Illinois",
           "Indiana",
-          "Manitoba",
           "Michigan",
           "Mille Lacs Band of Ojibwe Minnesota Ceded territory",
           "Minnesota",
@@ -5844,10 +5853,13 @@
       "risk": "",
       "n_ra": 0,
       "reg_level": "Prohibited",
-      "reg_n_juris": 1,
+      "reg_n_juris": 2,
       "reg_by_level": {
         "Prohibited": [
           "Quebec"
+        ],
+        "Restricted": [
+          "Canada (where not indigenous)"
         ]
       }
     },
@@ -5862,10 +5874,13 @@
       "risk": "",
       "n_ra": 0,
       "reg_level": "Prohibited",
-      "reg_n_juris": 1,
+      "reg_n_juris": 2,
       "reg_by_level": {
         "Prohibited": [
           "Quebec"
+        ],
+        "Restricted": [
+          "Canada (where not indigenous)"
         ]
       }
     },
@@ -6147,12 +6162,11 @@
       "risk": "High",
       "n_ra": 11,
       "reg_level": "Prohibited",
-      "reg_n_juris": 10,
+      "reg_n_juris": 9,
       "reg_by_level": {
         "Prohibited": [
           "Illinois",
           "Indiana",
-          "Manitoba",
           "Michigan",
           "New York",
           "Ohio",
@@ -6192,12 +6206,11 @@
       "risk": "Invasive",
       "n_ra": 12,
       "reg_level": "Prohibited",
-      "reg_n_juris": 5,
+      "reg_n_juris": 4,
       "reg_by_level": {
         "Prohibited": [
           "Illinois",
           "Indiana",
-          "Manitoba",
           "Minnesota",
           "Wisconsin"
         ]
@@ -6337,7 +6350,7 @@
       "risk": "Invasive",
       "n_ra": 5,
       "reg_level": "Prohibited",
-      "reg_n_juris": 9,
+      "reg_n_juris": 8,
       "reg_by_level": {
         "Restricted": [
           "Michigan",
@@ -6349,7 +6362,6 @@
         ],
         "Prohibited": [
           "Indiana",
-          "Manitoba",
           "Minnesota",
           "New York",
           "Ohio"

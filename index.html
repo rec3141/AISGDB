@@ -57,9 +57,15 @@ Companion pipeline: <a href="https://github.com/rec3141/danaSeq">danaSeq</a>'s <
   </li>
 
   <li class="card">
-    <h3><a href="glansis_inventory.html">GLANSIS species → NCBI assembly inventory (first pass)</a></h3>
-    <p>Live inventory of all 370 GLANSIS species against the NCBI Datasets API, tiered as <em>chromosome-scale WGS</em> / <em>draft WGS</em> / <em>markers only</em> / <em>nothing</em>. Filterable table; underlying script + machine-readable outputs (<a href="glansis_inventory.tsv">TSV</a>, <a href="glansis_inventory.json">JSON</a>) ship in the repo.</p>
+    <h3><a href="glansis_inventory.html">GLANSIS species → NCBI assembly inventory</a></h3>
+    <p>All 370 species in the NOAA GLANSIS Great Lakes watchlist, tiered against the NCBI Datasets API as <em>chromosome-scale WGS</em> / <em>draft WGS</em> / <em>transcriptome only</em> / <em>markers only</em> / <em>nothing</em>. Filterable + sortable; underlying script + machine-readable outputs (<a href="glansis_inventory.tsv">TSV</a>, <a href="glansis_inventory.json">JSON</a>) ship in the repo.</p>
     <div class="meta">95 chromosome-scale (26%) · 30 draft (8%) · 13 transcriptome/EST (4%) · 92 marker-only (25%) · 140 absent (38%)</div>
+  </li>
+
+  <li class="card">
+    <h3><a href="canadian_ais_inventory.html">Canadian AIS Regulation (SOR/2015-121) → NCBI assembly inventory</a></h3>
+    <p>The 101 species on Canada's federal Aquatic Invasive Species Regulations Schedule (Part 2 prohibited + Part 3 species-at-risk), tiered the same way as GLANSIS. The federal regulation is the master Canadian list — provincial regulations like Manitoba MR 173/2015 are mirrors of it. Outputs: <a href="canadian_ais_inventory.tsv">TSV</a> · <a href="canadian_ais_inventory.json">JSON</a>.</p>
+    <div class="meta">47 chromosome-scale (47%) · 14 draft (14%) · 3 transcriptome/EST (3%) · 32 marker-only (32%) · 5 absent (5%)</div>
   </li>
 
 </ul>

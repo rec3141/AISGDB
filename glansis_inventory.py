@@ -86,11 +86,15 @@ RISK_PRIORITY = ["Invasive", "High", "Watchlist", "Moderate", "Low"]
 # Same URL-stability caveat as RALevel2_v6.txt: vendor a snapshot.
 GLANSIS_REGS_URL = "https://www.glerl.noaa.gov/glansis/data/invasiveRegs.txt"
 
-# Manitoba isn't in GLANSIS's invasiveRegs.txt — its own province-level
-# AIS schedule (M.R. 173/2015 Schedule A) is a separate file we parse out
-# of the PDF and fold in as one additional jurisdiction.
-MB_REGULATION_URL = ("https://web2.gov.mb.ca/laws/regs/current/"
-                     "_pdf-regs.php?reg=173/2015")
+# Federal Aquatic Invasive Species Regulations (SOR/2015-121). The master
+# Canadian AIS list — Schedule Part 2 is the prohibited species (89), Part 3
+# is the additional Species at Risk (14, prohibited only where not
+# indigenous). Manitoba's MR 173/2015 Schedule A is a provincial-enforcement
+# mirror of this federal list, so we use the federal regulation as the
+# canonical source and decompose its per-zone scope into per-province
+# jurisdictions during the regs merge.
+CANADA_AIS_REGULATION_URL = ("https://laws-lois.justice.gc.ca/eng/"
+                             "regulations/sor-2015-121/FullText.html")
 
 # Most-restrictive regulation level wins for the displayed cell.
 REG_PRIORITY = ["Prohibited", "Restricted", "Other"]
@@ -266,38 +270,81 @@ def load_regs(path):
     return regs
 
 
-def load_mb_schedule_a(path):
-    """Read the parsed Manitoba Schedule A TSV.
+def load_canada_schedule(path):
+    """Read the parsed federal SOR/2015-121 schedule TSV.
 
-    Returns {(genus_lo, species_lo): condition}. Family-level entries
-    ('Any species of family Channidae', etc.) are skipped — they don't
-    have a clean binomial to join on.
+    Returns {(genus_lo, species_lo): {part, possess_area, ...}}. Family-level
+    entries ('Any species of family Channidae') are skipped — they have no
+    binomial to join on. Both Part 2 (prohibited) and Part 3 (species at
+    risk) are loaded; the 'part' field disambiguates.
     """
     if not path or not os.path.exists(path):
         return {}
     out = {}
     with open(path, encoding="utf-8") as fh:
         for row in csv.DictReader(fh, delimiter="\t"):
-            sci = (row.get("scientific_name") or "").strip()
+            sci = (row.get("scientific") or "").strip()
             parts = sci.split()
             if len(parts) < 2 or not parts[0][0].isupper() or not parts[1][0].islower():
                 continue
-            out[(parts[0].lower(), parts[1].lower())] = (row.get("condition") or "").strip()
+            # Skip family-level placeholders like 'Any species of the family Channidae'.
+            if parts[0] == "Any" or parts[0] == "All":
+                continue
+            out[(parts[0].lower(), parts[1].lower())] = {
+                "part":           row.get("part", ""),
+                "item":           row.get("item", ""),
+                "condition":      (row.get("condition") or "").strip(),
+                "possess_area":   (row.get("possess_area") or "").strip(),
+                "import_area":    (row.get("import_area") or "").strip(),
+                "common_name":    (row.get("common_name") or "").strip(),
+            }
     return out
 
 
-def merge_mb_into_regs(regs, mb_entries):
-    """Fold each Manitoba listing into the regs dict as one extra Prohibited
-    jurisdiction. Possession is prohibited under MR 173/2015 regardless of
-    the Schedule A 'condition' (Dead / Dead and eviscerated / n/a), so all
-    map to Prohibited."""
-    for key in mb_entries:
+# Map federal possession-area phrases to lists of jurisdictions. Anything
+# not matched here is treated as a single opaque jurisdiction.
+_CANADA_AREA_RE = re.compile(r"\s+and\s+|,\s*")
+
+
+def _split_area(area):
+    """Decompose 'British Columbia, Alberta, Saskatchewan and Manitoba'
+    into ['British Columbia', 'Alberta', 'Saskatchewan', 'Manitoba']."""
+    area = (area or "").strip()
+    if not area:
+        return []
+    if area == "Canada":
+        return ["Canada (federal)"]
+    parts = [p.strip() for p in _CANADA_AREA_RE.split(area) if p.strip()]
+    return parts or [area]
+
+
+def merge_canada_into_regs(regs, canada_entries):
+    """Fold each federal SOR/2015-121 listing into the regs dict.
+
+    Part 2 contributes per-province Prohibited jurisdictions (decomposed
+    from `possess_area`). Part 3 contributes a single 'Canada (where not
+    indigenous)' Restricted jurisdiction. Jurisdictions are de-duplicated
+    against existing GLANSIS invasiveRegs entries — this matters because
+    GLANSIS already lists 'Manitoba', 'Ontario', etc. for some species,
+    and adding the federal source shouldn't double-count.
+    """
+    for key, fed in canada_entries.items():
         entry = regs.get(key) or {"top_level": "", "n_jurisdictions": 0,
                                   "by_level": {}}
         by_level = {lvl: list(jur) for lvl, jur in entry.get("by_level", {}).items()}
-        by_level.setdefault("Prohibited", []).append("Manitoba")
-        # Re-sort the affected level.
-        by_level["Prohibited"] = sorted(set(by_level["Prohibited"]))
+
+        if fed["part"] == "2":
+            new_jurs = _split_area(fed["possess_area"])
+            level = "Prohibited"
+        elif fed["part"] == "3":
+            new_jurs = ["Canada (where not indigenous)"]
+            level = "Restricted"
+        else:
+            continue
+
+        by_level.setdefault(level, []).extend(new_jurs)
+        by_level[level] = sorted(set(by_level[level]))
+
         top = next((lvl for lvl in REG_PRIORITY if lvl in by_level),
                    next(iter(by_level), ""))
         regs[key] = {
@@ -306,6 +353,12 @@ def merge_mb_into_regs(regs, mb_entries):
             "by_level":        by_level,
         }
     return regs
+
+
+def species_from_canada_schedule(canada_entries):
+    """Yield 'Genus species' strings from the parsed federal schedule,
+    sorted, in NCBI-Datasets-API-friendly form."""
+    return sorted(f"{g.title()} {s}" for (g, s) in canada_entries.keys())
 
 
 def classify_assemblies(reports):
@@ -379,60 +432,18 @@ def tier_for(genome_info, nuccore_count, transcriptome_count):
     return "E", "No public sequence"
 
 
-def main():
-    ap = argparse.ArgumentParser(description=__doc__,
-                                 formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--occurrence", default="/tmp/glansis/occurrence.txt",
-                    help="Path to extracted GLANSIS DwC occurrence.txt")
-    ap.add_argument("--ra",
-                    default=os.path.join(os.path.dirname(__file__) or ".",
-                                         "data", "RALevel2_v6.txt.gz"),
-                    help="GLANSIS Tier-2 risk-assessment CSV (UTF-16 TSV or .gz). "
-                         f"Live source: {GLANSIS_RA_URL}")
-    ap.add_argument("--regs",
-                    default=os.path.join(os.path.dirname(__file__) or ".",
-                                         "data", "invasiveRegs.txt.gz"),
-                    help="GLANSIS regulatory-listings TSV (UTF-8 or .gz). "
-                         f"Live source: {GLANSIS_REGS_URL}")
-    ap.add_argument("--mb-schedule-a",
-                    default=os.path.join(os.path.dirname(__file__) or ".",
-                                         "data", "manitoba_schedule_a.tsv"),
-                    help="Manitoba AIS Regulation MR 173/2015 Schedule A "
-                         "(parsed TSV). Source PDF: " + MB_REGULATION_URL)
-    ap.add_argument("--out-tsv",  default="/matika/projects/project_zebra/docs/glansis_inventory.tsv")
-    ap.add_argument("--out-html", default="/matika/projects/project_zebra/docs/glansis_inventory.html")
-    ap.add_argument("--out-json", default="/matika/projects/project_zebra/docs/glansis_inventory.json")
-    ap.add_argument("--cache",    default="/tmp/glansis_ncbi_cache.json")
-    ap.add_argument("--refresh",  action="store_true",
-                    help="Invalidate the cache and re-query NCBI.")
-    ap.add_argument("--delay-ms", type=int, default=120,
-                    help="Sleep between NCBI calls (default 120 ms).")
-    ap.add_argument("--limit",    type=int, default=0,
-                    help="Stop after N species (debug).")
-    args = ap.parse_args()
+def classify_species(species, ra_enrich, regs_enrich, *,
+                     cache_path, delay_ms=120, refresh=False):
+    """Run NCBI Datasets + Entrez lookups for each species, classify into
+    A–E tier, attach RA + regs enrichment, return (results, counts).
 
-    species = species_from_dwc(args.occurrence)
-    if args.limit:
-        species = species[: args.limit]
-    print(f"[inventory] GLANSIS species: {len(species)}", file=sys.stderr)
-
-    ra_enrich = load_ra_file(args.ra)
-    print(f"[inventory] RA enrichment loaded for {len(ra_enrich)} (genus, species) pairs",
-          file=sys.stderr)
-    regs_enrich = load_regs(args.regs)
-    print(f"[inventory] regs loaded for {len(regs_enrich)} (genus, species) pairs",
-          file=sys.stderr)
-    mb_entries = load_mb_schedule_a(args.mb_schedule_a)
-    print(f"[inventory] Manitoba Schedule A: {len(mb_entries)} binomial entries",
-          file=sys.stderr)
-    regs_enrich = merge_mb_into_regs(regs_enrich, mb_entries)
-    print(f"[inventory] regs after Manitoba merge: {len(regs_enrich)} pairs",
-          file=sys.stderr)
-
+    Caches NCBI responses at cache_path. Shared by glansis_inventory and
+    canadian_ais_inventory — both pass the same cache so common species
+    aren't re-queried."""
     cache = {}
-    if os.path.exists(args.cache) and not args.refresh:
+    if os.path.exists(cache_path) and not refresh:
         try:
-            with open(args.cache) as f:
+            with open(cache_path) as f:
                 cache = json.load(f)
             print(f"[inventory] cache hits available for {len(cache)} species",
                   file=sys.stderr)
@@ -442,27 +453,24 @@ def main():
     results = []
     for i, name in enumerate(species, 1):
         entry = cache.get(name) or {}
-        need_genome = "genome" not in entry
-        # Fill in any missing fields. Transcriptome + nuccore are only meaningful
-        # when there's no genome, so skip them in that case to save API calls.
-        if need_genome:
+        if "genome" not in entry:
             reports, err = query_ncbi_genome(name)
-            time.sleep(args.delay_ms / 1000.0)
+            time.sleep(delay_ms / 1000.0)
             entry["genome"] = classify_assemblies(reports) if reports else None
             entry["err"] = err
         if not entry.get("genome"):
             if "transcriptome_count" not in entry:
                 entry["transcriptome_count"] = query_transcriptome_count(name)
-                time.sleep(args.delay_ms / 1000.0)
+                time.sleep(delay_ms / 1000.0)
             if "nuccore_count" not in entry:
                 entry["nuccore_count"] = query_nuccore_count(name)
-                time.sleep(args.delay_ms / 1000.0)
+                time.sleep(delay_ms / 1000.0)
         else:
             entry.setdefault("transcriptome_count", 0)
             entry.setdefault("nuccore_count", 0)
         cache[name] = entry
         if i % 25 == 0:
-            with open(args.cache, "w") as f:
+            with open(cache_path, "w") as f:
                 json.dump(cache, f)
             print(f"[inventory] {i}/{len(species)}", file=sys.stderr)
         tier, label = tier_for(
@@ -488,42 +496,120 @@ def main():
             "reg_by_level": rg.get("by_level", {}),
         })
 
-    with open(args.cache, "w") as f:
+    with open(cache_path, "w") as f:
         json.dump(cache, f)
 
-    # Sort: WGS first, then transcriptome, then markers, then nothing.
-    # Within tier, sort alphabetically.
     tier_order = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}
     results.sort(key=lambda r: (tier_order[r["tier"]], r["scientific_name"]))
-
-    # Counts
     counts = defaultdict(int)
     for r in results:
         counts[r["tier"]] += 1
+    return results, counts
 
-    # ---- TSV ----
+
+def write_outputs(results, counts, *, out_tsv, out_json, out_html,
+                  html_title, html_intro_html, source_name):
+    """Shared output writer for GLANSIS / Canadian inventories.
+
+    Writes TSV (machine-readable), JSON (per-tier summary + full species
+    list), and HTML (filterable + sortable view). The HTML is parameterized
+    by title and intro_html so each inventory page has its own framing."""
     cols = ["tier", "scientific_name", "common_name", "group", "risk", "n_ra",
             "reg_level", "reg_n_juris",
             "accession", "assembly_level",
             "assembly_name", "total_length", "refseq_category",
             "transcriptome_count", "nuccore_count"]
-    with open(args.out_tsv, "w") as f:
+    with open(out_tsv, "w") as f:
         f.write("\t".join(cols) + "\n")
         for r in results:
             f.write("\t".join(str(r.get(c, "") or "") for c in cols) + "\n")
 
-    # ---- JSON (machine-readable summary) ----
     summary = {
         "generated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
-        "n_species": len(results),
-        "tier_counts": {k: counts[k] for k in "ABCDE"},
-        "species": results,
+        "source":       source_name,
+        "n_species":    len(results),
+        "tier_counts":  {k: counts[k] for k in "ABCDE"},
+        "species":      results,
     }
-    with open(args.out_json, "w") as f:
+    with open(out_json, "w") as f:
         json.dump(summary, f, indent=2)
 
-    # ---- HTML ----
-    write_html(args.out_html, results, counts)
+    write_html(out_html, results, counts,
+               page_title=html_title, intro_html=html_intro_html)
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__,
+                                 formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--occurrence", default="/tmp/glansis/occurrence.txt",
+                    help="Path to extracted GLANSIS DwC occurrence.txt")
+    ap.add_argument("--ra",
+                    default=os.path.join(os.path.dirname(__file__) or ".",
+                                         "data", "RALevel2_v6.txt.gz"),
+                    help="GLANSIS Tier-2 risk-assessment CSV (UTF-16 TSV or .gz). "
+                         f"Live source: {GLANSIS_RA_URL}")
+    ap.add_argument("--regs",
+                    default=os.path.join(os.path.dirname(__file__) or ".",
+                                         "data", "invasiveRegs.txt.gz"),
+                    help="GLANSIS regulatory-listings TSV (UTF-8 or .gz). "
+                         f"Live source: {GLANSIS_REGS_URL}")
+    ap.add_argument("--canada-schedule",
+                    default=os.path.join(os.path.dirname(__file__) or ".",
+                                         "data", "canada_sor_2015_121_schedule.tsv"),
+                    help="Federal SOR/2015-121 schedule (Parts 2+3, parsed TSV). "
+                         f"Source: {CANADA_AIS_REGULATION_URL}")
+    ap.add_argument("--out-tsv",  default="/matika/projects/project_zebra/docs/glansis_inventory.tsv")
+    ap.add_argument("--out-html", default="/matika/projects/project_zebra/docs/glansis_inventory.html")
+    ap.add_argument("--out-json", default="/matika/projects/project_zebra/docs/glansis_inventory.json")
+    ap.add_argument("--cache",    default="/tmp/glansis_ncbi_cache.json")
+    ap.add_argument("--refresh",  action="store_true",
+                    help="Invalidate the cache and re-query NCBI.")
+    ap.add_argument("--delay-ms", type=int, default=120,
+                    help="Sleep between NCBI calls (default 120 ms).")
+    ap.add_argument("--limit",    type=int, default=0,
+                    help="Stop after N species (debug).")
+    args = ap.parse_args()
+
+    species = species_from_dwc(args.occurrence)
+    if args.limit:
+        species = species[: args.limit]
+    print(f"[inventory] GLANSIS species: {len(species)}", file=sys.stderr)
+
+    ra_enrich = load_ra_file(args.ra)
+    print(f"[inventory] RA enrichment loaded for {len(ra_enrich)} (genus, species) pairs",
+          file=sys.stderr)
+    regs_enrich = load_regs(args.regs)
+    print(f"[inventory] regs loaded for {len(regs_enrich)} (genus, species) pairs",
+          file=sys.stderr)
+    canada_entries = load_canada_schedule(args.canada_schedule)
+    print(f"[inventory] Canadian SOR/2015-121: {len(canada_entries)} binomial entries "
+          f"({sum(1 for v in canada_entries.values() if v['part']=='2')} Part 2, "
+          f"{sum(1 for v in canada_entries.values() if v['part']=='3')} Part 3)",
+          file=sys.stderr)
+    regs_enrich = merge_canada_into_regs(regs_enrich, canada_entries)
+    print(f"[inventory] regs after Canadian merge: {len(regs_enrich)} pairs",
+          file=sys.stderr)
+
+    results, counts = classify_species(
+        species, ra_enrich, regs_enrich,
+        cache_path=args.cache, delay_ms=args.delay_ms, refresh=args.refresh,
+    )
+
+    write_outputs(
+        results, counts,
+        out_tsv=args.out_tsv, out_json=args.out_json, out_html=args.out_html,
+        source_name="GLANSIS",
+        html_title="GLANSIS species &rarr; NCBI assembly inventory",
+        html_intro_html=(
+            f'Generated {time.strftime("%Y-%m-%d")} &middot; '
+            f'{len(results)} species from the '
+            f'<a href="https://nas.er.usgs.gov/ipt/resource?r=nas_glansis">'
+            f'USGS NAS GLANSIS Darwin Core archive</a> '
+            f'&middot; per-species lookup via the '
+            f'<a href="https://api.ncbi.nlm.nih.gov/datasets/">NCBI Datasets v2 API</a> '
+            f'and <a href="https://eutils.ncbi.nlm.nih.gov/">Entrez E-utilities</a>.'
+        ),
+    )
 
     print(
         f"[inventory] done. Tier A={counts['A']}  B={counts['B']}  "
@@ -545,7 +631,9 @@ def fmt_bp(n):
     return str(n)
 
 
-def write_html(path, results, counts):
+def write_html(path, results, counts, *,
+               page_title="Species &rarr; NCBI assembly inventory",
+               intro_html=""):
     tier_meta = {
         "A": ("Chromosome-scale WGS",                "#047857"),
         "B": ("Draft (scaffold / contig) WGS",       "#1d4ed8"),
@@ -676,7 +764,7 @@ def write_html(path, results, counts):
     html = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>GLANSIS species → NCBI assembly inventory</title>
+<title>{page_title}</title>
 <style>
   body {{
     font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
@@ -722,15 +810,8 @@ def write_html(path, results, counts):
   footer {{ margin-top: 2rem; color: #475569; font-size: 0.8rem; }}
 </style>
 </head><body>
-<h1>GLANSIS species &rarr; NCBI assembly inventory</h1>
-<div class="meta">
-  Generated {time.strftime("%Y-%m-%d")} &middot;
-  {n_total} species from the
-  <a href="https://nas.er.usgs.gov/ipt/resource?r=nas_glansis">USGS NAS GLANSIS Darwin Core archive</a>
-  &middot; per-species lookup via the
-  <a href="https://api.ncbi.nlm.nih.gov/datasets/">NCBI Datasets v2 API</a>
-  and <a href="https://eutils.ncbi.nlm.nih.gov/">Entrez E-utilities</a>.
-</div>
+<h1>{page_title}</h1>
+<div class="meta">{intro_html}</div>
 
 <div class="tier-summary">{tier_summary_html}</div>
 
@@ -760,10 +841,10 @@ def write_html(path, results, counts):
   Regulated is joined from
   <a href="https://www.glerl.noaa.gov/glansis/raT2Explorer.html"><code>invasiveRegs.txt</code></a>
   (13 Great Lakes basin jurisdictions) plus
-  <a href="https://web2.gov.mb.ca/laws/regs/current/173-2015.php?lang=en">Manitoba MR 173/2015 Schedule A</a>
-  &mdash; {n_with_reg} of {n_total} species have at least one regulatory listing.
-  Hover the badge for the per-jurisdiction breakdown; cell shows the
-  most-restrictive level and total jurisdictions.
+  <a href="https://laws-lois.justice.gc.ca/eng/regulations/sor-2015-121/FullText.html">Canadian SOR/2015-121</a>
+  (federal AISR, Parts 2 + 3) &mdash; {n_with_reg} of {n_total} species have
+  at least one regulatory listing. Hover the badge for the per-jurisdiction
+  breakdown; cell shows the most-restrictive level and total jurisdictions.
 </div>
 
 <table>
