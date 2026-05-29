@@ -17,7 +17,7 @@ Browse the rendered docs at **<https://rec3141.github.io/AISGDB/>**.
 | [`glansis_inventory.tsv`](glansis_inventory.tsv) | Machine-readable inventory |
 | [`glansis_inventory.json`](glansis_inventory.json) | Same as TSV plus per-tier summary |
 | [`glansis_inventory.py`](glansis_inventory.py) | Reproducible script — re-runnable as new NCBI assemblies are deposited |
-| [`data/RALevel2_v6.txt.gz`](data/RALevel2_v6.txt.gz) | Vendored snapshot of the GLANSIS Tier-2 risk-assessment CSV (UTF-16 TSV, gzipped). Source: `https://www.glerl.noaa.gov/glansis/data/RALevel2_v6.txt`. Mirrored because the upstream URL bumps versions destructively (older `_v*` files 404 immediately) and the dataset has no DOI / NCEI archive. |
+| [`data/`](data/) | Vendored snapshots of the four data files that back the GLANSIS Risk-Assessment and Regulations Explorers. See table below. |
 
 ## First-pass results
 
@@ -40,17 +40,34 @@ are interesting precisely because they have the resources needed for a WGS
 project in progress. They're the highest-yield candidates for an
 opportunistic "next WGS" prioritisation list.
 
-Per-species rows are also enriched from the **GLANSIS Tier-2 Risk-Assessment
-Clearinghouse** (`RALevel2_v6.txt`) with three additional columns:
+Per-species rows are enriched from two GLANSIS sources, all joined on
+case-folded `(Genus, Species)`:
 
 | Column | Source | Coverage |
 |---|---|---|
-| `common_name` | Modal `Common Names` across all assessments for the species | 197/370 (53%) |
-| `group`       | Modal `Group` (functional group: Fishes, Plants, Mollusk-Bivalve, …) with sing/plural variants collapsed | 252/370 (68%) |
-| `risk`        | Most-severe verdict across all `Overall` strings, by priority *Invasive > High > Watchlist > Moderate > Low* | 193/370 (52%) |
+| `common_name`  | Modal `Common Names` across all assessments for the species (`RALevel2_v6.txt`) | 197/370 (53%) |
+| `group`        | Modal `Group` (Fishes / Plants / Mollusk-Bivalve / …), with sing/plural variants collapsed (`RALevel2_v6.txt`) | 252/370 (68%) |
+| `risk`         | Most-severe verdict across all `Overall` strings, by priority *Invasive > High > Watchlist > Moderate > Low* (`RALevel2_v6.txt`) | 193/370 (52%) |
+| `reg_level`    | Most-restrictive regulation level across all jurisdictions, by priority *Prohibited > Restricted > Other* (`invasiveRegs.txt`) | 121/370 (33%) |
+| `reg_n_juris`  | Total number of regulatory listings — e.g. round goby (*Neogobius melanostomus*) is Prohibited in 11 jurisdictions (`invasiveRegs.txt`) | same |
 
-The HTML view exposes Group and Risk as dropdown filters, mirroring the
-GLANSIS Tier-2 Explorer UI.
+The HTML view exposes Group, Risk, and Regulation level as dropdown
+filters, mirroring the GLANSIS Tier-2 Explorer UI; the regulation cell
+hover-tooltip lists the per-jurisdiction breakdown.
+
+### Vendored data files
+
+The GLANSIS Explorer pages load these four TSVs at runtime via PapaParse.
+None has a DOI, NCEI listing, or data.noaa.gov entry — and the file names
+bump versions destructively (older `_v*` 404 the moment a new one ships) —
+so we mirror them here. All four are tab-delimited; encoding noted below.
+
+| File | Source URL | Encoding | What it is |
+|---|---|---|---|
+| [`data/RALevel2_v6.txt.gz`](data/RALevel2_v6.txt.gz) | <https://www.glerl.noaa.gov/glansis/data/RALevel2_v6.txt> | UTF-16 LE | Tier-2 risk-assessment table — 4,997 rows × 20 cols. Powers `group`, `common_name`, `risk`. |
+| [`data/invasiveRegs.txt.gz`](data/invasiveRegs.txt.gz) | <https://www.glerl.noaa.gov/glansis/data/invasiveRegs.txt> | UTF-8 | Regulatory listings — 757 rows × 19 cols across 13 jurisdictions (WI, MN, OH, NY, IN, PA, QC, IL, US, MI, ON, Canada, …). Powers `reg_level`, `reg_n_juris`. |
+| [`data/RA_Content_v3_forLevel2.txt.gz`](data/RA_Content_v3_forLevel2.txt.gz) | <https://www.glerl.noaa.gov/glansis/data/RA_Content_v3_forLevel2.txt> | UTF-8 | Methodology lookup — 18 rows describing each risk-assessment method (USFWS ERSS, Canadian AqWRA, …). Not joined into the inventory; archived for future use as per-assessment tooltip text. |
+| [`data/IllinoisWhiteList.txt.gz`](data/IllinoisWhiteList.txt.gz) | <https://www.glerl.noaa.gov/glansis/data/IllinoisWhiteList.txt> | CP-1252 | Illinois aquaculture-approved list — 367 species. Not joined: it's the *inverse* signal (permitted in IL), almost no overlap with the GLANSIS DwC list. |
 
 ## Re-running the inventory
 

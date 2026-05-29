@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T19:18:44Z",
+  "generated_at": "2026-05-29T19:30:15Z",
   "n_species": 370,
   "tier_counts": {
     "A": 95,
@@ -25,7 +25,10 @@
       "group": "Insects",
       "common_name": "",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Acorus calamus",
@@ -43,7 +46,10 @@
       "group": "Plants",
       "common_name": "Sweet-flag",
       "risk": "",
-      "n_ra": 4
+      "n_ra": 4,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Aeromonas salmonicida",
@@ -61,7 +67,10 @@
       "group": "Bacteria",
       "common_name": "Aeromonas salmonicida",
       "risk": "Low",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Alisma plantago-aquatica",
@@ -79,7 +88,10 @@
       "group": "Plants",
       "common_name": "Water Plantain",
       "risk": "",
-      "n_ra": 4
+      "n_ra": 4,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Alligator mississippiensis",
@@ -97,7 +109,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Alnus glutinosa",
@@ -115,7 +130,14 @@
       "group": "Plants",
       "common_name": "European Alder",
       "risk": "Invasive",
-      "n_ra": 5
+      "n_ra": 5,
+      "reg_level": "Restricted",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Restricted": [
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Alopecurus geniculatus",
@@ -133,7 +155,10 @@
       "group": "Plants",
       "common_name": "Water foxtail",
       "risk": "Invasive",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Alosa sapidissima",
@@ -151,7 +176,14 @@
       "group": "Fishes",
       "common_name": "",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ]
+      }
     },
     {
       "scientific_name": "Amia calva",
@@ -169,7 +201,14 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "Restricted",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Restricted": [
+          "Quebec"
+        ]
+      }
     },
     {
       "scientific_name": "Anguilla rostrata",
@@ -187,7 +226,14 @@
       "group": "Fishes",
       "common_name": "American eel",
       "risk": "Invasive",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ]
+      }
     },
     {
       "scientific_name": "Apeltes quadracus",
@@ -205,7 +251,10 @@
       "group": "Fishes",
       "common_name": "Fourspine Stickleback",
       "risk": "Low",
-      "n_ra": 6
+      "n_ra": 6,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Carassius auratus",
@@ -223,7 +272,18 @@
       "group": "Fishes",
       "common_name": "Goldfish",
       "risk": "High",
-      "n_ra": 6
+      "n_ra": 6,
+      "reg_level": "Restricted",
+      "reg_n_juris": 5,
+      "reg_by_level": {
+        "Restricted": [
+          "Minnesota",
+          "New York",
+          "Pennsylvania",
+          "Quebec",
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Carex acutiformis",
@@ -241,7 +301,10 @@
       "group": "Plants",
       "common_name": "",
       "risk": "Invasive",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Chrosomus eos",
@@ -259,7 +322,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Cipangopaludina chinensis",
@@ -277,7 +343,21 @@
       "group": "Mollusk-Gastropoda",
       "common_name": "Chinese Mysterysnail",
       "risk": "High",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 4,
+      "reg_by_level": {
+        "Other": [
+          "Indiana",
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "New York"
+        ],
+        "Restricted": [
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Coregonus clupeaformis",
@@ -295,7 +375,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Crassostrea virginica",
@@ -313,7 +396,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Ctenopharyngodon idella",
@@ -331,7 +417,25 @@
       "group": "Fishes",
       "common_name": "Grass carp",
       "risk": "Invasive",
-      "n_ra": 10
+      "n_ra": 10,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 8,
+      "reg_by_level": {
+        "Prohibited": [
+          "Michigan",
+          "Mille Lacs Band of Ojibwe Minnesota Ceded territory",
+          "Minnesota",
+          "Ohio",
+          "Ontario",
+          "Wisconsin"
+        ],
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Restricted": [
+          "Indiana"
+        ]
+      }
     },
     {
       "scientific_name": "Cygnus olor",
@@ -349,7 +453,10 @@
       "group": "Birds",
       "common_name": "Mute swan",
       "risk": "High",
-      "n_ra": 3
+      "n_ra": 3,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Cyprinella lutrensis",
@@ -367,7 +474,18 @@
       "group": "Fishes",
       "common_name": "Red shiner",
       "risk": "High",
-      "n_ra": 6
+      "n_ra": 6,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 3,
+      "reg_by_level": {
+        "Prohibited": [
+          "Ontario",
+          "Wisconsin"
+        ],
+        "Other": [
+          "Pennsylvania"
+        ]
+      }
     },
     {
       "scientific_name": "Cyprinus carpio",
@@ -385,7 +503,21 @@
       "group": "Fishes",
       "common_name": "Common Carp",
       "risk": "Invasive",
-      "n_ra": 8
+      "n_ra": 8,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 6,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ],
+        "Restricted": [
+          "Indiana",
+          "Minnesota",
+          "New York",
+          "Pennsylvania",
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Diadumene lineata",
@@ -403,7 +535,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Dreissena polymorpha",
@@ -421,7 +556,23 @@
       "group": "Mollusk-Bivalve",
       "common_name": "Zebra Mussel",
       "risk": "Invasive",
-      "n_ra": 7
+      "n_ra": 7,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 8,
+      "reg_by_level": {
+        "Prohibited": [
+          "Canada",
+          "Indiana",
+          "New York",
+          "Ohio",
+          "Pennsylvania",
+          "United States"
+        ],
+        "Restricted": [
+          "Michigan",
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Dreissena rostriformis bugensis",
@@ -439,7 +590,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Echinochloa crus-galli",
@@ -457,7 +611,10 @@
       "group": "Plants",
       "common_name": "Barnyard grass",
       "risk": "Invasive",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Eichhornia crassipes",
@@ -475,7 +632,17 @@
       "group": "Plants",
       "common_name": "Water Hyacinth",
       "risk": "High",
-      "n_ra": 12
+      "n_ra": 12,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 2,
+      "reg_by_level": {
+        "Prohibited": [
+          "Wisconsin"
+        ],
+        "Restricted": [
+          "Minnesota"
+        ]
+      }
     },
     {
       "scientific_name": "Epilobium hirsutum",
@@ -493,7 +660,17 @@
       "group": "Plants",
       "common_name": "Hairy Willow Herb",
       "risk": "Invasive",
-      "n_ra": 5
+      "n_ra": 5,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 2,
+      "reg_by_level": {
+        "Restricted": [
+          "Wisconsin"
+        ],
+        "Prohibited": [
+          "Ohio"
+        ]
+      }
     },
     {
       "scientific_name": "Eriocheir sinensis",
@@ -511,7 +688,22 @@
       "group": "Crustacean-Crab",
       "common_name": "Chinese Mitten Crab",
       "risk": "High",
-      "n_ra": 4
+      "n_ra": 4,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 5,
+      "reg_by_level": {
+        "Restricted": [
+          "Quebec"
+        ],
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "New York",
+          "Ohio",
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Esox lucius",
@@ -529,7 +721,14 @@
       "group": "Fishes",
       "common_name": "Northern pike",
       "risk": "High",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ]
+      }
     },
     {
       "scientific_name": "Eurytemora carolleeae",
@@ -547,7 +746,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Filipendula ulmaria",
@@ -565,7 +767,14 @@
       "group": "Plants",
       "common_name": "Queen of the Meadow",
       "risk": "Invasive",
-      "n_ra": 5
+      "n_ra": 5,
+      "reg_level": "Restricted",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Restricted": [
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Fundulus heteroclitus",
@@ -583,7 +792,10 @@
       "group": "Fishes",
       "common_name": "Mummichog",
       "risk": "High",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Gambusia affinis",
@@ -601,7 +813,19 @@
       "group": "Fishes",
       "common_name": "Western mosquitofish",
       "risk": "Invasive",
-      "n_ra": 10
+      "n_ra": 10,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 4,
+      "reg_by_level": {
+        "Prohibited": [
+          "Minnesota",
+          "New York",
+          "Ontario"
+        ],
+        "Restricted": [
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Gasterosteus aculeatus",
@@ -619,7 +843,17 @@
       "group": "Fishes",
       "common_name": "Threespine Stickleback",
       "risk": "Invasive",
-      "n_ra": 7
+      "n_ra": 7,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 2,
+      "reg_by_level": {
+        "Restricted": [
+          "Wisconsin"
+        ],
+        "Prohibited": [
+          "Ohio"
+        ]
+      }
     },
     {
       "scientific_name": "Gymnocephalus cernua",
@@ -637,7 +871,24 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 9,
+      "reg_by_level": {
+        "Prohibited": [
+          "Illinois",
+          "Indiana",
+          "Michigan",
+          "Mille Lacs Band of Ojibwe Minnesota Ceded territory",
+          "Minnesota",
+          "Ohio",
+          "Ontario",
+          "Pennsylvania"
+        ],
+        "Restricted": [
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Hypophthalmichthys nobilis",
@@ -655,7 +906,23 @@
       "group": "Fishes",
       "common_name": "Bighead Carp",
       "risk": "High",
-      "n_ra": 9
+      "n_ra": 9,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 10,
+      "reg_by_level": {
+        "Prohibited": [
+          "Illinois",
+          "Indiana",
+          "Michigan",
+          "Minnesota",
+          "New York",
+          "Ohio",
+          "Ontario",
+          "Pennsylvania",
+          "United States",
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Ictalurus furcatus",
@@ -673,7 +940,10 @@
       "group": "Fishes",
       "common_name": "Blue Catfish",
       "risk": "Invasive",
-      "n_ra": 5
+      "n_ra": 5,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Ictalurus punctatus",
@@ -691,7 +961,14 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ]
+      }
     },
     {
       "scientific_name": "Impatiens glandulifera",
@@ -709,7 +986,14 @@
       "group": "Plants",
       "common_name": "Ornamental Jewelweed",
       "risk": "Moderate",
-      "n_ra": 5
+      "n_ra": 5,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Juncus inflexus",
@@ -727,7 +1011,10 @@
       "group": "Plants",
       "common_name": "",
       "risk": "Invasive",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Lepisosteus oculatus",
@@ -745,7 +1032,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Lithobates catesbeianus",
@@ -763,7 +1053,10 @@
       "group": "Amphibian",
       "common_name": "American bullfrog",
       "risk": "Invasive",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Mentha aquatica",
@@ -781,7 +1074,10 @@
       "group": "Plants",
       "common_name": "Water Mint",
       "risk": "",
-      "n_ra": 5
+      "n_ra": 5,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Micropterus dolomieu",
@@ -799,7 +1095,14 @@
       "group": "Fishes",
       "common_name": "Smallmouth Bass",
       "risk": "High",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ]
+      }
     },
     {
       "scientific_name": "Micropterus salmoides",
@@ -817,7 +1120,14 @@
       "group": "Fishes",
       "common_name": "Largemouth Bass",
       "risk": "High",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ]
+      }
     },
     {
       "scientific_name": "Microstegium vimineum",
@@ -835,7 +1145,19 @@
       "group": "Plants",
       "common_name": "Japanese stiltgrass",
       "risk": "Invasive",
-      "n_ra": 4
+      "n_ra": 4,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 4,
+      "reg_by_level": {
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "New York",
+          "Ohio",
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Misgurnus anguillicaudatus",
@@ -853,7 +1175,22 @@
       "group": "Fishes",
       "common_name": "Oriental Weatherfish",
       "risk": "Invasive",
-      "n_ra": 8
+      "n_ra": 8,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 5,
+      "reg_by_level": {
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "Minnesota",
+          "New York"
+        ],
+        "Restricted": [
+          "Michigan",
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Nasturtium officinale",
@@ -871,7 +1208,10 @@
       "group": "Plants",
       "common_name": "Watercress",
       "risk": "High",
-      "n_ra": 10
+      "n_ra": 10,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Nelumbo lutea",
@@ -889,7 +1229,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Nymphoides peltata",
@@ -907,7 +1250,26 @@
       "group": "Plants",
       "common_name": "Yellow Floating-heart",
       "risk": "Invasive",
-      "n_ra": 11
+      "n_ra": 11,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 9,
+      "reg_by_level": {
+        "Restricted": [
+          "Ontario"
+        ],
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "Illinois",
+          "Indiana",
+          "Michigan",
+          "Minnesota",
+          "New York",
+          "Ohio",
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Oenanthe javanica",
@@ -925,7 +1287,14 @@
       "group": "Plants",
       "common_name": "Java waterdropwort",
       "risk": "Invasive",
-      "n_ra": 5
+      "n_ra": 5,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Oncorhynchus gorbuscha",
@@ -943,7 +1312,17 @@
       "group": "Fishes",
       "common_name": "Pink Salmon",
       "risk": "Invasive",
-      "n_ra": 5
+      "n_ra": 5,
+      "reg_level": "Restricted",
+      "reg_n_juris": 2,
+      "reg_by_level": {
+        "Restricted": [
+          "Wisconsin"
+        ],
+        "Other": [
+          "Minnesota"
+        ]
+      }
     },
     {
       "scientific_name": "Oncorhynchus kisutch",
@@ -961,7 +1340,18 @@
       "group": "Fishes",
       "common_name": "Coho Salmon",
       "risk": "Invasive",
-      "n_ra": 5
+      "n_ra": 5,
+      "reg_level": "Restricted",
+      "reg_n_juris": 3,
+      "reg_by_level": {
+        "Restricted": [
+          "Illinois",
+          "Wisconsin"
+        ],
+        "Other": [
+          "Minnesota"
+        ]
+      }
     },
     {
       "scientific_name": "Oncorhynchus mykiss",
@@ -979,7 +1369,21 @@
       "group": "Fishes",
       "common_name": "Rainbow Trout",
       "risk": "Invasive",
-      "n_ra": 5
+      "n_ra": 5,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 4,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ],
+        "Restricted": [
+          "Illinois",
+          "Wisconsin"
+        ],
+        "Other": [
+          "Minnesota"
+        ]
+      }
     },
     {
       "scientific_name": "Oncorhynchus mykiss irideus",
@@ -997,7 +1401,21 @@
       "group": "Fishes",
       "common_name": "Rainbow Trout",
       "risk": "Invasive",
-      "n_ra": 5
+      "n_ra": 5,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 4,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ],
+        "Restricted": [
+          "Illinois",
+          "Wisconsin"
+        ],
+        "Other": [
+          "Minnesota"
+        ]
+      }
     },
     {
       "scientific_name": "Oncorhynchus nerka",
@@ -1015,7 +1433,10 @@
       "group": "Fishes",
       "common_name": "",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Oncorhynchus tshawytscha",
@@ -1033,7 +1454,18 @@
       "group": "Fishes",
       "common_name": "Chinook Salmon",
       "risk": "Invasive",
-      "n_ra": 6
+      "n_ra": 6,
+      "reg_level": "Restricted",
+      "reg_n_juris": 3,
+      "reg_by_level": {
+        "Restricted": [
+          "Illinois",
+          "Wisconsin"
+        ],
+        "Other": [
+          "Minnesota"
+        ]
+      }
     },
     {
       "scientific_name": "Oreochromis niloticus",
@@ -1051,7 +1483,10 @@
       "group": "Fishes",
       "common_name": "Nile Tilapia",
       "risk": "High",
-      "n_ra": 4
+      "n_ra": 4,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Osmerus mordax",
@@ -1069,7 +1504,21 @@
       "group": "Fishes",
       "common_name": "Rainbow Smelt",
       "risk": "Invasive",
-      "n_ra": 8
+      "n_ra": 8,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 4,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ],
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Restricted": [
+          "Minnesota",
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Perca flavescens",
@@ -1087,7 +1536,14 @@
       "group": "Fishes",
       "common_name": "Yellow Perch",
       "risk": "High",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ]
+      }
     },
     {
       "scientific_name": "Persicaria maculosa",
@@ -1105,7 +1561,10 @@
       "group": "Plants",
       "common_name": "",
       "risk": "Invasive",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Petromyzon marinus",
@@ -1123,7 +1582,25 @@
       "group": "Fishes",
       "common_name": "Sea Lamprey",
       "risk": "Invasive",
-      "n_ra": 7
+      "n_ra": 7,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 8,
+      "reg_by_level": {
+        "Restricted": [
+          "Quebec",
+          "Wisconsin"
+        ],
+        "Other": [
+          "Indiana",
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "Mille Lacs Band of Ojibwe Minnesota Ceded territory",
+          "Minnesota",
+          "New York",
+          "Ohio"
+        ]
+      }
     },
     {
       "scientific_name": "Phalaris arundinacea",
@@ -1141,7 +1618,20 @@
       "group": "Plants",
       "common_name": "Reed Canarygrass",
       "risk": "Invasive",
-      "n_ra": 5
+      "n_ra": 5,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 3,
+      "reg_by_level": {
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Restricted": [
+          "Wisconsin"
+        ],
+        "Prohibited": [
+          "Indiana"
+        ]
+      }
     },
     {
       "scientific_name": "Piaractus brachypomus",
@@ -1159,7 +1649,10 @@
       "group": "Fishes",
       "common_name": "Red-bellied Pacu",
       "risk": "Invasive",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Platichthys flesus",
@@ -1177,7 +1670,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Potamogeton crispus",
@@ -1195,7 +1691,25 @@
       "group": "Plants",
       "common_name": "Curly-leaved Pondweed",
       "risk": "Invasive",
-      "n_ra": 12
+      "n_ra": 12,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 8,
+      "reg_by_level": {
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "Illinois",
+          "Indiana",
+          "Minnesota",
+          "New York",
+          "Ohio"
+        ],
+        "Restricted": [
+          "Michigan",
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Procambarus clarkii",
@@ -1213,7 +1727,22 @@
       "group": "Crustacean-Crayfish",
       "common_name": "red swamp crayfish",
       "risk": "Invasive",
-      "n_ra": 6
+      "n_ra": 6,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 5,
+      "reg_by_level": {
+        "Prohibited": [
+          "Michigan",
+          "Minnesota",
+          "Ontario"
+        ],
+        "Restricted": [
+          "Pennsylvania"
+        ],
+        "Other": [
+          "Indiana"
+        ]
+      }
     },
     {
       "scientific_name": "Proterorhinus semilunaris",
@@ -1231,7 +1760,18 @@
       "group": "Fishes",
       "common_name": "Western Tubenose Goby",
       "risk": "Invasive",
-      "n_ra": 4
+      "n_ra": 4,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 5,
+      "reg_by_level": {
+        "Prohibited": [
+          "Michigan",
+          "Minnesota",
+          "New York",
+          "Ontario",
+          "Pennsylvania"
+        ]
+      }
     },
     {
       "scientific_name": "Pterygoplichthys disjunctivus",
@@ -1249,7 +1789,10 @@
       "group": "Fishes",
       "common_name": "Verminculated Sailfin Catfish",
       "risk": "High",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Pungitius pungitius",
@@ -1267,7 +1810,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Ranavirus micropterus1",
@@ -1285,7 +1831,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Raphidiopsis raciborskii",
@@ -1303,7 +1852,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Reynoutria japonica",
@@ -1321,7 +1873,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Rhamnus frangula",
@@ -1339,7 +1894,14 @@
       "group": "Plants",
       "common_name": "Glossy Buckthorn",
       "risk": "Invasive",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "Restricted",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Restricted": [
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Salix caprea",
@@ -1357,7 +1919,10 @@
       "group": "Plants",
       "common_name": "goat willow",
       "risk": "Invasive",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Salix purpurea",
@@ -1375,7 +1940,10 @@
       "group": "Plants",
       "common_name": "",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Salmo salar",
@@ -1393,7 +1961,20 @@
       "group": "Fishes",
       "common_name": "Atlantic Salmon",
       "risk": "Invasive",
-      "n_ra": 6
+      "n_ra": 6,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 3,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ],
+        "Restricted": [
+          "Wisconsin"
+        ],
+        "Other": [
+          "Minnesota"
+        ]
+      }
     },
     {
       "scientific_name": "Salmo trutta",
@@ -1411,7 +1992,21 @@
       "group": "Fishes",
       "common_name": "Brown Trout",
       "risk": "Invasive",
-      "n_ra": 6
+      "n_ra": 6,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 4,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ],
+        "Restricted": [
+          "Illinois",
+          "Wisconsin"
+        ],
+        "Other": [
+          "Minnesota"
+        ]
+      }
     },
     {
       "scientific_name": "Salvelinus alpinus",
@@ -1429,7 +2024,17 @@
       "group": "Fishes",
       "common_name": "Artic Char",
       "risk": "High",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 2,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ],
+        "Restricted": [
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Salvelinus fontinalis",
@@ -1447,7 +2052,17 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 2,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ],
+        "Restricted": [
+          "Illinois"
+        ]
+      }
     },
     {
       "scientific_name": "Salvelinus namaycush",
@@ -1465,7 +2080,17 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 2,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ],
+        "Restricted": [
+          "Illinois"
+        ]
+      }
     },
     {
       "scientific_name": "Sander vitreus",
@@ -1483,7 +2108,10 @@
       "group": "Fishes",
       "common_name": "Walleye",
       "risk": "High",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Scardinius erythrophthalmus",
@@ -1501,7 +2129,25 @@
       "group": "Fishes",
       "common_name": "Rudd",
       "risk": "Invasive",
-      "n_ra": 7
+      "n_ra": 7,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 10,
+      "reg_by_level": {
+        "Prohibited": [
+          "Illinois",
+          "Indiana",
+          "Michigan",
+          "Mille Lacs Band of Ojibwe Minnesota Ceded territory",
+          "Minnesota",
+          "Ohio",
+          "Ontario",
+          "Pennsylvania",
+          "Wisconsin"
+        ],
+        "Restricted": [
+          "Quebec"
+        ]
+      }
     },
     {
       "scientific_name": "Schmidtea polychroa",
@@ -1519,7 +2165,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Solanum dulcamara",
@@ -1537,7 +2186,10 @@
       "group": "Plants",
       "common_name": "Trailing Nightshade",
       "risk": "Invasive",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Sphaerium corneum",
@@ -1555,7 +2207,10 @@
       "group": "Mollusk-Bivalve",
       "common_name": "European Fingernailclam",
       "risk": "",
-      "n_ra": 3
+      "n_ra": 3,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Sprivivirus cyprinus",
@@ -1573,7 +2228,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Thalassiosira pseudonana",
@@ -1591,7 +2249,10 @@
       "group": "Algae",
       "common_name": "",
       "risk": "Low",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Trachemys scripta",
@@ -1609,7 +2270,10 @@
       "group": "Reptile",
       "common_name": "Red-eared slider",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Trachemys scripta elegans",
@@ -1627,7 +2291,10 @@
       "group": "Reptile",
       "common_name": "Red-eared slider",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Trapa natans",
@@ -1645,7 +2312,25 @@
       "group": "Plants",
       "common_name": "Water Chestnut",
       "risk": "Invasive",
-      "n_ra": 12
+      "n_ra": 12,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 10,
+      "reg_by_level": {
+        "Prohibited": [
+          "Illinois",
+          "Indiana",
+          "Michigan",
+          "Mille Lacs Band of Ojibwe Minnesota Ceded territory",
+          "Minnesota",
+          "New York",
+          "Ohio",
+          "Ontario",
+          "Wisconsin"
+        ],
+        "Other": [
+          "Pennsylvania"
+        ]
+      }
     },
     {
       "scientific_name": "Typha angustifolia",
@@ -1663,7 +2348,21 @@
       "group": "Plants",
       "common_name": "Narrowleaf Cattail",
       "risk": "Invasive",
-      "n_ra": 8
+      "n_ra": 8,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 4,
+      "reg_by_level": {
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Restricted": [
+          "Wisconsin"
+        ],
+        "Prohibited": [
+          "Indiana",
+          "Ohio"
+        ]
+      }
     },
     {
       "scientific_name": "Typha latifolia",
@@ -1681,7 +2380,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Veronica anagallis-aquatica",
@@ -1699,7 +2401,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Xenopus laevis",
@@ -1717,7 +2422,14 @@
       "group": "Amphibian",
       "common_name": "African clawed frog",
       "risk": "High",
-      "n_ra": 4
+      "n_ra": 4,
+      "reg_level": "Restricted",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Restricted": [
+          "New York"
+        ]
+      }
     },
     {
       "scientific_name": "Alosa aestivalis",
@@ -1735,7 +2447,14 @@
       "group": "Fishes",
       "common_name": "Blueback Herring",
       "risk": "Invasive",
-      "n_ra": 5
+      "n_ra": 5,
+      "reg_level": "Restricted",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Restricted": [
+          "Quebec"
+        ]
+      }
     },
     {
       "scientific_name": "Alosa pseudoharengus",
@@ -1753,7 +2472,19 @@
       "group": "Fishes",
       "common_name": "Alewife",
       "risk": "Invasive",
-      "n_ra": 7
+      "n_ra": 7,
+      "reg_level": "Restricted",
+      "reg_n_juris": 4,
+      "reg_by_level": {
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Restricted": [
+          "Indiana",
+          "Minnesota",
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Ameiurus nebulosus",
@@ -1771,7 +2502,14 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ]
+      }
     },
     {
       "scientific_name": "Amnicola limosus",
@@ -1789,7 +2527,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Aphredoderus sayanus",
@@ -1807,7 +2548,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Chaetoceros muelleri",
@@ -1825,7 +2569,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Corbicula fluminea",
@@ -1843,7 +2590,20 @@
       "group": "Mollusk-Bivalve",
       "common_name": "Asian Clam",
       "risk": "Invasive",
-      "n_ra": 7
+      "n_ra": 7,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 5,
+      "reg_by_level": {
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "Indiana",
+          "Minnesota",
+          "New York",
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Craspedacusta sowerbii",
@@ -1861,7 +2621,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Cyclotella atomus",
@@ -1879,7 +2642,10 @@
       "group": "Algae",
       "common_name": "",
       "risk": "Low",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Cyclotella cryptica",
@@ -1897,7 +2663,10 @@
       "group": "Algae",
       "common_name": "Diatom",
       "risk": "Low",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Diadumene leucolena",
@@ -1915,7 +2684,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Discostella pseudostelligera",
@@ -1933,7 +2705,10 @@
       "group": "Algae",
       "common_name": "",
       "risk": "Low",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Esox masquinongy",
@@ -1951,7 +2726,14 @@
       "group": "Fishes",
       "common_name": "Muskellunge",
       "risk": "Invasive",
-      "n_ra": 3
+      "n_ra": 3,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ]
+      }
     },
     {
       "scientific_name": "Esox niger",
@@ -1969,7 +2751,17 @@
       "group": "Fishes",
       "common_name": "Chain Pickerel",
       "risk": "Invasive",
-      "n_ra": 4
+      "n_ra": 4,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 2,
+      "reg_by_level": {
+        "Restricted": [
+          "Canada"
+        ],
+        "Prohibited": [
+          "Quebec"
+        ]
+      }
     },
     {
       "scientific_name": "Lepisosteus osseus",
@@ -1987,7 +2779,14 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "Restricted",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Restricted": [
+          "Quebec"
+        ]
+      }
     },
     {
       "scientific_name": "Lepomis macrochirus",
@@ -2005,7 +2804,14 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ]
+      }
     },
     {
       "scientific_name": "Morone americana",
@@ -2023,7 +2829,24 @@
       "group": "Fishes",
       "common_name": "White perch",
       "risk": "Invasive",
-      "n_ra": 8
+      "n_ra": 8,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 7,
+      "reg_by_level": {
+        "Restricted": [
+          "Quebec",
+          "Wisconsin"
+        ],
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "Indiana",
+          "Mille Lacs Band of Ojibwe Minnesota Ceded territory",
+          "Minnesota",
+          "Ohio"
+        ]
+      }
     },
     {
       "scientific_name": "Morone chrysops",
@@ -2041,7 +2864,14 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ]
+      }
     },
     {
       "scientific_name": "Morone saxatilis",
@@ -2059,7 +2889,14 @@
       "group": "Fishes",
       "common_name": "Rockfish",
       "risk": "Moderate",
-      "n_ra": 4
+      "n_ra": 4,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ]
+      }
     },
     {
       "scientific_name": "Myriophyllum spicatum",
@@ -2077,7 +2914,27 @@
       "group": "Plants",
       "common_name": "Eurasian Watermilfoil",
       "risk": "Invasive",
-      "n_ra": 13
+      "n_ra": 13,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 10,
+      "reg_by_level": {
+        "Restricted": [
+          "Michigan",
+          "Ontario",
+          "Wisconsin"
+        ],
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "Illinois",
+          "Indiana",
+          "Mille Lacs Band of Ojibwe Minnesota Ceded territory",
+          "Minnesota",
+          "New York",
+          "Ohio"
+        ]
+      }
     },
     {
       "scientific_name": "Neogobius melanostomus",
@@ -2095,7 +2952,26 @@
       "group": "Fishes",
       "common_name": "Round goby",
       "risk": "Invasive",
-      "n_ra": 10
+      "n_ra": 10,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 11,
+      "reg_by_level": {
+        "Prohibited": [
+          "Illinois",
+          "Indiana",
+          "Michigan",
+          "Mille Lacs Band of Ojibwe Minnesota Ceded territory",
+          "Minnesota",
+          "New York",
+          "Ohio",
+          "Ontario"
+        ],
+        "Restricted": [
+          "Pennsylvania",
+          "Quebec",
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Pimephales promelas",
@@ -2113,7 +2989,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Procambarus virginalis",
@@ -2131,7 +3010,16 @@
       "group": "Crustacean-Crayfish",
       "common_name": "Marmorkrebs",
       "risk": "High",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 3,
+      "reg_by_level": {
+        "Prohibited": [
+          "Minnesota",
+          "Ohio",
+          "Ontario"
+        ]
+      }
     },
     {
       "scientific_name": "Pylodictis olivaris",
@@ -2149,7 +3037,14 @@
       "group": "Fishes",
       "common_name": "Flathead catfish",
       "risk": "Invasive",
-      "n_ra": 4
+      "n_ra": 4,
+      "reg_level": "Other",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Other": [
+          "Pennsylvania"
+        ]
+      }
     },
     {
       "scientific_name": "Radix auricularia",
@@ -2167,7 +3062,10 @@
       "group": "Mollusk-Gastropoda",
       "common_name": "European Ear Snail",
       "risk": "Moderate",
-      "n_ra": 4
+      "n_ra": 4,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Salvelinus alpinus oquassa",
@@ -2185,7 +3083,17 @@
       "group": "Fishes",
       "common_name": "Artic Char",
       "risk": "High",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 2,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ],
+        "Restricted": [
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Skeletonema potamos",
@@ -2203,7 +3111,10 @@
       "group": "Algae",
       "common_name": "",
       "risk": "Low",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Thalassiosira weissflogii",
@@ -2221,7 +3132,10 @@
       "group": "Algae",
       "common_name": "",
       "risk": "Low",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Thymallus arcticus",
@@ -2239,7 +3153,10 @@
       "group": "Fishes",
       "common_name": "Arctic Grayling",
       "risk": "High",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Tinca tinca",
@@ -2257,7 +3174,20 @@
       "group": "Fishes",
       "common_name": "Tench",
       "risk": "High",
-      "n_ra": 7
+      "n_ra": 7,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 7,
+      "reg_by_level": {
+        "Prohibited": [
+          "Michigan",
+          "Minnesota",
+          "New York",
+          "Ohio",
+          "Ontario",
+          "Quebec",
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Anguillicola crassus",
@@ -2268,7 +3198,10 @@
       "group": "Nematodes",
       "common_name": "Eel swim bladder parasite",
       "risk": "Invasive",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Bangia atropurpurea",
@@ -2279,7 +3212,10 @@
       "group": "Algae",
       "common_name": "Red Algae",
       "risk": "Invasive",
-      "n_ra": 3
+      "n_ra": 3,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Chaetogaster diaphanus",
@@ -2290,7 +3226,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Iris pseudacorus",
@@ -2301,7 +3240,24 @@
       "group": "Plants",
       "common_name": "Yellow Flag",
       "risk": "Invasive",
-      "n_ra": 10
+      "n_ra": 10,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 7,
+      "reg_by_level": {
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "Illinois",
+          "Indiana",
+          "New York",
+          "New York"
+        ],
+        "Restricted": [
+          "Minnesota",
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Lepomis microlophus",
@@ -2312,7 +3268,14 @@
       "group": "Fishes",
       "common_name": "Redear Sunfish",
       "risk": "Invasive",
-      "n_ra": 3
+      "n_ra": 3,
+      "reg_level": "Restricted",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Restricted": [
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Lotus corniculatus",
@@ -2323,7 +3286,10 @@
       "group": "Plants",
       "common_name": "Birdsfoot trefoil",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Marsilea quadrifolia",
@@ -2334,7 +3300,10 @@
       "group": "Plants",
       "common_name": "European Waterclover",
       "risk": "Invasive",
-      "n_ra": 11
+      "n_ra": 11,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Mentha \u00d7 piperita",
@@ -2345,7 +3314,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Myosoton aquaticum",
@@ -2356,7 +3328,10 @@
       "group": "Plants",
       "common_name": "",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Myxobolus cerebralis",
@@ -2367,7 +3342,15 @@
       "group": "Myxosporean",
       "common_name": "Whirling disease",
       "risk": "Invasive",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "Other",
+      "reg_n_juris": 2,
+      "reg_by_level": {
+        "Other": [
+          "Indiana",
+          "Pennsylvania"
+        ]
+      }
     },
     {
       "scientific_name": "Potamopyrgus antipodarum",
@@ -2378,7 +3361,23 @@
       "group": "Mollusk-Gastropoda",
       "common_name": "New Zealand mudsnail",
       "risk": "Invasive",
-      "n_ra": 8
+      "n_ra": 8,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 8,
+      "reg_by_level": {
+        "Prohibited": [
+          "Michigan",
+          "Minnesota",
+          "New York",
+          "Ohio",
+          "Ontario",
+          "Wisconsin"
+        ],
+        "Other": [
+          "Indiana",
+          "Pennsylvania"
+        ]
+      }
     },
     {
       "scientific_name": "Salix alba",
@@ -2389,7 +3388,10 @@
       "group": "Plants",
       "common_name": "White willow",
       "risk": "",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Salix fragilis",
@@ -2400,7 +3402,10 @@
       "group": "Plants",
       "common_name": "Crack willow",
       "risk": "Invasive",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Ambloplites rupestris",
@@ -2411,7 +3416,14 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ]
+      }
     },
     {
       "scientific_name": "Ameiurus catus",
@@ -2422,7 +3434,10 @@
       "group": "Fishes",
       "common_name": "White Catfish",
       "risk": "High",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Ameiurus natalis",
@@ -2433,7 +3448,14 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ]
+      }
     },
     {
       "scientific_name": "Ammocrypta pellucida",
@@ -2444,7 +3466,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Aplodinotus grunniens",
@@ -2455,7 +3480,14 @@
       "group": "Fishes",
       "common_name": "Freshwater drum",
       "risk": "Invasive",
-      "n_ra": 3
+      "n_ra": 3,
+      "reg_level": "Restricted",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Restricted": [
+          "Quebec"
+        ]
+      }
     },
     {
       "scientific_name": "Arundo donax",
@@ -2466,7 +3498,14 @@
       "group": "Plants",
       "common_name": "Giant Reed",
       "risk": "High",
-      "n_ra": 7
+      "n_ra": 7,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Bithynia tentaculata",
@@ -2477,7 +3516,16 @@
       "group": "Mollusk-Gastropoda",
       "common_name": "Faucet snail",
       "risk": "Invasive",
-      "n_ra": 6
+      "n_ra": 6,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 3,
+      "reg_by_level": {
+        "Prohibited": [
+          "Minnesota",
+          "New York",
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Brachionus leydigii",
@@ -2488,7 +3536,10 @@
       "group": "Rotifers",
       "common_name": "Rotifer",
       "risk": "High",
-      "n_ra": 4
+      "n_ra": 4,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Bythotrephes longimanus",
@@ -2499,7 +3550,22 @@
       "group": "Crustacean-Cladoceran",
       "common_name": "Spiny Waterflea",
       "risk": "Invasive",
-      "n_ra": 6
+      "n_ra": 6,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 5,
+      "reg_by_level": {
+        "Other": [
+          "Indiana",
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "New York",
+          "Wisconsin"
+        ],
+        "Restricted": [
+          "Minnesota"
+        ]
+      }
     },
     {
       "scientific_name": "Cabomba caroliniana",
@@ -2510,7 +3576,23 @@
       "group": "Plants",
       "common_name": "Carolina Fanwort",
       "risk": "Invasive",
-      "n_ra": 10
+      "n_ra": 10,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 6,
+      "reg_by_level": {
+        "Restricted": [
+          "Minnesota",
+          "Ontario"
+        ],
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "Michigan",
+          "New York",
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Caecidotea racovitzai",
@@ -2521,7 +3603,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Callinina georgiana",
@@ -2532,7 +3617,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Carex disticha",
@@ -2543,7 +3631,10 @@
       "group": "Plants",
       "common_name": "",
       "risk": "Low",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Carex flacca",
@@ -2554,7 +3645,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Carpiodes carpio",
@@ -2565,7 +3659,10 @@
       "group": "Fishes",
       "common_name": "River Carpsucker",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Cercopagis pengoi",
@@ -2576,7 +3673,19 @@
       "group": "Crustacean-Cladoceran",
       "common_name": "Fishhook Water Flea",
       "risk": "Invasive",
-      "n_ra": 8
+      "n_ra": 8,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 4,
+      "reg_by_level": {
+        "Other": [
+          "Indiana",
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "New York",
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Chroodactylon ornatum",
@@ -2587,7 +3696,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Cirsium palustre",
@@ -2598,7 +3710,14 @@
       "group": "Plants",
       "common_name": "Marsh Thistle",
       "risk": "Invasive",
-      "n_ra": 5
+      "n_ra": 5,
+      "reg_level": "Restricted",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Restricted": [
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Corbicula sp.",
@@ -2609,7 +3728,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Cyprinus rubrofuscus",
@@ -2620,7 +3742,10 @@
       "group": "Fishes",
       "common_name": "Koi",
       "risk": "High",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Dactylogyrus hemiamphibothrium",
@@ -2631,7 +3756,10 @@
       "group": "Fluke",
       "common_name": "",
       "risk": "Low",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Daphnia longispina",
@@ -2642,7 +3770,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Didymosphenia geminata",
@@ -2653,7 +3784,18 @@
       "group": "Algae",
       "common_name": "Didymo",
       "risk": "Invasive",
-      "n_ra": 5
+      "n_ra": 5,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 3,
+      "reg_by_level": {
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "New York",
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Elimia livescens",
@@ -2664,7 +3806,10 @@
       "group": "Mollusk-Gastropoda",
       "common_name": "Liver Elimia",
       "risk": "Invasive",
-      "n_ra": 6
+      "n_ra": 6,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Enneacanthus gloriosus",
@@ -2675,7 +3820,10 @@
       "group": "Fishes",
       "common_name": "Bluespotted Sunfish",
       "risk": "",
-      "n_ra": 3
+      "n_ra": 3,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Etheostoma olmstedi",
@@ -2686,7 +3834,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Eubosmina coregoni",
@@ -2697,7 +3848,10 @@
       "group": "Crustacean-Cladoceran",
       "common_name": "",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Euglesa supina",
@@ -2708,7 +3862,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Faxonius obscurus",
@@ -2719,7 +3876,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Fundulus notatus",
@@ -2730,7 +3890,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Gianius aquaedulcis",
@@ -2741,7 +3904,10 @@
       "group": "Annelids",
       "common_name": "",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Glyceria maxima",
@@ -2752,7 +3918,18 @@
       "group": "Plants",
       "common_name": "Reed Mannagrass",
       "risk": "Invasive",
-      "n_ra": 10
+      "n_ra": 10,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 3,
+      "reg_by_level": {
+        "Prohibited": [
+          "New York",
+          "New York"
+        ],
+        "Restricted": [
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Graptemys pseudogeographica",
@@ -2763,7 +3940,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Hemimysis anomala",
@@ -2774,7 +3954,18 @@
       "group": "Crustacean-Mysid",
       "common_name": "Bloody Shrimp",
       "risk": "Invasive",
-      "n_ra": 8
+      "n_ra": 8,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 3,
+      "reg_by_level": {
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "New York",
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Hydrocharis morsus-ranae",
@@ -2785,7 +3976,27 @@
       "group": "Plants",
       "common_name": "Common Frogbit",
       "risk": "Invasive",
-      "n_ra": 11
+      "n_ra": 11,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 10,
+      "reg_by_level": {
+        "Restricted": [
+          "Ontario"
+        ],
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "Illinois",
+          "Indiana",
+          "Michigan",
+          "Mille Lacs Band of Ojibwe Minnesota Ceded territory",
+          "Minnesota",
+          "New York",
+          "Ohio",
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Ichthyocotylurus pileatus",
@@ -2796,7 +4007,10 @@
       "group": "Fluke",
       "common_name": "",
       "risk": "Invasive",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Ictiobus cyprinellus",
@@ -2807,7 +4021,10 @@
       "group": "Fishes",
       "common_name": "Bigmouth buffalo",
       "risk": "Invasive",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Ictiobus niger",
@@ -2818,7 +4035,10 @@
       "group": "Fishes",
       "common_name": "Black Buffalo",
       "risk": "Invasive",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Juncus gerardii",
@@ -2829,7 +4049,10 @@
       "group": "Plants",
       "common_name": "Saltmeadow rush",
       "risk": "Invasive",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Landoltia punctata",
@@ -2840,7 +4063,10 @@
       "group": "Plants",
       "common_name": "Dotted Duckmeat",
       "risk": "",
-      "n_ra": 8
+      "n_ra": 8,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Lepisosteus platostomus",
@@ -2851,7 +4077,10 @@
       "group": "Fishes",
       "common_name": "",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Lepomis cyanellus",
@@ -2862,7 +4091,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Leyogonimus polyoon",
@@ -2873,7 +4105,10 @@
       "group": "Flatworm",
       "common_name": "Trematode flatworm",
       "risk": "Watchlist",
-      "n_ra": 3
+      "n_ra": 3,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Ligumia recta",
@@ -2884,7 +4119,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Lophopodella carteri",
@@ -2895,7 +4133,10 @@
       "group": "Bryozoan",
       "common_name": "Bryozoan",
       "risk": "Invasive",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Lysimachia vulgaris",
@@ -2906,7 +4147,17 @@
       "group": "Plants",
       "common_name": "Garden Loosestrife",
       "risk": "Invasive",
-      "n_ra": 4
+      "n_ra": 4,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 2,
+      "reg_by_level": {
+        "Prohibited": [
+          "New York"
+        ],
+        "Restricted": [
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Lythrum salicaria",
@@ -2917,7 +4168,25 @@
       "group": "Plants",
       "common_name": "Purple Loosestrife",
       "risk": "Invasive",
-      "n_ra": 10
+      "n_ra": 10,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 8,
+      "reg_by_level": {
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "Indiana",
+          "Mille Lacs Band of Ojibwe Minnesota Ceded territory",
+          "New York",
+          "New York",
+          "Ohio"
+        ],
+        "Restricted": [
+          "Michigan",
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Margariscus nachtriebi",
@@ -2928,7 +4197,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Mesocyclops pehpeiensis",
@@ -2939,7 +4211,10 @@
       "group": "Crustacean-Copepod",
       "common_name": "Copepod",
       "risk": "High",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Morone mississippiensis",
@@ -2950,7 +4225,10 @@
       "group": "Fishes",
       "common_name": "Yellow Bass",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Myriophyllum heterophyllum",
@@ -2961,7 +4239,17 @@
       "group": "Plants",
       "common_name": "Broadleaf Water-milfoil",
       "risk": "High",
-      "n_ra": 4
+      "n_ra": 4,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 2,
+      "reg_by_level": {
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "New York"
+        ]
+      }
     },
     {
       "scientific_name": "Mysis diluviana",
@@ -2972,7 +4260,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Najas marina",
@@ -2983,7 +4274,14 @@
       "group": "Plants",
       "common_name": "Spiny naiad",
       "risk": "Invasive",
-      "n_ra": 6
+      "n_ra": 6,
+      "reg_level": "Restricted",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Restricted": [
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Neoergasilus japonicus",
@@ -2994,7 +4292,10 @@
       "group": "Crustacean-Copepod",
       "common_name": "parasitic copepod",
       "risk": "",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Nitellopsis obtusa",
@@ -3005,7 +4306,20 @@
       "group": "Algae",
       "common_name": "Starry Stonewort",
       "risk": "High",
-      "n_ra": 6
+      "n_ra": 6,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 5,
+      "reg_by_level": {
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "Indiana",
+          "Michigan",
+          "Minnesota",
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Nitokra hibernica",
@@ -3016,7 +4330,10 @@
       "group": "Crustacean-Copepod",
       "common_name": "",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Notemigonus crysoleucas",
@@ -3027,7 +4344,10 @@
       "group": "Fishes",
       "common_name": "Golden Shiner",
       "risk": "Moderate",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Notropis buchanani",
@@ -3038,7 +4358,10 @@
       "group": "Fishes",
       "common_name": "Ghost shiner",
       "risk": "Invasive",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Notropis dorsalis",
@@ -3049,7 +4372,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Notropis hudsonius",
@@ -3060,7 +4386,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Notropis volucellus",
@@ -3071,7 +4400,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Noturus insignis",
@@ -3082,7 +4414,10 @@
       "group": "Fishes",
       "common_name": "Margined Madtom",
       "risk": "Invasive",
-      "n_ra": 3
+      "n_ra": 3,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Nymphaea odorata",
@@ -3093,7 +4428,10 @@
       "group": "Plants",
       "common_name": "Fragrant Waterlily",
       "risk": "High",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Nymphaea sp.",
@@ -3104,7 +4442,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Odhneripisidium moitessierianum",
@@ -3115,7 +4456,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Oxybasis glauca",
@@ -3126,7 +4470,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Paranais frici",
@@ -3137,7 +4484,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Percina shumardi",
@@ -3148,7 +4498,10 @@
       "group": "Fishes",
       "common_name": "River darter",
       "risk": "Invasive",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Perrunichthys perruno",
@@ -3159,7 +4512,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Persicaria longiseta",
@@ -3170,7 +4526,10 @@
       "group": "Plants",
       "common_name": "Creeping Smartweed",
       "risk": "Moderate",
-      "n_ra": 3
+      "n_ra": 3,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Phenacobius mirabilis",
@@ -3181,7 +4540,10 @@
       "group": "Fishes",
       "common_name": "Suckermouth Minnow",
       "risk": "Invasive",
-      "n_ra": 4
+      "n_ra": 4,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Pisidium amnicum",
@@ -3192,7 +4554,10 @@
       "group": "Mollusk-Bivalve",
       "common_name": "Greater European Peaclam",
       "risk": "Moderate",
-      "n_ra": 3
+      "n_ra": 3,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Pistia stratiotes",
@@ -3203,7 +4568,14 @@
       "group": "Plants",
       "common_name": "Water Lettuce",
       "risk": "Invasive",
-      "n_ra": 12
+      "n_ra": 12,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Pleurosira laevis",
@@ -3214,7 +4586,10 @@
       "group": "Algae",
       "common_name": "",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Poa trivialis",
@@ -3225,7 +4600,10 @@
       "group": "Plants",
       "common_name": "",
       "risk": "Low",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Pomoxis annularis",
@@ -3236,7 +4614,10 @@
       "group": "Fishes",
       "common_name": "White Crappie",
       "risk": "Invasive",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Potamilus alatus",
@@ -3247,7 +4628,10 @@
       "group": "Mollusk-Bivalve",
       "common_name": "Pink Heelsplitter",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Puccinellia distans",
@@ -3258,7 +4642,10 @@
       "group": "Plants",
       "common_name": "",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Rumex longifolius",
@@ -3269,7 +4656,10 @@
       "group": "Plants",
       "common_name": "",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Salmo trutta \u00d7 Salvelinus fontinalis",
@@ -3280,7 +4670,21 @@
       "group": "Fishes",
       "common_name": "Brown Trout",
       "risk": "Invasive",
-      "n_ra": 6
+      "n_ra": 6,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 4,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ],
+        "Restricted": [
+          "Illinois",
+          "Wisconsin"
+        ],
+        "Other": [
+          "Minnesota"
+        ]
+      }
     },
     {
       "scientific_name": "Schizopera borutzkyi",
@@ -3291,7 +4695,10 @@
       "group": "Crustacean-Copepod",
       "common_name": "Oarsman",
       "risk": "Invasive",
-      "n_ra": 3
+      "n_ra": 3,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Scolex pleuronectis",
@@ -3302,7 +4709,10 @@
       "group": "Tapeworm",
       "common_name": "Tapeworm",
       "risk": "Low",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Skeletonema subsalsum",
@@ -3313,7 +4723,10 @@
       "group": "Algae",
       "common_name": "",
       "risk": "Low",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Skistodiaptomus pallidus",
@@ -3324,7 +4737,10 @@
       "group": "Crustacean-Copepod",
       "common_name": "",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Sonchus arvensis uliginosus",
@@ -3335,7 +4751,10 @@
       "group": "Plants",
       "common_name": "Perennial sowthistle",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Stephanodiscus binderanus",
@@ -3346,7 +4765,10 @@
       "group": "Algae",
       "common_name": "Diatom",
       "risk": "Invasive",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Stratiotes aloides",
@@ -3357,7 +4779,19 @@
       "group": "Plants",
       "common_name": "Water Soldiers",
       "risk": "Invasive",
-      "n_ra": 10
+      "n_ra": 10,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 6,
+      "reg_by_level": {
+        "Prohibited": [
+          "Illinois",
+          "Indiana",
+          "Michigan",
+          "Minnesota",
+          "Ontario",
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Tanysphyrus lemnae",
@@ -3368,7 +4802,10 @@
       "group": "Insects",
       "common_name": "",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Thalassiosira baltica",
@@ -3379,7 +4816,10 @@
       "group": "Algae",
       "common_name": "",
       "risk": "Low",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Thermocyclops crassus",
@@ -3390,7 +4830,10 @@
       "group": "Crustacean-Copepod",
       "common_name": "A copepod",
       "risk": "Invasive",
-      "n_ra": 3
+      "n_ra": 3,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Utricularia inflata",
@@ -3401,7 +4844,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Veronica beccabunga",
@@ -3412,7 +4858,10 @@
       "group": "Plants",
       "common_name": "European Brooklime",
       "risk": "Invasive",
-      "n_ra": 8
+      "n_ra": 8,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Acineta nitocrae",
@@ -3423,7 +4872,10 @@
       "group": "Protozoa-Ciliate",
       "common_name": "",
       "risk": "Low",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Actinocyclus normanii f. subsalsa",
@@ -3434,7 +4886,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Agrostis gigantea",
@@ -3445,7 +4900,10 @@
       "group": "Plants",
       "common_name": "Redtop",
       "risk": "Moderate",
-      "n_ra": 3
+      "n_ra": 3,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Alosa chrysochloris",
@@ -3456,7 +4914,10 @@
       "group": "Fishes",
       "common_name": "Skipjack Herring",
       "risk": "High",
-      "n_ra": 3
+      "n_ra": 3,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Argulus japonicus",
@@ -3467,7 +4928,10 @@
       "group": "Crustacean-Copepod",
       "common_name": "Parasitic copepod",
       "risk": "",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Branchiura sowerbyi",
@@ -3478,7 +4942,10 @@
       "group": "Annelids",
       "common_name": "Tubificid worm",
       "risk": "",
-      "n_ra": 3
+      "n_ra": 3,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Butomus umbellatus",
@@ -3489,7 +4956,23 @@
       "group": "Plants",
       "common_name": "Flowering Rush",
       "risk": "Invasive",
-      "n_ra": 12
+      "n_ra": 12,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 8,
+      "reg_by_level": {
+        "Restricted": [
+          "Michigan",
+          "Ontario",
+          "Wisconsin"
+        ],
+        "Prohibited": [
+          "Illinois",
+          "Indiana",
+          "Mille Lacs Band of Ojibwe Minnesota Ceded territory",
+          "Minnesota",
+          "Ohio"
+        ]
+      }
     },
     {
       "scientific_name": "Cambarus robustus",
@@ -3500,7 +4983,10 @@
       "group": "Crustacean-Crayfish",
       "common_name": "Big Water Crayfish",
       "risk": "High",
-      "n_ra": 3
+      "n_ra": 3,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Cipangopaludina japonica",
@@ -3511,7 +4997,17 @@
       "group": "Mollusk-Gastropoda",
       "common_name": "Japanese Mysterysnail",
       "risk": "High",
-      "n_ra": 7
+      "n_ra": 7,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 2,
+      "reg_by_level": {
+        "Prohibited": [
+          "New York"
+        ],
+        "Restricted": [
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Cipangopaludina sp.",
@@ -3522,7 +5018,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Conium maculatum",
@@ -3533,7 +5032,14 @@
       "group": "Plants",
       "common_name": "Poison Hemlock",
       "risk": "Invasive",
-      "n_ra": 3
+      "n_ra": 3,
+      "reg_level": "Restricted",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Restricted": [
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Conticribra (Thalassiosira) guillardii",
@@ -3544,7 +5050,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Cordylophora caspia",
@@ -3555,7 +5064,10 @@
       "group": "Coelenterates",
       "common_name": "Freshwater hydroid",
       "risk": "",
-      "n_ra": 3
+      "n_ra": 3,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Corythionella golemanskyi",
@@ -3566,7 +5078,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Cottus cognatus",
@@ -3577,7 +5092,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Couesius plumbeus",
@@ -3588,7 +5106,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Cyclops strenuus",
@@ -3599,7 +5120,10 @@
       "group": "Crustacean-Copepod",
       "common_name": "Copepod",
       "risk": "",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Cyprinella analostana",
@@ -3610,7 +5134,10 @@
       "group": "Fishes",
       "common_name": "Satinfin shiner",
       "risk": "Invasive",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Cyprinella spiloptera",
@@ -3621,7 +5148,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Dactylogyrus amphibothrium",
@@ -3632,7 +5162,10 @@
       "group": "Fluke",
       "common_name": "",
       "risk": "Low",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Daphnia galeata galeata",
@@ -3643,7 +5176,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Daphnia lumholtzi",
@@ -3654,7 +5190,14 @@
       "group": "Crustacean-Cladoceran",
       "common_name": "Water Flea",
       "risk": "Invasive",
-      "n_ra": 7
+      "n_ra": 7,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Diaphanosoma fluviatile",
@@ -3665,7 +5208,10 @@
       "group": "Crustacean-Cladoceran",
       "common_name": "water flea",
       "risk": "High",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Diatoma ehrenbergii",
@@ -3676,7 +5222,10 @@
       "group": "Algae",
       "common_name": "",
       "risk": "Low",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Discostella woltereckii",
@@ -3687,7 +5236,10 @@
       "group": "Algae",
       "common_name": "",
       "risk": "Low",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Dorosoma cepedianum",
@@ -3698,7 +5250,14 @@
       "group": "Fishes",
       "common_name": "Gizzard shad",
       "risk": "Invasive",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ]
+      }
     },
     {
       "scientific_name": "Dreissena sp.",
@@ -3709,7 +5268,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Echinogammarus ischnus",
@@ -3720,7 +5282,10 @@
       "group": "Crustacean-Amphipod",
       "common_name": "Scud",
       "risk": "Invasive",
-      "n_ra": 3
+      "n_ra": 3,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Egeria densa",
@@ -3731,7 +5296,26 @@
       "group": "Plants",
       "common_name": "Brazilian Elodea",
       "risk": "High",
-      "n_ra": 11
+      "n_ra": 11,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 9,
+      "reg_by_level": {
+        "Prohibited": [
+          "Illinois",
+          "Indiana",
+          "Michigan",
+          "New York",
+          "Ohio",
+          "Ontario",
+          "Wisconsin"
+        ],
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Restricted": [
+          "Minnesota"
+        ]
+      }
     },
     {
       "scientific_name": "Elimia virginica",
@@ -3742,7 +5326,10 @@
       "group": "Mollusk-Gastropoda",
       "common_name": "Piedmont Elimia",
       "risk": "",
-      "n_ra": 3
+      "n_ra": 3,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Epilobium parviflorum",
@@ -3753,7 +5340,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Esox lucius \u00d7 masquinongy",
@@ -3764,7 +5354,14 @@
       "group": "Fishes",
       "common_name": "Northern pike",
       "risk": "High",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ]
+      }
     },
     {
       "scientific_name": "Etheostoma caeruleum",
@@ -3775,7 +5372,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Etheostoma zonale",
@@ -3786,7 +5386,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Eubosmina maritima",
@@ -3797,7 +5400,10 @@
       "group": "Crustacean-Cladoceran",
       "common_name": "",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Euglesa henslowana",
@@ -3808,7 +5414,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Faxonius propinquus",
@@ -3819,7 +5428,10 @@
       "group": "Crustacean-Crayfish",
       "common_name": "Northern clearwater crayfish",
       "risk": "Invasive",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Faxonius rusticus",
@@ -3830,7 +5442,25 @@
       "group": "Crustacean-Crayfish",
       "common_name": "Rusty crayfish",
       "risk": "Invasive",
-      "n_ra": 3
+      "n_ra": 3,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 8,
+      "reg_by_level": {
+        "Restricted": [
+          "Michigan",
+          "Minnesota",
+          "Pennsylvania",
+          "Quebec"
+        ],
+        "Prohibited": [
+          "Illinois",
+          "Mille Lacs Band of Ojibwe Minnesota Ceded territory",
+          "New York"
+        ],
+        "Other": [
+          "Indiana"
+        ]
+      }
     },
     {
       "scientific_name": "Faxonius virilis",
@@ -3841,7 +5471,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Fundulus diaphanus diaphanus",
@@ -3852,7 +5485,14 @@
       "group": "Fishes",
       "common_name": "Banded Killifish",
       "risk": "High",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Ohio"
+        ]
+      }
     },
     {
       "scientific_name": "Gammarus fasciatus",
@@ -3863,7 +5503,10 @@
       "group": "Crustacean-Amphipod",
       "common_name": "Freshwater shrimp",
       "risk": "Invasive",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Gammarus tigrinus",
@@ -3874,7 +5517,10 @@
       "group": "Crustacean-Amphipod",
       "common_name": "",
       "risk": "",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Gillia altilis",
@@ -3885,7 +5531,10 @@
       "group": "Mollusk-Gastropoda",
       "common_name": "Buffalo Pebblesnail",
       "risk": "",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Glugea hertwigi",
@@ -3896,7 +5545,10 @@
       "group": "Microsporidea",
       "common_name": "",
       "risk": "Low",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Heteropsyllus nr. nunni",
@@ -3907,7 +5559,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Heteropsyllus nunni",
@@ -3918,7 +5573,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Heterosporis sutherlandae",
@@ -3929,7 +5587,14 @@
       "group": "Microsporidea",
       "common_name": "Heterosporis",
       "risk": "Invasive",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "Other",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Other": [
+          "Indiana"
+        ]
+      }
     },
     {
       "scientific_name": "Hydrilla verticillata peregrina",
@@ -3940,7 +5605,25 @@
       "group": "Plants",
       "common_name": "Hydrilla",
       "risk": "Invasive",
-      "n_ra": 11
+      "n_ra": 11,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 10,
+      "reg_by_level": {
+        "Prohibited": [
+          "Illinois",
+          "Indiana",
+          "Michigan",
+          "Mille Lacs Band of Ojibwe Minnesota Ceded territory",
+          "Minnesota",
+          "New York",
+          "Ohio",
+          "Ontario",
+          "Wisconsin"
+        ],
+        "Other": [
+          "Pennsylvania"
+        ]
+      }
     },
     {
       "scientific_name": "Hymenomonas roseola",
@@ -3951,7 +5634,10 @@
       "group": "Algae",
       "common_name": "",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Ictiobus bubalus",
@@ -3962,7 +5648,10 @@
       "group": "Fishes",
       "common_name": "Smallmouth buffalo",
       "risk": "Invasive",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Juncus compressus",
@@ -3973,7 +5662,10 @@
       "group": "Plants",
       "common_name": "",
       "risk": "Invasive",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Labidesthes sicculus",
@@ -3984,7 +5676,10 @@
       "group": "Fishes",
       "common_name": "Brook silverside",
       "risk": "Invasive",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Ladislavella catascopium",
@@ -3995,7 +5690,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Lasmigona subviridis",
@@ -4006,7 +5704,10 @@
       "group": "Mollusk-Bivalve",
       "common_name": "Green Floater",
       "risk": "Low",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Lepomis auritus",
@@ -4017,7 +5718,10 @@
       "group": "Fishes",
       "common_name": "Redbreast sunfish",
       "risk": "Watchlist",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Lepomis gibbosus \u00d7 cyanellus",
@@ -4028,7 +5732,14 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ]
+      }
     },
     {
       "scientific_name": "Lepomis gibbosus \u00d7 macrochirus",
@@ -4039,7 +5750,14 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ]
+      }
     },
     {
       "scientific_name": "Lepomis gulosus",
@@ -4050,7 +5768,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Lepomis humilis",
@@ -4061,7 +5782,10 @@
       "group": "Fishes",
       "common_name": "Orangespotted Sunfish",
       "risk": "",
-      "n_ra": 3
+      "n_ra": 3,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Lepomis megalotis",
@@ -4072,7 +5796,14 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ]
+      }
     },
     {
       "scientific_name": "Leptodea fragilis",
@@ -4083,7 +5814,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Lupinus polyphyllus",
@@ -4094,7 +5828,10 @@
       "group": "Plants",
       "common_name": "Bigleaf lupine",
       "risk": "",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Lycopus asper",
@@ -4105,7 +5842,10 @@
       "group": "Plants",
       "common_name": "",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Lycopus europaeus",
@@ -4116,7 +5856,10 @@
       "group": "Plants",
       "common_name": "",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Lysimachia nummularia",
@@ -4127,7 +5870,14 @@
       "group": "Plants",
       "common_name": "Moneywort",
       "risk": "Moderate",
-      "n_ra": 5
+      "n_ra": 5,
+      "reg_level": "Restricted",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Restricted": [
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Lysimachia punctata",
@@ -4138,7 +5888,10 @@
       "group": "Plants",
       "common_name": "Large yellow loosestrife",
       "risk": "Watchlist",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Manayunkia speciosa",
@@ -4149,7 +5902,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Megacyclops viridis",
@@ -4160,7 +5916,10 @@
       "group": "Crustacean-Copepod",
       "common_name": "",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Mentha spicata",
@@ -4171,7 +5930,10 @@
       "group": "Plants",
       "common_name": "Spearmint",
       "risk": "",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Mentha \u00d7 gracilis",
@@ -4182,7 +5944,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Morone chrysops \u00d7 americana",
@@ -4193,7 +5958,14 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ]
+      }
     },
     {
       "scientific_name": "Morone chrysops \u00d7 saxatilis",
@@ -4204,7 +5976,14 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ]
+      }
     },
     {
       "scientific_name": "Moxostoma carinatum",
@@ -4215,7 +5994,14 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ]
+      }
     },
     {
       "scientific_name": "Myosotis scorpioides",
@@ -4226,7 +6012,14 @@
       "group": "Plants",
       "common_name": "Forget-me-not",
       "risk": "Invasive",
-      "n_ra": 8
+      "n_ra": 8,
+      "reg_level": "Restricted",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Restricted": [
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Myriophyllum aquaticum",
@@ -4237,7 +6030,26 @@
       "group": "Plants",
       "common_name": "Parrot Feather",
       "risk": "High",
-      "n_ra": 11
+      "n_ra": 11,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 9,
+      "reg_by_level": {
+        "Prohibited": [
+          "Illinois",
+          "Indiana",
+          "Michigan",
+          "New York",
+          "Ohio",
+          "Ontario",
+          "Wisconsin"
+        ],
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Restricted": [
+          "Minnesota"
+        ]
+      }
     },
     {
       "scientific_name": "Myriophyllum \u00d7 hybridum",
@@ -4248,7 +6060,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Najas minor",
@@ -4259,7 +6074,17 @@
       "group": "Plants",
       "common_name": "Brittle Waternymph",
       "risk": "Invasive",
-      "n_ra": 12
+      "n_ra": 12,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 4,
+      "reg_by_level": {
+        "Prohibited": [
+          "Illinois",
+          "Indiana",
+          "Minnesota",
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Nasturtium microphyllum",
@@ -4270,7 +6095,10 @@
       "group": "Plants",
       "common_name": "Onerow Yellowcress",
       "risk": "High",
-      "n_ra": 5
+      "n_ra": 5,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Neascus brevicaudatus",
@@ -4281,7 +6109,10 @@
       "group": "Fluke",
       "common_name": "",
       "risk": "Low",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Nitokra incerta",
@@ -4292,7 +6123,10 @@
       "group": "Crustacean-Copepod",
       "common_name": "",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Nocomis biguttatus",
@@ -4303,7 +6137,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Notropis atherinoides",
@@ -4314,7 +6151,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Novirhabdovirus sp. genotype IV sublineage b",
@@ -4325,7 +6165,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Oncorhynchus mykiss whitei",
@@ -4336,7 +6179,21 @@
       "group": "Fishes",
       "common_name": "Rainbow Trout",
       "risk": "Invasive",
-      "n_ra": 5
+      "n_ra": 5,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 4,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ],
+        "Restricted": [
+          "Illinois",
+          "Wisconsin"
+        ],
+        "Other": [
+          "Minnesota"
+        ]
+      }
     },
     {
       "scientific_name": "Phractocephalus hemioliopterus",
@@ -4347,7 +6204,10 @@
       "group": "Fishes",
       "common_name": "Redtail Catfish",
       "risk": "Low",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Phragmites australis australis",
@@ -4358,7 +6218,25 @@
       "group": "Plants",
       "common_name": "Phragmites",
       "risk": "Invasive",
-      "n_ra": 5
+      "n_ra": 5,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 8,
+      "reg_by_level": {
+        "Restricted": [
+          "Michigan",
+          "Ontario",
+          "Wisconsin"
+        ],
+        "Other": [
+          "Pennsylvania"
+        ],
+        "Prohibited": [
+          "Indiana",
+          "Minnesota",
+          "New York",
+          "Ohio"
+        ]
+      }
     },
     {
       "scientific_name": "Physella sp.",
@@ -4369,7 +6247,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Piaractus sp.",
@@ -4380,7 +6261,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Pimephales notatus",
@@ -4391,7 +6275,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Piscirickettsia cf. salmonis",
@@ -4402,7 +6289,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Pleurocera acuta",
@@ -4413,7 +6303,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Pluchea odorata",
@@ -4424,7 +6317,10 @@
       "group": "Plants",
       "common_name": "Marsh fleabane",
       "risk": "",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Pomoxis nigromaculatus",
@@ -4435,7 +6331,14 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ]
+      }
     },
     {
       "scientific_name": "Potamothrix bavaricus",
@@ -4446,7 +6349,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Potamothrix bedoti",
@@ -4457,7 +6363,10 @@
       "group": "Annelids",
       "common_name": "",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Potamothrix moldaviensis",
@@ -4468,7 +6377,10 @@
       "group": "Annelids",
       "common_name": "",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Potamothrix vejdovskyi",
@@ -4479,7 +6391,10 @@
       "group": "Annelids",
       "common_name": "",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Procambarus acutus",
@@ -4490,7 +6405,14 @@
       "group": "Crustacean-Crayfish",
       "common_name": "White River Crawfish",
       "risk": "High",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "Restricted",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Restricted": [
+          "Pennsylvania"
+        ]
+      }
     },
     {
       "scientific_name": "Psammonobiotus communis",
@@ -4501,7 +6423,10 @@
       "group": "Protozoa-Amoebae",
       "common_name": "Testate amoeba",
       "risk": "",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Psammonobiotus dziwnowi",
@@ -4512,7 +6437,10 @@
       "group": "Protozoa-Amoebae",
       "common_name": "",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Psammonobiotus linearis",
@@ -4523,7 +6451,10 @@
       "group": "Protozoa-Amoebae",
       "common_name": "Testate amoeba",
       "risk": "Low",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Pseudemys rubriventris",
@@ -4534,7 +6465,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Pterygoplichthys sp.",
@@ -4545,7 +6479,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Renibacterium (Corynebacterium) salmoninarum",
@@ -4556,7 +6493,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Rhinichthys obtusus",
@@ -4567,7 +6507,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Ripistes parasita",
@@ -4578,7 +6521,10 @@
       "group": "Annelids",
       "common_name": "",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Rorippa sylvestris",
@@ -4589,7 +6535,10 @@
       "group": "Plants",
       "common_name": "",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Rumex obtusifolius",
@@ -4600,7 +6549,10 @@
       "group": "Plants",
       "common_name": "",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Salix cf. cinerea/atrocinerea",
@@ -4611,7 +6563,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Salmincola californiensis",
@@ -4622,7 +6577,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Salmincola edwardsii",
@@ -4633,7 +6591,10 @@
       "group": "Crustacean-Copepod",
       "common_name": "Gill louse",
       "risk": "Invasive",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Salmincola lotae",
@@ -4644,7 +6605,10 @@
       "group": "Crustacean-Copepod",
       "common_name": "",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Salmo letnica",
@@ -4655,7 +6619,10 @@
       "group": "Fishes",
       "common_name": "Ohrid Trout",
       "risk": "High",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Salmo salar sebago",
@@ -4666,7 +6633,20 @@
       "group": "Fishes",
       "common_name": "Atlantic Salmon",
       "risk": "Invasive",
-      "n_ra": 6
+      "n_ra": 6,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 3,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ],
+        "Restricted": [
+          "Wisconsin"
+        ],
+        "Other": [
+          "Minnesota"
+        ]
+      }
     },
     {
       "scientific_name": "Salvelinus fontinalis \u00d7 namaycush",
@@ -4677,7 +6657,17 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 2,
+      "reg_by_level": {
+        "Prohibited": [
+          "Quebec"
+        ],
+        "Restricted": [
+          "Illinois"
+        ]
+      }
     },
     {
       "scientific_name": "Sander canadensis",
@@ -4688,7 +6678,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Sander canadensis \u00d7 vitreus",
@@ -4699,7 +6692,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Schyzocotyle acheilognathi",
@@ -4710,7 +6706,10 @@
       "group": "Tapeworm",
       "common_name": "Tapeworm",
       "risk": "Low",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Semotilus corporalis",
@@ -4721,7 +6720,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Solidago sempervirens",
@@ -4732,7 +6734,14 @@
       "group": "Plants",
       "common_name": "Seaside goldenrod",
       "risk": "",
-      "n_ra": 3
+      "n_ra": 3,
+      "reg_level": "Restricted",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Restricted": [
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Sonchus arvensis",
@@ -4743,7 +6752,10 @@
       "group": "Plants",
       "common_name": "Perennial sowthistle",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Sparganium glomeratum",
@@ -4754,7 +6766,10 @@
       "group": "Plants",
       "common_name": "Northern bur-reed",
       "risk": "Invasive",
-      "n_ra": 5
+      "n_ra": 5,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Sphacelaria fluviatilis",
@@ -4765,7 +6780,10 @@
       "group": "Algae",
       "common_name": "Brown alga",
       "risk": "Low",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Sphacelaria lacustris",
@@ -4776,7 +6794,10 @@
       "group": "Algae",
       "common_name": "",
       "risk": "Low",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Sphaeromyxa sevastopoli",
@@ -4787,7 +6808,10 @@
       "group": "Myxosporean",
       "common_name": "",
       "risk": "Low",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Stagnicola palustris",
@@ -4798,7 +6822,10 @@
       "group": "Mollusk-Gastropoda",
       "common_name": "Marsh pond snail",
       "risk": "Invasive",
-      "n_ra": 2
+      "n_ra": 2,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Stephanodiscus subtilis",
@@ -4809,7 +6836,10 @@
       "group": "Algae",
       "common_name": "",
       "risk": "Low",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Stylodrilus heringianus",
@@ -4820,7 +6850,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Thalassiosira bramaputrae",
@@ -4831,7 +6864,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Timoniella sp.",
@@ -4842,7 +6878,10 @@
       "group": "Fluke",
       "common_name": "",
       "risk": "Low",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Trachemys scripta scripta",
@@ -4853,7 +6892,10 @@
       "group": "Reptile",
       "common_name": "Red-eared slider",
       "risk": "",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Trypanosoma acerinae",
@@ -4864,7 +6906,10 @@
       "group": "Protozoa-Flagellate",
       "common_name": "",
       "risk": "Low",
-      "n_ra": 1
+      "n_ra": 1,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Typha laxmannii",
@@ -4875,7 +6920,14 @@
       "group": "Plants",
       "common_name": "Graceful cattail",
       "risk": "Watchlist",
-      "n_ra": 6
+      "n_ra": 6,
+      "reg_level": "Prohibited",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Prohibited": [
+          "Wisconsin"
+        ]
+      }
     },
     {
       "scientific_name": "Typha \u00d7 glauca",
@@ -4886,7 +6938,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Ulva (Enteromorpha) flexuosa subsp. flexuosa and flexuosa subsp. paradoxa",
@@ -4897,7 +6952,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Ulva (Enteromorpha) intestinalis",
@@ -4908,7 +6966,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Ulva (Enteromorpha) prolifera",
@@ -4919,7 +6980,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Umbra limi",
@@ -4930,7 +6994,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Urnatella gracilis",
@@ -4941,7 +7008,10 @@
       "group": "",
       "common_name": "",
       "risk": "",
-      "n_ra": 0
+      "n_ra": 0,
+      "reg_level": "",
+      "reg_n_juris": 0,
+      "reg_by_level": {}
     },
     {
       "scientific_name": "Valvata piscinalis",
@@ -4952,7 +7022,14 @@
       "group": "Mollusk-Gastropoda",
       "common_name": "European Stream Valvata",
       "risk": "",
-      "n_ra": 4
+      "n_ra": 4,
+      "reg_level": "Restricted",
+      "reg_n_juris": 1,
+      "reg_by_level": {
+        "Restricted": [
+          "Wisconsin"
+        ]
+      }
     }
   ]
 }

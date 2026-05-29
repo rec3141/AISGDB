@@ -82,6 +82,13 @@ GROUP_ALIASES = {
 # confirmed-fact label, not a predicted score.
 RISK_PRIORITY = ["Invasive", "High", "Watchlist", "Moderate", "Low"]
 
+# GLANSIS regulations table — one row per (species, jurisdiction). UTF-8 TSV.
+# Same URL-stability caveat as RALevel2_v6.txt: vendor a snapshot.
+GLANSIS_REGS_URL = "https://www.glerl.noaa.gov/glansis/data/invasiveRegs.txt"
+
+# Most-restrictive regulation level wins for the displayed cell.
+REG_PRIORITY = ["Prohibited", "Restricted", "Other"]
+
 USER_AGENT = "danaSeq-GLANSIS-inventory/1.0 (https://github.com/rec3141/danaSeq)"
 
 
@@ -191,6 +198,49 @@ def _enrichment_key(scientific_name):
     return (parts[0].lower(), parts[1].lower())
 
 
+def load_regs(path):
+    """Read GLANSIS invasiveRegs.txt (UTF-8 TSV or .gz of same).
+
+    Returns a dict keyed by (genus_lower, species_lower) →
+        {top_level, n_jurisdictions, jurisdictions_by_level}
+    The dataset has family-level rows (empty Genus/Species) too — those are
+    skipped here, which costs some recall on multi-species families.
+    """
+    if not path or not os.path.exists(path):
+        return {}
+    if path.endswith(".gz"):
+        with gzip.open(path, "rt", encoding="utf-8") as fh:
+            text = fh.read()
+    else:
+        with open(path, encoding="utf-8") as fh:
+            text = fh.read()
+    reader = csv.DictReader(io.StringIO(text), delimiter="\t")
+    by_species = defaultdict(list)
+    for row in reader:
+        g = (row.get("Genus") or "").strip()
+        s = (row.get("Species") or "").strip()
+        if not (g and s):
+            continue
+        by_species[(g.lower(), s.lower())].append(row)
+
+    regs = {}
+    for key, rows in by_species.items():
+        by_level = defaultdict(list)
+        for r in rows:
+            level = (r.get("RegulationLevel") or "").strip() or "Other"
+            jur = (r.get("Jurisdiction") or "").strip()
+            if jur:
+                by_level[level].append(jur)
+        top = next((lvl for lvl in REG_PRIORITY if lvl in by_level),
+                   next(iter(by_level), ""))
+        regs[key] = {
+            "top_level":         top,
+            "n_jurisdictions":   sum(len(v) for v in by_level.values()),
+            "by_level":          {lvl: sorted(jur) for lvl, jur in by_level.items()},
+        }
+    return regs
+
+
 def classify_assemblies(reports):
     """Pick the most informative assembly across all reports for one species."""
     if not reports:
@@ -272,6 +322,11 @@ def main():
                                          "data", "RALevel2_v6.txt.gz"),
                     help="GLANSIS Tier-2 risk-assessment CSV (UTF-16 TSV or .gz). "
                          f"Live source: {GLANSIS_RA_URL}")
+    ap.add_argument("--regs",
+                    default=os.path.join(os.path.dirname(__file__) or ".",
+                                         "data", "invasiveRegs.txt.gz"),
+                    help="GLANSIS regulatory-listings TSV (UTF-8 or .gz). "
+                         f"Live source: {GLANSIS_REGS_URL}")
     ap.add_argument("--out-tsv",  default="/matika/projects/project_zebra/docs/glansis_inventory.tsv")
     ap.add_argument("--out-html", default="/matika/projects/project_zebra/docs/glansis_inventory.html")
     ap.add_argument("--out-json", default="/matika/projects/project_zebra/docs/glansis_inventory.json")
@@ -291,6 +346,9 @@ def main():
 
     ra_enrich = load_ra_file(args.ra)
     print(f"[inventory] RA enrichment loaded for {len(ra_enrich)} (genus, species) pairs",
+          file=sys.stderr)
+    regs_enrich = load_regs(args.regs)
+    print(f"[inventory] regs loaded for {len(regs_enrich)} (genus, species) pairs",
           file=sys.stderr)
 
     cache = {}
@@ -334,7 +392,9 @@ def main():
             entry.get("nuccore_count") or 0,
             entry.get("transcriptome_count") or 0,
         )
-        ra = ra_enrich.get(_enrichment_key(name) or ("", ""), {})
+        ek = _enrichment_key(name) or ("", "")
+        ra = ra_enrich.get(ek, {})
+        rg = regs_enrich.get(ek, {})
         results.append({
             "scientific_name": name,
             "tier": tier,
@@ -346,6 +406,9 @@ def main():
             "common_name": ra.get("common_name", ""),
             "risk":        ra.get("risk", ""),
             "n_ra":        ra.get("n_ra", 0),
+            "reg_level":   rg.get("top_level", ""),
+            "reg_n_juris": rg.get("n_jurisdictions", 0),
+            "reg_by_level": rg.get("by_level", {}),
         })
 
     with open(args.cache, "w") as f:
@@ -363,6 +426,7 @@ def main():
 
     # ---- TSV ----
     cols = ["tier", "scientific_name", "common_name", "group", "risk", "n_ra",
+            "reg_level", "reg_n_juris",
             "accession", "assembly_level",
             "assembly_name", "total_length", "refseq_category",
             "transcriptome_count", "nuccore_count"]
@@ -419,6 +483,11 @@ def write_html(path, results, counts):
         "Moderate":  "#ca8a04",
         "Low":       "#16a34a",
     }
+    reg_color = {
+        "Prohibited": "#be123c",
+        "Restricted": "#ea580c",
+        "Other":      "#64748b",
+    }
     n_total = len(results)
     rows_html = []
     for r in results:
@@ -451,12 +520,27 @@ def write_html(path, results, counts):
         species_cell = f'<em>{r["scientific_name"]}</em>'
         if cname:
             species_cell += f'<br><span class="muted small">{cname}</span>'
+        reg_level = r.get("reg_level") or ""
+        reg_n = r.get("reg_n_juris") or 0
+        reg_by_level = r.get("reg_by_level") or {}
+        reg_tooltip = " | ".join(
+            f"{lvl}: {', '.join(juris)}"
+            for lvl in REG_PRIORITY if lvl in reg_by_level
+            for juris in [reg_by_level[lvl]]
+        ) or ""
+        rcc = reg_color.get(reg_level, "#94a3b8")
+        regs_cell = (
+            f'<span class="badge" style="background:{rcc}1a;color:{rcc}" '
+            f'title="{reg_tooltip}">{reg_level}</span>'
+            f' <span class="muted">×{reg_n}</span>' if reg_level else ""
+        )
         rows_html.append(f"""
-        <tr data-group="{grp}" data-risk="{risk}">
+        <tr data-group="{grp}" data-risk="{risk}" data-reg="{reg_level}">
           <td><span class="badge" style="background:{color}1a;color:{color}">{tier}</span></td>
           <td>{species_cell}</td>
           <td class="small">{grp}</td>
           <td>{risk_cell}</td>
+          <td>{regs_cell}</td>
           <td>{r.get("assembly_level") or ""}</td>
           <td class="mono">{acc_html}</td>
           <td class="mono right">{fmt_bp(r.get("total_length"))}</td>
@@ -486,6 +570,11 @@ def write_html(path, results, counts):
                                          if x[0] in RISK_PRIORITY else 99)
     )
     n_with_ra = sum(1 for r in results if r.get("n_ra"))
+    n_with_reg = sum(1 for r in results if r.get("reg_n_juris"))
+    reg_options = "".join(
+        f'<option value="{lvl}">{lvl}</option>' for lvl in REG_PRIORITY
+        if any(r.get("reg_level") == lvl for r in results)
+    )
 
     html = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
@@ -552,6 +641,10 @@ def write_html(path, results, counts):
     <option value="">All risk</option>
     {risk_options}
   </select>
+  <select id="regFilter" onchange="applyFilters()">
+    <option value="">All regulation</option>
+    {reg_options}
+  </select>
 </div>
 <div class="meta">
   Group, Common Name, and Risk are joined from the
@@ -561,12 +654,17 @@ def write_html(path, results, counts):
   Risk reduces all assessments per species to a single label
   (priority: Invasive &gt; High &gt; Watchlist &gt; Moderate &gt; Low); count
   in parentheses is the number of source assessments.
+  Regulated is joined from
+  <a href="https://www.glerl.noaa.gov/glansis/raT2Explorer.html"><code>invasiveRegs.txt</code></a>
+  &mdash; {n_with_reg} of {n_total} species have at least one regulatory listing
+  in a Great Lakes jurisdiction. Hover the badge for the per-jurisdiction
+  breakdown; cell shows the most-restrictive level and total jurisdictions.
 </div>
 
 <table>
   <thead>
     <tr>
-      <th>Tier</th><th>Species</th><th>Group</th><th>Risk</th>
+      <th>Tier</th><th>Species</th><th>Group</th><th>Risk</th><th>Regulated</th>
       <th>Assembly level</th><th>Accession</th><th class="right">Length</th>
       <th class="right">EST/TSA</th><th class="right">nuccore</th>
     </tr>
@@ -587,12 +685,14 @@ def write_html(path, results, counts):
     const q   = document.getElementById('filter').value.toLowerCase();
     const grp = document.getElementById('groupFilter').value;
     const rsk = document.getElementById('riskFilter').value;
+    const reg = document.getElementById('regFilter').value;
     const rows = document.querySelectorAll('#rows tr');
     for (const r of rows) {{
       let show = true;
       if (q   && !r.textContent.toLowerCase().includes(q)) show = false;
       if (grp && r.dataset.group !== grp) show = false;
       if (rsk && r.dataset.risk  !== rsk) show = false;
+      if (reg && r.dataset.reg   !== reg) show = false;
       r.style.display = show ? '' : 'none';
     }}
   }}
