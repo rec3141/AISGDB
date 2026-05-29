@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T15:13:32Z",
+  "generated_at": "2026-05-29T19:18:44Z",
   "n_species": 370,
   "tier_counts": {
     "A": 95,
@@ -21,7 +21,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Insects",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Acorus calamus",
@@ -35,7 +39,11 @@
       "refseq_category": "reference genome",
       "n_reports": 1,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Sweet-flag",
+      "risk": "",
+      "n_ra": 4
     },
     {
       "scientific_name": "Aeromonas salmonicida",
@@ -49,7 +57,11 @@
       "refseq_category": "reference genome",
       "n_reports": 20,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Bacteria",
+      "common_name": "Aeromonas salmonicida",
+      "risk": "Low",
+      "n_ra": 2
     },
     {
       "scientific_name": "Alisma plantago-aquatica",
@@ -63,7 +75,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Water Plantain",
+      "risk": "",
+      "n_ra": 4
     },
     {
       "scientific_name": "Alligator mississippiensis",
@@ -77,7 +93,11 @@
       "refseq_category": "reference genome",
       "n_reports": 9,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Alnus glutinosa",
@@ -91,7 +111,11 @@
       "refseq_category": "reference genome",
       "n_reports": 4,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "European Alder",
+      "risk": "Invasive",
+      "n_ra": 5
     },
     {
       "scientific_name": "Alopecurus geniculatus",
@@ -105,7 +129,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Water foxtail",
+      "risk": "Invasive",
+      "n_ra": 2
     },
     {
       "scientific_name": "Alosa sapidissima",
@@ -119,7 +147,11 @@
       "refseq_category": "reference genome",
       "n_reports": 4,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Amia calva",
@@ -133,7 +165,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Anguilla rostrata",
@@ -147,7 +183,11 @@
       "refseq_category": "reference genome",
       "n_reports": 3,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "American eel",
+      "risk": "Invasive",
+      "n_ra": 2
     },
     {
       "scientific_name": "Apeltes quadracus",
@@ -161,7 +201,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Fourspine Stickleback",
+      "risk": "Low",
+      "n_ra": 6
     },
     {
       "scientific_name": "Carassius auratus",
@@ -175,7 +219,11 @@
       "refseq_category": "reference genome",
       "n_reports": 7,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Goldfish",
+      "risk": "High",
+      "n_ra": 6
     },
     {
       "scientific_name": "Carex acutiformis",
@@ -189,7 +237,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "",
+      "risk": "Invasive",
+      "n_ra": 1
     },
     {
       "scientific_name": "Chrosomus eos",
@@ -203,7 +255,11 @@
       "refseq_category": "reference genome",
       "n_reports": 1,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Cipangopaludina chinensis",
@@ -217,7 +273,11 @@
       "refseq_category": "reference genome",
       "n_reports": 1,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Mollusk-Gastropoda",
+      "common_name": "Chinese Mysterysnail",
+      "risk": "High",
+      "n_ra": 2
     },
     {
       "scientific_name": "Coregonus clupeaformis",
@@ -231,7 +291,11 @@
       "refseq_category": "reference genome",
       "n_reports": 4,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Crassostrea virginica",
@@ -245,7 +309,11 @@
       "refseq_category": "reference genome",
       "n_reports": 4,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Ctenopharyngodon idella",
@@ -259,7 +327,11 @@
       "refseq_category": null,
       "n_reports": 7,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Grass carp",
+      "risk": "Invasive",
+      "n_ra": 10
     },
     {
       "scientific_name": "Cygnus olor",
@@ -273,7 +345,11 @@
       "refseq_category": "reference genome",
       "n_reports": 4,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Birds",
+      "common_name": "Mute swan",
+      "risk": "High",
+      "n_ra": 3
     },
     {
       "scientific_name": "Cyprinella lutrensis",
@@ -287,7 +363,11 @@
       "refseq_category": "reference genome",
       "n_reports": 3,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Red shiner",
+      "risk": "High",
+      "n_ra": 6
     },
     {
       "scientific_name": "Cyprinus carpio",
@@ -301,7 +381,11 @@
       "refseq_category": null,
       "n_reports": 17,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Common Carp",
+      "risk": "Invasive",
+      "n_ra": 8
     },
     {
       "scientific_name": "Diadumene lineata",
@@ -315,7 +399,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Dreissena polymorpha",
@@ -329,7 +417,11 @@
       "refseq_category": "reference genome",
       "n_reports": 3,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Mollusk-Bivalve",
+      "common_name": "Zebra Mussel",
+      "risk": "Invasive",
+      "n_ra": 7
     },
     {
       "scientific_name": "Dreissena rostriformis bugensis",
@@ -343,7 +435,11 @@
       "refseq_category": "reference genome",
       "n_reports": 1,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Echinochloa crus-galli",
@@ -357,7 +453,11 @@
       "refseq_category": null,
       "n_reports": 4,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Barnyard grass",
+      "risk": "Invasive",
+      "n_ra": 2
     },
     {
       "scientific_name": "Eichhornia crassipes",
@@ -371,7 +471,11 @@
       "refseq_category": "reference genome",
       "n_reports": 1,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Water Hyacinth",
+      "risk": "High",
+      "n_ra": 12
     },
     {
       "scientific_name": "Epilobium hirsutum",
@@ -385,7 +489,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Hairy Willow Herb",
+      "risk": "Invasive",
+      "n_ra": 5
     },
     {
       "scientific_name": "Eriocheir sinensis",
@@ -399,7 +507,11 @@
       "refseq_category": "reference genome",
       "n_reports": 6,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Crustacean-Crab",
+      "common_name": "Chinese Mitten Crab",
+      "risk": "High",
+      "n_ra": 4
     },
     {
       "scientific_name": "Esox lucius",
@@ -413,7 +525,11 @@
       "refseq_category": "reference genome",
       "n_reports": 8,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Northern pike",
+      "risk": "High",
+      "n_ra": 1
     },
     {
       "scientific_name": "Eurytemora carolleeae",
@@ -427,7 +543,11 @@
       "refseq_category": null,
       "n_reports": 3,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Filipendula ulmaria",
@@ -441,7 +561,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Queen of the Meadow",
+      "risk": "Invasive",
+      "n_ra": 5
     },
     {
       "scientific_name": "Fundulus heteroclitus",
@@ -455,7 +579,11 @@
       "refseq_category": "reference genome",
       "n_reports": 4,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Mummichog",
+      "risk": "High",
+      "n_ra": 1
     },
     {
       "scientific_name": "Gambusia affinis",
@@ -469,7 +597,11 @@
       "refseq_category": "reference genome",
       "n_reports": 3,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Western mosquitofish",
+      "risk": "Invasive",
+      "n_ra": 10
     },
     {
       "scientific_name": "Gasterosteus aculeatus",
@@ -483,7 +615,11 @@
       "refseq_category": "reference genome",
       "n_reports": 12,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Threespine Stickleback",
+      "risk": "Invasive",
+      "n_ra": 7
     },
     {
       "scientific_name": "Gymnocephalus cernua",
@@ -497,7 +633,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Hypophthalmichthys nobilis",
@@ -511,7 +651,11 @@
       "refseq_category": "reference genome",
       "n_reports": 4,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Bighead Carp",
+      "risk": "High",
+      "n_ra": 9
     },
     {
       "scientific_name": "Ictalurus furcatus",
@@ -525,7 +669,11 @@
       "refseq_category": "reference genome",
       "n_reports": 3,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Blue Catfish",
+      "risk": "Invasive",
+      "n_ra": 5
     },
     {
       "scientific_name": "Ictalurus punctatus",
@@ -539,7 +687,11 @@
       "refseq_category": "reference genome",
       "n_reports": 3,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Impatiens glandulifera",
@@ -553,7 +705,11 @@
       "refseq_category": "reference genome",
       "n_reports": 3,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Ornamental Jewelweed",
+      "risk": "Moderate",
+      "n_ra": 5
     },
     {
       "scientific_name": "Juncus inflexus",
@@ -567,7 +723,11 @@
       "refseq_category": "reference genome",
       "n_reports": 3,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "",
+      "risk": "Invasive",
+      "n_ra": 1
     },
     {
       "scientific_name": "Lepisosteus oculatus",
@@ -581,7 +741,11 @@
       "refseq_category": "reference genome",
       "n_reports": 5,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Lithobates catesbeianus",
@@ -595,7 +759,11 @@
       "refseq_category": "reference genome",
       "n_reports": 5,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Amphibian",
+      "common_name": "American bullfrog",
+      "risk": "Invasive",
+      "n_ra": 2
     },
     {
       "scientific_name": "Mentha aquatica",
@@ -609,7 +777,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Water Mint",
+      "risk": "",
+      "n_ra": 5
     },
     {
       "scientific_name": "Micropterus dolomieu",
@@ -623,7 +795,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Smallmouth Bass",
+      "risk": "High",
+      "n_ra": 1
     },
     {
       "scientific_name": "Micropterus salmoides",
@@ -637,7 +813,11 @@
       "refseq_category": null,
       "n_reports": 8,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Largemouth Bass",
+      "risk": "High",
+      "n_ra": 1
     },
     {
       "scientific_name": "Microstegium vimineum",
@@ -651,7 +831,11 @@
       "refseq_category": "reference genome",
       "n_reports": 1,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Japanese stiltgrass",
+      "risk": "Invasive",
+      "n_ra": 4
     },
     {
       "scientific_name": "Misgurnus anguillicaudatus",
@@ -665,7 +849,11 @@
       "refseq_category": "reference genome",
       "n_reports": 8,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Oriental Weatherfish",
+      "risk": "Invasive",
+      "n_ra": 8
     },
     {
       "scientific_name": "Nasturtium officinale",
@@ -679,7 +867,11 @@
       "refseq_category": "reference genome",
       "n_reports": 3,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Watercress",
+      "risk": "High",
+      "n_ra": 10
     },
     {
       "scientific_name": "Nelumbo lutea",
@@ -693,7 +885,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Nymphoides peltata",
@@ -707,7 +903,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Yellow Floating-heart",
+      "risk": "Invasive",
+      "n_ra": 11
     },
     {
       "scientific_name": "Oenanthe javanica",
@@ -721,7 +921,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Java waterdropwort",
+      "risk": "Invasive",
+      "n_ra": 5
     },
     {
       "scientific_name": "Oncorhynchus gorbuscha",
@@ -735,7 +939,11 @@
       "refseq_category": "reference genome",
       "n_reports": 3,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Pink Salmon",
+      "risk": "Invasive",
+      "n_ra": 5
     },
     {
       "scientific_name": "Oncorhynchus kisutch",
@@ -749,7 +957,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Coho Salmon",
+      "risk": "Invasive",
+      "n_ra": 5
     },
     {
       "scientific_name": "Oncorhynchus mykiss",
@@ -763,7 +975,11 @@
       "refseq_category": "reference genome",
       "n_reports": 12,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Rainbow Trout",
+      "risk": "Invasive",
+      "n_ra": 5
     },
     {
       "scientific_name": "Oncorhynchus mykiss irideus",
@@ -777,7 +993,11 @@
       "refseq_category": null,
       "n_reports": 1,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Rainbow Trout",
+      "risk": "Invasive",
+      "n_ra": 5
     },
     {
       "scientific_name": "Oncorhynchus nerka",
@@ -791,7 +1011,11 @@
       "refseq_category": "reference genome",
       "n_reports": 4,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Oncorhynchus tshawytscha",
@@ -805,7 +1029,11 @@
       "refseq_category": "reference genome",
       "n_reports": 5,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Chinook Salmon",
+      "risk": "Invasive",
+      "n_ra": 6
     },
     {
       "scientific_name": "Oreochromis niloticus",
@@ -819,7 +1047,11 @@
       "refseq_category": "reference genome",
       "n_reports": 9,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Nile Tilapia",
+      "risk": "High",
+      "n_ra": 4
     },
     {
       "scientific_name": "Osmerus mordax",
@@ -833,7 +1065,11 @@
       "refseq_category": "reference genome",
       "n_reports": 3,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Rainbow Smelt",
+      "risk": "Invasive",
+      "n_ra": 8
     },
     {
       "scientific_name": "Perca flavescens",
@@ -847,7 +1083,11 @@
       "refseq_category": "reference genome",
       "n_reports": 3,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Yellow Perch",
+      "risk": "High",
+      "n_ra": 1
     },
     {
       "scientific_name": "Persicaria maculosa",
@@ -861,7 +1101,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "",
+      "risk": "Invasive",
+      "n_ra": 1
     },
     {
       "scientific_name": "Petromyzon marinus",
@@ -875,7 +1119,11 @@
       "refseq_category": "reference genome",
       "n_reports": 9,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Sea Lamprey",
+      "risk": "Invasive",
+      "n_ra": 7
     },
     {
       "scientific_name": "Phalaris arundinacea",
@@ -889,7 +1137,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Reed Canarygrass",
+      "risk": "Invasive",
+      "n_ra": 5
     },
     {
       "scientific_name": "Piaractus brachypomus",
@@ -903,7 +1155,11 @@
       "refseq_category": "reference genome",
       "n_reports": 1,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Red-bellied Pacu",
+      "risk": "Invasive",
+      "n_ra": 2
     },
     {
       "scientific_name": "Platichthys flesus",
@@ -917,7 +1173,11 @@
       "refseq_category": "reference genome",
       "n_reports": 4,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Potamogeton crispus",
@@ -931,7 +1191,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Curly-leaved Pondweed",
+      "risk": "Invasive",
+      "n_ra": 12
     },
     {
       "scientific_name": "Procambarus clarkii",
@@ -945,7 +1209,11 @@
       "refseq_category": "reference genome",
       "n_reports": 5,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Crustacean-Crayfish",
+      "common_name": "red swamp crayfish",
+      "risk": "Invasive",
+      "n_ra": 6
     },
     {
       "scientific_name": "Proterorhinus semilunaris",
@@ -959,7 +1227,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Western Tubenose Goby",
+      "risk": "Invasive",
+      "n_ra": 4
     },
     {
       "scientific_name": "Pterygoplichthys disjunctivus",
@@ -973,7 +1245,11 @@
       "refseq_category": "reference genome",
       "n_reports": 1,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Verminculated Sailfin Catfish",
+      "risk": "High",
+      "n_ra": 2
     },
     {
       "scientific_name": "Pungitius pungitius",
@@ -987,7 +1263,11 @@
       "refseq_category": null,
       "n_reports": 6,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Ranavirus micropterus1",
@@ -1001,7 +1281,11 @@
       "refseq_category": null,
       "n_reports": 12,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Raphidiopsis raciborskii",
@@ -1015,7 +1299,11 @@
       "refseq_category": "reference genome",
       "n_reports": 20,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Reynoutria japonica",
@@ -1029,7 +1317,11 @@
       "refseq_category": "reference genome",
       "n_reports": 1,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Rhamnus frangula",
@@ -1043,7 +1335,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Glossy Buckthorn",
+      "risk": "Invasive",
+      "n_ra": 2
     },
     {
       "scientific_name": "Salix caprea",
@@ -1057,7 +1353,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "goat willow",
+      "risk": "Invasive",
+      "n_ra": 1
     },
     {
       "scientific_name": "Salix purpurea",
@@ -1071,7 +1371,11 @@
       "refseq_category": "reference genome",
       "n_reports": 6,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Salmo salar",
@@ -1085,7 +1389,11 @@
       "refseq_category": "reference genome",
       "n_reports": 19,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Atlantic Salmon",
+      "risk": "Invasive",
+      "n_ra": 6
     },
     {
       "scientific_name": "Salmo trutta",
@@ -1099,7 +1407,11 @@
       "refseq_category": "reference genome",
       "n_reports": 5,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Brown Trout",
+      "risk": "Invasive",
+      "n_ra": 6
     },
     {
       "scientific_name": "Salvelinus alpinus",
@@ -1113,7 +1425,11 @@
       "refseq_category": "reference genome",
       "n_reports": 6,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Artic Char",
+      "risk": "High",
+      "n_ra": 2
     },
     {
       "scientific_name": "Salvelinus fontinalis",
@@ -1127,7 +1443,11 @@
       "refseq_category": "reference genome",
       "n_reports": 3,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Salvelinus namaycush",
@@ -1141,7 +1461,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Sander vitreus",
@@ -1155,7 +1479,11 @@
       "refseq_category": "reference genome",
       "n_reports": 3,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Walleye",
+      "risk": "High",
+      "n_ra": 1
     },
     {
       "scientific_name": "Scardinius erythrophthalmus",
@@ -1169,7 +1497,11 @@
       "refseq_category": "reference genome",
       "n_reports": 5,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Rudd",
+      "risk": "Invasive",
+      "n_ra": 7
     },
     {
       "scientific_name": "Schmidtea polychroa",
@@ -1183,7 +1515,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Solanum dulcamara",
@@ -1197,7 +1533,11 @@
       "refseq_category": "reference genome",
       "n_reports": 4,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Trailing Nightshade",
+      "risk": "Invasive",
+      "n_ra": 2
     },
     {
       "scientific_name": "Sphaerium corneum",
@@ -1211,7 +1551,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Mollusk-Bivalve",
+      "common_name": "European Fingernailclam",
+      "risk": "",
+      "n_ra": 3
     },
     {
       "scientific_name": "Sprivivirus cyprinus",
@@ -1225,7 +1569,11 @@
       "refseq_category": null,
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Thalassiosira pseudonana",
@@ -1239,7 +1587,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Algae",
+      "common_name": "",
+      "risk": "Low",
+      "n_ra": 1
     },
     {
       "scientific_name": "Trachemys scripta",
@@ -1253,7 +1605,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Reptile",
+      "common_name": "Red-eared slider",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Trachemys scripta elegans",
@@ -1267,7 +1623,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Reptile",
+      "common_name": "Red-eared slider",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Trapa natans",
@@ -1281,7 +1641,11 @@
       "refseq_category": "reference genome",
       "n_reports": 1,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Water Chestnut",
+      "risk": "Invasive",
+      "n_ra": 12
     },
     {
       "scientific_name": "Typha angustifolia",
@@ -1295,7 +1659,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Narrowleaf Cattail",
+      "risk": "Invasive",
+      "n_ra": 8
     },
     {
       "scientific_name": "Typha latifolia",
@@ -1309,7 +1677,11 @@
       "refseq_category": "reference genome",
       "n_reports": 3,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Veronica anagallis-aquatica",
@@ -1323,7 +1695,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Xenopus laevis",
@@ -1337,7 +1713,11 @@
       "refseq_category": "reference genome",
       "n_reports": 4,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Amphibian",
+      "common_name": "African clawed frog",
+      "risk": "High",
+      "n_ra": 4
     },
     {
       "scientific_name": "Alosa aestivalis",
@@ -1351,7 +1731,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Blueback Herring",
+      "risk": "Invasive",
+      "n_ra": 5
     },
     {
       "scientific_name": "Alosa pseudoharengus",
@@ -1365,7 +1749,11 @@
       "refseq_category": "reference genome",
       "n_reports": 4,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Alewife",
+      "risk": "Invasive",
+      "n_ra": 7
     },
     {
       "scientific_name": "Ameiurus nebulosus",
@@ -1379,7 +1767,11 @@
       "refseq_category": "reference genome",
       "n_reports": 1,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Amnicola limosus",
@@ -1393,7 +1785,11 @@
       "refseq_category": "reference genome",
       "n_reports": 1,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Aphredoderus sayanus",
@@ -1407,7 +1803,11 @@
       "refseq_category": "reference genome",
       "n_reports": 1,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Chaetoceros muelleri",
@@ -1421,7 +1821,11 @@
       "refseq_category": "reference genome",
       "n_reports": 1,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Corbicula fluminea",
@@ -1435,7 +1839,11 @@
       "refseq_category": "reference genome",
       "n_reports": 1,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Mollusk-Bivalve",
+      "common_name": "Asian Clam",
+      "risk": "Invasive",
+      "n_ra": 7
     },
     {
       "scientific_name": "Craspedacusta sowerbii",
@@ -1449,7 +1857,11 @@
       "refseq_category": "reference genome",
       "n_reports": 1,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Cyclotella atomus",
@@ -1463,7 +1875,11 @@
       "refseq_category": "reference genome",
       "n_reports": 3,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Algae",
+      "common_name": "",
+      "risk": "Low",
+      "n_ra": 1
     },
     {
       "scientific_name": "Cyclotella cryptica",
@@ -1477,7 +1893,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Algae",
+      "common_name": "Diatom",
+      "risk": "Low",
+      "n_ra": 2
     },
     {
       "scientific_name": "Diadumene leucolena",
@@ -1491,7 +1911,11 @@
       "refseq_category": "reference genome",
       "n_reports": 1,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Discostella pseudostelligera",
@@ -1505,7 +1929,11 @@
       "refseq_category": null,
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Algae",
+      "common_name": "",
+      "risk": "Low",
+      "n_ra": 1
     },
     {
       "scientific_name": "Esox masquinongy",
@@ -1519,7 +1947,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Muskellunge",
+      "risk": "Invasive",
+      "n_ra": 3
     },
     {
       "scientific_name": "Esox niger",
@@ -1533,7 +1965,11 @@
       "refseq_category": "reference genome",
       "n_reports": 1,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Chain Pickerel",
+      "risk": "Invasive",
+      "n_ra": 4
     },
     {
       "scientific_name": "Lepisosteus osseus",
@@ -1547,7 +1983,11 @@
       "refseq_category": "reference genome",
       "n_reports": 1,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Lepomis macrochirus",
@@ -1561,7 +2001,11 @@
       "refseq_category": "reference genome",
       "n_reports": 1,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Morone americana",
@@ -1575,7 +2019,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "White perch",
+      "risk": "Invasive",
+      "n_ra": 8
     },
     {
       "scientific_name": "Morone chrysops",
@@ -1589,7 +2037,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Morone saxatilis",
@@ -1603,7 +2055,11 @@
       "refseq_category": "reference genome",
       "n_reports": 3,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Rockfish",
+      "risk": "Moderate",
+      "n_ra": 4
     },
     {
       "scientific_name": "Myriophyllum spicatum",
@@ -1617,7 +2073,11 @@
       "refseq_category": "reference genome",
       "n_reports": 3,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Eurasian Watermilfoil",
+      "risk": "Invasive",
+      "n_ra": 13
     },
     {
       "scientific_name": "Neogobius melanostomus",
@@ -1631,7 +2091,11 @@
       "refseq_category": "reference genome",
       "n_reports": 1,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Round goby",
+      "risk": "Invasive",
+      "n_ra": 10
     },
     {
       "scientific_name": "Pimephales promelas",
@@ -1645,7 +2109,11 @@
       "refseq_category": "reference genome",
       "n_reports": 4,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Procambarus virginalis",
@@ -1659,7 +2127,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Crustacean-Crayfish",
+      "common_name": "Marmorkrebs",
+      "risk": "High",
+      "n_ra": 2
     },
     {
       "scientific_name": "Pylodictis olivaris",
@@ -1673,7 +2145,11 @@
       "refseq_category": "reference genome",
       "n_reports": 1,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Flathead catfish",
+      "risk": "Invasive",
+      "n_ra": 4
     },
     {
       "scientific_name": "Radix auricularia",
@@ -1687,7 +2163,11 @@
       "refseq_category": "reference genome",
       "n_reports": 1,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Mollusk-Gastropoda",
+      "common_name": "European Ear Snail",
+      "risk": "Moderate",
+      "n_ra": 4
     },
     {
       "scientific_name": "Salvelinus alpinus oquassa",
@@ -1701,7 +2181,11 @@
       "refseq_category": null,
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Artic Char",
+      "risk": "High",
+      "n_ra": 2
     },
     {
       "scientific_name": "Skeletonema potamos",
@@ -1715,7 +2199,11 @@
       "refseq_category": "reference genome",
       "n_reports": 1,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Algae",
+      "common_name": "",
+      "risk": "Low",
+      "n_ra": 1
     },
     {
       "scientific_name": "Thalassiosira weissflogii",
@@ -1729,7 +2217,11 @@
       "refseq_category": "reference genome",
       "n_reports": 1,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Algae",
+      "common_name": "",
+      "risk": "Low",
+      "n_ra": 1
     },
     {
       "scientific_name": "Thymallus arcticus",
@@ -1743,7 +2235,11 @@
       "refseq_category": "reference genome",
       "n_reports": 2,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Arctic Grayling",
+      "risk": "High",
+      "n_ra": 1
     },
     {
       "scientific_name": "Tinca tinca",
@@ -1757,1722 +2253,2706 @@
       "refseq_category": "reference genome",
       "n_reports": 1,
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Tench",
+      "risk": "High",
+      "n_ra": 7
     },
     {
       "scientific_name": "Anguillicola crassus",
       "tier": "C",
       "tier_label": "Transcriptome / EST (129 records)",
       "transcriptome_count": 129,
-      "nuccore_count": 874
+      "nuccore_count": 874,
+      "group": "Nematodes",
+      "common_name": "Eel swim bladder parasite",
+      "risk": "Invasive",
+      "n_ra": 2
     },
     {
       "scientific_name": "Bangia atropurpurea",
       "tier": "C",
       "tier_label": "Transcriptome / EST (1252 records)",
       "transcriptome_count": 1252,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Algae",
+      "common_name": "Red Algae",
+      "risk": "Invasive",
+      "n_ra": 3
     },
     {
       "scientific_name": "Chaetogaster diaphanus",
       "tier": "C",
       "tier_label": "Transcriptome / EST (1 records)",
       "transcriptome_count": 1,
-      "nuccore_count": 122
+      "nuccore_count": 122,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Iris pseudacorus",
       "tier": "C",
       "tier_label": "Transcriptome / EST (1 records)",
       "transcriptome_count": 1,
-      "nuccore_count": 135
+      "nuccore_count": 135,
+      "group": "Plants",
+      "common_name": "Yellow Flag",
+      "risk": "Invasive",
+      "n_ra": 10
     },
     {
       "scientific_name": "Lepomis microlophus",
       "tier": "C",
       "tier_label": "Transcriptome / EST (1 records)",
       "transcriptome_count": 1,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Redear Sunfish",
+      "risk": "Invasive",
+      "n_ra": 3
     },
     {
       "scientific_name": "Lotus corniculatus",
       "tier": "C",
       "tier_label": "Transcriptome / EST (1 records)",
       "transcriptome_count": 1,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Birdsfoot trefoil",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Marsilea quadrifolia",
       "tier": "C",
       "tier_label": "Transcriptome / EST (16 records)",
       "transcriptome_count": 16,
-      "nuccore_count": 65
+      "nuccore_count": 65,
+      "group": "Plants",
+      "common_name": "European Waterclover",
+      "risk": "Invasive",
+      "n_ra": 11
     },
     {
       "scientific_name": "Mentha \u00d7 piperita",
       "tier": "C",
       "tier_label": "Transcriptome / EST (1316 records)",
       "transcriptome_count": 1316,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Myosoton aquaticum",
       "tier": "C",
       "tier_label": "Transcriptome / EST (1 records)",
       "transcriptome_count": 1,
-      "nuccore_count": 92
+      "nuccore_count": 92,
+      "group": "Plants",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Myxobolus cerebralis",
       "tier": "C",
       "tier_label": "Transcriptome / EST (1 records)",
       "transcriptome_count": 1,
-      "nuccore_count": 87
+      "nuccore_count": 87,
+      "group": "Myxosporean",
+      "common_name": "Whirling disease",
+      "risk": "Invasive",
+      "n_ra": 2
     },
     {
       "scientific_name": "Potamopyrgus antipodarum",
       "tier": "C",
       "tier_label": "Transcriptome / EST (2 records)",
       "transcriptome_count": 2,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Mollusk-Gastropoda",
+      "common_name": "New Zealand mudsnail",
+      "risk": "Invasive",
+      "n_ra": 8
     },
     {
       "scientific_name": "Salix alba",
       "tier": "C",
       "tier_label": "Transcriptome / EST (10 records)",
       "transcriptome_count": 10,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "White willow",
+      "risk": "",
+      "n_ra": 2
     },
     {
       "scientific_name": "Salix fragilis",
       "tier": "C",
       "tier_label": "Transcriptome / EST (18 records)",
       "transcriptome_count": 18,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Crack willow",
+      "risk": "Invasive",
+      "n_ra": 2
     },
     {
       "scientific_name": "Ambloplites rupestris",
       "tier": "D",
       "tier_label": "Marker pool (166 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 166
+      "nuccore_count": 166,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Ameiurus catus",
       "tier": "D",
       "tier_label": "Marker pool (86 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 86
+      "nuccore_count": 86,
+      "group": "Fishes",
+      "common_name": "White Catfish",
+      "risk": "High",
+      "n_ra": 1
     },
     {
       "scientific_name": "Ameiurus natalis",
       "tier": "D",
       "tier_label": "Marker pool (179 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 179
+      "nuccore_count": 179,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Ammocrypta pellucida",
       "tier": "D",
       "tier_label": "Marker pool (75 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 75
+      "nuccore_count": 75,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Aplodinotus grunniens",
       "tier": "D",
       "tier_label": "Marker pool (56 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 56
+      "nuccore_count": 56,
+      "group": "Fishes",
+      "common_name": "Freshwater drum",
+      "risk": "Invasive",
+      "n_ra": 3
     },
     {
       "scientific_name": "Arundo donax",
       "tier": "D",
       "tier_label": "Marker pool (284181 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 284181
+      "nuccore_count": 284181,
+      "group": "Plants",
+      "common_name": "Giant Reed",
+      "risk": "High",
+      "n_ra": 7
     },
     {
       "scientific_name": "Bithynia tentaculata",
       "tier": "D",
       "tier_label": "Marker pool (76 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 76
+      "nuccore_count": 76,
+      "group": "Mollusk-Gastropoda",
+      "common_name": "Faucet snail",
+      "risk": "Invasive",
+      "n_ra": 6
     },
     {
       "scientific_name": "Brachionus leydigii",
       "tier": "D",
       "tier_label": "Markers only (8 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 8
+      "nuccore_count": 8,
+      "group": "Rotifers",
+      "common_name": "Rotifer",
+      "risk": "High",
+      "n_ra": 4
     },
     {
       "scientific_name": "Bythotrephes longimanus",
       "tier": "D",
       "tier_label": "Marker pool (42 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 42
+      "nuccore_count": 42,
+      "group": "Crustacean-Cladoceran",
+      "common_name": "Spiny Waterflea",
+      "risk": "Invasive",
+      "n_ra": 6
     },
     {
       "scientific_name": "Cabomba caroliniana",
       "tier": "D",
       "tier_label": "Marker pool (369 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 369
+      "nuccore_count": 369,
+      "group": "Plants",
+      "common_name": "Carolina Fanwort",
+      "risk": "Invasive",
+      "n_ra": 10
     },
     {
       "scientific_name": "Caecidotea racovitzai",
       "tier": "D",
       "tier_label": "Marker pool (152 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 152
+      "nuccore_count": 152,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Callinina georgiana",
       "tier": "D",
       "tier_label": "Marker pool (266 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 266
+      "nuccore_count": 266,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Carex disticha",
       "tier": "D",
       "tier_label": "Markers only (15 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 15
+      "nuccore_count": 15,
+      "group": "Plants",
+      "common_name": "",
+      "risk": "Low",
+      "n_ra": 1
     },
     {
       "scientific_name": "Carex flacca",
       "tier": "D",
       "tier_label": "Marker pool (67 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 67
+      "nuccore_count": 67,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Carpiodes carpio",
       "tier": "D",
       "tier_label": "Marker pool (394 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 394
+      "nuccore_count": 394,
+      "group": "Fishes",
+      "common_name": "River Carpsucker",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Cercopagis pengoi",
       "tier": "D",
       "tier_label": "Marker pool (41 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 41
+      "nuccore_count": 41,
+      "group": "Crustacean-Cladoceran",
+      "common_name": "Fishhook Water Flea",
+      "risk": "Invasive",
+      "n_ra": 8
     },
     {
       "scientific_name": "Chroodactylon ornatum",
       "tier": "D",
       "tier_label": "Marker pool (83600 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 83600
+      "nuccore_count": 83600,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Cirsium palustre",
       "tier": "D",
       "tier_label": "Marker pool (67 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 67
+      "nuccore_count": 67,
+      "group": "Plants",
+      "common_name": "Marsh Thistle",
+      "risk": "Invasive",
+      "n_ra": 5
     },
     {
       "scientific_name": "Corbicula sp.",
       "tier": "D",
       "tier_label": "Marker pool (342 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 342
+      "nuccore_count": 342,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Cyprinus rubrofuscus",
       "tier": "D",
       "tier_label": "Marker pool (93 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 93
+      "nuccore_count": 93,
+      "group": "Fishes",
+      "common_name": "Koi",
+      "risk": "High",
+      "n_ra": 1
     },
     {
       "scientific_name": "Dactylogyrus hemiamphibothrium",
       "tier": "D",
       "tier_label": "Markers only (2 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 2
+      "nuccore_count": 2,
+      "group": "Fluke",
+      "common_name": "",
+      "risk": "Low",
+      "n_ra": 1
     },
     {
       "scientific_name": "Daphnia longispina",
       "tier": "D",
       "tier_label": "Marker pool (1348 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 1348
+      "nuccore_count": 1348,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Didymosphenia geminata",
       "tier": "D",
       "tier_label": "Marker pool (166 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 166
+      "nuccore_count": 166,
+      "group": "Algae",
+      "common_name": "Didymo",
+      "risk": "Invasive",
+      "n_ra": 5
     },
     {
       "scientific_name": "Elimia livescens",
       "tier": "D",
       "tier_label": "Markers only (5 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 5
+      "nuccore_count": 5,
+      "group": "Mollusk-Gastropoda",
+      "common_name": "Liver Elimia",
+      "risk": "Invasive",
+      "n_ra": 6
     },
     {
       "scientific_name": "Enneacanthus gloriosus",
       "tier": "D",
       "tier_label": "Marker pool (164 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 164
+      "nuccore_count": 164,
+      "group": "Fishes",
+      "common_name": "Bluespotted Sunfish",
+      "risk": "",
+      "n_ra": 3
     },
     {
       "scientific_name": "Etheostoma olmstedi",
       "tier": "D",
       "tier_label": "Marker pool (821 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 821
+      "nuccore_count": 821,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Eubosmina coregoni",
       "tier": "D",
       "tier_label": "Marker pool (2018 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 2018
+      "nuccore_count": 2018,
+      "group": "Crustacean-Cladoceran",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Euglesa supina",
       "tier": "D",
       "tier_label": "Marker pool (31 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 31
+      "nuccore_count": 31,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Faxonius obscurus",
       "tier": "D",
       "tier_label": "Markers only (15 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 15
+      "nuccore_count": 15,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Fundulus notatus",
       "tier": "D",
       "tier_label": "Marker pool (487 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 487
+      "nuccore_count": 487,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Gianius aquaedulcis",
       "tier": "D",
       "tier_label": "Markers only (14 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 14
+      "nuccore_count": 14,
+      "group": "Annelids",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Glyceria maxima",
       "tier": "D",
       "tier_label": "Marker pool (32 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 32
+      "nuccore_count": 32,
+      "group": "Plants",
+      "common_name": "Reed Mannagrass",
+      "risk": "Invasive",
+      "n_ra": 10
     },
     {
       "scientific_name": "Graptemys pseudogeographica",
       "tier": "D",
       "tier_label": "Marker pool (476 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 476
+      "nuccore_count": 476,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Hemimysis anomala",
       "tier": "D",
       "tier_label": "Markers only (21 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 21
+      "nuccore_count": 21,
+      "group": "Crustacean-Mysid",
+      "common_name": "Bloody Shrimp",
+      "risk": "Invasive",
+      "n_ra": 8
     },
     {
       "scientific_name": "Hydrocharis morsus-ranae",
       "tier": "D",
       "tier_label": "Marker pool (68 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 68
+      "nuccore_count": 68,
+      "group": "Plants",
+      "common_name": "Common Frogbit",
+      "risk": "Invasive",
+      "n_ra": 11
     },
     {
       "scientific_name": "Ichthyocotylurus pileatus",
       "tier": "D",
       "tier_label": "Markers only (19 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 19
+      "nuccore_count": 19,
+      "group": "Fluke",
+      "common_name": "",
+      "risk": "Invasive",
+      "n_ra": 1
     },
     {
       "scientific_name": "Ictiobus cyprinellus",
       "tier": "D",
       "tier_label": "Marker pool (122 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 122
+      "nuccore_count": 122,
+      "group": "Fishes",
+      "common_name": "Bigmouth buffalo",
+      "risk": "Invasive",
+      "n_ra": 2
     },
     {
       "scientific_name": "Ictiobus niger",
       "tier": "D",
       "tier_label": "Marker pool (80 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 80
+      "nuccore_count": 80,
+      "group": "Fishes",
+      "common_name": "Black Buffalo",
+      "risk": "Invasive",
+      "n_ra": 2
     },
     {
       "scientific_name": "Juncus gerardii",
       "tier": "D",
       "tier_label": "Marker pool (26 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 26
+      "nuccore_count": 26,
+      "group": "Plants",
+      "common_name": "Saltmeadow rush",
+      "risk": "Invasive",
+      "n_ra": 2
     },
     {
       "scientific_name": "Landoltia punctata",
       "tier": "D",
       "tier_label": "Marker pool (91455 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 91455
+      "nuccore_count": 91455,
+      "group": "Plants",
+      "common_name": "Dotted Duckmeat",
+      "risk": "",
+      "n_ra": 8
     },
     {
       "scientific_name": "Lepisosteus platostomus",
       "tier": "D",
       "tier_label": "Marker pool (91 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 91
+      "nuccore_count": 91,
+      "group": "Fishes",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Lepomis cyanellus",
       "tier": "D",
       "tier_label": "Marker pool (294 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 294
+      "nuccore_count": 294,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Leyogonimus polyoon",
       "tier": "D",
       "tier_label": "Markers only (7 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 7
+      "nuccore_count": 7,
+      "group": "Flatworm",
+      "common_name": "Trematode flatworm",
+      "risk": "Watchlist",
+      "n_ra": 3
     },
     {
       "scientific_name": "Ligumia recta",
       "tier": "D",
       "tier_label": "Marker pool (25 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 25
+      "nuccore_count": 25,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Lophopodella carteri",
       "tier": "D",
       "tier_label": "Markers only (5 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 5
+      "nuccore_count": 5,
+      "group": "Bryozoan",
+      "common_name": "Bryozoan",
+      "risk": "Invasive",
+      "n_ra": 2
     },
     {
       "scientific_name": "Lysimachia vulgaris",
       "tier": "D",
       "tier_label": "Marker pool (53 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 53
+      "nuccore_count": 53,
+      "group": "Plants",
+      "common_name": "Garden Loosestrife",
+      "risk": "Invasive",
+      "n_ra": 4
     },
     {
       "scientific_name": "Lythrum salicaria",
       "tier": "D",
       "tier_label": "Marker pool (103 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 103
+      "nuccore_count": 103,
+      "group": "Plants",
+      "common_name": "Purple Loosestrife",
+      "risk": "Invasive",
+      "n_ra": 10
     },
     {
       "scientific_name": "Margariscus nachtriebi",
       "tier": "D",
       "tier_label": "Markers only (4 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 4
+      "nuccore_count": 4,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Mesocyclops pehpeiensis",
       "tier": "D",
       "tier_label": "Marker pool (44 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 44
+      "nuccore_count": 44,
+      "group": "Crustacean-Copepod",
+      "common_name": "Copepod",
+      "risk": "High",
+      "n_ra": 2
     },
     {
       "scientific_name": "Morone mississippiensis",
       "tier": "D",
       "tier_label": "Marker pool (39 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 39
+      "nuccore_count": 39,
+      "group": "Fishes",
+      "common_name": "Yellow Bass",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Myriophyllum heterophyllum",
       "tier": "D",
       "tier_label": "Marker pool (96 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 96
+      "nuccore_count": 96,
+      "group": "Plants",
+      "common_name": "Broadleaf Water-milfoil",
+      "risk": "High",
+      "n_ra": 4
     },
     {
       "scientific_name": "Mysis diluviana",
       "tier": "D",
       "tier_label": "Marker pool (40 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 40
+      "nuccore_count": 40,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Najas marina",
       "tier": "D",
       "tier_label": "Marker pool (532 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 532
+      "nuccore_count": 532,
+      "group": "Plants",
+      "common_name": "Spiny naiad",
+      "risk": "Invasive",
+      "n_ra": 6
     },
     {
       "scientific_name": "Neoergasilus japonicus",
       "tier": "D",
       "tier_label": "Marker pool (61 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 61
+      "nuccore_count": 61,
+      "group": "Crustacean-Copepod",
+      "common_name": "parasitic copepod",
+      "risk": "",
+      "n_ra": 2
     },
     {
       "scientific_name": "Nitellopsis obtusa",
       "tier": "D",
       "tier_label": "Marker pool (83 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 83
+      "nuccore_count": 83,
+      "group": "Algae",
+      "common_name": "Starry Stonewort",
+      "risk": "High",
+      "n_ra": 6
     },
     {
       "scientific_name": "Nitokra hibernica",
       "tier": "D",
       "tier_label": "Markers only (14 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 14
+      "nuccore_count": 14,
+      "group": "Crustacean-Copepod",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Notemigonus crysoleucas",
       "tier": "D",
       "tier_label": "Marker pool (429 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 429
+      "nuccore_count": 429,
+      "group": "Fishes",
+      "common_name": "Golden Shiner",
+      "risk": "Moderate",
+      "n_ra": 1
     },
     {
       "scientific_name": "Notropis buchanani",
       "tier": "D",
       "tier_label": "Marker pool (57 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 57
+      "nuccore_count": 57,
+      "group": "Fishes",
+      "common_name": "Ghost shiner",
+      "risk": "Invasive",
+      "n_ra": 2
     },
     {
       "scientific_name": "Notropis dorsalis",
       "tier": "D",
       "tier_label": "Marker pool (42 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 42
+      "nuccore_count": 42,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Notropis hudsonius",
       "tier": "D",
       "tier_label": "Marker pool (141 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 141
+      "nuccore_count": 141,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Notropis volucellus",
       "tier": "D",
       "tier_label": "Marker pool (106 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 106
+      "nuccore_count": 106,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Noturus insignis",
       "tier": "D",
       "tier_label": "Marker pool (72 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 72
+      "nuccore_count": 72,
+      "group": "Fishes",
+      "common_name": "Margined Madtom",
+      "risk": "Invasive",
+      "n_ra": 3
     },
     {
       "scientific_name": "Nymphaea odorata",
       "tier": "D",
       "tier_label": "Marker pool (143 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 143
+      "nuccore_count": 143,
+      "group": "Plants",
+      "common_name": "Fragrant Waterlily",
+      "risk": "High",
+      "n_ra": 1
     },
     {
       "scientific_name": "Nymphaea sp.",
       "tier": "D",
       "tier_label": "Markers only (1 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 1
+      "nuccore_count": 1,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Odhneripisidium moitessierianum",
       "tier": "D",
       "tier_label": "Markers only (12 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 12
+      "nuccore_count": 12,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Oxybasis glauca",
       "tier": "D",
       "tier_label": "Marker pool (223 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 223
+      "nuccore_count": 223,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Paranais frici",
       "tier": "D",
       "tier_label": "Marker pool (27 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 27
+      "nuccore_count": 27,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Percina shumardi",
       "tier": "D",
       "tier_label": "Marker pool (35 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 35
+      "nuccore_count": 35,
+      "group": "Fishes",
+      "common_name": "River darter",
+      "risk": "Invasive",
+      "n_ra": 2
     },
     {
       "scientific_name": "Perrunichthys perruno",
       "tier": "D",
       "tier_label": "Markers only (6 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 6
+      "nuccore_count": 6,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Persicaria longiseta",
       "tier": "D",
       "tier_label": "Marker pool (61 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 61
+      "nuccore_count": 61,
+      "group": "Plants",
+      "common_name": "Creeping Smartweed",
+      "risk": "Moderate",
+      "n_ra": 3
     },
     {
       "scientific_name": "Phenacobius mirabilis",
       "tier": "D",
       "tier_label": "Marker pool (32 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 32
+      "nuccore_count": 32,
+      "group": "Fishes",
+      "common_name": "Suckermouth Minnow",
+      "risk": "Invasive",
+      "n_ra": 4
     },
     {
       "scientific_name": "Pisidium amnicum",
       "tier": "D",
       "tier_label": "Marker pool (52 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 52
+      "nuccore_count": 52,
+      "group": "Mollusk-Bivalve",
+      "common_name": "Greater European Peaclam",
+      "risk": "Moderate",
+      "n_ra": 3
     },
     {
       "scientific_name": "Pistia stratiotes",
       "tier": "D",
       "tier_label": "Marker pool (278 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 278
+      "nuccore_count": 278,
+      "group": "Plants",
+      "common_name": "Water Lettuce",
+      "risk": "Invasive",
+      "n_ra": 12
     },
     {
       "scientific_name": "Pleurosira laevis",
       "tier": "D",
       "tier_label": "Markers only (22 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 22
+      "nuccore_count": 22,
+      "group": "Algae",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Poa trivialis",
       "tier": "D",
       "tier_label": "Marker pool (129 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 129
+      "nuccore_count": 129,
+      "group": "Plants",
+      "common_name": "",
+      "risk": "Low",
+      "n_ra": 1
     },
     {
       "scientific_name": "Pomoxis annularis",
       "tier": "D",
       "tier_label": "Marker pool (106 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 106
+      "nuccore_count": 106,
+      "group": "Fishes",
+      "common_name": "White Crappie",
+      "risk": "Invasive",
+      "n_ra": 2
     },
     {
       "scientific_name": "Potamilus alatus",
       "tier": "D",
       "tier_label": "Marker pool (25 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 25
+      "nuccore_count": 25,
+      "group": "Mollusk-Bivalve",
+      "common_name": "Pink Heelsplitter",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Puccinellia distans",
       "tier": "D",
       "tier_label": "Marker pool (396 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 396
+      "nuccore_count": 396,
+      "group": "Plants",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Rumex longifolius",
       "tier": "D",
       "tier_label": "Markers only (19 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 19
+      "nuccore_count": 19,
+      "group": "Plants",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Salmo trutta \u00d7 Salvelinus fontinalis",
       "tier": "D",
       "tier_label": "Markers only (2 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 2
+      "nuccore_count": 2,
+      "group": "Fishes",
+      "common_name": "Brown Trout",
+      "risk": "Invasive",
+      "n_ra": 6
     },
     {
       "scientific_name": "Schizopera borutzkyi",
       "tier": "D",
       "tier_label": "Markers only (7 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 7
+      "nuccore_count": 7,
+      "group": "Crustacean-Copepod",
+      "common_name": "Oarsman",
+      "risk": "Invasive",
+      "n_ra": 3
     },
     {
       "scientific_name": "Scolex pleuronectis",
       "tier": "D",
       "tier_label": "Markers only (1 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 1
+      "nuccore_count": 1,
+      "group": "Tapeworm",
+      "common_name": "Tapeworm",
+      "risk": "Low",
+      "n_ra": 1
     },
     {
       "scientific_name": "Skeletonema subsalsum",
       "tier": "D",
       "tier_label": "Marker pool (380 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 380
+      "nuccore_count": 380,
+      "group": "Algae",
+      "common_name": "",
+      "risk": "Low",
+      "n_ra": 1
     },
     {
       "scientific_name": "Skistodiaptomus pallidus",
       "tier": "D",
       "tier_label": "Marker pool (78 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 78
+      "nuccore_count": 78,
+      "group": "Crustacean-Copepod",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Sonchus arvensis uliginosus",
       "tier": "D",
       "tier_label": "Markers only (5 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 5
+      "nuccore_count": 5,
+      "group": "Plants",
+      "common_name": "Perennial sowthistle",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Stephanodiscus binderanus",
       "tier": "D",
       "tier_label": "Marker pool (33 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 33
+      "nuccore_count": 33,
+      "group": "Algae",
+      "common_name": "Diatom",
+      "risk": "Invasive",
+      "n_ra": 2
     },
     {
       "scientific_name": "Stratiotes aloides",
       "tier": "D",
       "tier_label": "Marker pool (178 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 178
+      "nuccore_count": 178,
+      "group": "Plants",
+      "common_name": "Water Soldiers",
+      "risk": "Invasive",
+      "n_ra": 10
     },
     {
       "scientific_name": "Tanysphyrus lemnae",
       "tier": "D",
       "tier_label": "Marker pool (39 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 39
+      "nuccore_count": 39,
+      "group": "Insects",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Thalassiosira baltica",
       "tier": "D",
       "tier_label": "Markers only (2 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 2
+      "nuccore_count": 2,
+      "group": "Algae",
+      "common_name": "",
+      "risk": "Low",
+      "n_ra": 1
     },
     {
       "scientific_name": "Thermocyclops crassus",
       "tier": "D",
       "tier_label": "Markers only (14 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 14
+      "nuccore_count": 14,
+      "group": "Crustacean-Copepod",
+      "common_name": "A copepod",
+      "risk": "Invasive",
+      "n_ra": 3
     },
     {
       "scientific_name": "Utricularia inflata",
       "tier": "D",
       "tier_label": "Marker pool (44 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 44
+      "nuccore_count": 44,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Veronica beccabunga",
       "tier": "D",
       "tier_label": "Marker pool (68 records)",
       "transcriptome_count": 0,
-      "nuccore_count": 68
+      "nuccore_count": 68,
+      "group": "Plants",
+      "common_name": "European Brooklime",
+      "risk": "Invasive",
+      "n_ra": 8
     },
     {
       "scientific_name": "Acineta nitocrae",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Protozoa-Ciliate",
+      "common_name": "",
+      "risk": "Low",
+      "n_ra": 1
     },
     {
       "scientific_name": "Actinocyclus normanii f. subsalsa",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Agrostis gigantea",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Redtop",
+      "risk": "Moderate",
+      "n_ra": 3
     },
     {
       "scientific_name": "Alosa chrysochloris",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Skipjack Herring",
+      "risk": "High",
+      "n_ra": 3
     },
     {
       "scientific_name": "Argulus japonicus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Crustacean-Copepod",
+      "common_name": "Parasitic copepod",
+      "risk": "",
+      "n_ra": 2
     },
     {
       "scientific_name": "Branchiura sowerbyi",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Annelids",
+      "common_name": "Tubificid worm",
+      "risk": "",
+      "n_ra": 3
     },
     {
       "scientific_name": "Butomus umbellatus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Flowering Rush",
+      "risk": "Invasive",
+      "n_ra": 12
     },
     {
       "scientific_name": "Cambarus robustus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Crustacean-Crayfish",
+      "common_name": "Big Water Crayfish",
+      "risk": "High",
+      "n_ra": 3
     },
     {
       "scientific_name": "Cipangopaludina japonica",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Mollusk-Gastropoda",
+      "common_name": "Japanese Mysterysnail",
+      "risk": "High",
+      "n_ra": 7
     },
     {
       "scientific_name": "Cipangopaludina sp.",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Conium maculatum",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Poison Hemlock",
+      "risk": "Invasive",
+      "n_ra": 3
     },
     {
       "scientific_name": "Conticribra (Thalassiosira) guillardii",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Cordylophora caspia",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Coelenterates",
+      "common_name": "Freshwater hydroid",
+      "risk": "",
+      "n_ra": 3
     },
     {
       "scientific_name": "Corythionella golemanskyi",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Cottus cognatus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Couesius plumbeus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Cyclops strenuus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Crustacean-Copepod",
+      "common_name": "Copepod",
+      "risk": "",
+      "n_ra": 2
     },
     {
       "scientific_name": "Cyprinella analostana",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Satinfin shiner",
+      "risk": "Invasive",
+      "n_ra": 2
     },
     {
       "scientific_name": "Cyprinella spiloptera",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Dactylogyrus amphibothrium",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fluke",
+      "common_name": "",
+      "risk": "Low",
+      "n_ra": 1
     },
     {
       "scientific_name": "Daphnia galeata galeata",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Daphnia lumholtzi",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Crustacean-Cladoceran",
+      "common_name": "Water Flea",
+      "risk": "Invasive",
+      "n_ra": 7
     },
     {
       "scientific_name": "Diaphanosoma fluviatile",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Crustacean-Cladoceran",
+      "common_name": "water flea",
+      "risk": "High",
+      "n_ra": 2
     },
     {
       "scientific_name": "Diatoma ehrenbergii",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Algae",
+      "common_name": "",
+      "risk": "Low",
+      "n_ra": 1
     },
     {
       "scientific_name": "Discostella woltereckii",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Algae",
+      "common_name": "",
+      "risk": "Low",
+      "n_ra": 1
     },
     {
       "scientific_name": "Dorosoma cepedianum",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Gizzard shad",
+      "risk": "Invasive",
+      "n_ra": 2
     },
     {
       "scientific_name": "Dreissena sp.",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Echinogammarus ischnus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Crustacean-Amphipod",
+      "common_name": "Scud",
+      "risk": "Invasive",
+      "n_ra": 3
     },
     {
       "scientific_name": "Egeria densa",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Brazilian Elodea",
+      "risk": "High",
+      "n_ra": 11
     },
     {
       "scientific_name": "Elimia virginica",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Mollusk-Gastropoda",
+      "common_name": "Piedmont Elimia",
+      "risk": "",
+      "n_ra": 3
     },
     {
       "scientific_name": "Epilobium parviflorum",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Esox lucius \u00d7 masquinongy",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Northern pike",
+      "risk": "High",
+      "n_ra": 1
     },
     {
       "scientific_name": "Etheostoma caeruleum",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Etheostoma zonale",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Eubosmina maritima",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Crustacean-Cladoceran",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Euglesa henslowana",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Faxonius propinquus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Crustacean-Crayfish",
+      "common_name": "Northern clearwater crayfish",
+      "risk": "Invasive",
+      "n_ra": 1
     },
     {
       "scientific_name": "Faxonius rusticus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Crustacean-Crayfish",
+      "common_name": "Rusty crayfish",
+      "risk": "Invasive",
+      "n_ra": 3
     },
     {
       "scientific_name": "Faxonius virilis",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Fundulus diaphanus diaphanus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Banded Killifish",
+      "risk": "High",
+      "n_ra": 2
     },
     {
       "scientific_name": "Gammarus fasciatus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Crustacean-Amphipod",
+      "common_name": "Freshwater shrimp",
+      "risk": "Invasive",
+      "n_ra": 2
     },
     {
       "scientific_name": "Gammarus tigrinus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Crustacean-Amphipod",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 2
     },
     {
       "scientific_name": "Gillia altilis",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Mollusk-Gastropoda",
+      "common_name": "Buffalo Pebblesnail",
+      "risk": "",
+      "n_ra": 2
     },
     {
       "scientific_name": "Glugea hertwigi",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Microsporidea",
+      "common_name": "",
+      "risk": "Low",
+      "n_ra": 1
     },
     {
       "scientific_name": "Heteropsyllus nr. nunni",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Heteropsyllus nunni",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Heterosporis sutherlandae",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Microsporidea",
+      "common_name": "Heterosporis",
+      "risk": "Invasive",
+      "n_ra": 2
     },
     {
       "scientific_name": "Hydrilla verticillata peregrina",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Hydrilla",
+      "risk": "Invasive",
+      "n_ra": 11
     },
     {
       "scientific_name": "Hymenomonas roseola",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Algae",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Ictiobus bubalus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Smallmouth buffalo",
+      "risk": "Invasive",
+      "n_ra": 2
     },
     {
       "scientific_name": "Juncus compressus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "",
+      "risk": "Invasive",
+      "n_ra": 1
     },
     {
       "scientific_name": "Labidesthes sicculus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Brook silverside",
+      "risk": "Invasive",
+      "n_ra": 2
     },
     {
       "scientific_name": "Ladislavella catascopium",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Lasmigona subviridis",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Mollusk-Bivalve",
+      "common_name": "Green Floater",
+      "risk": "Low",
+      "n_ra": 2
     },
     {
       "scientific_name": "Lepomis auritus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Redbreast sunfish",
+      "risk": "Watchlist",
+      "n_ra": 1
     },
     {
       "scientific_name": "Lepomis gibbosus \u00d7 cyanellus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Lepomis gibbosus \u00d7 macrochirus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Lepomis gulosus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Lepomis humilis",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Orangespotted Sunfish",
+      "risk": "",
+      "n_ra": 3
     },
     {
       "scientific_name": "Lepomis megalotis",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Leptodea fragilis",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Lupinus polyphyllus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Bigleaf lupine",
+      "risk": "",
+      "n_ra": 2
     },
     {
       "scientific_name": "Lycopus asper",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Lycopus europaeus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Lysimachia nummularia",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Moneywort",
+      "risk": "Moderate",
+      "n_ra": 5
     },
     {
       "scientific_name": "Lysimachia punctata",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Large yellow loosestrife",
+      "risk": "Watchlist",
+      "n_ra": 2
     },
     {
       "scientific_name": "Manayunkia speciosa",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Megacyclops viridis",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Crustacean-Copepod",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Mentha spicata",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Spearmint",
+      "risk": "",
+      "n_ra": 2
     },
     {
       "scientific_name": "Mentha \u00d7 gracilis",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Morone chrysops \u00d7 americana",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Morone chrysops \u00d7 saxatilis",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Moxostoma carinatum",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Myosotis scorpioides",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Forget-me-not",
+      "risk": "Invasive",
+      "n_ra": 8
     },
     {
       "scientific_name": "Myriophyllum aquaticum",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Parrot Feather",
+      "risk": "High",
+      "n_ra": 11
     },
     {
       "scientific_name": "Myriophyllum \u00d7 hybridum",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Najas minor",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Brittle Waternymph",
+      "risk": "Invasive",
+      "n_ra": 12
     },
     {
       "scientific_name": "Nasturtium microphyllum",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Onerow Yellowcress",
+      "risk": "High",
+      "n_ra": 5
     },
     {
       "scientific_name": "Neascus brevicaudatus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fluke",
+      "common_name": "",
+      "risk": "Low",
+      "n_ra": 1
     },
     {
       "scientific_name": "Nitokra incerta",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Crustacean-Copepod",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Nocomis biguttatus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Notropis atherinoides",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Novirhabdovirus sp. genotype IV sublineage b",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Oncorhynchus mykiss whitei",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Rainbow Trout",
+      "risk": "Invasive",
+      "n_ra": 5
     },
     {
       "scientific_name": "Phractocephalus hemioliopterus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Redtail Catfish",
+      "risk": "Low",
+      "n_ra": 2
     },
     {
       "scientific_name": "Phragmites australis australis",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Phragmites",
+      "risk": "Invasive",
+      "n_ra": 5
     },
     {
       "scientific_name": "Physella sp.",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Piaractus sp.",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Pimephales notatus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Piscirickettsia cf. salmonis",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Pleurocera acuta",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Pluchea odorata",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Marsh fleabane",
+      "risk": "",
+      "n_ra": 2
     },
     {
       "scientific_name": "Pomoxis nigromaculatus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Potamothrix bavaricus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Potamothrix bedoti",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Annelids",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Potamothrix moldaviensis",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Annelids",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Potamothrix vejdovskyi",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Annelids",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Procambarus acutus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Crustacean-Crayfish",
+      "common_name": "White River Crawfish",
+      "risk": "High",
+      "n_ra": 2
     },
     {
       "scientific_name": "Psammonobiotus communis",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Protozoa-Amoebae",
+      "common_name": "Testate amoeba",
+      "risk": "",
+      "n_ra": 2
     },
     {
       "scientific_name": "Psammonobiotus dziwnowi",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Protozoa-Amoebae",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Psammonobiotus linearis",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Protozoa-Amoebae",
+      "common_name": "Testate amoeba",
+      "risk": "Low",
+      "n_ra": 2
     },
     {
       "scientific_name": "Pseudemys rubriventris",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Pterygoplichthys sp.",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Renibacterium (Corynebacterium) salmoninarum",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Rhinichthys obtusus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Ripistes parasita",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Annelids",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Rorippa sylvestris",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Rumex obtusifolius",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Salix cf. cinerea/atrocinerea",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Salmincola californiensis",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Salmincola edwardsii",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Crustacean-Copepod",
+      "common_name": "Gill louse",
+      "risk": "Invasive",
+      "n_ra": 1
     },
     {
       "scientific_name": "Salmincola lotae",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Crustacean-Copepod",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Salmo letnica",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Ohrid Trout",
+      "risk": "High",
+      "n_ra": 1
     },
     {
       "scientific_name": "Salmo salar sebago",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fishes",
+      "common_name": "Atlantic Salmon",
+      "risk": "Invasive",
+      "n_ra": 6
     },
     {
       "scientific_name": "Salvelinus fontinalis \u00d7 namaycush",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Sander canadensis",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Sander canadensis \u00d7 vitreus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Schyzocotyle acheilognathi",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Tapeworm",
+      "common_name": "Tapeworm",
+      "risk": "Low",
+      "n_ra": 2
     },
     {
       "scientific_name": "Semotilus corporalis",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Solidago sempervirens",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Seaside goldenrod",
+      "risk": "",
+      "n_ra": 3
     },
     {
       "scientific_name": "Sonchus arvensis",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Perennial sowthistle",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Sparganium glomeratum",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Northern bur-reed",
+      "risk": "Invasive",
+      "n_ra": 5
     },
     {
       "scientific_name": "Sphacelaria fluviatilis",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Algae",
+      "common_name": "Brown alga",
+      "risk": "Low",
+      "n_ra": 2
     },
     {
       "scientific_name": "Sphacelaria lacustris",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Algae",
+      "common_name": "",
+      "risk": "Low",
+      "n_ra": 1
     },
     {
       "scientific_name": "Sphaeromyxa sevastopoli",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Myxosporean",
+      "common_name": "",
+      "risk": "Low",
+      "n_ra": 1
     },
     {
       "scientific_name": "Stagnicola palustris",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Mollusk-Gastropoda",
+      "common_name": "Marsh pond snail",
+      "risk": "Invasive",
+      "n_ra": 2
     },
     {
       "scientific_name": "Stephanodiscus subtilis",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Algae",
+      "common_name": "",
+      "risk": "Low",
+      "n_ra": 1
     },
     {
       "scientific_name": "Stylodrilus heringianus",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Thalassiosira bramaputrae",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Timoniella sp.",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Fluke",
+      "common_name": "",
+      "risk": "Low",
+      "n_ra": 1
     },
     {
       "scientific_name": "Trachemys scripta scripta",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Reptile",
+      "common_name": "Red-eared slider",
+      "risk": "",
+      "n_ra": 1
     },
     {
       "scientific_name": "Trypanosoma acerinae",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Protozoa-Flagellate",
+      "common_name": "",
+      "risk": "Low",
+      "n_ra": 1
     },
     {
       "scientific_name": "Typha laxmannii",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Plants",
+      "common_name": "Graceful cattail",
+      "risk": "Watchlist",
+      "n_ra": 6
     },
     {
       "scientific_name": "Typha \u00d7 glauca",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Ulva (Enteromorpha) flexuosa subsp. flexuosa and flexuosa subsp. paradoxa",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Ulva (Enteromorpha) intestinalis",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Ulva (Enteromorpha) prolifera",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Umbra limi",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Urnatella gracilis",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "",
+      "common_name": "",
+      "risk": "",
+      "n_ra": 0
     },
     {
       "scientific_name": "Valvata piscinalis",
       "tier": "E",
       "tier_label": "No public sequence",
       "transcriptome_count": 0,
-      "nuccore_count": 0
+      "nuccore_count": 0,
+      "group": "Mollusk-Gastropoda",
+      "common_name": "European Stream Valvata",
+      "risk": "",
+      "n_ra": 4
     }
   ]
 }

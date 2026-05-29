@@ -17,6 +17,7 @@ Browse the rendered docs at **<https://rec3141.github.io/AISGDB/>**.
 | [`glansis_inventory.tsv`](glansis_inventory.tsv) | Machine-readable inventory |
 | [`glansis_inventory.json`](glansis_inventory.json) | Same as TSV plus per-tier summary |
 | [`glansis_inventory.py`](glansis_inventory.py) | Reproducible script — re-runnable as new NCBI assemblies are deposited |
+| [`data/RALevel2_v6.txt.gz`](data/RALevel2_v6.txt.gz) | Vendored snapshot of the GLANSIS Tier-2 risk-assessment CSV (UTF-16 TSV, gzipped). Source: `https://www.glerl.noaa.gov/glansis/data/RALevel2_v6.txt`. Mirrored because the upstream URL bumps versions destructively (older `_v*` files 404 immediately) and the dataset has no DOI / NCEI archive. |
 
 ## First-pass results
 
@@ -38,6 +39,18 @@ Tier C species — those with transcriptome or EST data but no assembly —
 are interesting precisely because they have the resources needed for a WGS
 project in progress. They're the highest-yield candidates for an
 opportunistic "next WGS" prioritisation list.
+
+Per-species rows are also enriched from the **GLANSIS Tier-2 Risk-Assessment
+Clearinghouse** (`RALevel2_v6.txt`) with three additional columns:
+
+| Column | Source | Coverage |
+|---|---|---|
+| `common_name` | Modal `Common Names` across all assessments for the species | 197/370 (53%) |
+| `group`       | Modal `Group` (functional group: Fishes, Plants, Mollusk-Bivalve, …) with sing/plural variants collapsed | 252/370 (68%) |
+| `risk`        | Most-severe verdict across all `Overall` strings, by priority *Invasive > High > Watchlist > Moderate > Low* | 193/370 (52%) |
+
+The HTML view exposes Group and Risk as dropdown filters, mirroring the
+GLANSIS Tier-2 Explorer UI.
 
 ## Re-running the inventory
 

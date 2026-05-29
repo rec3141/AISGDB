@@ -1,371 +1,371 @@
-tier	scientific_name	accession	assembly_level	assembly_name	total_length	refseq_category	transcriptome_count	nuccore_count
-A	Acentria ephemerella	GCA_943193645.1	Chromosome	ilAceEphe1.1	340777416	reference genome		
-A	Acorus calamus	GCA_030737845.1	Chromosome	ASM3073784v1	721748827	reference genome		
-A	Aeromonas salmonicida	GCF_028355655.1	Complete Genome	ASM2835565v1	4954811	reference genome		
-A	Alisma plantago-aquatica	GCA_963693085.1	Chromosome	laAliPlan1.1	9377969683	reference genome		
-A	Alligator mississippiensis	GCF_030867095.1	Chromosome	rAllMis1	2346779227	reference genome		
-A	Alnus glutinosa	GCF_958979055.1	Chromosome	dhAlnGlut1.1	456761304	reference genome		
-A	Alopecurus geniculatus	GCA_965641495.1	Chromosome	lpAloGeni1.hap1.1	6196785535	reference genome		
-A	Alosa sapidissima	GCF_018492685.1	Chromosome	fAloSap1.pri	903564947	reference genome		
-A	Amia calva	GCA_017591415.1	Chromosome	AmiCal1	831002832	reference genome		
-A	Anguilla rostrata	GCF_018555375.3	Chromosome	ASM1855537v3	976090453	reference genome		
-A	Apeltes quadracus	GCA_048569185.1	Chromosome	Unibe_ApeQuad_male_1.0	475913512	reference genome		
-A	Carassius auratus	GCF_003368295.1	Chromosome	ASM336829v1	1820618472	reference genome		
-A	Carex acutiformis	GCA_964417155.2	Chromosome	lpCarAcui1.hap1.2	411490426	reference genome		
-A	Chrosomus eos	GCA_036326025.1	Chromosome	ASM3632602v1	1270618293	reference genome		
-A	Cipangopaludina chinensis	GCA_050437285.1	Chromosome	ASM5043728v1	1560258163	reference genome		
-A	Coregonus clupeaformis	GCF_020615455.1	Chromosome	ASM2061545v1	2753270621	reference genome		
-A	Crassostrea virginica	GCF_053477285.1	Chromosome	ASM5347728v1	529025936	reference genome		
-A	Ctenopharyngodon idella	GCA_049919795.1	Complete Genome	ASM4991979v1	890918310			
-A	Cygnus olor	GCF_009769625.2	Chromosome	bCygOlo1.pri.v2	1134169903	reference genome		
-A	Cyprinella lutrensis	GCA_054825075.1	Chromosome	fCypLut1.hap1	926968418	reference genome		
-A	Cyprinus carpio	GCA_050881965.1	Complete Genome	ASM5088196v1	1555859486			
-A	Diadumene lineata	GCA_918843875.1	Chromosome	jaDiaLine6.1	312988696	reference genome		
-A	Dreissena polymorpha	GCF_020536995.1	Chromosome	UMN_Dpol_1.0	1797942340	reference genome		
-A	Dreissena rostriformis bugensis	GCA_055670145.1	Chromosome	ASM5567014v1	1613145916	reference genome		
-A	Echinochloa crus-galli	GCA_020466025.1	Chromosome	ec_v3	1340710827			
-A	Eichhornia crassipes	GCA_030549335.1	Chromosome	CAS_Eicr_1.0	1132240410	reference genome		
-A	Epilobium hirsutum	GCA_965153245.1	Chromosome	drEpiHirs1.hap1.1	336043468	reference genome		
-A	Eriocheir sinensis	GCF_024679095.1	Chromosome	ASM2467909v1	1765827443	reference genome		
-A	Esox lucius	GCF_011004845.1	Chromosome	fEsoLuc1.pri	918731919	reference genome		
-A	Eurytemora carolleeae	GCA_057318455.1	Chromosome	ASM5731845v1	529287666			
-A	Filipendula ulmaria	GCA_964200655.1	Chromosome	drFilUlma1.1	274991720	reference genome		
-A	Fundulus heteroclitus	GCF_011125445.2	Chromosome	MU-UCD_Fhet_4.1	1203489213	reference genome		
-A	Gambusia affinis	GCF_019740435.1	Chromosome	SWU_Gaff_1.0	680149392	reference genome		
-A	Gasterosteus aculeatus	GCF_964276395.1	Chromosome	fGasAcu3.hap1.1	511138727	reference genome		
-A	Gymnocephalus cernua	GCA_023631565.1	Chromosome	fGymCer.pri	904342373	reference genome		
-A	Hypophthalmichthys nobilis	GCA_037950665.1	Chromosome	Hypophthalmichthys_nobilis_1.0	863920326	reference genome		
-A	Ictalurus furcatus	GCF_023375685.1	Chromosome	Billie_1.0	825459183	reference genome		
-A	Ictalurus punctatus	GCF_001660625.3	Chromosome	Coco_2.0	842926452	reference genome		
-A	Impatiens glandulifera	GCF_907164915.1	Chromosome	dImpGla2.1	653879104	reference genome		
-A	Juncus inflexus	GCA_965612345.2	Chromosome	lpJunInfl1.hap1.2	321598421	reference genome		
-A	Lepisosteus oculatus	GCF_040954835.1	Chromosome	fLepOcu1.hap2	1200589847	reference genome		
-A	Lithobates catesbeianus	GCF_042186555.1	Chromosome	ASM4218655v1	6377618952	reference genome		
-A	Mentha aquatica	GCA_965615935.2	Chromosome	daMenAqua1.hap1.2	1304813858	reference genome		
-A	Micropterus dolomieu	GCF_021292245.1	Chromosome	ASM2129224v1	829570727	reference genome		
-A	Micropterus salmoides	GCA_056957295.1	Complete Genome	T2T_MSal_M1.0	873867271			
-A	Microstegium vimineum	GCA_022036555.1	Chromosome	ASM2203655v1	1118670587	reference genome		
-A	Misgurnus anguillicaudatus	GCF_027580225.2	Chromosome	ASM2758022v2	1120296596	reference genome		
-A	Nasturtium officinale	GCA_963854855.1	Chromosome	ddNasOffi1.1	224952480	reference genome		
-A	Nelumbo lutea	GCA_056320005.1	Complete Genome	American lotus-T2T	838457245	reference genome		
-A	Nymphoides peltata	GCA_965615785.1	Chromosome	daNymPelt1.hap1.1	721921864	reference genome		
-A	Oenanthe javanica	GCA_048932635.1	Complete Genome	ASM4893263v1	1012110832	reference genome		
-A	Oncorhynchus gorbuscha	GCF_021184085.1	Chromosome	OgorEven_v1.0	2690266878	reference genome		
-A	Oncorhynchus kisutch	GCF_002021735.2	Chromosome	Okis_V2	2375894934	reference genome		
-A	Oncorhynchus mykiss	GCF_013265735.2	Chromosome	USDA_OmykA_1.1	2341671972	reference genome		
-A	Oncorhynchus mykiss irideus	GCA_049308825.1	Chromosome	O.lewisi_USDA_pat1.0	2331236414			
-A	Oncorhynchus nerka	GCF_034236695.1	Chromosome	Oner_Uvic_2.0	2645619652	reference genome		
-A	Oncorhynchus tshawytscha	GCF_018296145.1	Chromosome	Otsh_v2.0	2294842546	reference genome		
-A	Oreochromis niloticus	GCF_001858045.2	Chromosome	O_niloticus_UMD_NMBU	1005664923	reference genome		
-A	Osmerus mordax	GCF_038355195.1	Chromosome	fOsmMor3.pri	497673479	reference genome		
-A	Perca flavescens	GCF_004354835.1	Chromosome	PFLA_1.0	877439799	reference genome		
-A	Persicaria maculosa	GCA_963922045.1	Chromosome	dcPerMacu1.1	1505165586	reference genome		
-A	Petromyzon marinus	GCF_048934315.1	Chromosome	UKy_Petmar_22M1.pri1.0	1808332251	reference genome		
-A	Phalaris arundinacea	GCA_977930405.1	Chromosome	lpPhaArun1.hap1.1	4271620721	reference genome		
-A	Piaractus brachypomus	GCA_056915255.1	Chromosome	YSFRI_Pbrachy_1	1343059155	reference genome		
-A	Platichthys flesus	GCF_949316205.1	Chromosome	fPlaFle2.1	597120941	reference genome		
-A	Potamogeton crispus	GCA_965783375.2	Chromosome	laPotCris1.hap1.2	513044524	reference genome		
-A	Procambarus clarkii	GCF_040958095.1	Chromosome	FALCON_Pclarkii_2.0	4028952570	reference genome		
-A	Proterorhinus semilunaris	GCA_021464625.1	Chromosome	fProSem1.pri.20201207	864621867	reference genome		
-A	Pterygoplichthys disjunctivus	GCA_981919085.1	Chromosome	Pd_IHB	1566152583	reference genome		
-A	Pungitius pungitius	GCA_056822235.1	Complete Genome	TVA-T2T	510968162			
-A	Ranavirus micropterus1	GCA_029269695.1	Complete Genome	LMBV-FS001	100460			
-A	Raphidiopsis raciborskii	GCF_003367075.2	Complete Genome	ASM336707v2	3757845	reference genome		
-A	Reynoutria japonica	GCA_048128825.1	Chromosome	RJap_1.0	3293239434	reference genome		
-A	Rhamnus frangula	GCA_964106655.1	Chromosome	drFraAlnu1.hap2.1	281245521	reference genome		
-A	Salix caprea	GCA_964035475.1	Chromosome	ddSalCapr1.1	389070326	reference genome		
-A	Salix purpurea	GCA_027405865.1	Chromosome	94003 Monoecious Salix purpurea Haplotype 2 assembly	405530279	reference genome		
-A	Salmo salar	GCF_965601325.1	Chromosome	fSalSal1	2825041709	reference genome		
-A	Salmo trutta	GCF_901001165.2	Chromosome	fSalTru1.2	2371863509	reference genome		
-A	Salvelinus alpinus	GCF_045679555.1	Chromosome	SLU_Salpinus.1	2367887750	reference genome		
-A	Salvelinus fontinalis	GCF_029448725.1	Chromosome	ASM2944872v1	2496185110	reference genome		
-A	Salvelinus namaycush	GCF_016432855.1	Chromosome	SaNama_1.0	2345496725	reference genome		
-A	Sander vitreus	GCF_031162955.1	Chromosome	sanVit1	791702833	reference genome		
-A	Scardinius erythrophthalmus	GCF_964197995.1	Chromosome	fScaEry2.hap1.1	1229649543	reference genome		
-A	Schmidtea polychroa	GCA_044892525.1	Chromosome	ASM4489252v1	781270316	reference genome		
-A	Solanum dulcamara	GCF_947179165.1	Chromosome	daSolDulc1.2	946304905	reference genome		
-A	Sphaerium corneum	GCA_965230695.1	Chromosome	xbSphCorn4.1	3625506042	reference genome		
-A	Sprivivirus cyprinus	GCF_000850305.1	Complete Genome	ViralProj14726	11019			
-A	Thalassiosira pseudonana	GCF_000149405.2	Chromosome	ASM14940v2	32437365	reference genome		
-A	Trachemys scripta	GCF_013100865.1	Chromosome	CAS_Tse_1.0	2126182493	reference genome		
-A	Trachemys scripta elegans	GCF_013100865.1	Chromosome	CAS_Tse_1.0	2126182493	reference genome		
-A	Trapa natans	GCA_035582545.1	Chromosome	ASM3558254v1	477423239	reference genome		
-A	Typha angustifolia	GCF_048772165.1	Complete Genome	ASM4877216v1	206997856	reference genome		
-A	Typha latifolia	GCF_019914945.1	Chromosome	TyphaL0001v2	213846373	reference genome		
-A	Veronica anagallis-aquatica	GCA_965198525.1	Chromosome	daVerAnag1.hap1.1	1000668773	reference genome		
-A	Xenopus laevis	GCF_017654675.1	Chromosome	Xenopus_laevis_v10.1	2742451793	reference genome		
-B	Alosa aestivalis	GCA_040955115.1	Contig	fAloAes1_p1.1	1193374213	reference genome		
-B	Alosa pseudoharengus	GCF_046254945.1	Scaffold	YU_APseudo_1.1	1050053806	reference genome		
-B	Ameiurus nebulosus	GCA_051624135.1	Scaffold	ASM5162413v1	852833594	reference genome		
-B	Amnicola limosus	GCA_043384305.1	Scaffold	ASM4338430v1	1893660595	reference genome		
-B	Aphredoderus sayanus	GCA_027564795.1	Scaffold	ASM2756479v1	490500259	reference genome		
-B	Chaetoceros muelleri	GCA_019693545.1	Scaffold	ASM1969354v1	37735205	reference genome		
-B	Corbicula fluminea	GCA_001632725.1	Contig	ASM163272v1	662517	reference genome		
-B	Craspedacusta sowerbii	GCA_003687565.2	Scaffold	ASM368756v2	620643343	reference genome		
-B	Cyclotella atomus	GCA_036940135.2	Scaffold	UArk_CyAtom_2	67031067	reference genome		
-B	Cyclotella cryptica	GCA_013187285.2	Scaffold	UArk_CyCryp_3	171140631	reference genome		
-B	Diadumene leucolena	GCA_044473225.1	Scaffold	ASM4447322v1	360459906	reference genome		
-B	Discostella pseudostelligera	GCA_036940085.2	Scaffold	ASM3694008v2	30276017			
-B	Esox masquinongy	GCA_016801175.1	Scaffold	ASM1680117v1	1138222515	reference genome		
-B	Esox niger	GCA_016801105.1	Scaffold	ASM1680110v1	859849040	reference genome		
-B	Lepisosteus osseus	GCA_026401145.1	Scaffold	ASM2640114v1	930537206	reference genome		
-B	Lepomis macrochirus	GCA_024633595.2	Scaffold	Lm_LA_1.1	889035858	reference genome		
-B	Morone americana	GCA_965119265.1	Contig	M_amer_male.genomic	688633020	reference genome		
-B	Morone chrysops	GCA_019097615.1	Scaffold	DOM_MoChry_2.0	640404081	reference genome		
-B	Morone saxatilis	GCF_004916995.1	Scaffold	NCSU_SB_2.0	598109547	reference genome		
-B	Myriophyllum spicatum	GCA_057662065.1	Scaffold	ASM5766206v1	880108064	reference genome		
-B	Neogobius melanostomus	GCA_007210695.1	Contig	RGoby_Basel_V2	1003738541	reference genome		
-B	Pimephales promelas	GCF_016745375.1	Scaffold	EPA_FHM_2.0	1066412313	reference genome		
-B	Procambarus virginalis	GCA_020271785.1	Scaffold	DKFZ_Pvir_1.0	3700845369	reference genome		
-B	Pylodictis olivaris	GCA_028570965.1	Scaffold	ASM2857096v1	1424310885	reference genome		
-B	Radix auricularia	GCA_002072015.1	Scaffold	ASM207201v1	909750324	reference genome		
-B	Salvelinus alpinus oquassa	GCA_036784965.1	Scaffold	fSalAlp2_p1.0	2129014997			
-B	Skeletonema potamos	GCA_036940105.2	Scaffold	ASM3694010v2	34111510	reference genome		
-B	Thalassiosira weissflogii	GCA_036940025.2	Scaffold	ASM3694002v2	129999045	reference genome		
-B	Thymallus arcticus	GCA_048126525.2	Scaffold	fThyArc1_p1.2	1606449914	reference genome		
-B	Tinca tinca	GCA_037022345.1	Contig	ASM3702234v1	669980980	reference genome		
-C	Anguillicola crassus						129	874
-C	Bangia atropurpurea						1252	
-C	Chaetogaster diaphanus						1	122
-C	Iris pseudacorus						1	135
-C	Lepomis microlophus						1	
-C	Lotus corniculatus						1	
-C	Marsilea quadrifolia						16	65
-C	Mentha × piperita						1316	
-C	Myosoton aquaticum						1	92
-C	Myxobolus cerebralis						1	87
-C	Potamopyrgus antipodarum						2	
-C	Salix alba						10	
-C	Salix fragilis						18	
-D	Ambloplites rupestris							166
-D	Ameiurus catus							86
-D	Ameiurus natalis							179
-D	Ammocrypta pellucida							75
-D	Aplodinotus grunniens							56
-D	Arundo donax							284181
-D	Bithynia tentaculata							76
-D	Brachionus leydigii							8
-D	Bythotrephes longimanus							42
-D	Cabomba caroliniana							369
-D	Caecidotea racovitzai							152
-D	Callinina georgiana							266
-D	Carex disticha							15
-D	Carex flacca							67
-D	Carpiodes carpio							394
-D	Cercopagis pengoi							41
-D	Chroodactylon ornatum							83600
-D	Cirsium palustre							67
-D	Corbicula sp.							342
-D	Cyprinus rubrofuscus							93
-D	Dactylogyrus hemiamphibothrium							2
-D	Daphnia longispina							1348
-D	Didymosphenia geminata							166
-D	Elimia livescens							5
-D	Enneacanthus gloriosus							164
-D	Etheostoma olmstedi							821
-D	Eubosmina coregoni							2018
-D	Euglesa supina							31
-D	Faxonius obscurus							15
-D	Fundulus notatus							487
-D	Gianius aquaedulcis							14
-D	Glyceria maxima							32
-D	Graptemys pseudogeographica							476
-D	Hemimysis anomala							21
-D	Hydrocharis morsus-ranae							68
-D	Ichthyocotylurus pileatus							19
-D	Ictiobus cyprinellus							122
-D	Ictiobus niger							80
-D	Juncus gerardii							26
-D	Landoltia punctata							91455
-D	Lepisosteus platostomus							91
-D	Lepomis cyanellus							294
-D	Leyogonimus polyoon							7
-D	Ligumia recta							25
-D	Lophopodella carteri							5
-D	Lysimachia vulgaris							53
-D	Lythrum salicaria							103
-D	Margariscus nachtriebi							4
-D	Mesocyclops pehpeiensis							44
-D	Morone mississippiensis							39
-D	Myriophyllum heterophyllum							96
-D	Mysis diluviana							40
-D	Najas marina							532
-D	Neoergasilus japonicus							61
-D	Nitellopsis obtusa							83
-D	Nitokra hibernica							14
-D	Notemigonus crysoleucas							429
-D	Notropis buchanani							57
-D	Notropis dorsalis							42
-D	Notropis hudsonius							141
-D	Notropis volucellus							106
-D	Noturus insignis							72
-D	Nymphaea odorata							143
-D	Nymphaea sp.							1
-D	Odhneripisidium moitessierianum							12
-D	Oxybasis glauca							223
-D	Paranais frici							27
-D	Percina shumardi							35
-D	Perrunichthys perruno							6
-D	Persicaria longiseta							61
-D	Phenacobius mirabilis							32
-D	Pisidium amnicum							52
-D	Pistia stratiotes							278
-D	Pleurosira laevis							22
-D	Poa trivialis							129
-D	Pomoxis annularis							106
-D	Potamilus alatus							25
-D	Puccinellia distans							396
-D	Rumex longifolius							19
-D	Salmo trutta × Salvelinus fontinalis							2
-D	Schizopera borutzkyi							7
-D	Scolex pleuronectis							1
-D	Skeletonema subsalsum							380
-D	Skistodiaptomus pallidus							78
-D	Sonchus arvensis uliginosus							5
-D	Stephanodiscus binderanus							33
-D	Stratiotes aloides							178
-D	Tanysphyrus lemnae							39
-D	Thalassiosira baltica							2
-D	Thermocyclops crassus							14
-D	Utricularia inflata							44
-D	Veronica beccabunga							68
-E	Acineta nitocrae							
-E	Actinocyclus normanii f. subsalsa							
-E	Agrostis gigantea							
-E	Alosa chrysochloris							
-E	Argulus japonicus							
-E	Branchiura sowerbyi							
-E	Butomus umbellatus							
-E	Cambarus robustus							
-E	Cipangopaludina japonica							
-E	Cipangopaludina sp.							
-E	Conium maculatum							
-E	Conticribra (Thalassiosira) guillardii							
-E	Cordylophora caspia							
-E	Corythionella golemanskyi							
-E	Cottus cognatus							
-E	Couesius plumbeus							
-E	Cyclops strenuus							
-E	Cyprinella analostana							
-E	Cyprinella spiloptera							
-E	Dactylogyrus amphibothrium							
-E	Daphnia galeata galeata							
-E	Daphnia lumholtzi							
-E	Diaphanosoma fluviatile							
-E	Diatoma ehrenbergii							
-E	Discostella woltereckii							
-E	Dorosoma cepedianum							
-E	Dreissena sp.							
-E	Echinogammarus ischnus							
-E	Egeria densa							
-E	Elimia virginica							
-E	Epilobium parviflorum							
-E	Esox lucius × masquinongy							
-E	Etheostoma caeruleum							
-E	Etheostoma zonale							
-E	Eubosmina maritima							
-E	Euglesa henslowana							
-E	Faxonius propinquus							
-E	Faxonius rusticus							
-E	Faxonius virilis							
-E	Fundulus diaphanus diaphanus							
-E	Gammarus fasciatus							
-E	Gammarus tigrinus							
-E	Gillia altilis							
-E	Glugea hertwigi							
-E	Heteropsyllus nr. nunni							
-E	Heteropsyllus nunni							
-E	Heterosporis sutherlandae							
-E	Hydrilla verticillata peregrina							
-E	Hymenomonas roseola							
-E	Ictiobus bubalus							
-E	Juncus compressus							
-E	Labidesthes sicculus							
-E	Ladislavella catascopium							
-E	Lasmigona subviridis							
-E	Lepomis auritus							
-E	Lepomis gibbosus × cyanellus							
-E	Lepomis gibbosus × macrochirus							
-E	Lepomis gulosus							
-E	Lepomis humilis							
-E	Lepomis megalotis							
-E	Leptodea fragilis							
-E	Lupinus polyphyllus							
-E	Lycopus asper							
-E	Lycopus europaeus							
-E	Lysimachia nummularia							
-E	Lysimachia punctata							
-E	Manayunkia speciosa							
-E	Megacyclops viridis							
-E	Mentha spicata							
-E	Mentha × gracilis							
-E	Morone chrysops × americana							
-E	Morone chrysops × saxatilis							
-E	Moxostoma carinatum							
-E	Myosotis scorpioides							
-E	Myriophyllum aquaticum							
-E	Myriophyllum × hybridum							
-E	Najas minor							
-E	Nasturtium microphyllum							
-E	Neascus brevicaudatus							
-E	Nitokra incerta							
-E	Nocomis biguttatus							
-E	Notropis atherinoides							
-E	Novirhabdovirus sp. genotype IV sublineage b							
-E	Oncorhynchus mykiss whitei							
-E	Phractocephalus hemioliopterus							
-E	Phragmites australis australis							
-E	Physella sp.							
-E	Piaractus sp.							
-E	Pimephales notatus							
-E	Piscirickettsia cf. salmonis							
-E	Pleurocera acuta							
-E	Pluchea odorata							
-E	Pomoxis nigromaculatus							
-E	Potamothrix bavaricus							
-E	Potamothrix bedoti							
-E	Potamothrix moldaviensis							
-E	Potamothrix vejdovskyi							
-E	Procambarus acutus							
-E	Psammonobiotus communis							
-E	Psammonobiotus dziwnowi							
-E	Psammonobiotus linearis							
-E	Pseudemys rubriventris							
-E	Pterygoplichthys sp.							
-E	Renibacterium (Corynebacterium) salmoninarum							
-E	Rhinichthys obtusus							
-E	Ripistes parasita							
-E	Rorippa sylvestris							
-E	Rumex obtusifolius							
-E	Salix cf. cinerea/atrocinerea							
-E	Salmincola californiensis							
-E	Salmincola edwardsii							
-E	Salmincola lotae							
-E	Salmo letnica							
-E	Salmo salar sebago							
-E	Salvelinus fontinalis × namaycush							
-E	Sander canadensis							
-E	Sander canadensis × vitreus							
-E	Schyzocotyle acheilognathi							
-E	Semotilus corporalis							
-E	Solidago sempervirens							
-E	Sonchus arvensis							
-E	Sparganium glomeratum							
-E	Sphacelaria fluviatilis							
-E	Sphacelaria lacustris							
-E	Sphaeromyxa sevastopoli							
-E	Stagnicola palustris							
-E	Stephanodiscus subtilis							
-E	Stylodrilus heringianus							
-E	Thalassiosira bramaputrae							
-E	Timoniella sp.							
-E	Trachemys scripta scripta							
-E	Trypanosoma acerinae							
-E	Typha laxmannii							
-E	Typha × glauca							
-E	Ulva (Enteromorpha) flexuosa subsp. flexuosa and flexuosa subsp. paradoxa							
-E	Ulva (Enteromorpha) intestinalis							
-E	Ulva (Enteromorpha) prolifera							
-E	Umbra limi							
-E	Urnatella gracilis							
-E	Valvata piscinalis							
+tier	scientific_name	common_name	group	risk	n_ra	accession	assembly_level	assembly_name	total_length	refseq_category	transcriptome_count	nuccore_count
+A	Acentria ephemerella		Insects		1	GCA_943193645.1	Chromosome	ilAceEphe1.1	340777416	reference genome		
+A	Acorus calamus	Sweet-flag	Plants		4	GCA_030737845.1	Chromosome	ASM3073784v1	721748827	reference genome		
+A	Aeromonas salmonicida	Aeromonas salmonicida	Bacteria	Low	2	GCF_028355655.1	Complete Genome	ASM2835565v1	4954811	reference genome		
+A	Alisma plantago-aquatica	Water Plantain	Plants		4	GCA_963693085.1	Chromosome	laAliPlan1.1	9377969683	reference genome		
+A	Alligator mississippiensis					GCF_030867095.1	Chromosome	rAllMis1	2346779227	reference genome		
+A	Alnus glutinosa	European Alder	Plants	Invasive	5	GCF_958979055.1	Chromosome	dhAlnGlut1.1	456761304	reference genome		
+A	Alopecurus geniculatus	Water foxtail	Plants	Invasive	2	GCA_965641495.1	Chromosome	lpAloGeni1.hap1.1	6196785535	reference genome		
+A	Alosa sapidissima		Fishes		1	GCF_018492685.1	Chromosome	fAloSap1.pri	903564947	reference genome		
+A	Amia calva					GCA_017591415.1	Chromosome	AmiCal1	831002832	reference genome		
+A	Anguilla rostrata	American eel	Fishes	Invasive	2	GCF_018555375.3	Chromosome	ASM1855537v3	976090453	reference genome		
+A	Apeltes quadracus	Fourspine Stickleback	Fishes	Low	6	GCA_048569185.1	Chromosome	Unibe_ApeQuad_male_1.0	475913512	reference genome		
+A	Carassius auratus	Goldfish	Fishes	High	6	GCF_003368295.1	Chromosome	ASM336829v1	1820618472	reference genome		
+A	Carex acutiformis		Plants	Invasive	1	GCA_964417155.2	Chromosome	lpCarAcui1.hap1.2	411490426	reference genome		
+A	Chrosomus eos					GCA_036326025.1	Chromosome	ASM3632602v1	1270618293	reference genome		
+A	Cipangopaludina chinensis	Chinese Mysterysnail	Mollusk-Gastropoda	High	2	GCA_050437285.1	Chromosome	ASM5043728v1	1560258163	reference genome		
+A	Coregonus clupeaformis					GCF_020615455.1	Chromosome	ASM2061545v1	2753270621	reference genome		
+A	Crassostrea virginica					GCF_053477285.1	Chromosome	ASM5347728v1	529025936	reference genome		
+A	Ctenopharyngodon idella	Grass carp	Fishes	Invasive	10	GCA_049919795.1	Complete Genome	ASM4991979v1	890918310			
+A	Cygnus olor	Mute swan	Birds	High	3	GCF_009769625.2	Chromosome	bCygOlo1.pri.v2	1134169903	reference genome		
+A	Cyprinella lutrensis	Red shiner	Fishes	High	6	GCA_054825075.1	Chromosome	fCypLut1.hap1	926968418	reference genome		
+A	Cyprinus carpio	Common Carp	Fishes	Invasive	8	GCA_050881965.1	Complete Genome	ASM5088196v1	1555859486			
+A	Diadumene lineata					GCA_918843875.1	Chromosome	jaDiaLine6.1	312988696	reference genome		
+A	Dreissena polymorpha	Zebra Mussel	Mollusk-Bivalve	Invasive	7	GCF_020536995.1	Chromosome	UMN_Dpol_1.0	1797942340	reference genome		
+A	Dreissena rostriformis bugensis					GCA_055670145.1	Chromosome	ASM5567014v1	1613145916	reference genome		
+A	Echinochloa crus-galli	Barnyard grass	Plants	Invasive	2	GCA_020466025.1	Chromosome	ec_v3	1340710827			
+A	Eichhornia crassipes	Water Hyacinth	Plants	High	12	GCA_030549335.1	Chromosome	CAS_Eicr_1.0	1132240410	reference genome		
+A	Epilobium hirsutum	Hairy Willow Herb	Plants	Invasive	5	GCA_965153245.1	Chromosome	drEpiHirs1.hap1.1	336043468	reference genome		
+A	Eriocheir sinensis	Chinese Mitten Crab	Crustacean-Crab	High	4	GCF_024679095.1	Chromosome	ASM2467909v1	1765827443	reference genome		
+A	Esox lucius	Northern pike	Fishes	High	1	GCF_011004845.1	Chromosome	fEsoLuc1.pri	918731919	reference genome		
+A	Eurytemora carolleeae					GCA_057318455.1	Chromosome	ASM5731845v1	529287666			
+A	Filipendula ulmaria	Queen of the Meadow	Plants	Invasive	5	GCA_964200655.1	Chromosome	drFilUlma1.1	274991720	reference genome		
+A	Fundulus heteroclitus	Mummichog	Fishes	High	1	GCF_011125445.2	Chromosome	MU-UCD_Fhet_4.1	1203489213	reference genome		
+A	Gambusia affinis	Western mosquitofish	Fishes	Invasive	10	GCF_019740435.1	Chromosome	SWU_Gaff_1.0	680149392	reference genome		
+A	Gasterosteus aculeatus	Threespine Stickleback	Fishes	Invasive	7	GCF_964276395.1	Chromosome	fGasAcu3.hap1.1	511138727	reference genome		
+A	Gymnocephalus cernua					GCA_023631565.1	Chromosome	fGymCer.pri	904342373	reference genome		
+A	Hypophthalmichthys nobilis	Bighead Carp	Fishes	High	9	GCA_037950665.1	Chromosome	Hypophthalmichthys_nobilis_1.0	863920326	reference genome		
+A	Ictalurus furcatus	Blue Catfish	Fishes	Invasive	5	GCF_023375685.1	Chromosome	Billie_1.0	825459183	reference genome		
+A	Ictalurus punctatus					GCF_001660625.3	Chromosome	Coco_2.0	842926452	reference genome		
+A	Impatiens glandulifera	Ornamental Jewelweed	Plants	Moderate	5	GCF_907164915.1	Chromosome	dImpGla2.1	653879104	reference genome		
+A	Juncus inflexus		Plants	Invasive	1	GCA_965612345.2	Chromosome	lpJunInfl1.hap1.2	321598421	reference genome		
+A	Lepisosteus oculatus					GCF_040954835.1	Chromosome	fLepOcu1.hap2	1200589847	reference genome		
+A	Lithobates catesbeianus	American bullfrog	Amphibian	Invasive	2	GCF_042186555.1	Chromosome	ASM4218655v1	6377618952	reference genome		
+A	Mentha aquatica	Water Mint	Plants		5	GCA_965615935.2	Chromosome	daMenAqua1.hap1.2	1304813858	reference genome		
+A	Micropterus dolomieu	Smallmouth Bass	Fishes	High	1	GCF_021292245.1	Chromosome	ASM2129224v1	829570727	reference genome		
+A	Micropterus salmoides	Largemouth Bass	Fishes	High	1	GCA_056957295.1	Complete Genome	T2T_MSal_M1.0	873867271			
+A	Microstegium vimineum	Japanese stiltgrass	Plants	Invasive	4	GCA_022036555.1	Chromosome	ASM2203655v1	1118670587	reference genome		
+A	Misgurnus anguillicaudatus	Oriental Weatherfish	Fishes	Invasive	8	GCF_027580225.2	Chromosome	ASM2758022v2	1120296596	reference genome		
+A	Nasturtium officinale	Watercress	Plants	High	10	GCA_963854855.1	Chromosome	ddNasOffi1.1	224952480	reference genome		
+A	Nelumbo lutea					GCA_056320005.1	Complete Genome	American lotus-T2T	838457245	reference genome		
+A	Nymphoides peltata	Yellow Floating-heart	Plants	Invasive	11	GCA_965615785.1	Chromosome	daNymPelt1.hap1.1	721921864	reference genome		
+A	Oenanthe javanica	Java waterdropwort	Plants	Invasive	5	GCA_048932635.1	Complete Genome	ASM4893263v1	1012110832	reference genome		
+A	Oncorhynchus gorbuscha	Pink Salmon	Fishes	Invasive	5	GCF_021184085.1	Chromosome	OgorEven_v1.0	2690266878	reference genome		
+A	Oncorhynchus kisutch	Coho Salmon	Fishes	Invasive	5	GCF_002021735.2	Chromosome	Okis_V2	2375894934	reference genome		
+A	Oncorhynchus mykiss	Rainbow Trout	Fishes	Invasive	5	GCF_013265735.2	Chromosome	USDA_OmykA_1.1	2341671972	reference genome		
+A	Oncorhynchus mykiss irideus	Rainbow Trout	Fishes	Invasive	5	GCA_049308825.1	Chromosome	O.lewisi_USDA_pat1.0	2331236414			
+A	Oncorhynchus nerka		Fishes		1	GCF_034236695.1	Chromosome	Oner_Uvic_2.0	2645619652	reference genome		
+A	Oncorhynchus tshawytscha	Chinook Salmon	Fishes	Invasive	6	GCF_018296145.1	Chromosome	Otsh_v2.0	2294842546	reference genome		
+A	Oreochromis niloticus	Nile Tilapia	Fishes	High	4	GCF_001858045.2	Chromosome	O_niloticus_UMD_NMBU	1005664923	reference genome		
+A	Osmerus mordax	Rainbow Smelt	Fishes	Invasive	8	GCF_038355195.1	Chromosome	fOsmMor3.pri	497673479	reference genome		
+A	Perca flavescens	Yellow Perch	Fishes	High	1	GCF_004354835.1	Chromosome	PFLA_1.0	877439799	reference genome		
+A	Persicaria maculosa		Plants	Invasive	1	GCA_963922045.1	Chromosome	dcPerMacu1.1	1505165586	reference genome		
+A	Petromyzon marinus	Sea Lamprey	Fishes	Invasive	7	GCF_048934315.1	Chromosome	UKy_Petmar_22M1.pri1.0	1808332251	reference genome		
+A	Phalaris arundinacea	Reed Canarygrass	Plants	Invasive	5	GCA_977930405.1	Chromosome	lpPhaArun1.hap1.1	4271620721	reference genome		
+A	Piaractus brachypomus	Red-bellied Pacu	Fishes	Invasive	2	GCA_056915255.1	Chromosome	YSFRI_Pbrachy_1	1343059155	reference genome		
+A	Platichthys flesus					GCF_949316205.1	Chromosome	fPlaFle2.1	597120941	reference genome		
+A	Potamogeton crispus	Curly-leaved Pondweed	Plants	Invasive	12	GCA_965783375.2	Chromosome	laPotCris1.hap1.2	513044524	reference genome		
+A	Procambarus clarkii	red swamp crayfish	Crustacean-Crayfish	Invasive	6	GCF_040958095.1	Chromosome	FALCON_Pclarkii_2.0	4028952570	reference genome		
+A	Proterorhinus semilunaris	Western Tubenose Goby	Fishes	Invasive	4	GCA_021464625.1	Chromosome	fProSem1.pri.20201207	864621867	reference genome		
+A	Pterygoplichthys disjunctivus	Verminculated Sailfin Catfish	Fishes	High	2	GCA_981919085.1	Chromosome	Pd_IHB	1566152583	reference genome		
+A	Pungitius pungitius					GCA_056822235.1	Complete Genome	TVA-T2T	510968162			
+A	Ranavirus micropterus1					GCA_029269695.1	Complete Genome	LMBV-FS001	100460			
+A	Raphidiopsis raciborskii					GCF_003367075.2	Complete Genome	ASM336707v2	3757845	reference genome		
+A	Reynoutria japonica					GCA_048128825.1	Chromosome	RJap_1.0	3293239434	reference genome		
+A	Rhamnus frangula	Glossy Buckthorn	Plants	Invasive	2	GCA_964106655.1	Chromosome	drFraAlnu1.hap2.1	281245521	reference genome		
+A	Salix caprea	goat willow	Plants	Invasive	1	GCA_964035475.1	Chromosome	ddSalCapr1.1	389070326	reference genome		
+A	Salix purpurea		Plants		1	GCA_027405865.1	Chromosome	94003 Monoecious Salix purpurea Haplotype 2 assembly	405530279	reference genome		
+A	Salmo salar	Atlantic Salmon	Fishes	Invasive	6	GCF_965601325.1	Chromosome	fSalSal1	2825041709	reference genome		
+A	Salmo trutta	Brown Trout	Fishes	Invasive	6	GCF_901001165.2	Chromosome	fSalTru1.2	2371863509	reference genome		
+A	Salvelinus alpinus	Artic Char	Fishes	High	2	GCF_045679555.1	Chromosome	SLU_Salpinus.1	2367887750	reference genome		
+A	Salvelinus fontinalis					GCF_029448725.1	Chromosome	ASM2944872v1	2496185110	reference genome		
+A	Salvelinus namaycush					GCF_016432855.1	Chromosome	SaNama_1.0	2345496725	reference genome		
+A	Sander vitreus	Walleye	Fishes	High	1	GCF_031162955.1	Chromosome	sanVit1	791702833	reference genome		
+A	Scardinius erythrophthalmus	Rudd	Fishes	Invasive	7	GCF_964197995.1	Chromosome	fScaEry2.hap1.1	1229649543	reference genome		
+A	Schmidtea polychroa					GCA_044892525.1	Chromosome	ASM4489252v1	781270316	reference genome		
+A	Solanum dulcamara	Trailing Nightshade	Plants	Invasive	2	GCF_947179165.1	Chromosome	daSolDulc1.2	946304905	reference genome		
+A	Sphaerium corneum	European Fingernailclam	Mollusk-Bivalve		3	GCA_965230695.1	Chromosome	xbSphCorn4.1	3625506042	reference genome		
+A	Sprivivirus cyprinus					GCF_000850305.1	Complete Genome	ViralProj14726	11019			
+A	Thalassiosira pseudonana		Algae	Low	1	GCF_000149405.2	Chromosome	ASM14940v2	32437365	reference genome		
+A	Trachemys scripta	Red-eared slider	Reptile		1	GCF_013100865.1	Chromosome	CAS_Tse_1.0	2126182493	reference genome		
+A	Trachemys scripta elegans	Red-eared slider	Reptile		1	GCF_013100865.1	Chromosome	CAS_Tse_1.0	2126182493	reference genome		
+A	Trapa natans	Water Chestnut	Plants	Invasive	12	GCA_035582545.1	Chromosome	ASM3558254v1	477423239	reference genome		
+A	Typha angustifolia	Narrowleaf Cattail	Plants	Invasive	8	GCF_048772165.1	Complete Genome	ASM4877216v1	206997856	reference genome		
+A	Typha latifolia					GCF_019914945.1	Chromosome	TyphaL0001v2	213846373	reference genome		
+A	Veronica anagallis-aquatica					GCA_965198525.1	Chromosome	daVerAnag1.hap1.1	1000668773	reference genome		
+A	Xenopus laevis	African clawed frog	Amphibian	High	4	GCF_017654675.1	Chromosome	Xenopus_laevis_v10.1	2742451793	reference genome		
+B	Alosa aestivalis	Blueback Herring	Fishes	Invasive	5	GCA_040955115.1	Contig	fAloAes1_p1.1	1193374213	reference genome		
+B	Alosa pseudoharengus	Alewife	Fishes	Invasive	7	GCF_046254945.1	Scaffold	YU_APseudo_1.1	1050053806	reference genome		
+B	Ameiurus nebulosus					GCA_051624135.1	Scaffold	ASM5162413v1	852833594	reference genome		
+B	Amnicola limosus					GCA_043384305.1	Scaffold	ASM4338430v1	1893660595	reference genome		
+B	Aphredoderus sayanus					GCA_027564795.1	Scaffold	ASM2756479v1	490500259	reference genome		
+B	Chaetoceros muelleri					GCA_019693545.1	Scaffold	ASM1969354v1	37735205	reference genome		
+B	Corbicula fluminea	Asian Clam	Mollusk-Bivalve	Invasive	7	GCA_001632725.1	Contig	ASM163272v1	662517	reference genome		
+B	Craspedacusta sowerbii					GCA_003687565.2	Scaffold	ASM368756v2	620643343	reference genome		
+B	Cyclotella atomus		Algae	Low	1	GCA_036940135.2	Scaffold	UArk_CyAtom_2	67031067	reference genome		
+B	Cyclotella cryptica	Diatom	Algae	Low	2	GCA_013187285.2	Scaffold	UArk_CyCryp_3	171140631	reference genome		
+B	Diadumene leucolena					GCA_044473225.1	Scaffold	ASM4447322v1	360459906	reference genome		
+B	Discostella pseudostelligera		Algae	Low	1	GCA_036940085.2	Scaffold	ASM3694008v2	30276017			
+B	Esox masquinongy	Muskellunge	Fishes	Invasive	3	GCA_016801175.1	Scaffold	ASM1680117v1	1138222515	reference genome		
+B	Esox niger	Chain Pickerel	Fishes	Invasive	4	GCA_016801105.1	Scaffold	ASM1680110v1	859849040	reference genome		
+B	Lepisosteus osseus					GCA_026401145.1	Scaffold	ASM2640114v1	930537206	reference genome		
+B	Lepomis macrochirus					GCA_024633595.2	Scaffold	Lm_LA_1.1	889035858	reference genome		
+B	Morone americana	White perch	Fishes	Invasive	8	GCA_965119265.1	Contig	M_amer_male.genomic	688633020	reference genome		
+B	Morone chrysops					GCA_019097615.1	Scaffold	DOM_MoChry_2.0	640404081	reference genome		
+B	Morone saxatilis	Rockfish	Fishes	Moderate	4	GCF_004916995.1	Scaffold	NCSU_SB_2.0	598109547	reference genome		
+B	Myriophyllum spicatum	Eurasian Watermilfoil	Plants	Invasive	13	GCA_057662065.1	Scaffold	ASM5766206v1	880108064	reference genome		
+B	Neogobius melanostomus	Round goby	Fishes	Invasive	10	GCA_007210695.1	Contig	RGoby_Basel_V2	1003738541	reference genome		
+B	Pimephales promelas					GCF_016745375.1	Scaffold	EPA_FHM_2.0	1066412313	reference genome		
+B	Procambarus virginalis	Marmorkrebs	Crustacean-Crayfish	High	2	GCA_020271785.1	Scaffold	DKFZ_Pvir_1.0	3700845369	reference genome		
+B	Pylodictis olivaris	Flathead catfish	Fishes	Invasive	4	GCA_028570965.1	Scaffold	ASM2857096v1	1424310885	reference genome		
+B	Radix auricularia	European Ear Snail	Mollusk-Gastropoda	Moderate	4	GCA_002072015.1	Scaffold	ASM207201v1	909750324	reference genome		
+B	Salvelinus alpinus oquassa	Artic Char	Fishes	High	2	GCA_036784965.1	Scaffold	fSalAlp2_p1.0	2129014997			
+B	Skeletonema potamos		Algae	Low	1	GCA_036940105.2	Scaffold	ASM3694010v2	34111510	reference genome		
+B	Thalassiosira weissflogii		Algae	Low	1	GCA_036940025.2	Scaffold	ASM3694002v2	129999045	reference genome		
+B	Thymallus arcticus	Arctic Grayling	Fishes	High	1	GCA_048126525.2	Scaffold	fThyArc1_p1.2	1606449914	reference genome		
+B	Tinca tinca	Tench	Fishes	High	7	GCA_037022345.1	Contig	ASM3702234v1	669980980	reference genome		
+C	Anguillicola crassus	Eel swim bladder parasite	Nematodes	Invasive	2						129	874
+C	Bangia atropurpurea	Red Algae	Algae	Invasive	3						1252	
+C	Chaetogaster diaphanus										1	122
+C	Iris pseudacorus	Yellow Flag	Plants	Invasive	10						1	135
+C	Lepomis microlophus	Redear Sunfish	Fishes	Invasive	3						1	
+C	Lotus corniculatus	Birdsfoot trefoil	Plants		1						1	
+C	Marsilea quadrifolia	European Waterclover	Plants	Invasive	11						16	65
+C	Mentha × piperita										1316	
+C	Myosoton aquaticum		Plants		1						1	92
+C	Myxobolus cerebralis	Whirling disease	Myxosporean	Invasive	2						1	87
+C	Potamopyrgus antipodarum	New Zealand mudsnail	Mollusk-Gastropoda	Invasive	8						2	
+C	Salix alba	White willow	Plants		2						10	
+C	Salix fragilis	Crack willow	Plants	Invasive	2						18	
+D	Ambloplites rupestris											166
+D	Ameiurus catus	White Catfish	Fishes	High	1							86
+D	Ameiurus natalis											179
+D	Ammocrypta pellucida											75
+D	Aplodinotus grunniens	Freshwater drum	Fishes	Invasive	3							56
+D	Arundo donax	Giant Reed	Plants	High	7							284181
+D	Bithynia tentaculata	Faucet snail	Mollusk-Gastropoda	Invasive	6							76
+D	Brachionus leydigii	Rotifer	Rotifers	High	4							8
+D	Bythotrephes longimanus	Spiny Waterflea	Crustacean-Cladoceran	Invasive	6							42
+D	Cabomba caroliniana	Carolina Fanwort	Plants	Invasive	10							369
+D	Caecidotea racovitzai											152
+D	Callinina georgiana											266
+D	Carex disticha		Plants	Low	1							15
+D	Carex flacca											67
+D	Carpiodes carpio	River Carpsucker	Fishes		1							394
+D	Cercopagis pengoi	Fishhook Water Flea	Crustacean-Cladoceran	Invasive	8							41
+D	Chroodactylon ornatum											83600
+D	Cirsium palustre	Marsh Thistle	Plants	Invasive	5							67
+D	Corbicula sp.											342
+D	Cyprinus rubrofuscus	Koi	Fishes	High	1							93
+D	Dactylogyrus hemiamphibothrium		Fluke	Low	1							2
+D	Daphnia longispina											1348
+D	Didymosphenia geminata	Didymo	Algae	Invasive	5							166
+D	Elimia livescens	Liver Elimia	Mollusk-Gastropoda	Invasive	6							5
+D	Enneacanthus gloriosus	Bluespotted Sunfish	Fishes		3							164
+D	Etheostoma olmstedi											821
+D	Eubosmina coregoni		Crustacean-Cladoceran		1							2018
+D	Euglesa supina											31
+D	Faxonius obscurus											15
+D	Fundulus notatus											487
+D	Gianius aquaedulcis		Annelids		1							14
+D	Glyceria maxima	Reed Mannagrass	Plants	Invasive	10							32
+D	Graptemys pseudogeographica											476
+D	Hemimysis anomala	Bloody Shrimp	Crustacean-Mysid	Invasive	8							21
+D	Hydrocharis morsus-ranae	Common Frogbit	Plants	Invasive	11							68
+D	Ichthyocotylurus pileatus		Fluke	Invasive	1							19
+D	Ictiobus cyprinellus	Bigmouth buffalo	Fishes	Invasive	2							122
+D	Ictiobus niger	Black Buffalo	Fishes	Invasive	2							80
+D	Juncus gerardii	Saltmeadow rush	Plants	Invasive	2							26
+D	Landoltia punctata	Dotted Duckmeat	Plants		8							91455
+D	Lepisosteus platostomus		Fishes		1							91
+D	Lepomis cyanellus											294
+D	Leyogonimus polyoon	Trematode flatworm	Flatworm	Watchlist	3							7
+D	Ligumia recta											25
+D	Lophopodella carteri	Bryozoan	Bryozoan	Invasive	2							5
+D	Lysimachia vulgaris	Garden Loosestrife	Plants	Invasive	4							53
+D	Lythrum salicaria	Purple Loosestrife	Plants	Invasive	10							103
+D	Margariscus nachtriebi											4
+D	Mesocyclops pehpeiensis	Copepod	Crustacean-Copepod	High	2							44
+D	Morone mississippiensis	Yellow Bass	Fishes		1							39
+D	Myriophyllum heterophyllum	Broadleaf Water-milfoil	Plants	High	4							96
+D	Mysis diluviana											40
+D	Najas marina	Spiny naiad	Plants	Invasive	6							532
+D	Neoergasilus japonicus	parasitic copepod	Crustacean-Copepod		2							61
+D	Nitellopsis obtusa	Starry Stonewort	Algae	High	6							83
+D	Nitokra hibernica		Crustacean-Copepod		1							14
+D	Notemigonus crysoleucas	Golden Shiner	Fishes	Moderate	1							429
+D	Notropis buchanani	Ghost shiner	Fishes	Invasive	2							57
+D	Notropis dorsalis											42
+D	Notropis hudsonius											141
+D	Notropis volucellus											106
+D	Noturus insignis	Margined Madtom	Fishes	Invasive	3							72
+D	Nymphaea odorata	Fragrant Waterlily	Plants	High	1							143
+D	Nymphaea sp.											1
+D	Odhneripisidium moitessierianum											12
+D	Oxybasis glauca											223
+D	Paranais frici											27
+D	Percina shumardi	River darter	Fishes	Invasive	2							35
+D	Perrunichthys perruno											6
+D	Persicaria longiseta	Creeping Smartweed	Plants	Moderate	3							61
+D	Phenacobius mirabilis	Suckermouth Minnow	Fishes	Invasive	4							32
+D	Pisidium amnicum	Greater European Peaclam	Mollusk-Bivalve	Moderate	3							52
+D	Pistia stratiotes	Water Lettuce	Plants	Invasive	12							278
+D	Pleurosira laevis		Algae		1							22
+D	Poa trivialis		Plants	Low	1							129
+D	Pomoxis annularis	White Crappie	Fishes	Invasive	2							106
+D	Potamilus alatus	Pink Heelsplitter	Mollusk-Bivalve		1							25
+D	Puccinellia distans		Plants		1							396
+D	Rumex longifolius		Plants		1							19
+D	Salmo trutta × Salvelinus fontinalis	Brown Trout	Fishes	Invasive	6							2
+D	Schizopera borutzkyi	Oarsman	Crustacean-Copepod	Invasive	3							7
+D	Scolex pleuronectis	Tapeworm	Tapeworm	Low	1							1
+D	Skeletonema subsalsum		Algae	Low	1							380
+D	Skistodiaptomus pallidus		Crustacean-Copepod		1							78
+D	Sonchus arvensis uliginosus	Perennial sowthistle	Plants		1							5
+D	Stephanodiscus binderanus	Diatom	Algae	Invasive	2							33
+D	Stratiotes aloides	Water Soldiers	Plants	Invasive	10							178
+D	Tanysphyrus lemnae		Insects		1							39
+D	Thalassiosira baltica		Algae	Low	1							2
+D	Thermocyclops crassus	A copepod	Crustacean-Copepod	Invasive	3							14
+D	Utricularia inflata											44
+D	Veronica beccabunga	European Brooklime	Plants	Invasive	8							68
+E	Acineta nitocrae		Protozoa-Ciliate	Low	1							
+E	Actinocyclus normanii f. subsalsa											
+E	Agrostis gigantea	Redtop	Plants	Moderate	3							
+E	Alosa chrysochloris	Skipjack Herring	Fishes	High	3							
+E	Argulus japonicus	Parasitic copepod	Crustacean-Copepod		2							
+E	Branchiura sowerbyi	Tubificid worm	Annelids		3							
+E	Butomus umbellatus	Flowering Rush	Plants	Invasive	12							
+E	Cambarus robustus	Big Water Crayfish	Crustacean-Crayfish	High	3							
+E	Cipangopaludina japonica	Japanese Mysterysnail	Mollusk-Gastropoda	High	7							
+E	Cipangopaludina sp.											
+E	Conium maculatum	Poison Hemlock	Plants	Invasive	3							
+E	Conticribra (Thalassiosira) guillardii											
+E	Cordylophora caspia	Freshwater hydroid	Coelenterates		3							
+E	Corythionella golemanskyi											
+E	Cottus cognatus											
+E	Couesius plumbeus											
+E	Cyclops strenuus	Copepod	Crustacean-Copepod		2							
+E	Cyprinella analostana	Satinfin shiner	Fishes	Invasive	2							
+E	Cyprinella spiloptera											
+E	Dactylogyrus amphibothrium		Fluke	Low	1							
+E	Daphnia galeata galeata											
+E	Daphnia lumholtzi	Water Flea	Crustacean-Cladoceran	Invasive	7							
+E	Diaphanosoma fluviatile	water flea	Crustacean-Cladoceran	High	2							
+E	Diatoma ehrenbergii		Algae	Low	1							
+E	Discostella woltereckii		Algae	Low	1							
+E	Dorosoma cepedianum	Gizzard shad	Fishes	Invasive	2							
+E	Dreissena sp.											
+E	Echinogammarus ischnus	Scud	Crustacean-Amphipod	Invasive	3							
+E	Egeria densa	Brazilian Elodea	Plants	High	11							
+E	Elimia virginica	Piedmont Elimia	Mollusk-Gastropoda		3							
+E	Epilobium parviflorum											
+E	Esox lucius × masquinongy	Northern pike	Fishes	High	1							
+E	Etheostoma caeruleum											
+E	Etheostoma zonale											
+E	Eubosmina maritima		Crustacean-Cladoceran		1							
+E	Euglesa henslowana											
+E	Faxonius propinquus	Northern clearwater crayfish	Crustacean-Crayfish	Invasive	1							
+E	Faxonius rusticus	Rusty crayfish	Crustacean-Crayfish	Invasive	3							
+E	Faxonius virilis											
+E	Fundulus diaphanus diaphanus	Banded Killifish	Fishes	High	2							
+E	Gammarus fasciatus	Freshwater shrimp	Crustacean-Amphipod	Invasive	2							
+E	Gammarus tigrinus		Crustacean-Amphipod		2							
+E	Gillia altilis	Buffalo Pebblesnail	Mollusk-Gastropoda		2							
+E	Glugea hertwigi		Microsporidea	Low	1							
+E	Heteropsyllus nr. nunni											
+E	Heteropsyllus nunni											
+E	Heterosporis sutherlandae	Heterosporis	Microsporidea	Invasive	2							
+E	Hydrilla verticillata peregrina	Hydrilla	Plants	Invasive	11							
+E	Hymenomonas roseola		Algae		1							
+E	Ictiobus bubalus	Smallmouth buffalo	Fishes	Invasive	2							
+E	Juncus compressus		Plants	Invasive	1							
+E	Labidesthes sicculus	Brook silverside	Fishes	Invasive	2							
+E	Ladislavella catascopium											
+E	Lasmigona subviridis	Green Floater	Mollusk-Bivalve	Low	2							
+E	Lepomis auritus	Redbreast sunfish	Fishes	Watchlist	1							
+E	Lepomis gibbosus × cyanellus											
+E	Lepomis gibbosus × macrochirus											
+E	Lepomis gulosus											
+E	Lepomis humilis	Orangespotted Sunfish	Fishes		3							
+E	Lepomis megalotis											
+E	Leptodea fragilis											
+E	Lupinus polyphyllus	Bigleaf lupine	Plants		2							
+E	Lycopus asper		Plants		1							
+E	Lycopus europaeus		Plants		1							
+E	Lysimachia nummularia	Moneywort	Plants	Moderate	5							
+E	Lysimachia punctata	Large yellow loosestrife	Plants	Watchlist	2							
+E	Manayunkia speciosa											
+E	Megacyclops viridis		Crustacean-Copepod		1							
+E	Mentha spicata	Spearmint	Plants		2							
+E	Mentha × gracilis											
+E	Morone chrysops × americana											
+E	Morone chrysops × saxatilis											
+E	Moxostoma carinatum											
+E	Myosotis scorpioides	Forget-me-not	Plants	Invasive	8							
+E	Myriophyllum aquaticum	Parrot Feather	Plants	High	11							
+E	Myriophyllum × hybridum											
+E	Najas minor	Brittle Waternymph	Plants	Invasive	12							
+E	Nasturtium microphyllum	Onerow Yellowcress	Plants	High	5							
+E	Neascus brevicaudatus		Fluke	Low	1							
+E	Nitokra incerta		Crustacean-Copepod		1							
+E	Nocomis biguttatus											
+E	Notropis atherinoides											
+E	Novirhabdovirus sp. genotype IV sublineage b											
+E	Oncorhynchus mykiss whitei	Rainbow Trout	Fishes	Invasive	5							
+E	Phractocephalus hemioliopterus	Redtail Catfish	Fishes	Low	2							
+E	Phragmites australis australis	Phragmites	Plants	Invasive	5							
+E	Physella sp.											
+E	Piaractus sp.											
+E	Pimephales notatus											
+E	Piscirickettsia cf. salmonis											
+E	Pleurocera acuta											
+E	Pluchea odorata	Marsh fleabane	Plants		2							
+E	Pomoxis nigromaculatus											
+E	Potamothrix bavaricus											
+E	Potamothrix bedoti		Annelids		1							
+E	Potamothrix moldaviensis		Annelids		1							
+E	Potamothrix vejdovskyi		Annelids		1							
+E	Procambarus acutus	White River Crawfish	Crustacean-Crayfish	High	2							
+E	Psammonobiotus communis	Testate amoeba	Protozoa-Amoebae		2							
+E	Psammonobiotus dziwnowi		Protozoa-Amoebae		1							
+E	Psammonobiotus linearis	Testate amoeba	Protozoa-Amoebae	Low	2							
+E	Pseudemys rubriventris											
+E	Pterygoplichthys sp.											
+E	Renibacterium (Corynebacterium) salmoninarum											
+E	Rhinichthys obtusus											
+E	Ripistes parasita		Annelids		1							
+E	Rorippa sylvestris		Plants		1							
+E	Rumex obtusifolius		Plants		1							
+E	Salix cf. cinerea/atrocinerea											
+E	Salmincola californiensis											
+E	Salmincola edwardsii	Gill louse	Crustacean-Copepod	Invasive	1							
+E	Salmincola lotae		Crustacean-Copepod		1							
+E	Salmo letnica	Ohrid Trout	Fishes	High	1							
+E	Salmo salar sebago	Atlantic Salmon	Fishes	Invasive	6							
+E	Salvelinus fontinalis × namaycush											
+E	Sander canadensis											
+E	Sander canadensis × vitreus											
+E	Schyzocotyle acheilognathi	Tapeworm	Tapeworm	Low	2							
+E	Semotilus corporalis											
+E	Solidago sempervirens	Seaside goldenrod	Plants		3							
+E	Sonchus arvensis	Perennial sowthistle	Plants		1							
+E	Sparganium glomeratum	Northern bur-reed	Plants	Invasive	5							
+E	Sphacelaria fluviatilis	Brown alga	Algae	Low	2							
+E	Sphacelaria lacustris		Algae	Low	1							
+E	Sphaeromyxa sevastopoli		Myxosporean	Low	1							
+E	Stagnicola palustris	Marsh pond snail	Mollusk-Gastropoda	Invasive	2							
+E	Stephanodiscus subtilis		Algae	Low	1							
+E	Stylodrilus heringianus											
+E	Thalassiosira bramaputrae											
+E	Timoniella sp.		Fluke	Low	1							
+E	Trachemys scripta scripta	Red-eared slider	Reptile		1							
+E	Trypanosoma acerinae		Protozoa-Flagellate	Low	1							
+E	Typha laxmannii	Graceful cattail	Plants	Watchlist	6							
+E	Typha × glauca											
+E	Ulva (Enteromorpha) flexuosa subsp. flexuosa and flexuosa subsp. paradoxa											
+E	Ulva (Enteromorpha) intestinalis											
+E	Ulva (Enteromorpha) prolifera											
+E	Umbra limi											
+E	Urnatella gracilis											
+E	Valvata piscinalis	European Stream Valvata	Mollusk-Gastropoda		4							

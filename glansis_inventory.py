@@ -23,13 +23,17 @@ A local cache at <cache_path> stops re-queries on subsequent runs; pass
 """
 
 import argparse
+import csv
+import gzip
+import io
 import json
 import os
+import re
 import sys
 import time
 import urllib.parse
 import urllib.request
-from collections import defaultdict
+from collections import Counter, defaultdict
 
 NCBI_GENOME_URL = (
     "https://api.ncbi.nlm.nih.gov/datasets/v2/genome/taxon/{taxon}/dataset_report"
@@ -43,6 +47,40 @@ NCBI_ESEARCH_URL = (
 # date a full WGS assembly for the same taxon — useful as Tier-C references
 # for shotgun mapping but biased toward coding regions.
 TRANSCRIPTOME_FILTER = "(gbdiv_est[PROP] OR tsa_master[PROP])"
+
+# GLANSIS Tier-2 risk-assessment CSV (UTF-16 LE, tab-delimited). Powers the
+# Group, Common Name, and Risk columns. The upstream URL bumps versions
+# destructively (older _v* files 404 immediately on a bump) and has no DOI /
+# NCEI archive, so we vendor a gzipped copy in this repo and fall back to it
+# if the live URL is gone.
+GLANSIS_RA_URL = "https://www.glerl.noaa.gov/glansis/data/RALevel2_v6.txt"
+
+# GLANSIS's Group field has uncontrolled singular/plural and " - " vs "-"
+# variants. Collapse to the most-common spelling.
+GROUP_ALIASES = {
+    "Plant":                 "Plants",
+    "Nematode":              "Nematodes",
+    "Rotifer":               "Rotifers",
+    "Mollusks-Bivalves":     "Mollusk-Bivalve",
+    "Mollusks-Gastropods":   "Mollusk-Gastropoda",
+    "Mollusk - Slugs":       "Mollusk-Gastropoda",
+    "Crustaceans-Amphipods": "Crustacean-Amphipod",
+    "Crustaceans-Copepod":   "Crustacean-Copepod",
+    "Crustaceans-Cladocerans": "Crustacean-Cladoceran",
+    "Crustaceans-Crayfish":  "Crustacean-Crayfish",
+    "Crustaceans-Mysids":    "Crustacean-Mysid",
+    "Crustaceans-Tanaids":   "Crustacean-Tanaid",
+    "Crustaceans-Crab":      "Crustacean-Crab",
+    "Reptile - Turtle":      "Reptile",
+    "Annelids-Polychaetes":  "Annelids",
+    "Cnidarian":             "Coelenterates",
+    "Platyhelminthes":       "Flatworm",
+    "Myxozoa-Malacosporea":  "Myxosporean",
+}
+
+# Severity order for the Risk column — Invasive first because it's a
+# confirmed-fact label, not a predicted score.
+RISK_PRIORITY = ["Invasive", "High", "Watchlist", "Moderate", "Low"]
 
 USER_AGENT = "danaSeq-GLANSIS-inventory/1.0 (https://github.com/rec3141/danaSeq)"
 
@@ -67,6 +105,90 @@ def species_from_dwc(occurrence_path):
             if n:
                 names.add(n)
     return sorted(names)
+
+
+def _normalize_group(g):
+    g = (g or "").strip()
+    return GROUP_ALIASES.get(g, g)
+
+
+_RE_QUANT = re.compile(r"\b(High|Moderate|Medium|Low)\b", re.I)
+
+
+def _extract_verdict(overall):
+    """Map a single 'Overall' string to a severity label, or None."""
+    t = (overall or "").strip()
+    if not t:
+        return None
+    lt = t.lower()
+    # GLANSIS categorical tags (whole-cell values).
+    if lt == "invasive":
+        return "Invasive"
+    if lt.startswith("watchlist") or lt == "recommend watchlist":
+        return "Watchlist"
+    # Quantitative ladder used by USFWS ERSS and similar tools.
+    m = _RE_QUANT.search(t)
+    if m:
+        v = m.group(1).title()
+        return "Moderate" if v == "Medium" else v
+    # Substring-level invasive detection — catches longer phrases like
+    # "Invasive with Benefits" without colliding with "Non-Invasive".
+    if "invasive" in lt and "non" not in lt:
+        return "Invasive"
+    return None
+
+
+def load_ra_file(path):
+    """Read GLANSIS RALevel2 CSV (UTF-16 LE TSV, or .gz of same).
+
+    Returns a dict keyed by (genus_lower, species_lower) →
+        {group, common_name, risk, n_ra, organizations}
+    """
+    if not path or not os.path.exists(path):
+        return {}
+    if path.endswith(".gz"):
+        with gzip.open(path, "rb") as gz:
+            raw = gz.read()
+    else:
+        with open(path, "rb") as f:
+            raw = f.read()
+    # The upstream file is UTF-16 LE with BOM.
+    text = raw.decode("utf-16")
+    reader = csv.DictReader(io.StringIO(text), delimiter="\t")
+    by_species = defaultdict(list)
+    for row in reader:
+        g = (row.get("Genus") or "").strip()
+        s = (row.get("Species") or "").strip()
+        if not (g and s):
+            continue
+        by_species[(g.lower(), s.lower())].append(row)
+
+    enrichment = {}
+    for key, rows in by_species.items():
+        groups = Counter(_normalize_group(r.get("Group")) for r in rows
+                         if (r.get("Group") or "").strip())
+        commons = Counter((r.get("Common Names") or "").strip() for r in rows
+                          if (r.get("Common Names") or "").strip())
+        orgs = Counter((r.get("Organization") or "").strip() for r in rows
+                       if (r.get("Organization") or "").strip())
+        verdicts = [v for v in (_extract_verdict(r.get("Overall")) for r in rows) if v]
+        risk = next((v for v in RISK_PRIORITY if v in verdicts), None)
+        enrichment[key] = {
+            "group":        groups.most_common(1)[0][0] if groups else "",
+            "common_name":  commons.most_common(1)[0][0] if commons else "",
+            "risk":         risk or "",
+            "n_ra":         len(rows),
+            "organizations": sorted(orgs),
+        }
+    return enrichment
+
+
+def _enrichment_key(scientific_name):
+    """Best-effort (genus, species) from a DwC scientificName."""
+    parts = scientific_name.split()
+    if len(parts) < 2:
+        return None
+    return (parts[0].lower(), parts[1].lower())
 
 
 def classify_assemblies(reports):
@@ -145,6 +267,11 @@ def main():
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--occurrence", default="/tmp/glansis/occurrence.txt",
                     help="Path to extracted GLANSIS DwC occurrence.txt")
+    ap.add_argument("--ra",
+                    default=os.path.join(os.path.dirname(__file__) or ".",
+                                         "data", "RALevel2_v6.txt.gz"),
+                    help="GLANSIS Tier-2 risk-assessment CSV (UTF-16 TSV or .gz). "
+                         f"Live source: {GLANSIS_RA_URL}")
     ap.add_argument("--out-tsv",  default="/matika/projects/project_zebra/docs/glansis_inventory.tsv")
     ap.add_argument("--out-html", default="/matika/projects/project_zebra/docs/glansis_inventory.html")
     ap.add_argument("--out-json", default="/matika/projects/project_zebra/docs/glansis_inventory.json")
@@ -161,6 +288,10 @@ def main():
     if args.limit:
         species = species[: args.limit]
     print(f"[inventory] GLANSIS species: {len(species)}", file=sys.stderr)
+
+    ra_enrich = load_ra_file(args.ra)
+    print(f"[inventory] RA enrichment loaded for {len(ra_enrich)} (genus, species) pairs",
+          file=sys.stderr)
 
     cache = {}
     if os.path.exists(args.cache) and not args.refresh:
@@ -203,6 +334,7 @@ def main():
             entry.get("nuccore_count") or 0,
             entry.get("transcriptome_count") or 0,
         )
+        ra = ra_enrich.get(_enrichment_key(name) or ("", ""), {})
         results.append({
             "scientific_name": name,
             "tier": tier,
@@ -210,6 +342,10 @@ def main():
             **(entry.get("genome") or {}),
             "transcriptome_count": entry.get("transcriptome_count") or 0,
             "nuccore_count": entry.get("nuccore_count") or 0,
+            "group":       ra.get("group", ""),
+            "common_name": ra.get("common_name", ""),
+            "risk":        ra.get("risk", ""),
+            "n_ra":        ra.get("n_ra", 0),
         })
 
     with open(args.cache, "w") as f:
@@ -226,7 +362,8 @@ def main():
         counts[r["tier"]] += 1
 
     # ---- TSV ----
-    cols = ["tier", "scientific_name", "accession", "assembly_level",
+    cols = ["tier", "scientific_name", "common_name", "group", "risk", "n_ra",
+            "accession", "assembly_level",
             "assembly_name", "total_length", "refseq_category",
             "transcriptome_count", "nuccore_count"]
     with open(args.out_tsv, "w") as f:
@@ -275,6 +412,13 @@ def write_html(path, results, counts):
         "D": ("Marker / mitochondrion only",         "#b45309"),
         "E": ("No usable public sequence",           "#be123c"),
     }
+    risk_color = {
+        "Invasive":  "#be123c",
+        "High":      "#dc2626",
+        "Watchlist": "#ea580c",
+        "Moderate":  "#ca8a04",
+        "Low":       "#16a34a",
+    }
     n_total = len(results)
     rows_html = []
     for r in results:
@@ -294,10 +438,25 @@ def write_html(path, results, counts):
         )
         tsc = r.get("transcriptome_count") or ""
         nuc = r.get("nuccore_count") or ""
+        grp = r.get("group") or ""
+        cname = r.get("common_name") or ""
+        risk = r.get("risk") or ""
+        n_ra = r.get("n_ra") or 0
+        rc = risk_color.get(risk, "#94a3b8")
+        risk_cell = (
+            f'<span class="badge" style="background:{rc}1a;color:{rc}">{risk}</span>'
+            f' <span class="muted">({n_ra})</span>' if risk else
+            (f'<span class="muted">({n_ra})</span>' if n_ra else "")
+        )
+        species_cell = f'<em>{r["scientific_name"]}</em>'
+        if cname:
+            species_cell += f'<br><span class="muted small">{cname}</span>'
         rows_html.append(f"""
-        <tr>
+        <tr data-group="{grp}" data-risk="{risk}">
           <td><span class="badge" style="background:{color}1a;color:{color}">{tier}</span></td>
-          <td><em>{r["scientific_name"]}</em></td>
+          <td>{species_cell}</td>
+          <td class="small">{grp}</td>
+          <td>{risk_cell}</td>
           <td>{r.get("assembly_level") or ""}</td>
           <td class="mono">{acc_html}</td>
           <td class="mono right">{fmt_bp(r.get("total_length"))}</td>
@@ -312,6 +471,21 @@ def write_html(path, results, counts):
         f'({counts[t]/n_total*100:.0f}%)</span>'
         for t in "ABCDE"
     )
+
+    # Group + risk dropdown option lists, ordered by frequency.
+    group_counts = Counter(r.get("group","") for r in results if r.get("group"))
+    risk_counts  = Counter(r.get("risk","")  for r in results if r.get("risk"))
+    group_options = "".join(
+        f'<option value="{g}">{g} ({n})</option>'
+        for g, n in group_counts.most_common()
+    )
+    risk_options = "".join(
+        f'<option value="{r}">{r} ({n})</option>'
+        for r, n in sorted(risk_counts.items(),
+                           key=lambda x: RISK_PRIORITY.index(x[0])
+                                         if x[0] in RISK_PRIORITY else 99)
+    )
+    n_with_ra = sum(1 for r in results if r.get("n_ra"))
 
     html = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
@@ -329,11 +503,14 @@ def write_html(path, results, counts):
     display: inline-block; padding: 0.4rem 0.8rem; border-radius: 6px;
     font-size: 0.9rem;
   }}
-  .filter-bar {{ margin: 1rem 0; }}
-  .filter-bar input {{
-    padding: 0.4rem 0.7rem; font-size: 0.9rem; border: 1px solid #cbd5e1;
-    border-radius: 4px; width: 100%; max-width: 24rem;
+  .filter-bar {{
+    margin: 1rem 0; display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center;
   }}
+  .filter-bar input, .filter-bar select {{
+    padding: 0.4rem 0.7rem; font-size: 0.9rem; border: 1px solid #cbd5e1;
+    border-radius: 4px;
+  }}
+  .filter-bar input {{ flex: 1; min-width: 18rem; max-width: 28rem; }}
   table {{ width: 100%; border-collapse: collapse; font-size: 0.9rem; }}
   th, td {{
     text-align: left; padding: 0.4rem 0.6rem; border-bottom: 1px solid #e2e8f0;
@@ -342,6 +519,8 @@ def write_html(path, results, counts):
   th {{ font-weight: 600; color: #1e40af; background: #f8fafc; position: sticky; top: 0; }}
   .mono {{ font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 0.85em; }}
   .right {{ text-align: right; }}
+  .small {{ font-size: 0.85em; }}
+  .muted {{ color: #64748b; }}
   .badge {{
     display: inline-block; padding: 0.05em 0.55em; border-radius: 9999px;
     font-weight: 600; font-size: 0.85em;
@@ -364,14 +543,31 @@ def write_html(path, results, counts):
 <div class="tier-summary">{tier_summary_html}</div>
 
 <div class="filter-bar">
-  <input id="filter" placeholder="Filter species (case-insensitive substring)" oninput="filterRows(event)">
+  <input id="filter" placeholder="Filter species (substring)" oninput="applyFilters()">
+  <select id="groupFilter" onchange="applyFilters()">
+    <option value="">All groups</option>
+    {group_options}
+  </select>
+  <select id="riskFilter" onchange="applyFilters()">
+    <option value="">All risk</option>
+    {risk_options}
+  </select>
+</div>
+<div class="meta">
+  Group, Common Name, and Risk are joined from the
+  <a href="https://www.glerl.noaa.gov/glansis/raT2Explorer.html">GLANSIS Tier&nbsp;2 Risk-Assessment Clearinghouse</a>
+  (<code>RALevel2_v6.txt</code>, vendored at <code>data/</code>) &mdash;
+  {n_with_ra} of {n_total} species have ≥1 assessment.
+  Risk reduces all assessments per species to a single label
+  (priority: Invasive &gt; High &gt; Watchlist &gt; Moderate &gt; Low); count
+  in parentheses is the number of source assessments.
 </div>
 
 <table>
   <thead>
     <tr>
-      <th>Tier</th><th>Species</th><th>Assembly level</th>
-      <th>Accession</th><th class="right">Length</th>
+      <th>Tier</th><th>Species</th><th>Group</th><th>Risk</th>
+      <th>Assembly level</th><th>Accession</th><th class="right">Length</th>
       <th class="right">EST/TSA</th><th class="right">nuccore</th>
     </tr>
   </thead>
@@ -387,11 +583,17 @@ def write_html(path, results, counts):
 </footer>
 
 <script>
-  function filterRows(e) {{
-    const q = e.target.value.toLowerCase();
+  function applyFilters() {{
+    const q   = document.getElementById('filter').value.toLowerCase();
+    const grp = document.getElementById('groupFilter').value;
+    const rsk = document.getElementById('riskFilter').value;
     const rows = document.querySelectorAll('#rows tr');
     for (const r of rows) {{
-      r.style.display = r.textContent.toLowerCase().includes(q) ? '' : 'none';
+      let show = true;
+      if (q   && !r.textContent.toLowerCase().includes(q)) show = false;
+      if (grp && r.dataset.group !== grp) show = false;
+      if (rsk && r.dataset.risk  !== rsk) show = false;
+      r.style.display = show ? '' : 'none';
     }}
   }}
 </script>
