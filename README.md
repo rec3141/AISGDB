@@ -3,8 +3,7 @@
 **Aquatic Invasive Species Genomic Database** — a working space for a curated
 whole-genome reference panel for shotgun-metagenomic AIS surveillance.
 
-Browse the rendered docs at **<https://rec3141.github.io/AISGDB/>** (once
-GitHub Pages is enabled: *Settings → Pages → Source: `main` / root*).
+Browse the rendered docs at **<https://rec3141.github.io/AISGDB/>**.
 
 ## Contents
 
